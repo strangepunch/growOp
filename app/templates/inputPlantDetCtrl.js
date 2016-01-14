@@ -1,0 +1,195 @@
+(function () {
+	angular
+			.module("growOpApp")
+			.controller("InputPlantDetCtrl",
+						["$scope",
+						 "localStorageService",
+							InputPlantDetCtrl]);
+	
+	function InputPlantDetCtrl($scope, localStorageService){
+		var vm = this;
+    	
+  	//----Bindable Members Up Top----//
+  	//time variables
+		var d = new Date();
+		var hr = d.getHours();
+		var min = d.getMinutes();
+		var sec = d.getSeconds();
+		var mSec = d.getMilliseconds();
+    var MM = d.getMonth() + 1;
+    var DD = d.getDate();
+    var YYYY = d.getFullYear();
+
+    vm.currentTimestamp = hr + ":" + min + ":" + sec + ":" + mSec;
+    vm.currentDate = YYYY + "/" + MM + "/" + DD;
+
+    //scope variables
+    $scope.btnSuccess = 'default';
+
+    //data input variables
+    vm.isSaved = true;
+
+    vm.PlantName = $scope.listName;
+    vm.PlantDesc = $scope.listDesc;
+    vm.PlantCount = $scope.counter;
+    
+    vm.inPlantProgressView = true;
+
+    vm.emailMessageDATAinJSON = "";
+
+  	vm.placeholders = {
+      plantType: 'plant type',
+  		plantWater: 'enter water used...',
+  		plantPPM: 'enter plant PPM...',
+  		plantPH: 'enter plant PH...',
+      plantHeight: 'enter plant Height...',
+      plantMsg: 'extra notes on this plant...',
+  	};
+
+  	vm.inputData = {
+      plantType: null,
+  		plantWater: null,
+  		plantPPM: null,
+  		plantPH: null,
+      plantHeight: null,
+      plantCond: null,
+      timeOfDay: null,
+      plantMsg: null,
+      entryTime: vm.currentTimestamp,
+      entryDate: vm.currentDate
+  	};
+
+  	vm.storedData = {
+      plantType: 'unknown',
+  		plantWater: 0,
+  		plantPPM: 0,
+  		plantPH: 0,
+      plantHeight: 0,
+      plantCond: 'good',
+      timeOfDay: 'morning',
+      plantMsg: 'this plant feels good.',
+      entryTime: vm.currentTimestamp,
+      entryDate: vm.currentDate
+  	};
+
+    vm.outputData_storedData = '';
+
+  	//function declarations
+    vm.getData = getData;
+  	vm.storeData = storeData;
+    vm.makeJSON = makeJSON;
+    vm.emailData = sendMail;
+    vm.clearData = clearData;
+
+  	//---- Bindable Members---END----//
+
+    //---- Functions---START----//
+    function getData(){
+
+        if($scope.dataList != undefined){
+          vm.inputData = $scope.dataList;
+        }else{
+          vm.inputData = vm.storedData;
+        }
+    }
+  	
+  	function storeData(){
+      //!$scope.dailyForm.$pristine && 
+      if(!$scope.dailyForm.$invalid) {
+          //console.log("vm.inputData", vm.inputData);
+          vm.storedData = vm.inputData;
+          vm.storedData.entryTime = vm.currentTimestamp;
+          vm.storedData.entryDate = vm.currentDate;
+          $scope.btnSuccess = 'success';
+          vm.isSaved = false;
+          vm.makeJSON();
+      }else{
+          console.log("No entry!");
+          $scope.btnSuccess = 'fail';
+          vm.isSaved = true;
+      }
+      var myJsonString = JSON.stringify(vm.storedData);
+      console.log("JSON: " + myJsonString);
+  	}
+
+    function clearData(){
+        vm.inputData = {
+          plantType: null,
+          plantWater: null,
+          plantPPM: null,
+          plantPH: null,
+          plantHeight: null,
+          plantCond: null,
+          timeOfDay: null,
+          plantMsg: null,
+          entryTime: vm.currentTimestamp,
+          entryDate: vm.currentDate
+        };
+
+        if($scope.dataList != undefined){
+          vm.inputData.plantType = $scope.dataList.plantType;
+        } else{
+          vm.inputData.plantType = vm.storedData.plantType;
+        }
+
+        $scope.btnSuccess = 'default';
+        vm.isSaved = true;
+        console.log("Cleared PLANT input DATA!");
+    }
+
+    function makeJSON(){
+      
+      var tempFormatData = {
+            PlantName: vm.PlantName,
+            PlantDesc: vm.PlantDesc,
+            plantType: vm.storedData.plantType,
+            plantWater: vm.storedData.plantWater,
+            plantPPM: vm.storedData.plantPPM,
+            plantPH: vm.storedData.plantPH,
+            plantHeight: vm.storedData.plantHeight,
+            plantCond: vm.storedData.plantCond,
+            timeOfDay: vm.storedData.timeOfDay,
+            plantMsg: vm.storedData.plantMsg,
+            entryTime: vm.currentTimestamp,
+            entryDate: vm.currentDate
+          };
+
+      vm.emailMessageDATAinJSON = JSON.stringify(tempFormatData);
+      console.log("vm.emailMessageDATAinJSON --> JSON: " + vm.emailMessageDATAinJSON);
+    }
+
+    function sendMail() {
+        $.ajax({
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'o2qOjIGJdPAbn7CuXXWmRQ',
+            'message': {
+              'from_email': 'jessica@2geeseflying.com',
+              'to': [
+                  {
+                    'email': 'measurements@2geeseflying.com',
+                    'name': 'Tester',
+                    'type': 'to'
+                  },
+                  {
+                    'email': 'jessicazh09@gmail.com',
+                    'name': 'Tester',
+                    'type': 'to'
+                  }
+                ],
+              'autotext': 'true',
+              'subject': 'Some growOp Data',
+              'html': vm.emailMessageDATAinJSON
+            }
+          }
+         }).done(function(response) {
+           console.log(response); // if you're into that sorta thing
+         });
+    }
+    //---- Functions---END----//
+
+    vm.getData();
+	}
+
+}());

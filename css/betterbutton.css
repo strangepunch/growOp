@@ -1,0 +1,24 @@
+.betterbutton{
+	position:relative;
+
+	vertical-align: bottom;
+}
+
+.betterbutton .outterBorder {
+	border-style: solid;
+	border-width: 3px;
+	border-color: orange;
+	border-radius: 50%;
+	
+	width:80px;
+	height:80px;
+	padding:5px;
+}
+
+.betterbutton .innerName{
+	font-size:2em;
+	color: orange;
+	
+	padding-top: 14px;
+	padding-left: 20px;
+}

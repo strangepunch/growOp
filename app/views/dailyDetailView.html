@@ -1,0 +1,128 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	<legend>
+		Plant 1
+		<button type="button" class="close" data-dismiss="alert" ui-sref="daily.plants">
+	  		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	  	</button>
+	</legend>
+  	</div>
+  	<div class="panel-body">
+  		
+	 	<form class="form-horizontal">
+		  	<fieldset>
+		      	<div class="form-group">
+			        <div class="radio col-xs-4 col-lg-4">
+			          <label>
+			            <input type="radio" name="plantRadios" id="PlantHealth2" value="good">
+			            Good
+			          </label>
+			        </div>
+			         <div class="radio col-xs-4 col-lg-4">
+			          <label>
+			            <input type="radio" name="plantRadios" id="PlantHealth3" value="poor">
+			            Poor
+			          </label>
+			        </div>
+		    	</div>
+		    	<div class="alert alert-dismissible alert-danger">
+				  	<strong>
+						Problem Discription:
+						<button type="button" class="close" data-dismiss="alert">
+					  		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					  	</button>
+					</strong>
+					<hr></hr>
+				  	<div class="form-group">
+			      		<div class="radio col-xs-4 col-lg-4">
+				          <label>
+				            <input type="radio" name="noticeRadios2" id="TimeOfNotice1" value="JustNotice" checked="">
+				            Just Noticed
+				          </label>
+				        </div>
+				        <div class="radio col-xs-4 col-lg-4">
+				          <label>
+				            <input type="radio" name="noticeRadios2" id="TimeOfNotice2" value="OnGoing">
+				           	On Going
+				          </label>
+				        </div>
+				         <div class="radio col-xs-4 col-lg-4">
+				          <label>
+				            <input type="radio" name="noticeRadios2" id="TimeOfNotice3" value="Resolved">
+				            Resolved
+				          </label>
+				        </div>
+			    	</div>
+				</div>
+	    	   	<div class="form-group col-lg-12">
+			    	<label for="textArea" class="col-lg-2 control-label">Note:</label>
+			    	<div class="col-lg-10">
+			    		<textarea class="form-control" rows="3" id="textArea" placeholder="what happened to your plant today?"></textarea>
+			      	</div>
+			   	</div>
+			</fieldset>
+		</form>
+		<hr></hr>
+	</div>
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+		      	<h4 class="panel-title">
+		        	<button style="background:transparent;border:none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+		          		General Info <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		        	</button>
+		      	</h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		    	<div class="panel-body">
+		      		<form class="form-horizontal">
+		  				<fieldset>
+					      	<div class="form-group col-sm-6 col-lg-4">
+					      		<label for="input" class="col-lg-6 control-label">Strain:</label>
+					      		<div class="col-lg-6">
+					        		<input type="text" class="form-control" placeholder="type">
+					      		</div>
+					    	</div>
+					    	<div class="form-group col-sm-6 col-lg-4">
+					      		<label for="input" class="col-lg-6 control-label">Water:</label>
+					      		<div class="col-lg-6">
+					      		<div class="input-group">
+								    <input type="text" class="form-control" placeholder="0">
+								    <span class="input-group-btn">
+								      	<button class="btn btn-default" type="button">gal.</button>
+								    </span>
+								</div>
+							</div>
+					    	</div>
+					        <div class="form-group col-sm-6 col-lg-4">
+					      		<label for="input" class="col-lg-6 control-label">PH:</label>
+					      		<div class="col-lg-6">
+					        		<input type="text" class="form-control" placeholder="0">
+					      		</div>
+					    	</div>
+					    	<div class="form-group col-sm-6 col-lg-4">
+					      		<label for="input" class="col-lg-6 control-label">PPM:</label>
+					      		<div class="col-lg-6">
+					        		<input type="text" class="form-control" placeholder="0">
+					      		</div>
+					    	</div>
+					    	<div class="form-group col-sm-6 col-lg-4">
+					      		<label for="input" class="col-lg-6 control-label">Height:</label>
+					      		<div class="col-lg-6">
+					        		<div class="input-group">
+								    <input type="text" class="form-control" placeholder="0">
+								    <span class="input-group-btn">
+								      	<button class="btn btn-default" type="button">in.</button>
+								    </span>
+								</div>
+					      		</div>
+					    	</div>
+					      </div>
+					  </fieldset>
+					</form>
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
