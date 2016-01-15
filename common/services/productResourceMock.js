@@ -42,7 +42,7 @@
 
 		];
 
-		/* we could use this as a template for daily log - push to the logs colletion in local storage temporarily */
+/** phase numbers defined here **/
 		var phases = [
 		{
 			"seedling" : "0"
@@ -79,97 +79,97 @@
  			"entryDate":"2016/1/15"
  		}
  	], 
-				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
-				"plant2" :[ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
+			"plant1" : [ 
+			{
+				"PlantName":"Jack",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
 			}],
-			"plant3" :[ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-			}],
-			"plant4" :[ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-			}],
-			"plant5" :[ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-			}],
-			"plant6" :[ 
-				{
-					"PlantName":"Empty",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-			}]
-		}];
+			"plant2" :[ 
+			{
+				"PlantName":"Jack",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
+		}],
+		"plant3" :[ 
+			{
+				"PlantName":"Jack",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
+		}],
+		"plant4" :[ 
+			{
+				"PlantName":"Jack",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
+		}],
+		"plant5" :[ 
+			{
+				"PlantName":"Jack",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
+		}],
+		"plant6" :[ 
+			{
+				"PlantName":"Empty",
+				"PlantDesc":"NA",
+				"plantType":"annual",
+				"plantWater":1,
+				"plantPPM":0,
+				"plantPH":0,
+				"plantHeight":0,
+				"plantCond":"good",
+				"timeOfDay":"morning",
+				"plantMsg":"",
+				"entryTime":"10:5:8:856",
+				"entryDate":"2016/1/14"
+		}]
+	}];
 
 		/** we could use this as a basis for the suggested feeding schedule based on the current foxfarm feedstyle  - this can form the basis of reminders ont he status screen and data on the feeding screen **/
 		var foxfarmSchedule = [
