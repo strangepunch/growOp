@@ -7,25 +7,27 @@
 						["ngMockE2E"]);
 	
 	app.run(function ($httpBackend){
-		var temperatures = [
-			{"F": [126, 266, 313, 315, 334, 351, 356, 365, 388, 428]},
-			{"C": [52, 130, 156, 157, 168, 177, 180, 185, 198, 220]}
-		   ];
-
-		var modes = [1, 2, 3, 'Hi', 'Md', 'Lo', 'i', 's', 'h', 'Hi', 'Md', 'Lo']; //Flavor, Effect, Buds, High, Mid, Low, indica, sativa, hybred
-		
-		/** temp ranges  - 0 - 355 = Low, 356 - 385 Med, 386 - 470 = High **/
-
-		var detailModes = ['Pos','Per',1,'Neg','Med','Vap'];
-
-		/** VTempType is a flag that indicates when a vape has specific temps available = Y or has a variable range of temps like a dial = N  **/
-		/** When a variable range is available - N, an additional graphic can be shown that visually indicates the approximate temp rage **/
 
 		/***************************/
 		/* growOp data starts here */
 		/***************************/
 /*************************************************/		
-		var phases = [{"seedling" : "0"}, {"vegetation" : "1"}, {"flowering" : "2"}, {"drying" : "3"}, {"cure" : "4"}];
+		var phases = [
+		{
+			"seedling" : "0"
+		}, 
+		{
+			"vegetation" : "1"
+		}, 
+		{
+			"flowering" : "2"
+		}, 
+		{
+			"drying" : "3"
+		}, 
+		{
+			"cure" : "4"
+		}];
 		
 		/* use the feed sequence here to order the retrieval and display of daily feeding and compost tea data*/
 		var feedStyles = [
@@ -41,135 +43,135 @@
 		];
 
 		/* we could use this as a template for daily log - push to the logs colletion in local storage temporarily */
-		var emptyDay = [
-			{
-				"dayNum" :"0",
-				"nutrients": [
-				 	{ 
-				 		"name": "BB", 
-				 		"amt": 6,
-				 	},
-				 	{ 
-				 		"name": "GB", 
-				 		"amt": 0,
-				 	},
-				 	{ 
-				 		"name": "TB", 
-				 		"amt": 0				 	
-				 	}
-			 	],
-				"waterAmt" : "1",
-				"light" : "18",
-				"plantHeight" : [
-					{
-						"plantName" : "Green Crack",
-						"plantHeight" : "0"
+		var phases = [
+		{
+			"seedling" : "0"
+		}, 
+		{
+			"vegetation" : "1"
+		}, 
+		{
+			"flowering" : "2"
+		}, 
+		{
+			"drying" : "3"
+		}, 
+		{
+			"cure" : "4"
+		}];
 
-					},
-					{
-						"plantName" : "Acapulco Gold",
-						"plantHeight" : "0"
 
-					},
-					{
-						"plantName" : "Jack Herer",
-						"plantHeight" : "0"
 
-					},
-					{
-						"plantName" : "Green Crack",
-						"plantHeight" : "0"
+/** daily plant log data structure **/
+ var plantLog = [
+ {
+ 	"environment" : [
+ 		{
+ 			"roomTemp":70,
+ 			"roomHumidity":45,
+ 			"roomLight":80,
+ 			"totalWater":5,
+ 			"totalPPM":0,
+ 			"totalPH":0,
+ 			"timeOfDay":"evening",
+ 			"roomMsg":"nothing is going on around here.",
+ 			"entryTime":"11:55:45:130",
+ 			"entryDate":"2016/1/15"
+ 		}
+ 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+			}],
+			"plant3" :[ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+			}],
+			"plant4" :[ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+			}],
+			"plant5" :[ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+			}],
+			"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+			}]
+		}];
 
-					},
-					{
-						"plantName" : "Plant Name",
-						"plantHeight" : "0"
-
-					},
-					{
-						"plantName" : "Plant Name",
-						"plantHeight" : "0"
-
-					}
-				],
-				"plantHealth" : [
-					{
-						"plantName" : "Green Crack",
-						"plantHealth" : "Great"
-
-					},
-					{
-						"plantName" : "Acapulco Gold",
-						"plantHealth" : "Great"
-
-					},
-					{
-						"plantName" : "Jack Herer",
-						"plantHealth" : "Great"
-
-					},
-					{
-						"plantName" : "Green Crack",
-						"plantHealth" : "Great"
-
-					},
-					{
-						"plantName" : "Plant Name",
-						"plantHealth" : "Great"
-
-					},
-					{
-						"plantName" : "Plant Name",
-						"plantHealth" : "Great"
-
-					}
-				],
-				"ph": [
-					{
-						"plantName" : "GreenCrack",
-						"PlantpH" : "0"
-					},
-					{
-						"plantName" : "JackHerer",
-						"PlantpH" : "0"
-					},
-					{
-						"plantName" : "AcapulcoGold",
-						"PlantpH" : "0"
-					},
-					{
-						"plantName" : "Plant4",
-						"PlantpH" : "0"
-					},
-					{
-						"plantName" : "Plant5",
-						"PlantpH" : "0"
-					}
-				],	
-				"ECLow" : "0.6",
-				"ECHigh" : "0.8",
-				"PPMLow": "420",
-				"PPMHigh": "560",
-				"PPMActual": "",
-				"Roomtemp" : "0",
-				"RoomHumidity" : "0",
-				"Feederid" : "S",
-				"dateTime" : "",
-				"note" : "This is a test note about todays feeding",
-				"CT" : [
-					{
-						"CTType" : "Soil",
-						"BBBrewAmt" : "0",
-						"CTConcentration" : "1/10",
-						"otherIngredientName" : "none",
-						"otherIngredientAmt" : "none",
-						"Water" : "1"		
-					}
-				]
-			}
-		];
-
-		/* we could use this as a basis for the suggested feeding schedule based on the current foxfarm feedstyle  - this can form the basis of reminders ont he status screen and data on the feeding screen */
+		/** we could use this as a basis for the suggested feeding schedule based on the current foxfarm feedstyle  - this can form the basis of reminders ont he status screen and data on the feeding screen **/
 		var foxfarmSchedule = [
 			{
 				"week" : "0",
@@ -472,5381 +474,738 @@
 			}
 		];
 
+/** Use this to create a grwoth stage indicator for use on plant progress summary screen (and others)**/
+var growthPhase = [
+{
+	"weekPhase" : [
+	{
+		"week" : "0",
+		"phase" : "seedling"
+	},
+	{
+		"week" : "0B",
+		"phase" : "seedling"
+	},
+	{
+		"week" : "1",
+		"phase" : "vegetative"
+	},
+	{
+		"week" : "2",
+		"phase" : "vegetative"
+	},
+	{
+		"week" : "3",
+		"phase" : "vegetative"
+	},
+	{
+		"week" : "4",
+		"phase" : "vegetative"
+	},
+	{
+		"week" : "5",
+		"phase" : "flower"
+	},
+	{
+		"week" : "6",
+		"phase" : "flower"
+	},
+	{
+		"week" : "7",
+		"phase" : "flower"
+	},
+	{
+		"week" : "8",
+		"phase" : "flower"
+	},
+	{
+		"week" : "9",
+		"phase" : "flower"
+	},
+	{
+		"week" : "10",
+		"phase" : "flower"
+	},
+	{
+		"week" : "11",
+		"phase" : "flower"
+	},
+	{
+		"week" : "12",
+		"phase" : "flower"
+	},
+	{
+		"week" : "13",
+		"phase" : "drying"
+	},
+	{
+		"week" : "14",
+		"phase" : "curing"
+	}]
+}];
+
+/* Use this to populate weekly schedule with graphics and give user control by week number */
+var weeklySchedule = [
+{
+	"weekImages" : [
+	{
+		"week" : "0",
+		"weekImg" : "images/schedule/week0.jpg"
+	},
+	{
+		"week" : "0B",
+		"weekImg" : "images/schedule/week0B.jpg"
+	},
+	{
+		"week" : "1",
+		"weekImg" : "images/schedule/week1.jpg"
+	},
+	{
+		"week" : "2",
+		"weekImg" : "images/schedule/week2.jpg"
+	},
+	{
+		"week" : "3",
+		"weekImg" : "images/schedule/week3.jpg"
+	},
+	{
+		"week" : "4",
+		"weekImg" : "images/schedule/week4.jpg"
+	},
+	{
+		"week" : "5",
+		"weekImg" : "images/schedule/week5.jpg"
+	},
+	{
+		"week" : "6",
+		"weekImg" : "images/schedule/week6.jpg"
+	},
+	{
+		"week" : "7",
+		"weekImg" : "images/schedule/week7.jpg"
+	},
+	{
+		"week" : "8",
+		"weekImg" : "images/schedule/week8.jpg"
+	},
+	{
+		"week" : "9",
+		"weekImg" : "images/schedule/week9.jpg"
+	},
+	{
+		"week" : "10",
+		"weekImg" : "images/schedule/week10.jpg"
+	},
+	{
+		"week" : "11",
+		"weekImg" : "images/schedule/week11.jpg"
+	},
+	{
+		"week" : "12",
+		"weekImg" : "images/schedule/week12.jpg"
+	},
+	{
+		"week" : "13",
+		"weekImg" : "images/schedule/week13.jpg"
+	},
+	{
+		"week" : "14",
+		"weekImg" : "images/schedule/week14.jpg"
+	}]
+}];
+
+/** end weekly scheudule **/
+
+/** this is the current json strucure of the data being returned by the grower via the daily plantLog screen**/
+/*var logData = [
+{
+	"environment" : 
+				{
+					"roomTemp":70,
+					"roomHumidity":45,
+					"roomLight":80,
+					"totalWater":5,
+					"totalPPM":0,
+					"totalPH":0,
+					"timeOfDay":"evening",
+					"roomMsg":"nothing is going on around here.",
+					"entryTime":"10:22:7:590",
+					"entryDate":"2016/1/14"
+				},
+				"plant1" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant2" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant3" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant4" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant5" :
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant6" : 
+				{
+					"PlantName":"",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				}];
+
+*/
 /* push new values into a structure like this to record and retrieve ongoing data */
-		var mySchedule = [
+/*		var myGrowData = [
 		{
-				"week" : "0",
-				"day" : "1",
-				"growPhase" : "",
-				"feedWaterAmt": "",
-				"nutrients" : [
-					{
-						"name" : "GB",
-						"Amt" : "0",
-						"units": "tsp"
-					},
-					{
-						"name" : "BB",
-						"Amt" : "0",
-						"units": "tsp"
-					},
-					{
-						"name" : "TB",
-						"Amt" : "0",
-						"units": "tsp"
-					},
-					{
-						"name" : "CTea",
-						"Amt" : "0",
-						"units": "cup"
-					}
-				],
-				"lightType" : "flo",
-				"lightAmt" : "12",
-				"ECLow" : "3.0",
-				"ECHigh" : "3.3",
-				"PPMLow": "2100",
-				"PPMHigh": "2310",
-				"temp" : "70F",
-				"humidity" : "65"
+				"week" : "0D1",
+				"environment" : 
+				{
+					"roomTemp":70,
+					"roomHumidity":45,
+					"roomLight":80,
+					"totalWater":5,
+					"totalPPM":0,
+					"totalPH":0,
+					"timeOfDay":"evening",
+					"roomMsg":"nothing is going on around here.",
+					"entryTime":"10:22:7:590",
+					"entryDate":"2016/1/14"
+				},
+				"plant1" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant2" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant3" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant4" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant5" :
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant6" : 
+				{
+					"PlantName":"",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				},
+			},
+			{
+				"week" : "0D2",
+				"environment" : 
+				{
+					"roomTemp":70,
+					"roomHumidity":45,
+					"roomLight":80,
+					"totalWater":5,
+					"totalPPM":0,
+					"totalPH":0,
+					"timeOfDay":"evening",
+					"roomMsg":"nothing is going on around here.",
+					"entryTime":"10:22:7:590",
+					"entryDate":"2016/1/14"
+				},
+				"plant1" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant2" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant3" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant4" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant5" :
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant6" : 
+				{
+					"PlantName":"",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				},
+			},
+			{
+				"week" : "0D3",
+				"environment" : 
+				{
+					"roomTemp":70,
+					"roomHumidity":45,
+					"roomLight":80,
+					"totalWater":5,
+					"totalPPM":0,
+					"totalPH":0,
+					"timeOfDay":"evening",
+					"roomMsg":"nothing is going on around here.",
+					"entryTime":"10:22:7:590",
+					"entryDate":"2016/1/14"
+				},
+				"plant1" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant2" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant3" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant4" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant5" :
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant6" : 
+				{
+					"PlantName":"",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				},
+			},
+			{
+				"week" : "0D4",
+				"environment" : 
+				{
+					"roomTemp":70,
+					"roomHumidity":45,
+					"roomLight":80,
+					"totalWater":5,
+					"totalPPM":0,
+					"totalPH":0,
+					"timeOfDay":"evening",
+					"roomMsg":"nothing is going on around here.",
+					"entryTime":"10:22:7:590",
+					"entryDate":"2016/1/14"
+				},
+				"plant1" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant2" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant3" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant4" : 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant5" :
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				},
+				"plant6" : 
+				{
+					"PlantName":"",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				},
+			},
+			{
+				"week" : "0D5",
+				"weekImg" : "images/schedule/week3.jpg"
+			},
+			{
+				"week" : "0D6",
+				"weekImg" : "images/schedule/week4.jpg"
+			},
+			{
+				"week" : "0D7",
+				"weekImg" : "images/schedule/week5.jpg"
+			},
+			{
+				"week" : "1D1",
+				"weekImg" : "images/schedule/week6.jpg"
+			},
+			{
+				"week" : "1D2",
+				"weekImg" : "images/schedule/week7.jpg"
+			},
+			{
+				"week" : "8",
+				"weekImg" : "images/schedule/week8.jpg"
+			},
+			{
+				"week" : "9",
+				"weekImg" : "images/schedule/week9.jpg"
+			},
+			{
+				"week" : "10",
+				"weekImg" : "images/schedule/week10.jpg"
+			},
+			{
+				"week" : "11",
+				"weekImg" : "images/schedule/week11.jpg"
+			},
+			{
+				"week" : "12",
+				"weekImg" : "images/schedule/week12.jpg"
+			},
+			{
+				"week" : "13",
+				"weekImg" : "images/schedule/week13.jpg"
+			},
+			{
+				"week" : "14",
+				"weekImg" : "images/schedule/week14.jpg"
 			}
-	];
+	}];
  
 
-		var growCycle = [
-			{
-	 			"growCycleName": "Spring Grow",
-				"schedule" : [
-					 	{ 
-					 		"phase": 1, 
-					 		"value": 15.15
-					 	}
-				 ]
-			 }
-	 	];
-		/* end growCycle */
+*/
 
 /*************************************************/
 
-		var vapeTemps = [
-			{"VId": 1,
-			 "VName": "Crafty", 
-			 "VManufacturer" : "Storz & Bickels",
-			 "VType": "Portable",
-			 "VTempType": "N",
-			 "VTempsF": ["104","122", "266","290", "313", "315", "334", "351", "356", "365", "388", "400", "410"],
-			 "VTempsC": ["040","050","130", "143", "156", "157", "168", "177", "180", "185", "198", "204", "210"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Crafty vaporizer packs the power of Storz & Bickels' German engineered heating technology into an uber portable vaping unit that can be controlled from your smartphone. Now you can enjoy the efficient herbal vaporizing experience the Volcano and Plenty are known for, on the go. Although the Crafty only has two temperature settings, with the free app you can set those temperatures to any two values you choose.", 
-			 "VImageUrl": "images/vapes/crafty1.png"
-			},
-			{"VId": 2,
-			 "VName": "Mighty", 
-			 "VManufacturer" : "Storz & Bickels",
-			 "VType": "Portable",
-			 "VTempType": "N",
-			 "VTempsF": ["104","122", "266","290", "313", "315", "334", "351", "356", "365", "388", "400", "410"],
-			 "VTempsC": ["040","050","130", "143", "156", "157", "168", "177", "180", "185", "198", "204", "210"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Mighty Vaporizer is the first of the portable vaporizers from German vaping masterminds Storz & Bickel, the same creators of the Volcano and Plenty vaporizers. Their German engineered heaters are the most efficient in the game, and that power is now available in the palm of your hand. The Mighty has an adjustable temperature range with a digital display allowing you to set it to any temp within its range. The temps below indicate that it is capable of low, medum and high temperatures.",
-			 "VImageUrl": "images/vapes/mighty1.png"
-			},
-			{"VId": 3,
-			 "VName": "Arizer Solo", 
-			 "VManufacturer" : "Arizer",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["122", "365", "374", "383", "393", "401", "410"],
-			 "VTempsC": ["050", "185", "190", "195", "200", "205", "210"],
-			 "VColors": ["Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi"],
- 			 "descriptionAbbrev": "The Arizer Solo is a super efficient hand held portable vaporizer by Arizer Tech, the brilliant minds behind the Arizer Extreme Q.",
-			 "VImageUrl": "images/vapes/solo1.png"
-			},
-			{"VId": 4,
-			 "VName": "Arizer Air", 
-			 "VManufacturer" : "Arizer",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["356", "374", "392", "401", "410"],
-			 "VTempsC": ["180", "190", "200", "205", "210"],
-			 "VColors": ["Lo", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Arizer Air vaporizer uses an all glass vapor path and stainless steel heating element to produce desktop quality vapor in a small 5 Inch tall by 1 inch wide travel friendly size.",
-			 "VImageUrl": "images/vapes/arizer_air2.png"
-			},
-			{"VId": 5,
-			 "VName": "Pinnacle Pro", 
-			 "VManufacturer" : "VaporBlunt",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["370", "395", "420", "445", "470"],
-			 "VTempsC": ["188", "201", "215", "229", "243"],
-			 "VColors": ["Md", "Hi", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Pinnacle quickly became one of the most popular portable vaporizers for first time users and vape veterans alike because of its easy to use functionality, superb portability, and excellent vapor quality.",
-			 "VImageUrl": "images/vapes/pinnaclepro1.png"
-			},
-			{"VId": 6,
-			 "VName": "Silver Surfer", 
-			 "VManufacturer" : "7th Floor",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["0", "350", "900"],
-			 "VTempsC": ["0", "177", "482"],
-			 "VColors": ["Lo", "Md", "Hi"],
-			 "descriptionAbbrev": "Silver Surfer is a highly customizable, top performing desktop vaporizer. Choose from a wide array of colors, designs, and heater cover options to create your perfect vaporizer.",
-			 "VImageUrl": "images/vapes/ssv2.png"
-			},
-			{"VId": 7,
-			 "VName": "Da Buddah", 
-			 "VManufacturer" : "7th Floor",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["0",  "370", "900"],
-			 "VTempsC": ["0", "187", "482"],
-			 "VColors": ["Lo", "Md", "Hi"],
-			 "descriptionAbbrev":  "Da Buddha is pretty stylish, colored sparkly silver with a faint, fat Buddha logo above the temperature control knob. It's also available in black for a few dollars more. It's basically a stripped-down version of the Silver Surfer Vaporizer, which is made by the same company. It has a wide temperature range controlled by the plastic knob on the front of the unit and how fast you choose to inhale.",
-			 "VImageUrl": "images/vapes/dabuddah2.png"
-			},
-			{"VId": 8,
-			 "VName": "LSV", 
-			 "VManufacturer" : "7th Floor",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["0", "370", "900"],
-			 "VTempsC": ["0", "187", "482"],
-			 "VColors": ["Lo", "Md", "Hi"],
-			 "descriptionAbbrev": "This vape has been designed to within an inch of its life, and it shows. This is a thing of beauty which you will enjoy using and probably enjoy showing off to your friends even more.",
-			 "VImageUrl": "images/vapes/life-saber-vaporizer-lsv.png"
-			},
-			{"VId": 9,
-			 "VName": "Magic Flight Launch Box", 
-			 "VManufacturer" : "Magic Flight",
-			 "VType": "Portable",
-			 "VTempType": "N",
-			 "VTempsF": ["0", "370", "400"],
-			 "VTempsC": ["0", "187", "204"],
-			 "VColors": ["Lo", "Md", "Hi"],
-			 "descriptionAbbrev": "Beautifully crafted and intuitively designed, the Magic-Flight Launch Box, is powered by a rechargeable AA NiMH battery and holds the title of the world's smallest electronic vaporizer, making it the perfect option for low-profile vaporizing on-the-go.",
-			 "VImageUrl": "images/vapes/mflb1.png"
-			},
-			{"VId": 10,
-			 "VName": "Extreme Q", 
-			 "VManufacturer" : "Arizer",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["122", "266", "290", "313", "315", "334", "351", "356", "365", "388", "400", "428", "445", "500"],
-			 "VTempsC": ["050","130", "143", "156", "157", "168", "177", "180", "185", "198", "204", "220", "229", "260"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev":  "This is the Extreme-Q Vaporizer by Arizer. It is a dual purpose vaporizer or a combo vape because it can be used with a whip and it can also be used with a balloon.",
-			 "VImageUrl": "images/vapes/extremeq1.png"
-			},
-			{"VId": 11,
-			 "VName": "V Tower", 
-			 "VManufacturer" : "Arizer",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["122", "266","290", "313", "315", "334", "351", "356", "365", "388", "400", "428", "445", "500"],
-			 "VTempsC": ["050","130", "143", "156", "157", "168", "177", "180", "185", "198", "204", "220", "229", "260"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev":  "The V-Tower, by Canadian manufacturer Arizer, is a direct draw, simple to use, tabletop vaporizer. For efficient and user-friendly functionality, few vaporizers can compete with its high quality vapor production.",
-			 "VImageUrl": "images/vapes/Arizer-V-Tower-Vaporizer.png"
-			},
-			{"VId": 12,
-			 "VName": "Volcano Digit", 
-			 "VManufacturer" : "Storz & Bickel",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266", "288", "309", "331", "352", "374", "396", "417", "439"],
-			 "VTempsC": ["130", "142", "154", "166", "178", "190", "202", "214", "226"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev":  "The Volcano Digit vaporizer's reputation precedes it in most cases and is equally respected by vaporizing newbies and pro vaporizer users alike.",
-			 "VImageUrl": "images/vapes/volcano2.png"
-			},
-			{"VId": 13,
-			 "VName": "Volcano Classic", 
-			 "VManufacturer" : "Storz & Bickel",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266", "288", "309", "331", "352", "374", "396", "417", "439"],
-			 "VTempsC": ["130", "142", "154", "166", "178", "190", "202", "214", "226"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev":  "The Volcano Digit vaporizer's reputation precedes it in most cases and is equally respected by vaporizing newbies and pro vaporizer users alike.",
-			 "VImageUrl": "images/vapes/volcano1.png"
-			},
-			{"VId": 14,
-			 "VName": "Plenty", 
-			 "VManufacturer" : "Storz & Bickel",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266", "288", "309", "331", "353", "374", "396", "420"],
-			 "VTempsC": ["130", "142", "154", "166", "178", "190", "202", "215"],
-			 "VColors": ["Lo", "Lo", "Lo",  "Lo", "Lo", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev":  "This is Storz & Bickel's very first whip vaporizer and judging from their only other vaporizer, the Volcano vaporizer, you can expect a top of the line product when you buy the Plenty Vaporizer. The Plenty has an analgog temeprature gauge that let's you set a wide range of temperatures including low, medium and high values.",
-			 "VImageUrl": "images/vapes/plenty1.png"
-			},
-			{"VId": 15,
-			 "VName": "Ascent", 
-			 "VManufacturer" : "DaVinci  Vaporizers",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["126", "266", "313", "315", "334", "351", "356", "365", "388", "428", "430"],
-			 "VTempsC": ["052", "130", "156", "157", "168", "177", "180", "185", "198", "220", "221"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev":  "The Ascent Vaporizer takes what barriers you think portable vaporizers might be restricted by and smashes through them with ease.",
-			 "VImageUrl": "images/vapes/ascent1.png"
-			},
-			{"VId": 16,
-			 "VName": "PUFFiT 2", 
-			 "VManufacturer" : "Discreet Vape",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["250", "430"],
-			 "VTempsC": ["121", "221"],
-			 "VColors": ["Lo", "Hi"],
-			 "descriptionAbbrev":  "Draw true vapor quickly and easily without drawing attention with a little help from the PUFFiT 2 inhaler vaporizer.",
-			 "VImageUrl": "images/vapes/puffit1.png"
-			},
-			{"VId": 17,
-			 "VName": "Haze", 
-			 "VManufacturer" : "Haze Vaporizers",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["365", "380", "390", "415"],
-			 "VTempsC": ["185", "193", "198", "212"],
-			 "VColors": ["Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev":  "Haze is the first portable vaporizer with dual chambers, allowing vaporization of dried blends, solid concentrates, and liquids interchangeably and simultaneously.",
-			 "VImageUrl": "images/vapes/haze1.png"
-			},
-			{"VId": 18,
-			 "VName": "Firefly", 
-			 "VManufacturer" : "Firefly Vaporizers",
-			 "VType": "Portable",
-			 "VTempType": "N",
-			 "VTempsF": ["400"],
-			 "VTempsC": ["204"],
-			 "VColors": ["Hi"],
-			 "descriptionAbbrev":  "The revolutionary Firefly is the fastest, easiest, most satisfying way to enjoy aromatic blends. Firefly heats instantly at the touch of a button, so it's always ready. There's nothing faster.",
-			 "VImageUrl": "images/vapes/firefly1.png"
-			},
-			{"VId": 19,
-			 "VName": "Hot Box", 
-			 "VManufacturer" : "Hot Box Vapors",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["400"],
-			 "VTempsC": ["204"],
-			 "VColors": ["Hi"],
-			 "descriptionAbbrev":  "The Hot Box is a very simple desktop vape, it only has one switch to turn it on and off. It's also one of the least expensive home units on the market, which makes it a model to consider for beginners who may not want to spend a lot of money to see if they like vaping.",
-			 "VImageUrl": "images/vapes/hotbox1.png"
-			},
-			{"VId": 20,
-			 "VName": "Vapir Rise 2.0", 
-			 "VManufacturer" : "Vapir",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266", "288", "309", "331", "352", "374", "396", "417", "420"],
-			 "VTempsC": ["130", "142", "154", "166", "178", "190", "202", "214", "215"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev":  "Vapir has already laid the path for many of today's vaporizers with their revolutionary systems developed years ago. The new Vapir Rise carries this legacy into the future and is sure to impress even the most discriminating vapor enthusiast.",
-			 "VImageUrl": "images/vapes/vapirrise1.png",
-			},
-			{"VId": 21,
-			 "VName": "Pax", 
-			 "VManufacturer" : "Ploom",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["370", "390","410"],
-			 "VTempsC": ["187", "199", "210"],
-			 "VColors": ["Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "Pax by Ploom is a premium portable vaporizer that conveniently fits in your pocket and delivers pure, clean vapor. Small and lightweight, Pax is easily taken out and about and heats in under a minute. Its refined design is sleek, stylish, and durable, making Pax the ultimate choice for on-the-go vaporization.",
-			 "VImageUrl": "images/vapes/pax1.png",
-			},
-			{"VId": 22,
-			 "VName": "Pax 2", 
-			 "VManufacturer" : "Ploom",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["360", "380","400", "420"],
-			 "VTempsC": ["182", "193", "204", "216"],
-			 "VColors": ["Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "PAX 2 has four temperature settings with lip-sensing, motion-sensing, and auto-cooling technologies that intelligently self-optimize power and temperature during use. With a one-button operation and minimal maintenance required, PAX 2's interface is simple and efficient.",
-			 "VImageUrl": "images/vapes/pax2black.png",
-			},
-			{"VId": 23,
-			 "VName": "Phantom Premium", 
-			 "VManufacturer" : "Cloud V",
-			 "VType": "Pen",
-			 "VTempType": "N",
-			 "VTempsF": ["374", "410", "436"],
-			 "VTempsC": ["190", "210", "224"],
-			 "VColors": ["Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "Cloud V brings you a portable and stylish design to enhance your vaporizing experience. Phantom features a heating chamber that has optimized temperature for your dry herb products. Easy to use technology allows you to enjoy your Cloud anytime, anywhere.",
-			 "VImageUrl": "images/vapes/phantom.png",
-			},
-			{"VId": 24,
-			 "VName": "Alfa", 
-			 "VManufacturer" : "Goboof",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["374", "410", "446"],
-			 "VTempsC": ["190", "210", "230"],
-			 "VColors": ["Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "Want nice vapor from a short draw? The Alfa is one to consider. This mid-priced portable vape is made by a new company that goes by the name of Goboof, and it has a few unique features that make it stand out.",
-			 "VImageUrl": "images/vapes/alfa-vaporizer-goboof.png",
-			},
-			{"VId": 25,
-			 "VName": "Summit", 
-			 "VManufacturer" : "Vapium",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["320", "338", "356", "374", "392", "410", "428", "450"],
-			 "VTempsC": ["160", "170", "180", "190", "200", "210", "220", "230"],
-			 "VColors": ["Lo", "Lo", "Md", "Md", "Hi", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "With innovative technology, high-quality construction and materials and intuitive functionality crafted specifically for on-the-go use, the Summit redefines industry standards of both utility and style that performs wherever the trail may lead, and beyond.",
-			 "VImageUrl": "images/vapes/summit-green-600x600.png",
-			},
-			{"VId": 26,
-			 "VName": "Cloud Evo", 
-			 "VManufacturer" : "VapeXhale",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266", "288", "309", "331", "352", "374", "396", "417", "439"],
-			 "VTempsC": ["130", "142", "154", "166", "178", "190", "202", "214", "226"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "A top-tier desktop unit with an all-glass air path that produces excellent quality vapor. A huge advantage this model has is that the performance is superb with both dry herbs and concentrates.",
-			 "VImageUrl": "images/vapes/cloud-evo_thumb.png",
-			},
-			{"VId": 27,
-			 "VName": "Herbal Aire", 
-			 "VManufacturer" : "VapeXhale",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["266","290", "313", "315", "334", "351", "356", "365", "388", "400"],
-			 "VTempsC": ["130", "143", "156", "157", "168", "177", "180", "185", "198", "204"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Aire allows users the option of three different settings, whip style, balloon bag and direct draw. The temperature control on this unit is also great as it allows you to vape at anywhere between 250 F and 400F.",
-			 "VImageUrl": "images/vapes/Herbal-Aire-1.png",
-			},
-			{"VId": 28,
-			 "VName": "Herbalizer", 
-			 "VManufacturer" : "Herbalizer",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["290", "313", "315", "334", "351", "356", "365", "388", "428", "445"],
-			 "VTempsC": ["143", "156", "157", "168", "177", "180", "185", "198", "220", "229"],
-			 "VColors": ["Lo", "Lo", "Lo", "Lo", "Lo", "Md", "Md", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Herbalizer, or Herbie for short, is a high-tech medical device for cannabis patients seeking consistency in dosage and effects. Achieve consistent and precise temperatures to heat specific cannabinoids for your desired medicinal effects.",
-			 "VImageUrl": "images/vapes/herbalizer.png",
-			}, 
-			{"VId": 29,
-			 "VName": "V2 Pro Series 3", 
-			 "VManufacturer" : "V2 Cigs",
-			 "VType": "Pen",
-			 "VTempType": "N",
-			 "VTempsF": ["350"],
-			 "VTempsC": ["177"],
-			 "VColors": ["Lo"],
-			 "descriptionAbbrev": "For dry herb, the Series 3 uses conduction heating with a temp range from 350-375 degrees Fahrenheit. The temperature is regulated based on a number of things to include your herbs, grind time and draw speed.",
-			 "VImageUrl": "images/vapes/v2ProSeries3.png",
-			}, 
-			{"VId": 30,
-			 "VName": "V2 Pro Series 7", 
-			 "VManufacturer" : "V2 Cigs",
-			 "VType": "Pen",
-			 "VTempType": "Y",
-			 "VTempsF": ["392", "419", "437"],
-			 "VTempsC": ["200", "215", "225"],
-			 "VColors": ["Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The Series 7 is capable of vaporizing three, different mediums: e-liquid, loose leaf and wax. Allow the smart technology of your device to warm your chosen cartridge automatically, or use the variable voltage and temperature settings to tailor a custom vapor experience.",
-			 "VImageUrl": "images/vapes/V2ProSeries7.png",
-			},
-			{"VId": 31,
-			 "VName": "G-Pro", 
-			 "VManufacturer" : "Grenco Science",
-			 "VType": "Portable",
-			 "VTempType": "Y",
-			 "VTempsF": ["320", "380", "420"],
-			 "VTempsC": ["160", "193", "215"],
-			 "VColors": ["Lo", "Md", "Hi"],
-			 "descriptionAbbrev": "Founded on the principles of performance and user-preference, the G Pro Vaporizer features three variable temperature settings, enabling a uniquely-fitted vaping experience.",
-			 "VImageUrl": "images/vapes/GPro-Pen-Solo.png",
-			},
-			{"VId": 32,
-			 "VName": "K-Vape Micro DX", 
-			 "VManufacturer" : "KandyPens",
-			 "VType": "Pen",
-			 "VTempType": "Y",
-			 "VTempsF": ["351", "356", "365", "388", "428", "430"],
-			 "VTempsC": ["177", "180", "185", "198", "220", "221"],
-			 "VColors": ["Lo", "Md", "Md", "Hi", "Hi", "Hi"],
-			 "descriptionAbbrev": "The K-Vape Micro-DX is an extension of the K-Vape line, which is currently one of the top-selling vaporizer brands in the world. It has over 80 possible tempertaure settings and a 3 - 4 hr battery life.",
-			 "VImageUrl": "images/vapes/kvape_microDx.png",
-			},
-			{"VId": 33,
-			 "VName": "E-Nano", 
-			 "VManufacturer" : "Epic Vapes",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["430"],
-			 "VTempsC": ["221"],
-			 "VColors": ["Hi"],
-			 "descriptionAbbrev": "The Epic Vape E-Nano is a super efficient log vaporizer. Log vapes look just like a piece of wood and look great on any living room table.. Unlike most vapes which try to mimic spacecrafts and Apple products. It also heats up instantly and delivers milky clouds.",
-			 "VImageUrl": "images/vapes/Epic-Vape-E-Nano-Vape.png",
-			},
-			{"VId": 34,
-			 "VName": "Underdog", 
-			 "VManufacturer" : "Underdog Aromatherapy",
-			 "VType": "Desktop",
-			 "VTempType": "N",
-			 "VTempsF": ["430"],
-			 "VTempsC": ["221"],
-			 "VColors": ["Hi"],
-			 "descriptionAbbrev": "The Underdog has a stainless steel heating core. Air is drawn into the Underdog, around the heating core, and up through the herbs in the stem. You should use a voltage regulator is you would like control over a wide range of temperatures.",
-			 "VImageUrl": "images/vapes/Underdog-001-225x300.png",
-			}
-		];
-
-		var vTips = [
-			{
-				"VTipId": 1,
-				"VName": "Arizer Solo",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Before using your Arizer Solo for the first time be sure to let it warm to the highest temperature several times to eliminate any residues present from the manufacturing process and any taste associated with them.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Although the Solo vaporizer is very easy to master, start with a higher temperature and work your way down as you gain experience. This will result in an optimal vaporizing experience.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Even when you find your favorite temperature, remember it may be necessary to adjust as needed when using fresher material that contains moisture (higher temp) or extra dry herbs (lower temp). Generally speaking, temperature levels 3 and 4 will consistently yield the best results for Sativas and temperature levels 5 and 6 for Indicas.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "It sometimes may be easy to forget, but be sure to hold your Solo upside down while removing the glass stem to reload. Doing this when right side up may cause some material to fall onto the heating element and create residue or clog the small holes the air needs to pass through when using.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Although it is not a requirement to grind your herb finely, it will improve the performance and efficiency of your Solo vaporizer. Increased grinding means increased surface area of the cannabis, which allows more hot air to interact with and vaporize the cannabis (remember to hold it upside down when emptying).",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Whenever possible try to let your Solo charge to full capacity in between use. A full battery will go much further than one that is periodically recharged for short periods of time. A battery charge might last 3-4 hours. The charger that comes with the Solo can't charge while the Solo is in use, so plan accordingly. There are chargers sold separately that allowing charging during use, and there are also car charging adapters available.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Use an old school pipe cleaner to clean the Solo's glass stems. Simply fold the pipe cleaner over on itself once to make it a bit thicker (more surface area) and insert. If done frequently you can almost completely avoid using any type of cleaner or solvent. Neglecting to clean your stems frequently will quickly result in slightly diminished performance due to clogging of the air holes. Soaking the stems overnight in rubbing alcohol then rinsing out with water is also very effective.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Be sure to turn off your Solo vaporizer right away if taking a break “mid-bowl”. Even though the Solo has an automatic shut-off safety feature, it will continue to vaporize some of your material and cause it to taste stale when you resume use. Despite what many self-professed “vaporizer experts” online may claim, no quality vaporizer will ever result in a “burnt popcorn” type taste when used correctly.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "To disable the beeping noises on the Arizer Solo, hold the “up” button on the vaporizer until you hear it beep. This disables all further beeping from occurring.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "After you turn your Solo back on, if you hold the down button for a second it will go to last temperature setting you used before turning it off.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Make sure you get any leftover material stuck to the bowl-end of the mouthpiece out of there so it doesn't slowly build up and become a nuisance to clean later on. Also try to find something around the house, such as a toothpick, to poke the air holes in the bowl end of the mouthpiece. The last thing you need is those air holes getting clogged up.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Always take a look in the hole at the top of the Arizer Solo where the heating element is to make sure no material is in there. It doesn't happen often but sometimes there will be a small amount of vaporized material in there. It is really easy to get out using either a small brush, your finger (if it is not heated up), or blowing in it.",
-				 		"TipImg" : "images/vapes/solo1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "13", 
-				 		"tipTxt": "The best way to make sure the Solo will be hot enough for your liking is select one level higher then you were planning on using and wait about 10 to 15 minutes before selecting the level you want and start vaping at you desired temperature.",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	}
-				],
-			},	
-			{
-				"VTipId": 2,
-				"VName": "Arizer Air",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Never touch the end of the removable mouthpiece that is closest to the Air when hot. This can result in burns and will definitely ruin your experience.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "To maximize your taste experience use low temps. The best way to do this is to insert your mouthpiece, turn the Air on to the lowest setting and begin using it as it warms up to the first temperature. This ensures you get all the low temp effects which typically are where the flavors in your strain are best experienced.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Carry an extra prepacked mouthpiece or two with you in the travel case for quick changes when you're on the go and would like to be discreet. This works great for hikes, picnics, sunset cruises etc.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "To reach temps that are not at one of the preset levels, try vaping between levels by setting your temperature to the level just below the temp your looking for. Then set it to the temp just above and vaporize while the Air is heating up to the next highest level.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Remember the ghost hit. There is one hit typically still there when you turn the Air off. While it is cooling off, grab the ghost hit. ",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Using a domed screen in the Air mouthpiece can both save you herb and provide short but effective sessions. This also prevents ground herb from becoming lodged on the inside of the mouthpiece.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Letting your ground herb dry a bit before using it in the Air will increase the efficiency of vaporization. If clouds are what you seek, this is the way to get them.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Heating your well used mouthpiece in hot milk and then making hot chocolate can make a long lasting boost to your day. Just be sure to watch the milk so it doesn't boil and stir often.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "If you are having trouble with draw resistance, some users have found that raising the stem slighty allows more air to pass through the glass for sa smoother draw. Of course, this also means that strength of each draw may be somewhat diluted as well.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A good way to always have a charged battery ready for your next session is to place a battery into the external charger as soon as you take it out of the Air when possible.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A number of users have suggested one way to maximize the capacity and lifetime of your batteries is to overcharge them before the first use from 30 min to several hours.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "If the effect or flavor your looking for doesn't conveniently happen at one of the set temperatures on the Air, heat it to the temperature setting just below the value you're looking for, then set it to the next level and begin vaprorizing immediately. This will allow you to get the effects and taste from the temps between the two settings.",
-				 		"TipImg" : "images/vapes/arizer_air2.png"
-				 	}
-				]
-			},
-			{
-				"VTipId": 3,
-				"VName": "Crafty",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "It is posible to turn off or turn down the intensity of the led and the vibration making the Crafty a great stealth option for those times when it really is just your personal choice.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Although the Crafty has only two temperatures using the free app you can set those temperatures to any two temperatures you like. This really enhances the flexibility of this vaporizer.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "When you prefer a shorter session, a number of Crafty owners have found that using the stainless steel screen above your herb efectively cuts the capacity in half. This can also extend the life of your personal stash since you use less in each session.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "When sharing the session with others you can prevent interruption due to the automatic shutoff by suggesting each person press the on off button once when as soon as they take the Crafty.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Be careful when removing and replacing the top mouthpiece assembly since at times the plastic can be damaged when twisted too far after repeated use.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Letting your ground herb dry a bit before using it in the Crafty will increase the efficiency of vaporization. If clouds are what you seek, this is the way to get them.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Use 100% Isopropyl alcohol & cotton tips to clean every 3-5 bowls.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Make sure you grind fine. The finer, the more vapour you get. Just grind for double what you normally would, and test.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Use the filling tool to stir the bowl half way through. It is also super important to re-compress the bowl with the flat part. The tigher the bowl, the better the vape experience will be.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "When re-inserting the cooling chamber filter, bend it like a dome and then insert into place easily, you'll start ruining the mesh if you don't and you try to force it into the circular grooves with it angled flat straight.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Any amount of herb should be ok as long as you use the liquid pad to compress. It just needs to keep the herb compacted.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Start at lower temperatures and work your way up. Find a starting temp and vape until you can't see any more vapor, then increase 10 degrees and repeat.",
-				 		"TipImg" : "images/vapes/crafty1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 4,
-				"VName": "Mighty",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "The Mighty can be adjusted to any temperature within its range making it a very flexible device. The digital display and automatic sensing and adjustment keeps it at each temperature you have selected.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "When sharing the session with others you can prevent interruption by the automatic shutoff by suggesting each person press the on off button as soon as they take their turn.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "When you prefer a shorter session, a number of Mighty owners have found that using the stainless steel screen above your herb efectively cuts the capacity in half. This can also extend the life of your personal stash since you use less each session.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Be careful when removing and replacing the top mouthpiece assembly since at times the plastic can be damaged when twisted too far after repeated use.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Letting your ground herb dry a bit before using it in the Mighty will increase the efficiency of vaporization. If clouds are what you seek, this is the way to get them.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Use 100% Isopropyl alcohol & cotton tips to clean every 3-5 bowls.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Make sure you grind fine. The finer, the more vapour you get. It also makes me feel like the bowl lasts forever too. Just grind for double what you normally would, and test.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Use the filling tool to stir the bowl half way through. It is also super important to re-compress the bowl with the flat part. The tigher the bowl, the better the vape experience will be.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "When re-inserting the cooling chamber filter, bend it like a dome and then insert into place easily, you'll start ruining the mesh if you don't and you try to force it into the circular grooves with it angled flat straight.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "Any amount of herb should be ok as long as you use the liquid pad to compress. It just needs to keep the herb compacted.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Start at lower temperatures and work your way up. Find a starting temp and vape until you can't see any more vapor, then increase 10C and repeat.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "You can use a small Altoids container to hold your ABV when you're on the go.",
-				 		"TipImg" : "images/vapes/mighty1.png"
-				 	}
-			 	]	
-			},
-			{
-				"VTipId": 5,
-				"VName": "Pinnacle Pro",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "By filling a bullet half way with one strain and the rest of the way with a different strain you can get the benefits of both using the temperatures listed here for both flavor and effect.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "By setting your Pinnacle Pro to the first temperature setting and vaporizing while it is warming to that level, you can get the benefits of low temp vaping which include the maximum taste for your chosen strain.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "If the effect or flavor your looking for doesn't conveniently happen at one of the set temperatures on the Pinnacle Pro, heat it to the temperature setting just below the value you're looking for, then set it to the next level and begin vaprorizing immediately. This will allow you to get the effects and taste from the temps between the two settings.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "When using the water tool, be careful to not fill it more than halfway and try to only use it vertically if possible. Some users have foudn that water can leak down in to the device causing permanent damage.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "It has been noted that repeated use at high temperatures can cause the plastic mouthpiece to become increasingly fragile. To be sure your mouthpiece doesn't break, turn the unit on to heat it before removing the bullet for your first session. This will loosen the bond that may have formed between the plastic and the resins from earlier sessions.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Having a container close by for your ABV can help prevent you from getting burned when you complete your session. Just remove the mouthpiece and turn the unit over above the ABV container. The hot bullet should fall into the container and you can now drop a fresh bullet into the Pinnacle and continue vaping.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "If you prefer concentrates some Pinnacle owners have found that placing the wax, hash or oil in a bed of herb can be a nice combination. Higher temperatures will be needed to get the most from your concentrates.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Many users find that grinding their ABV in a coffee grinder before adding it to a cookie or brownie mix is a great way to get the most out of your herb.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Letting your ground herb dry a bit before using it in the pinnacle will increase the efficiency of vaporization. If clouds are what you seek, this is the way to get them.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "To maximize the life of your PNP, use settings 1-3 most often. Although Vaporblunt advertises the unit is built to handle higher temps, a number of users have reported problems with the unit that result from repeated use at levels 4 and 5.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "When cleaning your mouthpiece, try not to leave it in isopropyl alcohol for more than 1-3 minutes at a time. Then rinse with water and allow to dry. This will keep the plastic in good condition over time.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Many PNP owners have found that using the glass lined pong mouthpiece gives more satisfying results.",
-				 		"TipImg" : "images/vapes/pinnaclepro1.png"
-				 	}
-			 	]	
-			},
-			{
-				"VTipId": 6,
-				"VName": "Silver Surfer",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Using a smaller wand can help you moderate your sessions and your tolerance. This will also extend the time your personal stash lasts, potentially saving you money as well.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Although there are no specific temperature settings on the SSV, if you are looking for low temp flavors or effects you can still get them. Set the SSV to a 12:00 position or less and while it is heating up begin vaping. Any low temp benefits should now be yours.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Since the SSV is capable of very high temperatures, there is a risk of combusting your herb if you set it too high. This would both release dangerous chemicals such as benzene and toluene into your system as well as affect the taste of future sessions. Most SSV owners suggest a setting between 12:00 and 3:00 to prevent this, but each device is made differently so be cautious and experiment to find your favorite setting.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "If you prefer concentrates, some SSV owners have found that placing the wax, hash or oil in a bed of herb can be a pleasant combination. Of course, higher temperatures will be needed to get the most from your concentrates.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "To minimize the risk of having herb enter the SSV heating chamber always remove the wand between draws.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Dont toke too slow as it can burn the herb, nice short fast puffs.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Be careful of banging out the glass wand on the table or ashtray, it will crack after a while.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "The SSV has a pretty narrow air stream, you may want to rotate the wand as you're hitting it for a more even vape and try not to load the bowl more than half full.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Use a medium fine grind and stir the bowl with the pick after every hit.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "Both screens and tubing are a good deal from the 7th Floor site, and will be needed. It's also a good idea to get an extra wand, in case of an accident.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Take a smaller hit. Only fill up your lungs to like half capacity. Hold that in. Hold it in longer than you ever though you would need to hold your breath. When you finally do exhale, you should see nothing or next to nothing come out. Using this method, you can get medicated on next to nothing.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Have someone you want to share your SSV with, but they have never vaped? Give them an empty wand that hasn't been cleaned thoroughly yet. Even with nothing in it you can get at least a few clouds. They can see first hand what it takes to pull vapor and there is no risk at all of messing anything up.",
-				 		"TipImg" : "images/vapes/ssv2.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 7,
-				"VName": "Da Buddah",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Using a smaller wand can help you moderate your sessions and your tolerance. This will also extend the time your personal stash lasts potentially saving you money as well.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Although there are no specific temperature settings on the DBV, if you are looking for low temp flavors or effects you can still get them. Set your DBV to a 12:00 position or less and while it is heating up begin vaping. Any low temp benefits should now be yours.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Since the DBV is capable of very high temperatures, there is a risk of combusting your herb if you set it too high. This would both release dangerous chemicals such as benzene and toluene into your system as well as affect the taste of future sessions. Most DBV owners suggest a setting between 12:00 and 3:00 to prevent this but each device is made differently so be cautious and experiment to find your favorite setting.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "If you prefer concentrates, some DBV owners have found that placing the wax, hash or oil in a bed of herb can be a pleasant combination. Of course, higher temperatures will be needed to get the most from your concentrates.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "To minimize the risk of having herb enter the DBV heating chamber always remove the wand between draws.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Both screens and tubing are a good deal from the 7th Floor site, and will be needed. It's also a good idea to get an extra wand, in case of an accident.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Use a medium fine grind and stir the bowl with the pick after every hit.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Dont toke too slow as it can burn the herb, nice short fast puffs.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Be careful of banging out the glass wand on the table or ashtray, it will crack after a while.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "To minimize the risk of having herb enter the DBV heating chamber always remove the wand between draws.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Take a smaller hit. Only fill up your lungs to like half capacity. Hold that in. Hold it in longer than you ever though you would need to hold your breath. When you finally do exhale, you should see nothing or next to nothing come out. Using this method, you can get medicated on next to nothing.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Have someone you want to share your DBV with, but they have never vaped? Give them an empty wand that hasn't been cleaned thoroughly yet. Even with nothing in it you can get at least a few clouds. They can see first hand what it takes to pull vapor and there is no risk at all of messing anything up.",
-				 		"TipImg" : "images/vapes/dabuddah2.png"
-				 	}
-				] 	
-			},
-			{
-				"VTipId": 8,
-				"VName": "LSV",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Although there are no specific temperature settings on the LSV, if you are looking for low temp flavors or effects you can still get them. Set the SSV to a 12:00 position or less and while it is heating up begin vaping. Any low temp benefits should now be yours.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "If you prefer concentrates, some LSV owners have found that placing the wax, hash or oil in a bed of herb can be a pleasant combination. Of course, higher temperatures will be needed to get the most from your concentrates.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Take a smaller hit. Only fill up your lungs to like half capacity. Hold that in. Hold it in longer than you ever though you would need to hold your breath. When you finally do exhale, you should see nothing or next to nothing come out. Using this method, you can get medicated on next to nothing.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	}, 
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Have a 4 piece grinder with a bunch of kief? You can vaporize that, but it's so fine it will fly through the screen. Break off a little cotton ball/q-tip and use tweezers to roll it in the pollen. Stick that in your lsv, crank it up to like 3 o clock and enjoy.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Have someone you want to share your LSV with, but they have never vaped? Give them an empty wand that hasn't been cleaned thoroughly yet. Even with nothing in it you can get at least a few clouds. They can see first hand what it takes to pull vapor and there is no risk at all of messing anything up.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Use a medium fine grind and stir the bowl with the pick after every hit.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "When turned on, the surface of the Life Saber Vaporizer becomes very hot so coming into contact with the heater could result in serious burns.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Never place the Life Saber Vaporizer near paper, plastics, fabrics or other flammable materials during use.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "If you find that your blend becomes discolored and appears black or a very deep shade of brown, turn down the heat or try inhaling more slowly.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "The Life Saber Vaporizer can double as a flameless, butane-free lighter: 1. Take off the glass heater cover (Use caution - this piece is very fragile). 2. Turn the Life Saber Vaporizer on and adjust the power to high heat for approximately two minutes. 3. Once the unit is preheated, hold it 1/4 inch away from the material to be heated using the lighter. 4. Turn off the vaporizer when you're finished.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "When it's time to replace the vaporizer screen: 1. Take the screen out of the transfer with the pick that comes included with the Life Saber Vaporizer. 2. Put the new screen on top of the transfer. 3. Use the pick to push the screen until you reach the bottom. 4. Flip the screen to attach it one side. 5. Push down the other side with the pick.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "You need to stir your herbs at least once or twice during a session to ensure that it’s vaped evenly.",
-				 		"TipImg" : "images/vapes/life-saber-vaporizer-lsv.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 9,
-				"VName": "Magic Flight Launch Box",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "$0.78 worth of clear PVC will give you a nice whip. The 5/16 inch is the size that fits perfectly",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Push your straw through a hookah mouth stem for a flat, clean hitting chamber.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "You can use chapstick lids to cover the batteries.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "You can use a tic tac container as a bud dispenser.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "You can use a small Althoids container to hold your ABV when you're on the go.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Always keep your batteries covered to avoid contact with metal in your pocket or purse.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Don't use acrylic grinders. They wear down very quickly and become dangerous, grinding off tiny, sometimes even microscopic, plastic particles into your weed.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "To clean the mouthpiece stem, just dip a cotton swab in alcohol and push through the stem until it's clean, then rinse the stem and let dry.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "Magic-Flight recommends that people load it with unpacked material (finely ground but not powder) until it is level with the shoulder (i.e. do not fill the chamber) even though this might be more than you would normally need.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Filling ones lungs fully, drawing deeply all of the way in so as to get the vapor all of the way into the lower lungs is far more practical than holding a smaller volume of vapor only in the upper lungs and throat for any amount of time.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "The ideal vapor density is exactly that which can be adsorbed by the lungs in a natural/comfortable interval of time, usually between 3 to 5 seconds.",
-				 		"TipImg" : "images/vapes/mflb1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 10,
-				"VName": "Extreme Q",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "If you heat up the vaporizer to 392 degrees F, and then put the empty Cyclone Bowl on the unit's female piece, you will get the most effective and fast vaporization.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Use the remote to put the fan on the lowest setting and heat the Cyclone bowl even faster, then turn it off once the Extreme Q temperature reaches 392 F.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "The slower you inhale, the more vaporizer fumes you will successfully intake. Once finished with your toke, you can leave the Cyclone Bowl on the Extreme Q for about 30 seconds to one minute without risking unnecessary heat damage to the bud.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "The mouthpiece screen is shaped like a small bowl and needs to cleaned about once a month if you are using the vaporizer daily. You can use the glass tool to scrape the filter clean, but every couple weeks you should just submerge it in rubbing alcohol for a half an hour then rinse and dry.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "As with all vaporizers, use a grinder to grind your pot into fine particulates. This will allow maximum surface area and improve vaporization.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "The Extreme uses a standard 18.8mm connection on both the whip and a bag mouthpieces. They can connect to a 18.8mm GonG joint. (The bag stem has a GonG joint?) Hold the bag upright when connected to a bong to facilitate airflow.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Before you start heating up the Arizer Extreme Q you want to always make sure your cyclone bowl is clean and there is no leftover material resting on the screen. Anything leftover in the bowl can create a bad tasting vapor if your new material is just placed over it.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "While the Q is heating up it is best to ground up your material and have it ready in the cyclone bowl ahead of time. Since you can pre pack the bowl it is always a good idea to do so. Doing this ahead of time is going to make sure you aren't wasting any heat what so ever when the vape reaches your desired temperature.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "If you are using the balloon inflation method you will also want to make sure the balloons are put together and ready to be filled. Fumbling around with balloons while the vape is already at your desired vaporizing temperature is something best avoided.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "After each balloon you fill, or after every other pull you take from the whip, it is always recommended to use the included stir tool to stir up the material and make sure you are taking advantage of all the material and not just a percentage.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Once you are done you always want to dump out your used material and then use a brush, or even the stir tool, to get any leftover material sticking to the sides of the bowl off of there. Doing this ensures you don't eventually have a huge build up of leftover material that will later affect the taste. When using the stir tool just be extra careful you do not puncture the screen with the pointed end of the stir tool.",
-				 		"TipImg" : "images/vapes/extremeq1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 11,
-				"VName": "V Tower",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "When your V-Tower is heating up be sure to have the cyclone bowl and whip attached to the heating element. This will not only help the V-Tower heat up faster but also ensure an even and consistent vaporizing experience. Make sure while you are doing this the cyclone bowl is NOT packed.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Always remember to use your stir tool between each pull, or every other pull, from the V-Tower. It may seem like something that can get annoying but this is absolutely essential to getting every active ingredient out of your material.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "After you are done using the V-Tower always give the cyclone bowl and heating element ample time to cool down before clearing out the bowl. Trying to remove the cyclone bowl too soon can result in you burning yourself.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Taking harder and longer pulls is going to result in you having to clean your glass elbow adapter more often due to the material clogging the screen. It is recommended to take lighter and slower pulls with the V-Tower to avoid having to replace screens over and over.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Just like the Extreme Q you can also achieve stronger pulls from your V-Tower by packing the bowl end of the whip that normally attaches to the cyclone bowl.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "The V Tower vape couldn’t get any louder with its fondness of the whip system with its three-foot long medical grade tube, and that’s almost twice as long as that of its counterparts. So the result is more clearance space for the hot vapor to cool down as it passes along the tube.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Let’s say you wish to use the Cyclone bowl to add pleasant aroma to your room. All you have to do is to pack your ground material into the glass bowl, filling it up to half its maximum capacity. Then place the ground glass end of the bowl to the top of the vaporizer. Just leave it open to release all the fragrant vapors.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "After the vaping session, cleaning the glass bowl is actually a breeze because its smooth surface easily lets go of any residue when you throw the used up herb. But be careful with handling the Cyclone bowl as it could get too hot after a few minutes of use.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "The undeniable quality of the V-Tower’s aluminum body, the ceramic heating element and the rest of the V tower parts make it one of the most formidable vapes when it comes to long-term use.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "There are also for rubber tips underneath the base to hold it in place especially on smooth surfaces. You’d begin to appreciate this humble feature especially when the vaporizer whip is pulled around more aggressively while socializing with your friends.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Some owners report the V-Tower works better with the elbow screen packed, as opposed to the glass bowl (creates a better vapor/air ratio). Also, if the glass parts are warmed up prior to use, the vaping process is expedited dramatically.",
-				 		"TipImg" : "images/vapes/Arizer-V-Tower-Vaporizer.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 12,
-				"VName": "Volcano Digit",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Storz & Bickel recommends replacing the bags after 50-100 uses.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "If you leave the vapor in the balloons for two long, even a few hours and especially over time, the bags get sticky and smell funny.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "You throw the Easy Valve and balloon away after 150 uses, so you avoid cleaning issues but spend more money (a replacement set costs about $60).",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "We recommend that you use a grinder that is designed specifically with vaporizers in mind. Another factor will be how much botanical you load as well as the temperature. The higher the temperature, the more vapor will be released. It will also be thicker and more visible.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Finding the right temperature can be daunting at first. To really see what works for you, start out at a low temperature. From there you can increase your setting until you find what produces the best vapor you. You will get more control over your temperature with the digital but the classic still produces quality vapor.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Once your botanical is producing no more vapor and is an even brown color, you can next use it in baking.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "One often overlooked fact is that the parts dirty at different rates. For example the bottom screen of the filling chamber takes a long time to clog up, because the air is blowing through, not the vaporized plant material. Knowing this you can spread out some of your cleaning tasks to make it less of a burden.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "Dont fill too much or you are wasting the goods. A thin light layer is all you need (just barely cover the screen).",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "You'll always get the most vapor in the first bag, and the more you load, the more spent herb you'll be tasting while trying to get all the bowl vaped.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "You can put hash right on top of leaf, or you can vape straight hash with the little pad that looks like a small brillo. Just pop that in the bottom of the chamber and put your hash on top.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Hash has a higher melting point, so if you're vaping hash you need to get it to the higher numbers eventually.",
-				 		"TipImg" : "images/vapes/volcano2.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 13,
-				"VName": "Volcano Classic",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "The active ingredient in popular herbal mixtures vaporizes when heated to between 338 F and 372 F. This is not hot enough for the plant material to burn so many of the toxins associated with smoking are not released. On the original Volcano vaporizer, this range is between 4.25 and 6.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Some folks prefer a lighter less dense vapor - they'll set at 5.5 and get a very light mist in the bag, and probably get more bag fillings.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "If you prefer a smokier experience, start at 6.5 and ratchet it up a notch with each successive bag filling.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "One often overlooked fact is that the parts dirty at different rates. For example the bottom screen of the filling chamber takes a long time to clog up, because the air is blowing through, not the vaporized plant material. Knowing this you can spread out some of your cleaning tasks to make it less of a burden.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Finding the right temperature can be daunting at first. To really see what works for you, start out at a low temperature. From there you can increase your setting until you find what produces the best vapor you. You will get more control over your temperature with the digital but the classic still produces quality vapor.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "We recommend that you use a grinder that is designed specifically with vaporizers in mind. Another factor will be how much botanical you load as well as the temperature. The higher the temperature, the more vapor will be released. It will also be thicker and more visible.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Once your botanical is producing no more vapor and is an even brown color, you can next use it in baking.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "If you leave the vapor in the balloons for two long, even a few hours and especially over time, the bags get sticky and smell funny.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "You should start your first bag about 5 1/2 or so. Blow a bag or two, then raise it up 1 to 1/2 numbers for the next bag or two. Repeat until the taste/smell is like burnt popcorn. You may also want to stir your material in between bags, that will help.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "If you bought the easy-valve kit, you can go to a hardware store and buy 5/8 in. vinyl tubing and make a whip - get at least 5 feet of it, should cost you under 5 bucks. The tubing fits perfectly over the easy valve stem, just take off the blue rubber band.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "The flavinoids are the first thing that gets boiled off, so the first couple bags should taste great, but they won't have quite the kick that later bags will. When you've reached that burnt popcorn taste/smell, it's time for a new bowl.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12",				 		
-				 		"tipTxt": "Finding the right temperature can be daunting at first. To really see what works for you, start out at a low temperature. From there you can increase your setting until you find what produces the best vapor you. You will get more control over your temperature with the digital but the classic still produces quality vapor.",
-				 		"TipImg" : "images/vapes/volcano1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 14,
-				"VName": "Plenty",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "When you pack the herb chamber don't be shy. Try layering the entire bottom screen and then put even more on top. You may find leaving the pad out while vaping and just adding more material gives you some really thick vapor, but the quality and smoothness still remains.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Always cap the mouthpiece with your thumb or finger. If you look at the mouthpiece closely while the Plenty is on you can actually see vapor creeping out of the mouthpiece. So if you aren't constantly pulling you are slowly losing some precious vapor.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "When you feel like your material is on its last legs after stirring one or multiple times, try turning your heat level up to max. You can usually get some nice pulls at the end if you do this.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "After turning off the Plenty be sure to give it some time to cool down before clearing the herb chamber or storing it away. Also make sure the vent on the bottom is not blocked, so that it can cool down properly.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "When you clean out the herb chamber be sure to use the heavy duty brush that they include. Just dumping the material out is not going to do the trick, even if it looks like it did. Also be sure to really jam the brush into the edges around the chamber, both the bottom and top. That is the easiest place for used material to build up.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "If you're using it by yourself, just put a pinch of herbs at the bottom and then take the Liquid Pad (included in packaging) and put it on top of the herbs, to fill up the rest of the space inside the chamber, so that when you screw the coil piece on top, all of the contents become packed snugly inside and the herbs are pressed evenly across the bottom screen.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "If you plan to use your Plenty vaporizer for a group setting, fill the herb chamber completely because the herbs cannot move around when you move the unit different directions. If you pack it completely, you don't need to worry about slipping and sliding. They will stay pressed against the screen evenly for the whole time.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "This vape uses both conduction and convection to heat the herb, and it vapes the bud extremely evenly and effectively thanks its wide, shallow bowl.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{
-				 		"tipNum": "9", 
-				 		"tipTxt": "The Plenty comes with a liquid pad which is used for concentrates and also to use with smaller amounts of material, so that if you use it with less material you won't just get hot air when you hit it.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": " As for sharing, the herb chamber can hold over half a gram, which will easily get 3-4 people pretty stoned. It is wired, but the cord is about 10ft long.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Secret Tip- Pure 100% Cotton. It doesn't burn until like 570 or something. You put the wax in a tiny bit of cotton)enough to absorb it when it melts in the chamber.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "The liquid pad, included with the Plenty Vape is purported to be able to hold up to 10 drops of liquid. One or two drops seem to be OK, any more and the pad soon becomes clogged with dried liquid.",
-				 		"TipImg" : "images/vapes/plenty1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 15,
-				"VName": "Ascent",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "A great option on the Ascent is that it allows you to pre-program a series of temeprature levels before you start your session. It will then stay at each level temporarily before automatically changing to the next temperature value in the series.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Use a pipe cleaner after every single use to brush debris from the inside of the bowl, around the rim, and the bottom of the glass screen, it works great and helps cut down on how often I have to soak my glass sets.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "You can swab out your bowl with rubbing alcohol every few uses to prevent it from browning, if you don't you'll need a dabber.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Never try and stick anything down your screen end to try and clean debris out, just let it soak. The screen is very tiny, and the glass itself it very fragile, if you poke too hard, and move around too fast you could end up breaking it.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "If you've ever wondered how much weed to put in your DaVinci, well that's a personal preference, but never ever pack it all the way up, to the point where you can't push the bud down",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "If it's packed too tight, the center doesn't heat, and most often times you'll find that it's extremely hard to take hits, you have to realized that the vaporizer is pulling air from the bottom of the bowl, so you need airflow.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Some people own this vaporizer and don't even realize that it has a buddy rim system so you can share your vaporizer with other people, and not have to have oral contact. When you share your Ascent, use the rim, and pull the straw out for your friends.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "If you own a car, and love to vape, you more than 100% need to get the DaVinci Ascent Car Charger. Nothing is worse than having a vaporizer die on you in the middle of a session.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "Use two screes to maximize clouds: Put the small screen at the bottom of the bowl. Use very fine ground up herb to fill the bowl to the top loosely packed. Put a normal size screen on top and push it down to get a tighter pack and to keep the herb from flying around the bowl and prevents it from going thru the straw. Vaporize at 375 F to get big clouds.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "The tiny rubber seal in the bag that your Ascent arrived with can be placed around the top the mouthpiece and will prevent any vapor (and smell) from 'leaking'. A great find, if you ask me. Keeping this seal on will also eliminate the hygiene 'issue', as it makes the mouthpiece easier to lift by grabbing the rubber part.",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "The motion sensitive auto shutdown is a great help in preserving battery power. Some testing showed that batteries easily last long enough for multiple sessions (6-8 at medium temperatures).",
-				 		"TipImg" : "images/vapes/ascent1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 16,
-				"VName": "PUFFiT 2",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "If you just stick whole buds in there, you're not maximizing the ingredients of your herb. The finer you pulverize your herb, the more THC and CBD you can activate.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Pack the PUFFiT chamber loosely with your dry blends. Most of the time when someone says they aren't getting good results it's because they have loaded the herb chamber tightly like they would a classic water pipe or dugout.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Inhale gently and slowly once the green light goes on and you'll get a nice tasty cloud. You can even take short little sips rather than large rips.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Before and after loading the herb chamber, be sure to dust out the chamber for any residue from any previous sessions.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "One issue that prevents optimal discretion is the time it takes to heat up the Puffit 2. However, this problem can be circumvented by heating the vaporizer out of sight until it is ready to be used.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "The concentrate chamber does become messy, so we recommend cleaning it after each use.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "The white button you see on the front is your heat-preference light. Press to range between temperatures from 320 degrees to 415 degrees Fahrenheit.",
-				 		"TipImg" : "images/vapes/puffit1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 17,
-				"VName": "Haze",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "The Haze is designed to allow you to enjoy both concentrates and dry herbs with it's two chambers. You can also use dry herb for both chambers if you like extending your session and giving you the option of more tastes and effects with less hassle.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Haze Technologies helped ease the pain of not winning an Oscar by including the Haze vaporizer in the ACADEMY AWARDS Oscar Nominees gift bags.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Bring an extra battery and you ve got 2+ hours before needing to charge.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "At the size and weight of a flask of whiskey, this vaporizer is more suited to a bag, purse or jacket pocket rather than your pants pocket.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "The best way to clean the path is with alcohol soaked Q-tip. Simply remove the mouthpiece and insert the alcohol soaked Q-tip into the air path. It will clean all residue within seconds.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Haze is using a controlled system for temperatures. The approximate temperatures range 250-275 , 350 – 370, 375- 410, 410-470F. When there is wax content with cans, the system uses a higher value for heating. With conduction screen at low temperature, you will experience the lower end of the range.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "If you put the unit down without activity (no draws), the unit will shut itself off.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "The Haze heating element is stainless steel. All metal parts inside and accessories are surgical grade stainless steel (the most expensive and high end steel version). Including the cans, screens, mouthpiece, bowls etc.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "Convection screen will give you a taste, will medicate you 100% without much physical or visible vapor output at setting 3. This setting may be a bit low for some people, at setting 4 the haze will give you more visible vapor.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "If you use the conduction screens (the open side ones) at setting 3, you will see that it is the optimum temperature setting for the dry herb for most people. The conduction screen with setting 4 will produce much thicker vapor, but can be a bit on the hot side for some people.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "Most people use these cans to pre-pack the dry herb and take several cans out to concerts parks etc and they love the performance. So they don't have to deal with prep, dump, grind when they are out.",
-				 		"TipImg" : "images/vapes/haze1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 18,
-				"VName": "Firefly",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Although there is no temperature setting on the Firefly, you can control the relative temperature by changing your draw rate and length. With a little practice, ths shoudl allow you to enjoy low, medium or high temperature effects.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Hold the button down, wait for orange glow and start slow long draw, letting off the button about half way through. By varying technique you can get whatever type of vapor your heart desires.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "You really don't want to fill it up any higher than the rim of the bowl, and don't pack it too tightly. Do a medium pack and it'll work great.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Get a bottle of isopropyl alcohol and some paper towels and clean the Firefly out regularly. When burned weed starts to accumulate even a little, it gets in the way and ruins the perfect seal that is made when you put to the two halves together.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Order up an external battery charger and an extra battery. You are going to need to switch batteries a lot.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "It works like a charm when you pre heat for about 4 seconds and pull for about 8-10 seconds. Then you can let off the button and keep hitting this until you start to feel your lungs expand and the vapor heats your throat up.",
-				 		"TipImg" : "images/vapes/firefly1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 19,
-				"VName": "Hot Box",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Before using the Hot Box, if it is your first time using it, plug it in and let the vape heat up and stay heated for at least 15 minutes and then turn it off and let it cool down. Doing this will burn off any packing oils the manufacturer may have used when originally packing and shipping the vaporizer.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Although there is no actual temperature setting on the Hot Box, you can control the relative temperature by changing your draw rate and length. With a little practice, ths shoudl allow you to enjoy low, medium or high temperature effects. To enjoy low temp effects and flavors, begin your draw as the device heats up from it's off state at the beginning of your session.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "While the Hot Box is heating up it actually can heat a little faster if you tip it on it's back, so the heating element is pointing straight up at the ceiling. Also while the Hot Box is heating up leave the vapor whip on the heating element, but do so with the whip not packed. This also helps the unit heat up faster.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "While using the Hot Box if you feel like your vapor is too thick or too thin and you can't adjust the temperature to fix this you can actually adjust vapor thickness by how fast or slow you pull from the whip. Pulling faster will give you larger pulls and pulling slower will be a thinner but cooler vapor.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "After you are done using the Hot Box you want to let it cool down to room temperature before you put it away. To speed this process up it is best to remove the vapor whip from the heating element if you haven't already.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": " Like most vapor whips you can clean the Hot Box's whip by running hot or boiling water through it, but an additional trick is to straighten out a coat hanger and use it to scrape the inside of the whip to get any build up that the water misses. Doing this often will prevent any huge build up and keep each session with the Hot Box an enjoyable one.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "While holding the bowl end of the vapor whip to the Hot Box's heating element and drawing from the whip it is a good idea to rotate the bowl slowly around the heating element. When done correctly this can vaporize your material more evenly and give you a more consistent vapor.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/hotbox1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 20,
-				"VName": "Vapir Rise 2.0",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "The new Version allows to use the whip mode without the fan is running.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Increase the fan speed up to about the medium speed or so and you'll see that this helps you get a little more vapor, it's sort of like a stronger draw. So when you're using it yourself you can obviously experiment and see what fan speed you like to use best.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Multi-User Adapter allows vaporization with up to FOUR people at once.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "The large chamber keeps it going along time with out having to stop to refill, but usually only one is needed.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "It does do concentrates, and nicely also, using the concentrate can.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "If you are using the bag system, make sure the ball-cock valve is open. It has a shut-off to prevent vapor loss. The valve is metal and if I am not mistaken, it has a sensor that can stop the unit if it gets hot and the valve is closed.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "If your herb isn't completely dry, it can take up to 5 minutes to get thick vapor.",
-				 		"TipImg" : "images/vapes/vapirrise1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 21,
-				"VName": "Pax",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "One of the main things that affects how much vapor you get is how finely you grind your material and how you pack the oven. The grind consistency that everyone is used to from a common 2-piece or 4-piece grinder will work with most vaporizers, but if you really want maximum performance you need to grind your herbs even finer, almost to a powder or the consistency of coarse sand. If you have a coffee grinder lying around you could technically use that to try this out, but be sure to grind in short bursts.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "The recommended way to use this vape for maximum vapor production is with a fully packed oven. Depending on how finely your material is ground up the amount needed to fill the chamber ranges from 0.3g to 0.4g. When you fully pack you can expect approximately 20 full draws before your herbs are spent.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "The PAX's screen plays a critical role in the quality of your vapor. If you notice a change in the quality of your vapor, your screen is probably due for a cleaning.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Drawing a lot of air through the device won't create more vapor, you will just be inhaling hot air. Instead, allow the vapor to form in the oven to produce bigger clouds. Remember to give PAX a few seconds in between your next draw to heat your herb again and create more vapor in the oven.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Most PAXers like to start on the low or medium temperature setting and work their way up to the highest temperature before finishing.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/pax1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 22,
-				"VName": "Pax 2",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "One of the main things that affects how much vapor you get is how finely you grind your material and how you pack the oven. The grind consistency that everyone is used to from a common 2-piece or 4-piece grinder will work with most vaporizers, but if you really want maximum performance you need to grind your herbs even finer, almost to a powder or the consistency of coarse sand. If you have a coffee grinder lying around you could technically use that to try this out, but be sure to grind in short bursts.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "The recommended way to use this vape for maximum vapor production is with a fully packed oven. Depending on how finely your material is ground up the amount needed to fill the chamber ranges from 0.3g to 0.4g. When you fully pack you can expect approximately 20 full draws before your herbs are spent.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "The PAX's screen plays a critical role in the quality of your vapor. If you notice a change in the quality of your vapor, your screen is probably due for a cleaning.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Drawing a lot of air through the device won't create more vapor, you will just be inhaling hot air. Instead, allow the vapor to form in the oven to produce bigger clouds. Remember to give PAX a few seconds in between your next draw to heat your herb again and create more vapor in the oven.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Most PAXers like to start on the low or medium temperature setting and work their way up to the highest temperature before finishing.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/pax2black.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 23,
-				"VName": "Phantom Premium",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "Three clicks turns it on and off, and a steady green light lets you know it's ready. Hold it down to reach the next temperature level, then again for the highest temperature. ",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "With regular cleaning you shouldn't experience any clogging whatsoever, and the mouth piece locks in place perfectly.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Vapor is not smoke, so it's ok to hold in.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "Without combustion none of the associated noxious gasses such as CO and CO2 are created. Vaporization releases the active ingredients of organic matter without combustion.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": " Extra flashing means your atomizer is empty or you need to push the atomizer into the battery better.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Weak clouds or flashing red? Time to charge.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Rubbing alcohol will clean the mouthpiece and the atomizer.",
-				 		"TipImg" : "images/vapes/phantom.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 24,
-				"VName": "Alfa",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "When using the automatic Heat-By-Puff (A/P) setting, the Alfa's temperature starts at the LO setting (374 F) and raises in three degree increments after each puff taken until the HI setting (446 F) is achieved.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "Using the automatic Heat-By-Time (A/T) setting will gradually heat your herbs from LO to HI over a time period of twenty minutes.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Because of the pin sticking up in the middle it's hard to use your finger to tamp it down so you'll probably need to use some kind of small tool to pack it in.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "For best results, grind your herbs up real fine and then tightly pack the chamber. It's very important to load the herb chamber properly to get the best performance from it, so just remember to grind fine and pack tight.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "When you start at lower temperatures you can get a richer and purer flavor & aroma experience. Then when you reach the highest temps you can more completely vaporize any residual ingredients left in your material.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "The experience seems ideal on the low and medium heat settings and that's where flavor and smoothness is best.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "If you take short puffs the effects will usually be nice and mellow, so if you want to maximize how strong it feels you'll have to pull for  about 4-8 seconds.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "The herb chamber will hold up to roughly 0.25-0.3g of material but this will vary a tad depending on how tight you pack it and how fine you grind.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "From a fully packed oven you can expect somewhere around 15 draws depending on how long each pull is. Shorter puffs yield a little more, longer draws yield a little less.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "What's cool about the Alfa, and more specifically the extra heating-pin in the oven, is that you can pack less than a full chamber (half-pack) and it'll still work pretty well, the performance is not far off.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "You can get about 60-90 minutes of usage from a full charge when you use this vape on the low and medium heat settings.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "It also has an auto shut-off feature which turns the unit off after about 10 minutes of not detecting a puff.",
-				 		"TipImg" : "images/vapes/alfa-vaporizer-goboof.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 25,
-				"VName": "Summit",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "The Vapium Summit is being marketed as a “rugged” vaporizer, hoping to appeal to the outdoors crowd.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "The whole thing comes with a dry-bag, so you’re not going to soak your vapables when you accidentally tip your canoe.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "The Summit is pretty simple to use. Just hold down the power button, and that’s basically it. It will vibrate once when it first turns on, and it will vibrate a second time when it reaches your desired temperature.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "The Vapium Summit typically takes two or three pulls after it reaches temp before it really starts delivering a nice, dense vapor.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "You can use the lanyard's attachment points as a point to connect the Summit to your backpack, harness or helmet.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "If you like tiny repetitive sips, just turn it down a bit.  The draw rate and temperature adjustment is so flexible - not something you see in many portables - you can easily find the perfect setup for your needs.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "There are 8 heat settings, which is fantastic if you have access to many different blends that all require a different sweet spot of flavor vs. vapor.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "The design is super-mindful of the situations where its going to be used.  Have gloves on? There’s a huge Power button and a rubberized grip to keep the Summit firmly planted in your hand.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "This vape was designed for those that love the outdoors and need a dependable long-lasting portable.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "If you find yourself lost in the woods at night or want to provide runway lights for a plane landing in the Amazonian jungle, your covered. The LEDs are bright.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "With the dry bag's only internal seam being sealed with a roll top buckle closure, you can rest assured that your day on the water won’t put your vape at risk.",
-				 		"TipImg" : "images/vapes/summit-green-600x600.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 26,
-				"VName": "Cloud Evo",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "You can use this unit with your own water tool, or you can get it with one of their matching HydraTubes that fit on top. These glass pieces hold a little bit of water and allow you to further cool and condition the vapor to make it as comfortable as possible.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "When using it with herbs you can pack the chamber with as little as .1g or as much as ~.5g. The more you pack the more draws you can take, just don't pack it too tight and don't pack it more than about 80% full so airflow doesn't get restricted.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "It may sound a bit odd, but using warm/hot water in your hydrotube while vaporizing will actually give you the best results.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "For personal sessions, it works well at about fifty percent full, or about one quarter of a gram. I really wouldn't put more than half a gram in, because it will affect how well your material vaporizes.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "The hydratubes can be cleaned just like any other water pipe. 99% isopropyl alcohol works wonders.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "The design of the ELB is a key factor in the EVO's extraction efficiency. The ELB is much more than a screen - the pressurization and turbulence resulting from its design are what delivers the efficiency.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "The Cloud EVO has an all glass air path running through the center of the vaporizer. The glass vapor path, nicknamed 'Bamboo', is not hidden and can be easily viewed through the top and bottom of the vaporizer. The Bamboo is not a straight tube but has some ridges in it, resembling stalks of bamboo. The Perputuheat System design creates turbulance and agitation of the air, allowing for better heat transfer and vaping at lower temperatures.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A male 18.8mm ground glass joint tops the bamboo. This top piece serves as two functions: to hold the EZ Load Bowls and a place to attach the mouthpiece, Hydratube, or your own favorite water piece.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "The EZ Load Bowls, or ELB, are used to hold the flower or dry leaf. The ELBs are made from a fine stainless steel mesh to ensure effective, even vaporization.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "The Dry Hydratube is an approximately 10 inch piece of curved borosilicate glass with a female 18.8mm opening to allow for attaching to the EVO to act as a mouthpiece.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "Because the VapeXhale EVO does not need to be in the upright position to use, this allows one to use their favorite water piece in conjunction with the EVO.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "The VapeXhale Cloud EVO's Perputuheat System is not affected by thermal degradation. This provides for full, tasty vapor clouds wether you inhale strong and fast or slow and steady.",
-				 		"TipImg" : "images/vapes/cloud-evo_thumb.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 27,
-				"VName": "Herbal Aire",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "It does seem to work better, and you'll get better vapor and more vapor if you put a decent amount of material inside the chamber or the crucible.",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": " Cleaning the chamber will avoid any vuild up over time of leftover material, giving you the quality you expect from the HerbalAire each time you use it.",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "When using just the mouthpiece, not the whip, for direct inhalation you will want to lower whatever normal vaporizing temperature you use slightly because the vapor going from the vaporizer itself straight to the mouthpiece for inhalation can leave it kind of hot.",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "For direct inhalation, some owners like to start with 335 to get the flavor of the herb. You should see vapor at that temp. Take a couple of 2 breaths and then move up 10 degrees. Keep doing this until you get to 375.",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "Watch out for the crucible. It gets super hot for obvious reasons but cools down FAST. Within a minute or 2. Try to get an extra one if you can so you can reload quickly if need be.",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Herbal-Aire-1.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 28,
-				"VName": "Herbalizer",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/herbalizer.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 29,
-				"VName": "V2 Pro Series 3",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "The V2 pro Series 3 e-cig has a dimple at the top to line it up with the raised area present on the side of the cartridge. This is instrumental in preventing improper insertion of cartridge.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "The sleek window on the outer casing informs you the level of fluid as well as the type of cartridge being used.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "Using the V2 Pro is as simple as inserting the cartridge and pressing the button for three seconds. Be ready to puff as the indicator light turns green from red. When you hold the button pressed again for three seconds, you will turn off the heating.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "It has the lowest warm up time of 25-30 seconds for loose leaves unlike others in the category which take not less than several minutes to do so.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "To lock the Series 3, all you need to do is quickly push the button three times within 2 seconds. This will get the red LED perimeter flashing three times rendering your device unresponsive to accidental activation when not being used. To unlock the e-cigarette, just repeat the process to see the white LEDs flashing indicating an unlocked device.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "The V2 Series 3 has a built in safety mechanism that shuts off the device by cutting off the power if you hold the fire button for more than 10 seconds.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "When you use it as a loose leaf vaporizer, you can expect it to work at temperatures ranging from 160-180 degrees F. Such temperatures will allow you vaping sessions of approximately 12 hours between charges.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "Bear in mind that the standard packing only has an e-liquid cartridge and hence if you are looking for vaping with other mediums, you will need to consider buying different cartridges. They are readily available on the official website of V2.",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/v2ProSeries3.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 30,
-				"VName": "V2 Pro Series 7",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/V2ProSeries7.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 31,
-				"VName": "G-Pro",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/GPro-Pen-Solo.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 32,
-				"VName": "K-Vape Micro DX",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "For the best performance and most vapor production you should grind up your dry herbs fine and pack the chamber full, then tamp it down a tiny bit.",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "For the best low temp flavors and effects, set your vape on the lowest temperature setting and begin inhaling as it heats up to the selected setting.",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/kvape_microDx.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 33,
-				"VName": "E-Nano",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "If you happen to have a water piece handy the nano is AWESOME through water.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "To get a Solo-like experience. There are 2 basic techniques for E-Nano use: The first is to start the temp low, like 6.5, and just leave the stem on there for a bunch of hits. Then take it off, mix the material, and turn it up to 7, and leave the stem on for a few more hits.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "The element really heats up when you leave it on. 7 may get you moderate clouds after a 2 or 3 minute heat-up, but if you leave the e-nano at 7 for an hour you'll notice that you're getting much more heat.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "The stem can sit a bit looser, so there might be some play, your also going to want to use quite a bit less than the solo, and not grind it as much as you would with the solo.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "The E-Nano itself never needs cleaning. You can wipe the outside with a damp cloth but never expose the wood to any product that contains alcohol or citrus as this could adversely affect the finish.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "Clean the glass stem as often as possible to maintain the best taste from your E-nano. Simply put the stem back into the plastic container that the stem came packaged in, and pour 70-90% iso-alcohol (available at any drug store or super market) into the container. Be careful not to get any alcohol on wooden portion of the E-Nano itself. Put the top back on and soak the stem until it's clean. (15-20 minutes should be fine). Rinse the stem with water, dry, and you’re ready for your next session",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "Grinding is not necessary. Load small nuggets of your favorite herb or leaf tobacco directly into the glass stem nearest the screen side. Only a small amount is necessary, less than .05g. will be fine.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "After a few puffs, use the enclosed E-PIK to stir your herb up a little. NOTE: The end of the glass stem that comes in contact with the heater core will be HOT and could cause severe burns.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "After your session is over turn the unit off. NOTE: Leaving the unit on will not harm the unit, but it is never a good idea to leave heated appliances on and unattended.",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Epic-Vape-E-Nano-Vape.png"
-				 	}
-			 	]
-			},
-			{
-				"VTipId": 34,
-				"VName": "Underdog",
-				"VTipList": [
-				 	{ 
-				 		"tipNum": "1", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "2", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "3", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "4", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "5", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "6", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "7", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "8", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "9", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "10", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "11", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	},
-				 	{ 
-				 		"tipNum": "12", 
-				 		"tipTxt": "A Tip goes here",
-				 		"TipImg" : "images/vapes/Underdog-001-225x300.png"
-				 	}
-			 	]
-			}
-
-		];  
-
-		/**var temperatures = [126, 246, 273, 313, 315, 334, 349, 351, 352, 356, 360, 365, 388, 408, 423, 428, 435, 482]**/
-
-		/** temp ranges are L= 0-330F, M= 331-390F H= 391-445F**/
-		var recEffects = [
-			{"recEffectId": 1,
-			 "recEffectName": "Euphoric",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Euphoric.png"
-			}, 
-			{"recEffectId": 2,
-			 "recEffectName": "Happy",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Happy.png"
-			},
-			{"recEffectId": 3,
-			 "recEffectName": "Uplifted",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Uplifted.png"
-			},
-			{"recEffectId": 4,
-			 "recEffectName": "Relaxed",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Relaxed.png"
-			},
-			{"recEffectId": 5,
-			 "recEffectName": "Creative",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Creative.png"
-			},
-			{"recEffectId": 6,
-			 "recEffectName": "Energetic",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/Energetic.png"
-			},
-			{"recEffectId": 7,
-			 "recEffectName": "Long Lasting",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/LongLasting.png"
-			},
-			{"recEffectId": 8,
-			 "recEffectName": "Potent",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/VeryPotent.png"
-			},
-			{"recEffectId": 9,
-			 "recEffectName": "Balanced",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/Balanced.png"
-			},
-			{"recEffectId": 10,
-			 "recEffectName": "Calmness",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/MentalCalmness.png"
-			},
-			{"recEffectId": 11,
-			 "recEffectName": "Productive",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/Productive.png"
-			}, 
-			{"recEffectId": 12,
-			 "recEffectName": "Pain relief",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/PainRelief.png"
-			},
-			{"recEffectId": 13,
-			 "recEffectName": "Psychoactive",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/MildlyPsyc.png"
-			},
-			{"recEffectId": 14,
-			 "recEffectName": "Mellow",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/Mellow.png"
-			},
-			{"recEffectId": 15,
-			 "recEffectName": "Intense",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/IntenseEff.png"
-			},
-			{"recEffectId": 16,
-			 "recEffectName": "Mind + Body",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/MindAndBodyBuzz.png"
-			},
-			{"recEffectId": 17,
-			 "recEffectName": "Conversational",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/EnhanceConv.png"
-			},
-			{"recEffectId": 18,
-			 "recEffectName": "Therapeutic",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Therapeutic.png"
-			},
-			{"recEffectId": 19,
-			 "recEffectName": "Tingly",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Tingly.png"
-			},
-			{"recEffectId": 20,
-			 "recEffectName": "Hungry",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/EnhanceHung.png"
-			},
-			{"recEffectId": 21,
-			 "recEffectName": "Dry Mouth",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/DryMouth.png"
-			},
-			{"recEffectId": 22,
-			 "recEffectName": "Dry Eyes",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/DryEyes.png"
-			},
-			{"recEffectId": 23,
-			 "recEffectName": "Paranoid",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Paranoid.png"
-			},
-			{"recEffectId": 24,
-			 "recEffectName": "Dizzy",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Dizzy.png"
-			},
-			{"recEffectId": 25,
-			 "recEffectName": "Anxious",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Anxious.png"
-			},
-			{"recEffectId": 26,
-			 "recEffectName": "Munchies",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Munchies.png"
-			},
-			{"recEffectId": 27,
-			 "recEffectName": "Headache",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/Headache.png"
-			},
-			{"recEffectId": 28,
-			 "recEffectName": "Drowsiness",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/EnhanceDrow.png"
-			},
-			{"recEffectId": 29,
-			 "recEffectName": "Couch Lock",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/CouchLocked.png"
-			},
-			{"recEffectId": 30,
-			 "recEffectName": "Clear headed",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/ClearHeaded.png"
-			},
-			{"recEffectId": 31,
-			 "recEffectName": "Sexual",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/EnhanceSexu.png"
-			},
-			{"recEffectId": 32,
-			 "recEffectName": "Giggly",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Md",
-			 "imageUrl": "images/Rec/Giggly.png"
-			},
-			{"recEffectId": 33,
-			 "recEffectName": "Less Social",  
-			 "recEffectType": "N",
-			 "recEffectTempRange" : "Hi",
-			 "imageUrl": "images/Rec/LessSocial.png"
-			},
-			{"recEffectId": 34,
-			 "recEffectName": "Focused",  
-			 "recEffectType": "P",
-			 "recEffectTempRange" : "Lo",
-			 "imageUrl": "images/Rec/Focused.png"
-			}
-		];
-
-	var tastes = [
-		{ 
-			"tasteId": 1,
-			"taste": "Earthy",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Earthy.png"
-		},
-		{ 
-			"tasteId": 2,
-			"taste": "Pine",
-			"compound": "Pinene",
-			"tempF": "313",
-			"tempC": "156",			
-			"imageUrl": "images/Rec/Pine.png"
-		},
-		{ 
-			"tasteId": 3,
-			"taste": "Pungent",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Pungent.png"
-		},
-		{ 
-			"tasteId": 4,
-			"taste": "Woody",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Woody.png"
-		},
-		{ 
-			"tasteId": 5,
-			"taste": "Sage",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Sage.png"
-		},
-		{ 
-			"tasteId": 6,
-			"taste": "Sweet",
-			"compound": "Linalool",
-			"tempF": "388",
-			"tempC": "198",			
-			"imageUrl": "images/Rec/Sweet.png"
-		},
-		{ 
-			"tasteId": 7,
-			"taste": "Berry",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Berry.png"
-		},
-		{ 
-			"tasteId": 8,
-			"taste": "Tropical",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Tropical.png"
-		},
-		{ 
-			"tasteId": 9,
-			"taste": "Mango",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",
-			"imageUrl": "images/Rec/Mango.png"
-		},
-		{ 
-			"tasteId": 10,
-			"taste": "Diesel",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Diesel.png"
-		},
-		{ 
-			"tasteId": 11,
-			"taste": "Skunk",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Skunk.png"
-		},
-		{ 
-			"tasteId": 12,
-			"taste": "Honey",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Honey.png"
-		},
-		{ 
-			"tasteId": 13,
-			"taste": "Citrus",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",		
-			"imageUrl": "images/Rec/Citrus.png"
-		},
-		{ 
-			"tasteId": 14,
-			"taste": "Lemon",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",		
-			"imageUrl": "images/Rec/Lemon.png"
-		},
-		{ 
-			"tasteId": 15,
-			"taste": "Tea",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Tea.png"
-		},
-		{ 
-			"tasteId": 16,
-			"taste": "Strawberry",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Strawberry.png"
-		},
-		{ 
-			"tasteId": 17,
-			"taste": "Pineapple",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Pineapple.png"
-		},
-		{ 
-			"tasteId": 18,
-			"taste": "Cheese",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Cheese.png"
-		},
-		{ 
-			"tasteId": 19,
-			"taste": "Grape",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Grape.png"
-		},
-		{ 
-			"tasteId": 20,
-			"taste": "Mint",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Mint.png"
-		},
-		{ 
-			"tasteId": 21,
-			"taste": "Chemical",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Chemical.png"
-		},
-		{ 
-			"tasteId": 22,
-			"taste": "Spicy",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Spicy.png"
-		},
-		{ 
-			"tasteId": 23,
-			"taste": "Herbal",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Herbal.png"
-		},
-		{ 
-			"tasteId": 24,
-			"taste": "Flowery",
-			"compound": "Linalool",
-			"tempF": "388",
-			"tempC": "198",			
-			"imageUrl": "images/Rec/Flowery.png"
-		}, 
-		{ 
-			"tasteId": 25,
-			"taste": "Pepper",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Pepper.png"
-		},
-		{ 
-			"tasteId": 26,
-			"taste": "Grapefruit",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",			
-			"imageUrl": "images/Rec/Grapefruit.png"
-		},
-		{ 
-			"tasteId": 27,
-			"taste": "Fruity",
-			"compound": "Linalool",
-			"tempF": "388",
-			"tempC": "198",			
-			"imageUrl": "images/Rec/Fruity.png"
-		},
-		{ 
-			"tasteId": 28,
-			"taste": "Orange",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",			
-			"imageUrl": "images/Rec/Orange.png"
-		},
-		{ 
-			"tasteId": 29,
-			"taste": "Hash",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Hash.png"
-		},
-		{ 
-			"tasteId": 30,
-			"taste": "Sour",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",			
-			"imageUrl": "images/Rec/Sour.png"
-		},
-		{ 
-			"tasteId": 31,
-			"taste": "Chestnut",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Chestnut.png"
-		},
-		{ 
-			"tasteId": 32,
-			"taste": "Blueberry",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Blueberry.png"
-		},
-		{ 
-			"tasteId": 33,
-			"taste": "Coffee",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Coffee.png"
-		},
-		{ 
-			"tasteId": 34,
-			"taste": "Dank",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Dank.png"
-		},
-		{ 
-			"tasteId": 35,
-			"taste": "Lime",
-			"compound": "Limonene",
-			"tempF": "351",
-			"tempC": "177",			
-			"imageUrl": "images/Rec/Lime.png"
-		},
-		{ 
-			"tasteId": 36,
-			"taste": "Menthol",
-			"compound": "Caryophyllene",
-			"tempF": "266",
-			"tempC": "130",			
-			"imageUrl": "images/Rec/Menthol.png"
-		},
-		{ 
-			"tasteId": 37,
-			"taste": "Plum",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Plum.png"
-		},
-		{ 
-			"tasteId": 38,
-			"taste": "Lavender",
-			"compound": "Linalool",
-			"tempF": "388",
-			"tempC": "198",			
-			"imageUrl": "images/Rec/Lavender.png"
-		},
-		{ 
-			"tasteId": 39,
-			"taste": "Exotic",
-			"compound": "Myrcene",
-			"tempF": "334",
-			"tempC": "168",			
-			"imageUrl": "images/Rec/Exotic.png"
-		},
-		{ 
-			"tasteId": 40,
-			"taste": "Nutty",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Nutty.png"
-		},
-		{ 
-			"tasteId": 41,
-			"taste": "Tree Fruit",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/TreeFruit.png"
-		},
-		{ 
-			"tasteId": 42,
-			"taste": "Chocolate",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Chocolate.png"
-		},
-		{ 
-			"tasteId": 44,
-			"taste": "Vanilla",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Vanilla.png"
-		},
-		{ 
-			"tasteId": 45,
-			"taste": "Butter",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Butter.png"
-		},
-		{ 
-			"tasteId": 46,
-			"taste": "Apple",
-			"compound": "Terpinolene",
-			"tempF": "428",
-			"tempC": "220",			
-			"imageUrl": "images/Rec/Apple.png"
-		},
-		{ 
-			"tasteId": 47,
-			"taste": "Peach",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Peach.png"
-		},
-		{ 
-			"tasteId": 48,
-			"taste": "Rose",
-			"compound": "Linalool",
-			"tempF": "388",
-			"tempC": "198",			
-			"imageUrl": "images/Rec/Rose.png"
-		},
-		{ 
-			"tasteId": 51,
-			"taste": "Violet",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Violet.png"
-		},
-		{ 
-			"tasteId": 52,
-			"taste": "Tobacco",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Tobacco.png"
-		},
-		{ 
-			"tasteId": 53,
-			"taste": "Pear",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Pear.png"
-		},
-		{ 
-			"tasteId": 54,
-			"taste": "Tar",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Tar.png"
-		},
-		{ 
-			"tasteId": 55,
-			"taste": "Blue Cheese",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Bluecheese.png"
-		},
-		{ 
-			"tasteId": 56,
-			"taste": "Ammonia",
-			"compound": "",
-			"tempF": "0",
-			"tempC": "0",			
-			"imageUrl": "images/Rec/Ammonia.png"
-		}
-
-	];
-
-		var strainNames = [
-			{"strainId": 1,
-			 "strainName": "Trainwreck", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/trainwreck_100x100.jpg"
-
-			},
-			{"strainId": 2,
-			 "strainName": "White Widow", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/white-widow_100x100.jpg"
-
-			},
-			{"strainId": 3,
-			 "strainName": "Sage", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/sage_100x100.jpg"
-
-			},
-			{"strainId": 4,
-			 "strainName": "Skywalker OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/skywalker-og_100x100.jpg"
-
-			},
-			{"strainId": 5,
-			 "strainName": "Permafrost", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/permafrost_100x100.jpg"
-
-			},
-			{"strainId": 6,
-			 "strainName": "Querkle", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/querkle_100x100.jpg"
-
-			},
-			{"strainId": 7,
-			 "strainName": "Papaya", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/papaya_100x100.jpg"
-
-			},
-			{"strainId": 8,
-			 "strainName": "Pennywise", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/pennywise_100x100.jpg"
-
-			},
-			{"strainId": 9,
-			 "strainName": "OG #18", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/og--18_100x100.jpg"
-
-			},
-			{"strainId": 10,
-			 "strainName": "OG Kush", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/og-kush_100x100.jpg"
-
-			},
-			{"strainId": 11,
-			 "strainName": "Canna-Tsu", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/canna-tsu_100x100.jpg"
-
-			},
-			{"strainId": 12,
-			 "strainName": "Nebula", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/nebula_100x100.jpg"
-
-			},
-			{"strainId": 13,
-			 "strainName": "XJ-13", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/xj-13_100x100.jpg"
-
-			},
-			{"strainId": 14,
-			 "strainName": "Yumbodlt", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/yumboldt_100x100.jpg"
-
-			},
-			{"strainId": 15,
-			 "strainName": "Vortex", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/vortex_100x100.jpg"
-
-			},
-			{"strainId": 16,
-			 "strainName": "Warlock", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/warlock_100x100.jpg"
-
-			},
-			{"strainId": 17,
-			 "strainName": "Strawberry Cough", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/strawberry-cough_100x100.jpg"
-
-			},
-			{"strainId": 18,
-			 "strainName": "Stardawg", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/stardawg_100x100.jpg"
-
-
-			},
-			{"strainId": 19,
-			 "strainName": "Strawberry", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/strawberry_100x100.jpg"
-
-			},
-			{"strainId": 20,
-			 "strainName": "Sour Diesel", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/sour-diesel_100x100.jpg"
-
-			},
-			{"strainId": 21,
-			 "strainName": "Shipwreck", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/Shipwreck_100x100.jpg"
-
-			},
-			{"strainId": 22,
-			 "strainName": "Skywalker", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/skywalker_100x100.jpg"
-
-			},
-			{"strainId": 23,
-			 "strainName": "Romulan", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/romulan_100x100.jpg"
-
-			},
-			{"strainId": 24,
-			 "strainName": "Purple Wreck", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/purple-wreck_100x100.jpg"
-
-			},
-			{"strainId": 25,
-			 "strainName": "Pineapple", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/pineapple_100x100.jpg"
-
-			},
-			{"strainId": 26,
-			 "strainName": "Purple Cheese", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/purple-cheese_100x100.jpg"
-
-			},
-			{"strainId": 27,
-			 "strainName": "ACDC", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/acdc_100x100.jpg"
-
-			},
-			{"strainId": 28,
-			 "strainName": "Shark Shock", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/shark-shock_100x100.jpg"
-
-			},
-			{"strainId": 29,
-			 "strainName": "Superman OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/superman-og_100x100.jpg"
-
-			},
-			{"strainId": 30,
-			 "strainName": "Thin Mint", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/thin-mint-girl-scout-cookies_100x100.jpg"
-
-			},
-			{"strainId": 31,
-			 "strainName": "Banana Diesel", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/banana-diesel_100x100.jpg"
-
-			},
-			{"strainId": 32,
-			 "strainName": "Candy OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/Candy-Og.jpg"
-
-			},
-			{"strainId": 33,
-			 "strainName": "Chem Valley Kush", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/chem-valley-kush_100x100.jpg"
-
-			},
-			{"strainId": 34,
-			 "strainName": "Confidential Cheese", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/confidential-cheese_100x100.jpg"
-
-			},
-			{"strainId": 35,
-			 "strainName": "Deadhead OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/deadhead-og_100x100.jpg"
-
-			},
-			{"strainId": 36,
-			 "strainName": "Diablo", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/diablo_100x100.jpg"
-
-			},
-			{"strainId": 37,
-			 "strainName": "Dutch Passion", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/dutch-passion.JPG"
-
-			},
-			{"strainId": 38,
-			 "strainName": "Eden OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/eden.jpg"
-
-			},
-			{"strainId": 39,
-			 "strainName": "Euphoria", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/euphoria_100x100.jpg"
-
-			},
-			{"strainId": 40,
-			 "strainName": "Fire Bomb", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/fire_bomb.jpg"
-
-			},
-			{"strainId": 41,
-			 "strainName": "Forum Cookies/GSC", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/forum_cookies.jpg"
-
-			},
-			{"strainId": 42,
-			 "strainName": "Gooey Wreck", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/gooey-wreck.jpg"
-
-			},
-			{"strainId": 43,
-			 "strainName": "Grapefruit Haze", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/grapefruit-haze_100x100.jpg"
-
-			},
-			{"strainId": 44,
-			 "strainName": "Green Crack", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/green-crack_100x100.jpg"
-
-			},
-			{"strainId": 45,
-			 "strainName": "Green Dream", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/green-dream_100x100.jpg"
-
-			},
-			{"strainId": 46,
-			 "strainName": "Green Thailand", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/thai_100x100.jpg"
-
-			},
-			{"strainId": 47,
-			 "strainName": "H-Train Wreck", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/H-trainwreck.jpg"
-
-			},
-			{"strainId": 48,
-			 "strainName": "Hawaiian Hulk", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/bruce-banner_100x100.jpg"
-
-			},
-			{"strainId": 49,
-			 "strainName": "Jack Chemdawg", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/chemdawg_100x100.jpg"
-
-			},
-			{"strainId": 50,
-			 "strainName": "Jack Herer", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/jack-herer_100x100.jpg"
-
-			},
-			{"strainId": 51,
-			 "strainName": "Jillybean", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/jillybean_100x100.jpg"
-
-			},
-			{"strainId": 52,
-			 "strainName": "Lamb's Bread", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/lamb-s-bread_100x100.jpg"
-
-			},
-			{"strainId": 53,
-			 "strainName": "Lemon Haze", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/lemon-haze_100x100.jpg"
-
-			},
-			{"strainId": 54,
-			 "strainName": "Lemon Head OG", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/super-lemon-og_100x100.jpg"
-
-			},
-			{"strainId": 55,
-			 "strainName": "Lulu", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/lulu200x160.jpg"
-
-			},
-			{"strainId": 56,
-			 "strainName": "Magic Jack", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/Magic-Jack-300.jpg"
-
-			},
-			{"strainId": 57,
-			 "strainName": "Mike Tyson", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/mike-tyson-marijuana-strain.jpg"
-
-			},
-			{"strainId": 58,
-			 "strainName": "Moon Candy", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/moon_candy.jpg"
-
-			},
-			{"strainId": 59,
-			 "strainName": "Moonshine Diesel", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/moonshine-Deisel.jpg"
-
-			},
-			{"strainId": 60,
-			 "strainName": "Northern Lights", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/northern-lights_100x100_7d43.jpg"
-
-			},
-			{"strainId": 61,
-			 "strainName": "Pineapple Express", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/pineapple-express_100x100.jpg"
-
-			},
-			{"strainId": 62,
-			 "strainName": "Platinum Trinity Kush", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/platinum_trinity_kush.jpg"
-
-			},
-			{"strainId": 63,
-			 "strainName": "Private Reserve OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/private_reserve_OG.jpg"
-
-			},
-			{"strainId": 64,
-			 "strainName": "Purple Haze", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/purple-haze_100x100.jpg"
-
-			},
-			
-			{"strainId": 65,
-			 "strainName": "Purple Urkle", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/purple-urkle_100x100.jpg"
-
-			},
-			{"strainId": 66,
-			 "strainName": "Raskal OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/raskal-og_100x100.jpg"
-
-			},
-			{"strainId": 67,
-			 "strainName": "Regulator OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/regulator-og.jpg"
-
-			},
-			{"strainId": 68,
-			 "strainName": "Saturn OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/saturn-og_100x100.jpg"
-
-			},
-			{"strainId": 69,
-			 "strainName": "Sherbet Cookies", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/sunset-sherbet_100x100.jpg"
-
-			},
-			{"strainId": 70,
-			 "strainName": "Sour Cherry", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/Sour_Cherry_Kush.jpg"
-
-			},
-			{"strainId": 71,
-			 "strainName": "Stratosphere", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/stratosphere.jpg"
-
-			},
-			{"strainId": 72,
-			 "strainName": "Super Grandaddy", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/Super_GDP.jpg"
-
-			},
-			{"strainId": 73,
-			 "strainName": "Tangerine", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/tangerine_100x100jpg"
-
-			},
-			{"strainId": 74,
-			 "strainName": "Tangilope", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/tangilope_100x100.jpg"
-
-			},
-			{"strainId": 75,
-			 "strainName": "Tropical OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/Tropical_OG.jpg"
-
-			},
-			{"strainId": 76,
-			 "strainName": "Ancient OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/ancient-og_100x100.jpg"
-
-			},
-			{"strainId": 77,
-			 "strainName": "Afghani", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/afghani_100x100_902b.jpg"
-
-			},
-			{"strainId": 78,
-			 "strainName": "Avi-Dekel", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/avi-dekel_100x100.jpg"
-
-			},
-			{"strainId": 79,
-			 "strainName": "Bull Rider", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/bull-rider-1498.jpg"
-
-			},
-			{"strainId": 80,
-			 "strainName": "Cannatonic", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cannatonic_100x100.jpg"
-
-			},
-			{"strainId": 81,
-			 "strainName": "Charlotte's Web", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/charlotte-s-web_100x100.jpg"
-
-			},
-			{"strainId": 82,
-			 "strainName": "G13 Haze", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/g13-haze_100x100.jpg"
-
-			},
-			{"strainId": 83,
-			 "strainName": "Great White Shark", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/great-white-shark_100x100.jpg"
-
-			},
-			{"strainId": 84,
-			 "strainName": "Harle-Tsu", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/harle-tsu_100x100.jpg"
-
-			},
-			{"strainId": 85,
-			 "strainName": "Harlequin", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/harlequin_100x100.jpg"
-
-			},
-			{"strainId": 86,
-			 "strainName": "Hog", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/hog_100x100.jpg"
-
-			},
-			{"strainId": 87,
-			 "strainName": "King's Kush", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/king-s-kush_100x100.jpg"
-
-			},
-			{"strainId": 88,
-			 "strainName": "Kosher Kush", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/kosher-kush_100x100.jpg"
-
-			},
-			{"strainId": 89,
-			 "strainName": "Lemon Larry OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/larry-og_100x100.jpg"
-
-			},
-			{"strainId": 90,
-			 "strainName": "Master Bubba", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/master-bubba_100x100jpg"
-
-			},
-			{"strainId": 91,
-			 "strainName": "Pineapple Thai", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/pineapple-thai_100x100.jpg"
-
-			},
-			{"strainId": 92,
-			 "strainName": "Sour Tsunami", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/sour-tsunami_100x100.jpg"
-
-			},
-			{"strainId": 93,
-			 "strainName": "The White", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/the-white_100x100.jpg"
-
-			},
-			{"strainId": 94,
-			 "strainName": "Valentine X", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/Valentine-X.jpg"
-
-			},
-			{"strainId": 95,
-			 "strainName": "White Fire Alien OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/white-fire-alien-og_100x100.jpg"
-
-			},
-			{"strainId": 96,
-			 "strainName": "Yoda OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/yoda-og_100x100.jpg"
-
-			},
-			{"strainId": 97,
-			 "strainName": "707 Headband", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/707-headband_100x100.jpg"
-
-			},
-			{"strainId": 98,
-			 "strainName": "Acapulco Gold", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/acapulco-gold_100x100.jpg"
-
-			},
-			{"strainId": 99,
-			 "strainName": "Alien OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/alien-og_100x100.jpg"
-
-			},
-			{"strainId": 100,
-			 "strainName": "Alien Rock Candy", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/alien-rock-candy_100x100.jpg"
-
-			},
-			{"strainId": 101,
-			 "strainName": "Amnesia Haze", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/amnesia-haze_100x100.jpg"
-
-			},
-			{"strainId": 102,
-			 "strainName": "ATF", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/alaskan-thunder-fuck_100x100.jpg"
-
-			},
-			{"strainId": 103,
-			 "strainName": "Bay Cookies", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/bay_cookies.jpg"
-
-			},
-			{"strainId": 104,
-			 "strainName": "Berry Queen", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/berryQueen.jpg"
-
-			},
-			{"strainId": 105,
-			 "strainName": "Berry White", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/berry-white_100x100.jpg"
-
-			},
-			{"strainId": 106,
-			 "strainName": "UW", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/uw_100x100.jpg"
-
-			},
-			{"strainId": 107,
-			 "strainName": "Blue Dream", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/blue-dream_100x100.jpg"
-
-			},
-			{"strainId": 108,
-			 "strainName": "Blue Moonshine", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/blue-moonshine_100x100.jpg"
-
-			},
-			{"strainId": 109,
-			 "strainName": "Blueberry Trainwreck", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/blueberry_100x100.jpg"
-
-			},
-			{"strainId": 110,
-			 "strainName": "Cannatonic #4", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cannatonic_100x100.jpg"
-
-			},
-			{"strainId": 111,
-			 "strainName": "Candy Jack", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/candy-jack_100x100.jpg"
-
-			},
-			{"strainId": 112,
-			 "strainName": "CandyLand", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/candyland_100x100.jpg"
-
-			},
-			{"strainId": 113,
-			 "strainName": "Cannalope Haze", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/cannalope-haze_100x100.jpg"
-
-			},
-			{"strainId": 114,
-			 "strainName": "Cataract Kush", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cataract-kush_100x100.jpg"
-
-			},
-			{"strainId": 115,
-			 "strainName": "Chemdawg", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/chemdawg_100x100.jpg"
-
-			},
-			{"strainId": 116,
-			 "strainName": "Cherry Pie", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cherry-pie_100x100.jpg"
-
-			},
-			{"strainId": 117,
-			 "strainName": "Chocolate Thai", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/chocolate-thai_100x100.jpg"
-
-			},
-			{"strainId": 118,
-			 "strainName": "Clear Lake", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/clear_lake.jpg"
-
-			},
-			{"strainId": 119,
-			 "strainName": "Dubtech", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/dubtech.jpg"
-
-			},
-			{"strainId": 120,
-			 "strainName": "Ghost OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/ghost-og_100x100.jpg"
-
-			},
-			{"strainId": 121,
-			 "strainName": "Grape Cookies", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/grape_Cookies.jpg"
-
-			},
-			{"strainId": 120,
-			 "strainName": "Grape Kool Aid", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/Purple Wreck-578x433.jpg"
-
-			},
-			{"strainId": 121,
-			 "strainName": "Jupiter Kush", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/jupiter-kush_100x100.jpg"
-
-			},
-			{"strainId": 122,
-			 "strainName": "L.A. Confidential", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/la-confidential_100x100.jpg"
-
-			},
-			{"strainId": 123,
-			 "strainName": "Lemon Jack", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/lemon-jack_100x100.jpg"
-
-			},
-			{"strainId": 124,
-			 "strainName": "Lemon OG Kush", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/lemon-og-kush_100x100.jpg"
-
-			},
-			{"strainId": 125,
-			 "strainName": "Mad Max", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/MADMAX.jpg"
-
-			},
-			{"strainId": 126,
-			 "strainName": "Mafia OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/mafia-og.jpg"
-
-			},
-			{"strainId": 127,
-			 "strainName": "Mango Maui", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/mango-maui-578x385.jpg"
-
-			},
-			{"strainId": 128,
-			 "strainName": "May Weather Kush", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/May-weather-kush.jpg"
-
-			},
-			{"strainId": 129,
-			 "strainName": "Phantom OG", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/phantom-og_100x100.jpg"
-
-			},
-			{"strainId": 130,
-			 "strainName": "Pineapple Hogsbreath", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/hog-s-breath_100x100.jpg"
-
-			},
-			{"strainId": 131,
-			 "strainName": "Silverback Gorilla", 
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/silverback-gorilla_100x100.jpg"
-
-			},
-			{"strainId": 132,
-			 "strainName": "Sugar Plum", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/sugar-plum_100x100.jpg"
-
-			},
-			{"strainId": 133,
-			 "strainName": "Super Lemon Haze", 
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/super-lemon-haze_100x100.jpg"
-
-			},
-			{"strainId": 134,
-			 "strainName": "Lemon Marmalade", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/acapulco-gold_100x100.jpg"
-
-			},
-			{"strainId": 135,
-			 "strainName": "White Fire OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/white-fire-og_100x100.jpg"
-
-			},
-			{"strainId": 138,
-			 "strainName": "White Walker OG", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/whitewalker-og_100x100.jpg"
-
-			},
-			{"strainId": 139,
-			 "strainName": "Cherry Bomb", 
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cherry-bomb_100x100.jpg"
-
-			},
-			{"strainId": 140,
-			 "strainName": "DJ Short Blueberry",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/dj-short-blueberry_100x100.jpg"
-
-			},
-			{"strainId": 141,
-			 "strainName": "El Alquimista",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/El-Alquimista.jpg"
-
-			},
-			{"strainId": 142,
-			 "strainName": "Godfather OG",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/godfather-og_100x100.jpg"
-
-			},
-			{"strainId": 143,
-			 "strainName": "Herijuana",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/herijuana_100x100.jpg"
-
-			},
-			{"strainId": 144,
-			 "strainName": "Lavender",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/lavender_100x100.jpg"
-
-			},
-			{"strainId": 145,
-			 "strainName": "Purple Coma",
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/purple-coma.jpg"
-
-			},
-			{"strainId": 146,
-			 "strainName": "Purple Passion",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/purple-passion_100x100.jpg"
-
-			},
-			{"strainId": 147,
-			 "strainName": "Sour Bubble",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/sour-bubble_100x100.jpg"
-
-			},
-			{"strainId": 148,
-			 "strainName": "Sour Dub",
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/SourDub.jpg"
-
-			},
-			{"strainId": 149,
-			 "strainName": "Strawberry Mist",
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/Kali-Mist-Bud-Closeup.jpg"
-
-			},
-			{"strainId": 150,
-			 "strainName": "LA Chocolat",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/DNA_Genetics_Seeds_-_LA_Chocolat.jpg"
-
-			},
-			{"strainId": 151,
-			 "strainName": "Afghani Bullrider",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/afghani-bullrider_100x100.jpg"
-
-			},
-			{"strainId": 152,
-			 "strainName": "Afgoo",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/afgoo_100x100.jpg"
-
-			},
-			{"strainId": 153,
-			 "strainName": "Afgooey",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/afgooey_100x100.jpg"
-
-			},
-			{"strainId": 154,
-			 "strainName": "AK-47",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/ak-47_100x100.jpg"
-
-			},
-			{"strainId": 155,
-			 "strainName": "AK-48",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/ak-48_100x100.jpg"
-
-			},
-			{"strainId": 156,
-			 "strainName": "Kalashnikova",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/kalashnikova_100x100.jpg"
-
-			},
-			{"strainId": 157,
-			 "strainName": "Black Buddah",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/Black-Budha.jpg"
-
-			},
-			{"strainId": 158,
-			 "strainName": "OG Cheese",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/og-cheese_100x100.jpg"
-
-			},
-			{"strainId": 159,
-			 "strainName": "Mercury OG",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/mercury-og_100x100.jpg"
-
-			},
-			{"strainId": 160,
-			 "strainName": "Silver Surfer",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/silver-surfer_100x100.jpg"
-
-			},
-			{"strainId": 161,
-			 "strainName": "Sour OG",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/sour-og_100x100.jpg"
-
-			},
-			{"strainId": 162,
-			 "strainName": "Mars OG",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/mars-og_100x100.jpg"
-
-			},
-			{"strainId": 163,
-			 "strainName": "White Rhino",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/white-rhino_100x100.jpg"
-
-			},
-			{"strainId": 164,
-			 "strainName": "Green Queen",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/green-queen_100x100.jpg"
-
-			},
-			{"strainId": 165,
-			 "strainName": "Green Dynamite",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/dynamite_100x100.jpg"
-
-			},
-			{"strainId": 166,
-			 "strainName": "J1",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/j1_100x100.jpg"
-
-			},
-			{"strainId": 167,
-			 "strainName": "Kryptonite",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/kryptonite_100x100.jpg"
-
-			},
-			{"strainId": 168,
-			 "strainName": "Master Kush",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/master-kush_100x100.jpg"
-
-			},
-			{"strainId": 169,
-			 "strainName": "Black Magic Kush",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/black-magic-kush.jpg"
-
-			},
-			{"strainId": 170,
-			 "strainName": "Blackberry Kush",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/blackberry-kush_100x100.jpg"
-
-			},
-			{"strainId": 171,
-			 "strainName": "Blue Diesel",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/blue-diesel_100x100.jpg"
-
-			}, 
-			{"strainId": 172,
-			 "strainName": "Blue Haze",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/blue-haze_100x100.jpg"
-
-			},
-			{"strainId": 173,
-			 "strainName": "Brutus OG",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/brutus-og-3.png"
-
-			},
-			{"strainId": 174,
-			 "strainName": "Bubba Kush",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/bubba-kush_100x100.jpg"
-
-			},
-			{"strainId": 175,
-			 "strainName": "Cheese",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cheese_100x100.jpg"
-
-			}, 
-			{"strainId": 176,
-			 "strainName": "Cinderella 99",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/cinderella-99_100x100.jpg"
-
-			}, 
-			{"strainId": 177,
-			 "strainName": "Diablo Haze",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/diablo_100x100.jpg"
-
-			},
-			{"strainId": 178,
-			 "strainName": "Diamond OG",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/diamond-og_100x100.jpg"
-
-			},
-			{"strainId": 179,
-			 "strainName": "Grandaddy Purple",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/grandaddy-purple.jpg"
-
-			},
-			{"strainId": 180,
-			 "strainName": "Fire OG",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/fire-og_100x100.jpg"
-
-			}, 
-			{"strainId": 181,
-			 "strainName": "Girl Scout Cookies",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/girl-scout-cookies_100x100.jpg"
-
-			},
-			{"strainId": 182,
-			 "strainName": "Grape Ape",
-			 "strainType": "Indica",
-			 "imageUrl": "images/strains/grape-ape_100x100.jpg"
-
-			},
-			{"strainId": 183,
-			 "strainName": "Headband",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/headband_100x100.jpg"
-
-			}, 
-			{"strainId": 184,
-			 "strainName": "Island Sweet Skunk",
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/island-sweet-skunk_100x100.jpg"
-
-			},
-			{"strainId": 185,
-			 "strainName": "LA Kush",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/la-kush_100x100.jpg"
-
-			},
-			{"strainId": 186,
-			 "strainName": "Gorilla Glue",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/gorilla-glue--4_100x100.jpg"
-
-			},
-			{"strainId": 187,
-			 "strainName": "Jack Frost",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/jack-frost_100x100.jpg"
-
-			},
-			{"strainId": 188,
-			 "strainName": "Kali Mist",
-			 "strainType": "Sativa",
-			 "imageUrl": "images/strains/kali-mist_100x100.jpg"
-
-			},
-		 	{"strainId": 189,
-			 "strainName": "NY Sour Diesel",
-			 "strainType": "Hybrid",
-			 "imageUrl": "images/strains/nyc-sour-diesel.jpg"
-
-			},
-		 	{"strainId": 190,
-		 	"strainName": "Skunk #1",
-		 	"strainType": "Hybrid",
-		 	"imageUrl": "images/strains/skunk--1_100x100.jpg"
-
-			},
-			{"strainId": 191,
-			 	"strainName": "Snowcap",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/snowcap_100x100.jpg"
-
-			},
-			{"strainId": 192,
-			 	"strainName": "Super Silver Haze",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/super-silver-haze_100x100.jpg"
-
-			},
-			{"strainId": 193,
-			 	"strainName": "Neptune OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/neptune-og_100x100.jpg"
-
-			},
-			{"strainId": 194,
-			 	"strainName": "Organic OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/organic-og-kush.JPG"
-
-			},
-			{"strainId": 195,
-			 	"strainName": "Kandy Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/kandy-kush_100x100.jpg"
-
-			},
-			{"strainId": 196,
-			 	"strainName": "King Louis XIII",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/king-louis-xiii_100x100.jpg"
-
-			},
-			{"strainId": 197,
-			 	"strainName": "White Kryptonite",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/white-kryptonite_100x100.jpg"
-
-			},
-			{"strainId": 198,
-			 	"strainName": "Legend OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/kryptonite_100x100.jpg"
-
-			},
-			{"strainId": 199,
-			 	"strainName": "Lemon Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/lemon-diesel_100x100.jpg"
-
-			},
-			{"strainId": 200,
-			 	"strainName": "Lemon Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/lemon-kush_100x100.jpg"
-
-			},
-			{"strainId": 201,
-			 	"strainName": "Blackwater",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/blackwater_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 202,
-			 	"strainName": "UltraViolet OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/UltravioletOG.jpg"
-			 	
-			}, 
-			{"strainId": 203,
-			 	"strainName": "Face Off OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/face-off-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 204,
-			 	"strainName": "Citrix",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/Citrix.jpg"
-			 	
-			},
-			{"strainId": 205,
-			 	"strainName": "Grapefruit",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/grapefruit_100x100.jpg"
-			 	
-			},
-			{"strainId": 206,
-			 	"strainName": "Chocolate Kush",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/chocolate-kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 207,
-			 	"strainName": "Chocolate Chunk",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/chocolate-chunk_100x100.jpg"
-			 	
-			},
-			{"strainId": 208,
-			 	"strainName": "Chocolope",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/chocolope_100x100.jpg"
-			 	
-			},
-			{"strainId": 209,
-			 	"strainName": "Cinex",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/cinex_100x100.jpg"
-			 	
-			},
-			{"strainId": 210,
-			 	"strainName": "Shiskaberry",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/shishkaberry_100x100.jpg"
-			 	
-			},
-			{"strainId": 211,
-			 	"strainName": "R4",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/R4-200x160.jpg"
-			 	
-			},
-			{"strainId": 212,
-			 	"strainName": "Super Sweet",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/super-sweet_100x100.jpg"
-			 	
-			},
-			{"strainId": 213,
-			 	"strainName": "Sweet Lavender Diesel",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/sweet-lavender-diesel.jpg"
-			 	
-			},
-			{"strainId": 214,
-			 	"strainName": "Cotton Candy Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/cotton-candy-kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 215,
-			 	"strainName": "Larry OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/larry-og_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 216,
-			 	"strainName": "Flo",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/flo_100x100.jpg"
-			 	
-			},
-			{"strainId": 217,
-			 	"strainName": "Obama Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/obama-kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 218,
-			 	"strainName": "Orange Crush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/orange-crush_100x100.jpg"
-			 	
-			},
-			{"strainId": 219,
-			 	"strainName": "Pink Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/pink-kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 220,
-			 	"strainName": "Red Dragon",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/red-dragon_100x100.jpg"
-			 	
-			},
-			{"strainId": 221,
-			 	"strainName": "Purple Sour Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/purple-sour-diesel_100x100.jpg"
-			 	
-			},
-			{"strainId": 222,
-			 	"strainName": "Dream Queen",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/dream-queen_100x100.jpg"
-			 	
-			},
-			{"strainId": 223,
-			 	"strainName": "Willy's Wonder",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/willy-s-wonder_100x100.jpg"
-			 	
-			},
-			{"strainId": 224,
-			 	"strainName": "Jean Guy",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/jean-guy_100x100.jpg"
-			 	
-			},
-			{"strainId": 225,
-			 	"strainName": "Orange Bud",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/orange-bud_100x100.jpg"
-			 	
-			},
-			{"strainId": 226,
-			 	"strainName": "Fucking Incredible",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/fucking-incredible_100x100.jpg"
-			 	
-			},
-			{"strainId": 227,
-			 	"strainName": "Sage N Sour",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/sage-n-sour_100x100.jpg"
-			 	
-			},
-			{"strainId": 228,
-			 	"strainName": "Bubba OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/bubba-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 229,
-			 	"strainName": "Hawaiian Snow",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
-			 	
-			},
-			{"strainId": 230,
-			 	"strainName": "Dr. Who",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
-			 	
-			},
-			{"strainId": 231,
-			 	"strainName": "Pineapple Chunk",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/pineapple-chunk_100x100.jpg"
-			 	
-			},
-			{"strainId": 232,
-			 	"strainName": "Pot of Gold",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/pot-of-gold_100x100.jpg"
-			 	
-			},
-			{"strainId": 233,
-			 	"strainName": "Tangerine Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/tangerine-kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 234,
-			 	"strainName": "Black Cherry Soda",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/black-cherry-soda_100x100.jpg"
-			 	
-			},
-			{"strainId": 235,
-			 	"strainName": "Qrazy Train",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/qrazy-train_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 236,
-			 	"strainName": "Death Star OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/death-star-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 237,
-			 	"strainName": "Blueberry Cheesecake",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/blueberry-cheesecake_100x100.jpg"
-			 	
-			},
-			{"strainId": 238,
-			 	"strainName": "Blue Crack",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/blue-crack_100x100.jpg"
-			 	
-			},
-			{"strainId": 239,
-			 	"strainName": "Bio-Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/bio-diesel_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 240,
-			 	"strainName": "Power Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/power-kush_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 241,
-			 	"strainName": "Panama Red",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/panama-red_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 242,
-			 	"strainName": "Purple Dragon",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/purple-dragon_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 243,
-			 	"strainName": "King Kong",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/king-kong_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 244,
-			 	"strainName": "Church OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/church-og_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 245,
-			 	"strainName": "Purple Arrow",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/purple-arrow_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 246,
-			 	"strainName": "Pandora's Box",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/pandora-s-box_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 247,
-			 	"strainName": "Abusive OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/abusive-og_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 248,
-			 	"strainName": "Platinum Purple Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/Platinum-Purple-Kush_100x100.jpg"
-			 	
-			},
-			{"strainId": 249,
-			 	"strainName": "Black Tuna",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/black-tuna_100x100.jpg"
-			 	
-			},
-			{"strainId": 250,
-			 	"strainName": "Charlie Sheen",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/charlie-sheen_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 251,
-			 	"strainName": "Rainbow",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/rainbow_100x100.jpg"
-			 	
-			},
-			{"strainId": 252,
-			 	"strainName": "Caramelicious",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/caramelicious_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 253,
-			 	"strainName": "Sour Cream",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/sour-cream_100x100.jpg"
-			 	
-			},
-			{"strainId": 254,
-			 	"strainName": "Apollo 11",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/apollo-11_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 255,
-			 	"strainName": "Green Crack Extreme",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/green-crack-extreme_100x100.jpg"
-			 	
-			},
-			{"strainId": 256,
-			 	"strainName": "Sour Cheese",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/sour-cheese_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 257,
-			 	"strainName": "Venom OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/venom-og_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 258,
-			 	"strainName": "Platinum Wreck",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/platinum_kush_indica.jpg"
-			 	
-			}, 
-			{"strainId": 259,
-			 	"strainName": "Deep Purple",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/deep-purple_100x100.jpg"
-			 	
-			},
-			{"strainId": 261,
-			 	"strainName": "Purple Afghani",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/purple-afghani_100x100.jpg"
-			 	
-			},
-			{"strainId": 262,
-			 	"strainName": "Heavy Duty Fruity",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/heavy-duty-fruity_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 263,
-			 	"strainName": "The Truth",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/the-truth_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 264,
-			 	"strainName": "Triple Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/triple-diesel_100x100.jpg"
-			 	
-			},
-			{"strainId": 265,
-			 	"strainName": "Grape Crush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/grape-crush_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 266,
-			 	"strainName": "Holland's Hope",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/hollands-hope_100x100.jpg"
-			 	
-			},
-			{"strainId": 267,
-			 	"strainName": "Black Cherry OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/black-cherry-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 268,
-			 	"strainName": "Blue Frost",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/blue-frost_100x100.jpg"
-			 	
-			},
-			{"strainId": 269,
-			 	"strainName": "BC Sweet Tooth",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/bc-sweet-tooth_100x100.jpg"
-			 	
-			},
-			{"strainId": 270,
-			 	"strainName": "Pink Panther",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/pink-panther_100x100.jpg"
-			 	
-			},
-			{"strainId": 271,
-			 	"strainName": "Orange Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/orange-diesel_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 272,
-			 	"strainName": "Watermelon",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/watermelon_100x100.jpg"
-			 	
-			},
-			{"strainId": 273,
-			 	"strainName": "OG Wreck",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/og-wreck_100x100.jpg"
-			 	
-			},
-			{"strainId": 274,
-			 	"strainName": "Green Hornet",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/green-hornet_100x100.jpg"
-			 	
-			},
-			{"strainId": 275,
-			 	"strainName": "Purple Ice",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/purple-ice_100x100.jpg"
-			 	
-			},
-			{"strainId": 276,
-			 	"strainName": "Blue Knight",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/blue-knight_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 277,
-			 	"strainName": "Scooby Snacks",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/scooby-snacks_100x100.jpg"
-			 	
-			},
-			{"strainId": 278,
-			 	"strainName": "Afghan Diesel",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/afghan-diesel_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 279,
-			 	"strainName": "Tigers Milk",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/tiger-s-milk_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 280,
-			 	"strainName": "Mexican",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/mexican_100x100.jpg"
-			 	
-			},
-			{"strainId": 281,
-			 	"strainName": "Lifesaver",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/lifesaver_100x100.jpg"
-			 	
-			},
-			{"strainId": 282,
-			 	"strainName": "Freezeland",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/freezeland_100x100.jpg"
-			 	
-			},
-			{"strainId": 283,
-			 	"strainName": "Critical Sensi Star",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/critical-sensi-star_100x100.jpg"
-			 	
-			},
-			{"strainId": 284,
-			 	"strainName": "Rugburn OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/rug-burn-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 285,
-			 	"strainName": "White Lightning",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/white-lightning_100x100.jpg"
-			 	
-			},
-			{"strainId": 286,
-			 	"strainName": "Black Betty",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/black-betty_100x100.jpg"
-			 	
-			},
-			{"strainId": 287,
-			 	"strainName": "The Black",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/the-black_100x100.jpg"
-			 	
-			},
-			{"strainId": 288,
-			 	"strainName": "The Black",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/pineapple-jack_100x100.jpg"
-			 	
-			},
-			{"strainId": 289,
-			 	"strainName": "Barbara Bud",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/barbara-bud_100x100.jpg"
-			 	
-			},
-			{"strainId": 290,
-			 	"strainName": "Wappa",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/wappa_100x100.jpg"
-			 	
-			},
-			{"strainId": 291,
-			 	"strainName": "Kilimanjaro",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/kilimanjaro_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 292,
-			 	"strainName": "Mendo Purps",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/mendocino-purps_100x100.jpg"
-			 	
-			},
-			{"strainId": 293,
-			 	"strainName": "White Skunk",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/white-skunk.jpg"
-			 	
-			},
-			{"strainId": 294,
-			 	"strainName": "Jamaican",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/jamaican_100x100.jpg"
-			 	
-			},
-			{"strainId": 295,
-			 	"strainName": "White Elephant",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/white-elephant_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 296,
-			 	"strainName": "Medibud",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/medibud_100x100.jpg"
-			 	
-			},
-			{"strainId": 297,
-			 	"strainName": "Dream Berry",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/dream-berry_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 298,
-			 	"strainName": "Belladonna",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/belladonna_100x100.jpg"
-			 	
-			},
-			{"strainId": 299,
-			 	"strainName": "Jacky White",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/jacky-white_100x100.jpg"
-			 	
-			},
-			{"strainId": 300,
-			 	"strainName": "Remedy",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/remedy_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 301,
-			 	"strainName": "Conspiracy Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/conspiracy-kush_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 302,
-			 	"strainName": "Night Terror OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/night-terror-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 303,
-			 	"strainName": "U2 Kush",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/u2-kush_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 304,
-			 	"strainName": "BSC",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/boy-scout-cookies_100x100.jpg"
-			 	
-			},
-			{"strainId": 305,
-			 	"strainName": "Purple Crack",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/purple-crack_100x100.jpg"
-			 	
-			},
-			{"strainId": 306,
-			 	"strainName": "Banana Candy",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/banana-candy_100x100.jpg"
-			 	
-			},
-			{"strainId": 307,
-			 	"strainName": "Love Potion #9",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/love-potion--9_100x100.jpg"
-			 	
-			},
-			{"strainId": 308,
-			 	"strainName": "Omega Dawg",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/omega-dawg_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 309,
-			 	"strainName": "Super Lemon OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/super-lemon-og_100x100.jpg"
-			 	
-			},
-			{"strainId": 310,
-			 	"strainName": "Elvis",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/elvis_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 311,
-			 	"strainName": "Silver Bubble",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/silver-bubble_100x100.jpg"
-			 	
-			},
-			{"strainId": 312,
-			 	"strainName": "Cindy White",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/cindy-white_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 313,
-			 	"strainName": "Gucci OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/gucci-og_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 314,
-			 	"strainName": "Sourlope",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/sourlope_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 315,
-			 	"strainName": "Buddah Tahoe",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/buddha-tahoe_100x100.jpg"
-			 	
-			},
-			{"strainId": 316,
-			 	"strainName": "Hawaiian Dream",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/hawaiian-dream_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 317,
-			 	"strainName": "Frostbite",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/frostbite_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 318,
-			 	"strainName": "Goldberry",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/goldberry_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 319,
-			 	"strainName": "Sonoma Coma",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/sonoma-coma_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 320,
-			 	"strainName": "Seattle Blue",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/seattle-blue_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 321,
-			 	"strainName": "Northern Berry",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/northern-berry_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 322,
-			 	"strainName": "OG's Pearl",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/og-s-pearl_100x100.jpg"
-			 	
-			},
-			{"strainId": 323,
-			 	"strainName": "Colorado Chem",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/colorado-chem_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 324,
-			 	"strainName": "Enigma",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/enigma_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 325,
-			 	"strainName": "Black 84",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/black--84_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 326,
-			 	"strainName": "Dr. Funk",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/Dr-Funk-200x160.jpg"
-			 	
-			}, 
-			{"strainId": 327,
-			 	"strainName": "Grand Doggy Purps",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/grand-doggy-purps_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 328,
-			 	"strainName": "Yummy",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/yummy_100x100.jpg"
-			 	
-			},
-			{"strainId": 329,
-			 	"strainName": "Haole",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/haole_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 330,
-			 	"strainName": "Incredible Bulk",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/incredible-bulk_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 331,
-			 	"strainName": "Eran Almog",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/eran-almog_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 332,
-			 	"strainName": "Catfish",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/catfish_100x100.jpg"
-			 	
-			},
-			{"strainId": 333,
-			 	"strainName": "Lions Gate",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/lions-gate_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 334,
-			 	"strainName": "Master Skunk",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/master-skunk_100x100.jpg"
-			 	
-			},
-			{"strainId": 335,
-			 	"strainName": "Ringo's Gift",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/ringo-s-gift_100x100.jpg"
-			 	
-			},
-			{"strainId": 336,
-			 	"strainName": "Sapphire Star",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/sapphire-star_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 337,
-			 	"strainName": "Jesus",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/jesus_100x100.jpg"
-			 	
-			},
-			{"strainId": 338,
-			 	"strainName": "Chem Scout",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/chem-scout_100x100.jpg"
-			 	
-			},
-			{"strainId": 339,
-			 	"strainName": "Ramona OG",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/chem-scout_100x100.jpg"
-			 	
-			},
-			{"strainId": 340,
-			 	"strainName": "OG Strawberry",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/og-strawberry_100x100.jpg"
-			 	
-			},
-			{"strainId": 341,
-			 	"strainName": "Gorilla Glue #4",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/gorilla-glue--4_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 342,
-			 	"strainName": "Holy Grail Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/holy-grail-kush_100x100_733a.jpg"
-			 	
-			}, 
-			{"strainId": 343,
-			 	"strainName": "Purple Nepal",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/purple-nepal_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 344,
-			 	"strainName": "Super Jack",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/super-jack_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 345,
-			 	"strainName": "Clinical OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/og-kush2_100x100.jpg"
-			 	
-			}, 
-			{"strainId": 346,
-			 	"strainName": "Diesel Cookies",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/girl-scout-cookies2_100x100.jpg"
-			}, 
-			{"strainId": 347,
-			 	"strainName": "Dreamweaver",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/dreamweaver.jpg"
-			}, 
-			{"strainId": 348,
-			 	"strainName": "Ogre",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/ogre_100x100.jpg"
-			}, 
-			{"strainId": 349,
-			 	"strainName": "SFV OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/sfv-og_100x100.jpg"
-			},
-			{"strainId": 350,
-			 	"strainName": "The Flav",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/the-flav_100x100.jpg"
-			},
-			{"strainId": 351,
-			 	"strainName": "God's Gift",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/god-s-gift_100x100.jpg"
-			}, 
-			{"strainId": 352,
-			 	"strainName": "Amnesia",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/amnesia_100x100.jpg"
-			}, 
-			{"strainId": 353,
-			 	"strainName": "A-Train",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/a-train_100x100.jpg"
-			}, 
-			{"strainId": 354,
-			 	"strainName": "Sugar Black Rose",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/sugar-black-rose_100x100.jpg"
-			}, 
-			{"strainId": 355,
-			 	"strainName": "Ice Queen",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/ice-queen_100x100.jpg"
-			}, 
-			{"strainId": 356,
-			 	"strainName": "Midnight Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/midnight_100x100.jpg"
-			}, 
-			{"strainId": 357,
-			 	"strainName": "Black Velvet",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/Black-Velvet_100x100.jpg"
-			},
-			{"strainId": 358,
-			 	"strainName": "Jamaican Dream",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/jamaican-dream_100x100.jpg"
-			}, 
-			{"strainId": 359,
-			 	"strainName": "California Grapefruit",
-			 	"strainType": "Indica",
-			 	"imageUrl": "images/strains/california-grapefruit_100x100.jpg"
-			}, 
-			{"strainId": 360,
-			 	"strainName": "Scott's OG",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/scott-s-og_100x100.jpg"
-			}, 
-			{"strainId": 361,
-			 	"strainName": "Hawaiian Sativa",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/hawaiian-sativa_100x100.jpg"
-			}, 
-			{"strainId": 362,
-			 	"strainName": "Wet Dream",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/wet-dream_100x100.jpg"
-			},
-			{"strainId": 363,
-			 	"strainName": "Sublime",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/sublime_100x100_46fa.jpg"
-			},
-			{"strainId": 364,
-			 	"strainName": "Purple Voodoo",
-			 	"strainType": "hyrbrid",
-			 	"imageUrl": "images/strains/purple-voodoo_100x100_1bb5.jpg"
-			},
-			{"strainId": 365,
-			 	"strainName": "Fire Haze",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/fire-haze_100x100_0ff8.jpg"
-			},
-			{"strainId": 366,
-			 	"strainName": "Space Jill",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/space-jill_100x100_4026.jpg"
-			},
-			{"strainId": 367,
-			 	"strainName": "Maui Waui",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/maui-waui_100x100_89bb.jpg"
-			},
-			{"strainId": 368,
-			 	"strainName": "Golden Goat",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
-			},
-			{"strainId": 369,
-			 	"strainName": "Laughing Buddha",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/laughing-buddha_100x100_ebef.jpg"
-			},
-			{"strainId": 370,
-			 	"strainName": "Durban Poison",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/durban-poison_100x100_09a5.jpg"
-			},
-			{"strainId": 371,
-			 	"strainName": "Mob Boss",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/mob-boss_100x100_5cd4.jpg"
-			},
-			{"strainId": 372,
-			 	"strainName": "Banana Kush",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/banana-kush_100x100_9b04.jpg"
-			},
-			{"strainId": 373,
-			 	"strainName": "Black Widow",
-			 	"strainType": "Hybrid",
-			 	"imageUrl": "images/strains/black-widow_100x100.jpg"
-			},
-			{"strainId": 374,
-			 	"strainName": "Jack the Ripper",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/jack-the-ripper_100x100.jpg"
-			},
-			{"strainId": 375,
-			 	"strainName": "Purple Thai",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/purple-thai_100x100.jpg"
-			}, 
-			{"strainId": 376,
-			 	"strainName": "Silver Haze",
-			 	"strainType": "Sativa",
-			 	"imageUrl": "images/strains/silver-haze_100x100.jpg"
-			}
-		]; 
-
-
-
+/** strain data **/
 		var strains = [
 			{"strainId": 1,
 			 "strainName": "Trainwreck", 
@@ -26370,7 +21729,7 @@
 			 "imageUrl": "images/strains/fire-og_100x100.jpg"
 			}, 
 			{"strainId": 180,
-			 "strainName": "Girl Scout Cookies",
+			 "strainName": "GirlScout Cookies",
 			 "strainType": "Hybrid",
 			 "components": [
 			 	{ 
@@ -26474,7 +21833,7 @@
 			 		"value": 0.02
 				} 	
 		 	], 
-		 	"taste": ["Sweet", "Earthy", "Pungent"],
+		 	"taste": ["Sweet", "Earthy", "Chocolate", "Mint","Pungent"],
 		 	 "conditions": ["Stress", "Pain", "Depression", "Insomnia", "Lack of Appetite", "Anxiety"],
 			 "positiveEffects": ["Happy", "Energetic", "Euphoric", "Relaxed", "Uplifted", "Productive", "Creative"],
 			 "negativeEffects": ["Dry Mouth", "Munchies", "Dry Eyes", "Drowsiness",  "Dizzy", "Paranoid",  "Headache"],
@@ -47917,7 +43276,7 @@
 			},
 			{"strainId": 369,
 			 "strainName": "Laughing Buddha",
-			 "strainType": "Sativa`",
+			 "strainType": "Sativa",
 			 "components": [
 			 	{ 
 			 		"name": "THC9",  
@@ -48826,900 +44185,2519 @@
 			 "descriptionAbbrev": "Silver Haze maintains strong but clear-headed sativa effects while producing the standard Haze effects.",
 			 "tags": [""],
 			 "imageUrl": "images/strains/silver-haze_100x100.jpg"
-			}
-		];
-		
-
-		var taste = [
-			{
-				"tasteId": 1,
-				"tasteName": "Pulegone",
-				"tasteDescription": "Peppermint"
 			},
-			{
-				"tasteId": 2,
-				"tasteName": "Delta9-THC",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 3,
-				"tasteName": "CBD",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 4,
-				"tasteName": "CBN",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 5,
-				"tasteName": "CBC",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 6,
-				"tasteName": "CBG",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 7,
-				"tasteName": "Delta8-THC",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 8,
-				"tasteName": "THCA",
-				"tasteDescription": "None"
-			},	
-			{
-				"tasteId": 9,
-				"tasteName": "THCV",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 10,
-				"tasteName": "Myrcene",
-				"tasteDescription": "Mango"
-			},
-			{
-				"tasteId": 11,
-				"tasteName": "Caryophyllene",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 12,
-				"tasteName": "Limonene",
-				"tasteDescription": "Citrus"
-			},
-			{
-				"tasteId": 13,
-				"tasteName": "Linalool",
-				"tasteDescription": "Floral"
-			},
-			{
-				"tasteId": 14,
-				"tasteName": "Eucalyptol",
-				"tasteDescription": "Spicy camphor"
-			},
-			{
-				"tasteId": 15,
-				"tasteName": "a-pinene",
-				"tasteDescription": "Pine"
-			},
-			{
-				"tasteId": 16,
-				"tasteName": "a-terpineol",
-				"tasteDescription": "Lilac"
-			},
-			{
-				"tasteId": 17,
-				"tasteName": "terpineol-4-ol",
-				"tasteDescription": "Tea Tree"
-			},
-			{
-				"tasteId": 18,
-				"tasteName": "p-cymene",
-				"tasteDescription": "Cumin, Thyme"
-			},
-			{
-				"tasteId": 19,
-				"tasteName": "apigenin",
-				"tasteDescription": "Chamomile, Celery"
-			},
-			{
-				"tasteId": 20,
-				"tasteName": "Quercetin",
-				"tasteDescription": "Earthy, Forest"
-			},
-			{
-				"tasteId": 21,
-				"tasteName": "cannflavin A",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 22,
-				"tasteName": "Beta-sitosterol",
-				"tasteDescription": "None"
-			},
-			{
-				"tasteId": 23,
-				"tasteName": "",
-				"tasteDescription": "None"
-			}
-		];
-
-		var products = [
-			{"productId": 1,
-			 "productName": "Pulegone", //compName
-			 "Property": ["Memory booster", "AChE inhibitor", "Sedative", "Antipyretic"],
-			 "lowTemp": 0,
-			 "highTemp": 435,
-			 "lowTempC": 0,
-			 "highTempC": 224,
-			 "temp": "435",
-			 "tempC": "224",
+			{"strainId": 377,
+			 "strainName": "Northern Lights Blue",
+			 "strainType": "Indica",
+			 "components": [
+			 	{ 
+			 		"name": "THC9",  
+			 		"value": 23.73
+			 	},
+			 	{ 
+			 		"name": "CBD", 
+			 		"value": 0.15
+			 	},
+			 	{ 
+			 		"name": "CBN", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBG", 
+			 		"value": 0.21	
+			 	},
+			 	{ 
+			 		"name": "CBC", 
+			 		"value": 0.02 
+			 	},
+			 	{ 
+			 		"name": "THCV", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THCA", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THC8", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pulegone", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Myrcene", 
+			 		"value": 0.25
+			 	},
+			 	{ 
+			 		"name": "Caryophyllene", 
+			 		"value": 0.98
+			 	},
+			 	{ 
+			 		"name": "Limonene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Linalool", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Eucalyptol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pinene", 
+			 		"value": 0.20
+			 	},
+			 	{ 
+			 		"name": "Terpineol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Terpineol-4", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cymene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Apigenin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Quercetin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cannflavin A", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Beta-sitosterol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBL", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Humulene", 
+			 		"value": 0.67
+				},
+				{ 
+			 		"name": "Terpinolene", 
+			 		"value": 0.00
+				}	
+		 	], 
+		 	"taste": ["Berry","Sweet","Blueberry","Spicy"],
+		 	 "conditions": ["Migraines","Stress", "Depression", "Pain", "Insomnia", "Appetite Loss"],
+			 "positiveEffects": ["Happy", "Uplifted", "Relaxed","Euphoric","Drowsiness","Potent"],
+			 "negativeEffects": ["Dry Mouth", "Dry Eyes", "Couch Lock", "Munchies"],
 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Pulegone has a pleasant odor similar to peppermint.",
+			 "descriptionAbbrev": "This variety has a nice fragrance of wild berries giving a pleasant sensation of wellness and at the same time a sedative effect. An Indica with a great medical value to reduce pains and chronic illnesses.",
 			 "tags": [""],
-			 "imageUrl": ""
+			 "imageUrl": "images/strains/blue-lights_100x100.jpg"
 			},
-			{"productId": 2,
-			 "productName": "THC9", //compName
-			 "Property": ["Euphoriant", "Neuroprotective", "Anxiolytic", "Analgesic", "Antipyretic","Relieve Behavioral Agitation", "Antihypoxia","Antiproliferative", "Inhibit Neural Plaques", "Neuropathic Analgesic", "Antiinflammatory", "Antioxidant", "Antiemetic", "Neurogenesis", "Antidiabetic", "Antispasmodic","Appetite Stimulant", "Vasorelaxant", "Anti gastric reflux", "Treats IBS"],
-			 "lowTemp": 0,
-			 "highTemp": 315,
-			 "lowTempC": 0,
-			 "highTempC": 157,
-			 "temp": "315",
-			 "tempC": "157",
+			{"strainId": 378,
+			 "strainName": "Mango Kush",
+			 "strainType": "Hybrid",
+			 "components": [
+			 	{ 
+			 		"name": "THC9",  
+			 		"value": 16.58
+			 	},
+			 	{ 
+			 		"name": "CBD", 
+			 		"value": 0.14
+			 	},
+			 	{ 
+			 		"name": "CBN", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBG", 
+			 		"value": 0.23	
+			 	},
+			 	{ 
+			 		"name": "CBC", 
+			 		"value": 0.02 
+			 	},
+			 	{ 
+			 		"name": "THCV", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THCA", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THC8", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pulegone", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Myrcene", 
+			 		"value": 0.24
+			 	},
+			 	{ 
+			 		"name": "Caryophyllene", 
+			 		"value": 0.28
+			 	},
+			 	{ 
+			 		"name": "Limonene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Linalool", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Eucalyptol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pinene", 
+			 		"value": 0.20
+			 	},
+			 	{ 
+			 		"name": "Terpineol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Terpineol-4", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cymene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Apigenin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Quercetin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cannflavin A", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Beta-sitosterol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBL", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Humulene", 
+			 		"value": 0.89
+				},
+				{ 
+			 		"name": "Terpinolene", 
+			 		"value": 0.00
+				}	
+		 	], 
+		 	"taste": ["Mango","Tropical","Pine"],
+		 	 "conditions": ["Stress", "Depression", "Pain", "Insomnia", "Headache"],
+			 "positiveEffects": ["Happy", "Relaxed","Euphoric","Conversational"],
+			 "negativeEffects": ["Dry Mouth", "Dry Eyes", "Dizzy", "Paranoid"],
 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "The principal psychoactive constituent or cannabinoid of the Cannabis plant.",
+			 "descriptionAbbrev": "The Mango Kush marijuana strain tastes similar to the the actual mango fruit, with a distinct kush flavor, and hints of pine on the exhale.",
 			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 3,
-			 "productName": "CBD", //compName
-			 "Property": ["Anxiolytic", "Analgesic","Antiglutamatergic", "Neuropathic Analgesic", "Neurogenesis", "Antipsychotic", "Antiinflammatory", "Antioxidant", "Antispasmodic", "Antiepileptic", "Antiischemic", "Antibacterial", "Antidiabetic", "Antiemetic", "Antiproliferative","Antipsoriatic", "Stimulates Bone Growth", "Immunosuppressant", "Intestinal anti-prokinetic", "Neuroprotective"],
-			 "lowTemp": 320,
-			 "highTemp": 356,
-			 "lowTempC": 160,
-			 "highTempC": 180,
-			 "temp": "320-356",
-			 "tempC": "160-180",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "CBD is considered to have a wider scope of medical applications than THC.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 4,
-			 "productName": "CBN", //compName
-			 "Property": ["Analgesic", "Oxidation", "Sedative", "Antibiotic", "Immunosuppressant", "Antiepileptic"],
-			 "lowTemp": 0,
-			 "highTemp": 365,
-			 "lowTempC": 0,
-			 "highTempC": 185,
-			 "temp": "365",
-			 "tempC": "185",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Used experimentally as an immunosuppressant.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 5,
-			 "productName": "CBC", //compName
-			 "Property": ["Euphoriant","Analgesic","Anxiolytic", "Antiinflammatory", "Antibiotic", "Antiviral", "Antiproliferative", "Neurogenesis", "Stimulates Bone Growth"],
-			 "lowTemp": 0,
-			 "highTemp": 428,
-			 "lowTempC": 0,
-			 "highTempC": 220,
-			 "temp": "428",
-			 "tempC": "220",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "May contribute to the overall analgesic effects of medical cannabis.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 6,
-			 "productName": "CBG", //compName
-			 "Property": ["Analgesic", "Antiinflammatory", "Antibacterial", "Anti-tumor", "Sedative", "Relieves Intraocular Pressure", "Stimulates Bone Growth", "Treats IBS", "Antidiabetic", "Antileishmanial", "Antiproliferative", "Neurogenesis", "Antiepileptic"],
-			 "lowTemp": 0,
-			 "highTemp": 126,
-			 "lowTempC": 0,
-			 "highTempC": 52,
-			 "temp": "125",
-			 "tempC": "52",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Cannabigerol is non psychoactive, and has been shown to stimulate the growth of new brain cells.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 7,
-			 "productName": "THC8", //compName
-			 "Property": ["Antiemetic", "Anxiolytic", "Appetite Stimulant", "Analgesic", "Aeuroprotective"],
-			 "lowTemp": 347,
-			 "highTemp": 352,
-			 "lowTempC": 175,
-			 "highTempC": 178,
-			 "temp": "351",
-			 "tempC": "177",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "May contribute to the overall analgesic effects of medical cannabis.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 8,
-			 "productName": "THCA", //compName
-			 "Property": ["Antiinflammatory", "Antiproliferative", "Anti-tumor", "Sedative", "Antispasmodic", "Anti-prostate cancer", "Antiepileptic"],
-			 "lowTemp": 0,
-			 "highTemp": 428,
-			 "lowTempC": 0,
-			 "highTempC": 220,
-			 "temp": "428",
-			 "tempC": "220",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "THCA is progressively decarboxylated to THC with drying, and especially under intense heating such as when cannabis is smoked.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 9,
-			 "productName": "THCV", //compName
-			 "Property": ["Analgesic", "Euphoriant","Antiinflammatory", "Anorectic", "Antiepileptic", "Stimulates Bone Growth", "Antiemetic"],
-			 "lowTemp": 0,
-			 "highTemp": 428,
-			 "lowTempC": 0,
-			 "highTempC": 220,
-			 "temp": "428",
-			 "tempC": "220",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Progressively decarboxylated to THC with drying, and especially under intense heating such as when cannabis is smoked.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 10,
-			 "productName": "Myrcene", //compName
-			 "Property": ["Analgesic", "Sedative", "Antiinflammatory", "Antibiotic", "Antimutagenic", "Antispasmodic"],
-			 "lowTemp": 0,
-			 "highTemp": 334,
-			 "lowTempC": 0,
-			 "highTempC": 168,
-			 "temp": "334",
-			 "tempC": "167",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "High Beta-Myrcene levels in cannabis result in the well known couch lock effect of classic Indica strains of cannabis.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 11,
-			 "productName": "Caryophyllene", //compName
-			 "Property": ["Antiinflammatory", "Analgesic", "Anti gastric reflux", "Cytoprotective", "Antimalarial", "Antidiabetic"],
-			 "lowTemp": 0,
-			 "highTemp": 266,
-			 "lowTempC": 0,
-			 "highTempC": 130,
-			 "temp": "266",
-			 "tempC": "130",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "High β-Myrcene levels in cannabis result in the well known couch lock effect of classic Indica strains of cannabis.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 12,
-			 "productName": "Limonene", //compName
-			 "Property": ["Anti gastric reflux", "Antifungal", "Euphoriant", "Anxiolytic", "Anti-tumor", "Immunostimulant"],
-			 "lowTemp": 0,
-			 "highTemp": 351,
-			 "lowTempC": 0,
-			 "highTempC": 177,
-			 "temp": "351",
-			 "tempC": "177",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Limonene takes its name from the lemon, as the rind of the lemon, like other citrus fruits, contains considerable amounts of this compound, which contributes to their odor.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 13,
-			 "productName": "Linalool", //compName
-			 "Property": ["Sedative", "Euphoriant", "Anxiolytic", "Immune potentiator", "Anesthetic", "Antispasmodic", "Analgesic"],
-			 "lowTemp": 0,
-			 "highTemp": 388,
-			 "lowTempC": 0,
-			 "highTempC": 198,
-			 "temp": "388",
-			 "tempC": "198",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "A naturally occurring terpene alcohol chemical found in many flowers and spice plants.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 14,
-			 "productName": "Eucalyptol", //compName
-			 "Property": ["AChE inhibitor", "Increases cerebral blood flow", "Stimulant", "Antibiotic", "Antiviral", "Antiinflammatory", "Antinociceptive"],
-			 "lowTemp": 0,
-			 "highTemp": 349,
-			 "lowTempC": 0,
-			 "highTempC": 176,
-			 "temp": "349",
-			 "tempC": "176",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Eucalyptol has a fresh camphor-like smell and a spicy, cooling taste.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 15,
-			 "productName": "Pinene", //compName
-			 "Property": ["Antiinflammatory", "Bronchodilator", "Stimulant", "Antibiotic", "Antineoplastic", "AChE inhibitor", "Antidiabetic", "Memory booster"],
-			 "lowTemp": 0,
-			 "highTemp": 313,
-			 "lowTempC": 0,
-			 "highTempC": 156,
-			 "temp": "312",
-			 "tempC": "156",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "At low exposure levels, alpha-Pinene is a bronchodilator in humans.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 16,
-			 "productName": "Terpineol", //compName
-			 "Property": ["Sedative", "Antibiotic", "AChE inhibitor", "Antioxidant", "Antimalarial"],
-			 "lowTemp": 0,
-			 "highTemp": 423,
-			 "lowTempC": 0,
-			 "highTempC": 217,
-			 "temp": "423",
-			 "tempC": "217",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Terpineol has a pleasant odor similar to lilac.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 17,
-			 "productName": "Terpineol-4", //compName
-			 "Property": ["AChE inhibitor", "Antibiotic"],
-			 "lowTemp": 0,
-			 "highTemp": 408,
-			 "lowTempC": 0,
-			 "highTempC": 209,
-			 "temp": "408",
-			 "tempC": "209",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Terpineol-4-ol considered the primary active ingredient of tea tree oil.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 18,
-			 "productName": "Cymene", //compName
-			 "Property": ["Antibiotic", "Anticandidal", "AChE inhibitor"],
-			 "lowTemp": 0,
-			 "highTemp": 351,
-			 "lowTempC": 0,
-			 "highTempC": 177,
-			 "temp": "351",
-			 "tempC": "177",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "It is a constituent of a number of essential oils, most commonly the oil of cumin and thyme.",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"productId": 19,
-			 "productName": "Apigenin", //compName
-			 "Property": ["Anxiolytic", "Antiinflammatory", "Estrogenic"],
-			 "lowTemp": 0,
-			 "highTemp": 352,
-			 "lowTempC": 0,
-			 "highTempC": 178,
-			 "temp": "352",
-			 "tempC": "178",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Apigenin is found in many fruits and vegetables, but parsley, celery, celeriac, and chamomile tea are the most common sources.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 20,
-			 "productName": "Quercetin", //compName
-			 "Property": ["Antioxidant", "Antimutagenic", "Antiviral", "Antineoplastic"],
-			 "lowTemp": 0,
-			 "highTemp": 482,
-			 "lowTempC": 0,
-			 "highTempC": 250,
-			 "temp": "482",
-			 "tempC": "250",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Quercetin is a flavonoid widely distributed in nature.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 21,
-			 "productName": "Cannflavin A", //compName
-			 "Property": ["COX inhibitor", "LO inhibitor"],
-			 "lowTemp": 0,
-			 "highTemp": 360,
-			 "lowTempC": 0,
-			 "highTempC": 182,
-			 "temp": "360",
-			 "tempC": "182",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "A non-cannabinoid constituent isolated from a high potency Cannabis sativa.",
-			 "tags": ["" ],
-			 "imageUrl": ""
-			},
-			{"productId": 22,
-			 "productName": "Beta-sitosterol", //compName
-			 "Property": ["Antiinflammatory", "5-a-reductase inhibitor"],
-			 "lowTemp": 0,
-			 "highTemp": 273,
-			 "lowTempC": 0,
-			 "highTempC": 134,
-			 "temp": "273",
-			 "tempC": "134",
-			 "descriptionDetailed": "β-sitosterol is being studied for its potential to reduce benign prostatic hyperplasia and blood cholesterol levels. β-Sitosterol supplements or enriched foods should be avoided during pregnancy and breast-feeding, since not enough is known about its effects on unborn and newborn children. High levels of β-sitosterol concentrations in blood have been correlated with increased severity of heart disease in men having previously suffered from heart attacks. It is found in pecans, avocados, pumpkin seeds, cashew fruit, rice bran, wheat germ, corn oils, soybeans and dandelion coffee.",
-			 "descriptionAbbrev":  "β-sitosterol is being studied for its potential to reduce benign prostatic hyperplasia and blood cholesterol levels.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 23,
-			 "productName": "Humulene", //compName
-			 "Property": ["Antiinflammatory", "Anti-tumor", "Antibacterial", "Anorectic"],
-			 "lowTemp": 0,
-			 "highTemp": 388,
-			 "lowTempC": 0,
-			 "highTempC": 198,
-			 "temp": "399",
-			 "tempC": "198",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Humulene is anti-tumor, anti-bacterial, anti-inflammatory, and anorectic (suppresses appetite), It has commonly been blended with beta–caryophyllene and used as a major remedy for inflammation, and is well known to Chinese medicine.",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"productId": 24,
-			 "productName": "Terpinolene", //compName
-			 "Property": ["Antiproliferative", "Antioxidant","Antibacterial", "Antifungal", "Sedative"],
-			 "lowTemp": 365,
-			 "highTemp": 428,
-			 "lowTempC": 185,
-			 "highTempC": 220,
-			 "temp": "428",
-			 "tempC": "220",
-			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "It does help fight cancer like most other cannabinoids, and it is anti-fungal as well as anti-bacterial. Terpinolene is a sedative which may also be helpful in cancer treatment if patients have difficulty sleeping.",
-			 "tags": [""],
-			 "imageUrl": ""
-			}			
-		];
-
-		var effects = [
-			{"effectId": 1,
-			 "effectName": "Neuroprotective", //compName
-			 "conditionsTreated": ["ADHD", "Alzheimers", "Dementia", "Memory", "Lyme Disease"],
- 			 "descriptionDetailed": "Medical Cannabis has been shown to actually protect against nerve damage",
-			 "descriptionAbbrev":  "Nervous system protection",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 2,
-			 "effectName": "Antispasmodic", //compName
-			 "conditionsTreated": ["Epilepsy", "Spasms", "Convulsions", "Chronic Back Pain"],
- 			 "descriptionDetailed": "Medical cannabis strains high in CBD have been shown to relieve spasms and convulsions associated with Epilepsy and other nerve related conditions.",
-			 "descriptionAbbrev":  "Suppress muscle spasms",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 3,
-			 "effectName": "Antiemetic", //compName
-			 "conditionsTreated": ["Chemotherapy", "Nausea", "Motion sickness", "Lyme Disease"],
- 			 "descriptionDetailed": "Reduces vomiting and nausea",
-			 "descriptionAbbrev":  "Reduce vomiting and nausea",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 4,
-			 "effectName": "Analgesic", //compName
-			 "conditionsTreated": ["Pain", "Chronic Pain", "Chronic Back Pain", "Fibromyalgia", "Arthritis", "Lyme Disease", "Migraines"],
- 			 "descriptionDetailed": "An analgesic, or painkiller, is any member of the group of drugs used to achieve analgesia — relief from pain.",
-			 "descriptionAbbrev":  "Relieve pain",
-			 "tags": ["" ],
-			 "imageUrl": ""
-			},
-			{"effectId": 5,
-			 "effectName": "Antioxidant", //compName
-			 "conditionsTreated": ["Stroke", "Coronary Heart Disease", "ALS", "Parkinsons", "Alzheimers", "Huntingtons", "Cancer", "Diabetes"],
- 			 "descriptionDetailed": "Antioxidants are widely used in dietary supplements and have been investigated for the prevention of diseases such as cancer, coronary heart disease and even altitude sickness among others.",
-			 "descriptionAbbrev":  "Fight free radicals",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 6,
-			 "effectName": "Neuropathic Analgesic", //compName
-			 "conditionsTreated": ["Chronic Back Pain", "Spinal Injuries", "Diabetes", "Arthritis", "Parkinsons", "Lyme Disease"],
- 			 "descriptionDetailed": "Reduces pain associated with nerve damage including spinal injuries",
-			 "descriptionAbbrev":  "Reduce nerve pain", 
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 7,
-			 "effectName": "Treats IBS", //compName
-			 "conditionsTreated": ["IBS"],
- 			 "descriptionDetailed": "Irritable bowel syndrome commonly causes cramping, abdominal pain, bloating, gas, diarrhea and constipation. IBS is a chronic condition that you will need to manage long term.",
-			 "descriptionAbbrev":  "Treat IBS",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 8,
-			 "effectName": "Antiinflammatory", //compName
-			 "conditionsTreated": ["Inflammation", "Chronic Inflammation Syndrome", "Coronary Heart Disease", "Diabetes", "Fibromyalgia", "Muscle Pain", "Alzheimers", "Lyme Disease"],
- 			 "descriptionDetailed": "Reducing inflammation can result in prevention of various conditions including heart disease and type II diabetes and stroke",
-			 "descriptionAbbrev":  "Reduce inflammation",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 9,
-			 "effectName": "Neurogenesis", //compName
-			 "conditionsTreated": ["Chronic Depression", "ADHD", "Alzheimers", "Dementia"],
- 			 "descriptionDetailed": "Neurogenesis is the process by which neurons are generated from neural stem cells and progenitor cells. Recent studies suggest that stress-induced atrophy and loss of hippocampal neurons may contribute to the pathophysiology of depression.",
-			 "descriptionAbbrev":  "Grow new nerve tissue",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 10,
-			 "effectName": "Anxiolytic", //compName
-			 "conditionsTreated": ["Anxiety", "Bipolar", "Social Anxiety", "Separation Anxiety", "Stress", "PTSD", "Lyme Disease"],
- 			 "descriptionDetailed": "Anxiolytic medications have been used for the treatment of anxiety and its related psychological and physical symptoms. ",
-			 "descriptionAbbrev":  "Reduce anxiety",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 11,
-			 "effectName": "Antiepileptic", //compName
-			 "conditionsTreated": ["Epilepsy", "Seizures", "Convulsions"],
- 			 "descriptionDetailed": "Anti-epileptic drugs or AEDs are the main form of treatment for people with epilepsy. Certain compnonents in medical cannabis are being used as an effectve treatment for some forms of Epilepsy based on the relative strengths of components such as CBD and THC-A.",
-			 "descriptionAbbrev":  "Reduce seizures and convulsions",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 12,
-			 "effectName": "Vasorelaxant", //compName
-			 "conditionsTreated": ["High Blood Pressure", "Hypertension", "Coronary Heart Disease", "Diabetes"],
- 			 "descriptionDetailed": "Reduces tension in blood vessel walls resultig in lower blood pressure and enhanced bloodflow in arteries, capillaries and blood vessels.",
-			 "descriptionAbbrev":  "Lower Blood Pressure",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 13,
-			 "effectName": "Antiischemic", //compName
-			 "conditionsTreated": ["Artery Blockage"],
- 			 "descriptionDetailed": "Reduces risk of artery blockage which could help prevent the conditions leading to coronary artery disease.",
-			 "descriptionAbbrev":  "Reduce risk of artery blockage",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 14,
-			 "effectName": "Antibacterial", //compName
-			 "conditionsTreated": ["Infection"],
- 			 "descriptionDetailed": "Kills surface bacteria. Destroys bacteria or suppresses their growth or their ability to reproduce.",
-			 "descriptionAbbrev":  "Kill or slow bacteria growth",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 15,
-			 "effectName": "Antidiabetic", //compName
-			 "conditionsTreated": ["Diabetes"],
- 			 "descriptionDetailed": "Helps reduce blood sugar levels.",
-			 "descriptionAbbrev":  "Lower blood sugar",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 16,
-			 "effectName": "Antipsoriatic", //compName
-			 "conditionsTreated": ["Psoriasis"],
- 			 "descriptionDetailed": "Helps relieve the symptoms of psoriasis.",
-			 "descriptionAbbrev":  "Treat psoriasis",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 17,
-			 "effectName": "Antipsychotic", //compName
-			 "conditionsTreated": ["Psychosis", "PTSD", "Schizophrenia", "Bipolar"],
- 			 "descriptionDetailed": "Helps reduce psychosis including delusions or hallucinations",
-			 "descriptionAbbrev":  "Tranquilizing effect",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 18,
-			 "effectName": "Stimulates Bone Growth", //compName
-			 "conditionsTreated": ["Osteoporosis"],
- 			 "descriptionDetailed": "promotes bone growth",
-			 "descriptionAbbrev":  "Promote bone growth",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 19,
-			 "effectName": "Intestinal anti-prokinetic", //compName
-			 "conditionsTreated": ["GI Motility Disorders", "Intestinal Contractions"],
- 			 "descriptionDetailed": "reduces contractions in the small intestine",
-			 "descriptionAbbrev":  "Reduce contractions in the small intestine",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 20,
-			 "effectName": "Immunosuppressant", //compName
-			 "conditionsTreated": ["Psoriasis", "Arthritis", "Crohns Disease", "Cancer", "Lupus", "Multiple Sclerosis"],
- 			 "descriptionDetailed": "Immunosuppressants are used to prevent rejection of a transplanted organ and to treat autoimmune diseases such as psoriasis, rheumatoid arthritis, and Crohn's disease. Some treatments for cancer act as immunosuppressants.",
-			 "descriptionAbbrev":  "Treat autoimmune conditions",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 21,
-			 "effectName": "Antiproliferative", //compName
-			 "conditionsTreated": ["Cancer"],
- 			 "descriptionDetailed": "Inhibits cancer cell growth",
-			 "descriptionAbbrev":  "Slow cancer cell growth",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 22,
-			 "effectName": "Vasoconstriction", //compName
-			 "conditionsTreated": ["Glaucoma"],
- 			 "descriptionDetailed": "Vasoconstriction is the narrowing of the blood vessels resulting from contraction of the muscular wall of the vessels, in particular the large arteries and small arterioles. The process is particularly important in staunching hemorrhage and acute blood loss.",
-			 "descriptionAbbrev":  "Raise blood pressure",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 23,
-			 "effectName": "Memory booster", //compName
-			 "conditionsTreated": ["Memory", "Alzheimers", "Lyme Disease"],
- 			 "descriptionDetailed": "helps memory conditions",
-			 "descriptionAbbrev":  "Help boost memory",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 24,
-			 "effectName": "AChE inhibitor", //compName
-			 "conditionsTreated": ["Glaucoma", "Postural Tachycardia Syndrome", "Anticholinergic Poisoning", "Alzheimers", "Apathy", "Dementia", "Parkinsons disease", "Schizophrenia", "Autism"],
- 			 "descriptionDetailed": "Typically used to increase neuromuscular transmission",
-			 "descriptionAbbrev":  "Increase neuromuscular transmission",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 25,
-			 "effectName": "Sedative", //compName
-			 "conditionsTreated": ["Insomnia", "Hyperactivity", "Irritability", "PTSD", "Lyme Disease"],
- 			 "descriptionDetailed": "Helps you sleep as it induces sedation by reducing irritability or excitement.",
-			 "descriptionAbbrev":  "Tranquilizer and Sleep aid",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 26,
-			 "effectName": "Antipyretic", //compName
-			 "conditionsTreated": ["Fever"],
- 			 "descriptionDetailed": "Some components in medical cannabis can be effectve in reducing or preventing fever. The most common antipyretics in the United States are ibuprofen and aspirin, which are used primarily as pain relievers.",
-			 "descriptionAbbrev":  "Reduce or prevent fever",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 27,
-			 "effectName": "Euphoriant", //compName
-			 "conditionsTreated": ["Depression", "Chronic Depression", "Stress", "Anxiety", "PTSD", "Lyme Disease"],
- 			 "descriptionDetailed": "Many strains of medical cannabis produce a sense of well-being commonly called Euphoria. This produces the happy, peaceful effect associated with cannabis.",
-			 "descriptionAbbrev":  "Treat depression",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 28,
-			 "effectName": "Antimalarial", //compName
-			 "conditionsTreated": ["Malaria"],
- 			 "descriptionDetailed": "Medical canabis has been used to prevent and treat malaria",
-			 "descriptionAbbrev":  "Treat Malaria",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 29,
-			 "effectName": "Antifungal", //compName
-			 "conditionsTreated": ["Athletes Foot", "Ringworm", "Thrush", "Cryptococcal Meningitis"],
- 			 "descriptionDetailed": "Medical cannabis has been used to treat and prevent fungal mycoses.",
-			 "descriptionAbbrev":  "Prevent fungal related conditions",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 30,
-			 "effectName": "Anti-tumor", //compName
-			 "conditionsTreated": ["Cancer", "Prostate Cancer"],
- 			 "descriptionDetailed": "High CBD strains of medical cannabis have been successfully used to stop abnormal tumor cell growth associated with some skin, brain and prostate cancers.",
-			 "descriptionAbbrev":  "Stop or slow tumor growth",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 31,
-			 "effectName": "Stimulates brain cell growth", //compName
-			 "conditionsTreated": ["Alzheimers", "Dementia", "Memory"],
- 			 "descriptionDetailed": "helps stimulate brain cell growth and memory functions",
-			 "descriptionAbbrev":  "Stimulate brain cell growth and memory function",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 32,
-			 "effectName": "Anti-prostate cancer", //compName
-			 "conditionsTreated": ["Prostate Cancer"],
- 			 "descriptionDetailed": "Helps treat and prevent prostate cancer",
-			 "descriptionAbbrev":  "Treat prostate cancer",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 33,
-			 "effectName": "Antinociceptive", //compName
-			 "conditionsTreated": ["Pain", "Chronic Pain","Lyme Disease"],
- 			 "descriptionDetailed": "helps prevent the sensation of pain",
-			 "descriptionAbbrev":  "Increase pain tolerance",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 34,
-			 "effectName": "Antibiotic", //compName
-			 "conditionsTreated": ["Infection"],
- 			 "descriptionDetailed": "destroys or slow down the growth of bacteria",
-			 "descriptionAbbrev":  "Destroy bacteria",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 35,
-			 "effectName": "Antimutagenic", //compName
-			 "conditionsTreated": ["Cancer"],
- 			 "descriptionDetailed": "Reduces or inhibits the rate of cell mutation",
-			 "descriptionAbbrev":  "Reduce cell mutation",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 36,
-			 "effectName": "Bronchodilator", //compName
-			 "conditionsTreated": ["Asthma", "COPD"],
- 			 "descriptionDetailed": "decreases resistance in the respiratory airway and increases airflow to the lungs",
-			 "descriptionAbbrev":  "Decrease resistance in the respiratory airway",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 37,
-			 "effectName": "Antineoplastic", //compName
-			 "conditionsTreated": ["Cancer", "Prostate Cancer"],
- 			 "descriptionDetailed": "prevents, inhibits or halts the development of tumors",
-			 "descriptionAbbrev":  "Slow down or inhibit tumors",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 38,
-			 "effectName": "Relieves Intraocular Pressure", //compName
-			 "conditionsTreated": ["Glaucoma"],
- 			 "descriptionDetailed": "Left untreated, high eye pressure can cause glaucoma and permanent vision loss in some individuals.",
-			 "descriptionAbbrev":  "Treat Glaucoma by reducing eye pressure",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 39,
-			 "effectName": "Antileishmanial", //compName
-			 "conditionsTreated": ["Sand flea Infection"],
- 			 "descriptionDetailed": "Every year, more than 2 million people worldwide suffer from leishmaniasis, a neglected tropical disease present in 88 countries. The disease is caused by the single-celled protozoan parasite species of the genus Leishmania, which is transmitted to humans by the bite of the sandfly.",
-			 "descriptionAbbrev":  "Treat sand flea infection",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 40,
-			 "effectName": "Antiviral", //compName
-			 "conditionsTreated": ["HCV"],
- 			 "descriptionDetailed": "Results suggest that modest cannabis use may offer symptomatic and virological benefit to some patients undergoing HCV treatment by helping them maintain adherence to the challenging medication regimen.",
-			 "descriptionAbbrev":  "Destroy viruses associated with HCV",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 41,
-			 "effectName": "Cytoprotective", //compName
-			 "conditionsTreated": ["Ulcers"],
- 			 "descriptionDetailed": "Fights ulcers by increasing mucosal protection.",
-			 "descriptionAbbrev":  "Treat ulcers by increasing mucosal protection",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 42,
-			 "effectName": "LO inhibitor", //compName
-			 "conditionsTreated": ["Asthma"],
- 			 "descriptionDetailed": "Inhibits lipoxygenase enzyme, can help asthma.",
-			 "descriptionAbbrev":  "Treat asthma conditions",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 43,
-			 "effectName": "5-a-reductase inhibitor", //compName
-			 "conditionsTreated": ["Prostate Cancer"],
- 			 "descriptionDetailed": "Surpresses dihydrotestosterone, treats benign prostatic hyperplasia - prostate.",
-			 "descriptionAbbrev":  "Treat benign prostate conditions",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 44,
-			 "effectName": "Appetite Stimulant", //compName
-			 "conditionsTreated": ["Anorexia", "Appetite Loss", "Alzheimers"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Stimulates Appetite",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 45,
-			 "effectName": "Anti gastric reflux", //compName
-			 "conditionsTreated": ["Gastric reflux", "Heartburn"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Protects intestinal tract lining",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 46,
-			 "effectName": "Anorectic", //compName
-			 "conditionsTreated": ["Weight Loss", "Appetite Suppression"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Suppresses appetite",
-			 "tags": [""],
-			 "imageUrl": ""
-			}, 
-			{"effectId": 47,
-			 "effectName": "Antihypoxia", //compName
-			 "conditionsTreated": ["Coronary Heart Disease"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Protect heart cells",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 48,
-			 "effectName": "Inhibit Neural Plaques", //compName
-			 "conditionsTreated": ["Alzheimers"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Slow neural plaque buildup",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 49,
-			 "effectName": "Antiglutamatergic", //compName
-			 "conditionsTreated": ["Alzheimers"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Cerebroprotective benefits",
-			 "tags": [""],
-			 "imageUrl": ""
-			},
-			{"effectId": 50,
-			 "effectName": "Relieve Behavioral Agitation", //compName
-			 "conditionsTreated": ["Alzheimers"],
- 			 "descriptionDetailed": "",
-			 "descriptionAbbrev":  "Relieve behavioral agitation",
-			 "tags": [""],
-			 "imageUrl": ""
+			 "imageUrl": "images/strains/mango-kush_100x100.jpg"
 			}
 		];
 
+/** end strain data **/
+
+		var strainNames = [
+			{"strainId": 1,
+			 "strainName": "Trainwreck", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/trainwreck_100x100.jpg"
+
+			},
+			{"strainId": 2,
+			 "strainName": "White Widow", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/white-widow_100x100.jpg"
+
+			},
+			{"strainId": 3,
+			 "strainName": "Sage", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/sage_100x100.jpg"
+
+			},
+			{"strainId": 4,
+			 "strainName": "Skywalker OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/skywalker-og_100x100.jpg"
+
+			},
+			{"strainId": 5,
+			 "strainName": "Permafrost", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/permafrost_100x100.jpg"
+
+			},
+			{"strainId": 6,
+			 "strainName": "Querkle", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/querkle_100x100.jpg"
+
+			},
+			{"strainId": 7,
+			 "strainName": "Papaya", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/papaya_100x100.jpg"
+
+			},
+			{"strainId": 8,
+			 "strainName": "Pennywise", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/pennywise_100x100.jpg"
+
+			},
+			{"strainId": 9,
+			 "strainName": "OG #18", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/og--18_100x100.jpg"
+
+			},
+			{"strainId": 10,
+			 "strainName": "OG Kush", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/og-kush_100x100.jpg"
+
+			},
+			{"strainId": 11,
+			 "strainName": "Canna-Tsu", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/canna-tsu_100x100.jpg"
+
+			},
+			{"strainId": 12,
+			 "strainName": "Nebula", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/nebula_100x100.jpg"
+
+			},
+			{"strainId": 13,
+			 "strainName": "XJ-13", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/xj-13_100x100.jpg"
+
+			},
+			{"strainId": 14,
+			 "strainName": "Yumbodlt", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/yumboldt_100x100.jpg"
+
+			},
+			{"strainId": 15,
+			 "strainName": "Vortex", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/vortex_100x100.jpg"
+
+			},
+			{"strainId": 16,
+			 "strainName": "Warlock", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/warlock_100x100.jpg"
+
+			},
+			{"strainId": 17,
+			 "strainName": "Strawberry Cough", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/strawberry-cough_100x100.jpg"
+
+			},
+			{"strainId": 18,
+			 "strainName": "Stardawg", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/stardawg_100x100.jpg"
+
+
+			},
+			{"strainId": 19,
+			 "strainName": "Strawberry", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/strawberry_100x100.jpg"
+
+			},
+			{"strainId": 20,
+			 "strainName": "Sour Diesel", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/sour-diesel_100x100.jpg"
+
+			},
+			{"strainId": 21,
+			 "strainName": "Shipwreck", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/Shipwreck_100x100.jpg"
+
+			},
+			{"strainId": 22,
+			 "strainName": "Skywalker", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/skywalker_100x100.jpg"
+
+			},
+			{"strainId": 23,
+			 "strainName": "Romulan", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/romulan_100x100.jpg"
+
+			},
+			{"strainId": 24,
+			 "strainName": "Purple Wreck", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/purple-wreck_100x100.jpg"
+
+			},
+			{"strainId": 25,
+			 "strainName": "Pineapple", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/pineapple_100x100.jpg"
+
+			},
+			{"strainId": 26,
+			 "strainName": "Purple Cheese", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/purple-cheese_100x100.jpg"
+
+			},
+			{"strainId": 27,
+			 "strainName": "ACDC", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/acdc_100x100.jpg"
+
+			},
+			{"strainId": 28,
+			 "strainName": "Shark Shock", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/shark-shock_100x100.jpg"
+
+			},
+			{"strainId": 29,
+			 "strainName": "Superman OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/superman-og_100x100.jpg"
+
+			},
+			{"strainId": 30,
+			 "strainName": "Thin Mint", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/thin-mint-girl-scout-cookies_100x100.jpg"
+
+			},
+			{"strainId": 31,
+			 "strainName": "Banana Diesel", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/banana-diesel_100x100.jpg"
+
+			},
+			{"strainId": 32,
+			 "strainName": "Candy OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/Candy-Og.jpg"
+
+			},
+			{"strainId": 33,
+			 "strainName": "Chem Valley Kush", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/chem-valley-kush_100x100.jpg"
+
+			},
+			{"strainId": 34,
+			 "strainName": "Confidential Cheese", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/confidential-cheese_100x100.jpg"
+
+			},
+			{"strainId": 35,
+			 "strainName": "Deadhead OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/deadhead-og_100x100.jpg"
+
+			},
+			{"strainId": 36,
+			 "strainName": "Diablo", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/diablo_100x100.jpg"
+
+			},
+			{"strainId": 37,
+			 "strainName": "Dutch Passion", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/dutch-passion.JPG"
+
+			},
+			{"strainId": 38,
+			 "strainName": "Eden OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/eden.jpg"
+
+			},
+			{"strainId": 39,
+			 "strainName": "Euphoria", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/euphoria_100x100.jpg"
+
+			},
+			{"strainId": 40,
+			 "strainName": "Fire Bomb", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/fire_bomb.jpg"
+
+			},
+			{"strainId": 41,
+			 "strainName": "Forum Cookies/GSC", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/forum_cookies.jpg"
+
+			},
+			{"strainId": 42,
+			 "strainName": "Gooey Wreck", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/gooey-wreck.jpg"
+
+			},
+			{"strainId": 43,
+			 "strainName": "Grapefruit Haze", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/grapefruit-haze_100x100.jpg"
+
+			},
+			{"strainId": 44,
+			 "strainName": "Green Crack", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/green-crack_100x100.jpg"
+
+			},
+			{"strainId": 45,
+			 "strainName": "Green Dream", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/green-dream_100x100.jpg"
+
+			},
+			{"strainId": 46,
+			 "strainName": "Green Thailand", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/thai_100x100.jpg"
+
+			},
+			{"strainId": 47,
+			 "strainName": "H-Train Wreck", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/H-trainwreck.jpg"
+
+			},
+			{"strainId": 48,
+			 "strainName": "Hawaiian Hulk", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/bruce-banner_100x100.jpg"
+
+			},
+			{"strainId": 49,
+			 "strainName": "Jack Chemdawg", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/chemdawg_100x100.jpg"
+
+			},
+			{"strainId": 50,
+			 "strainName": "Jack Herer", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/jack-herer_100x100.jpg"
+
+			},
+			{"strainId": 51,
+			 "strainName": "Jillybean", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/jillybean_100x100.jpg"
+
+			},
+			{"strainId": 52,
+			 "strainName": "Lamb's Bread", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/lamb-s-bread_100x100.jpg"
+
+			},
+			{"strainId": 53,
+			 "strainName": "Lemon Haze", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/lemon-haze_100x100.jpg"
+
+			},
+			{"strainId": 54,
+			 "strainName": "Lemon Head OG", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/super-lemon-og_100x100.jpg"
+
+			},
+			{"strainId": 55,
+			 "strainName": "Lulu", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/lulu200x160.jpg"
+
+			},
+			{"strainId": 56,
+			 "strainName": "Magic Jack", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/Magic-Jack-300.jpg"
+
+			},
+			{"strainId": 57,
+			 "strainName": "Mike Tyson", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/mike-tyson-marijuana-strain.jpg"
+
+			},
+			{"strainId": 58,
+			 "strainName": "Moon Candy", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/moon_candy.jpg"
+
+			},
+			{"strainId": 59,
+			 "strainName": "Moonshine Diesel", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/moonshine-Deisel.jpg"
+
+			},
+			{"strainId": 60,
+			 "strainName": "Northern Lights", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/northern-lights_100x100_7d43.jpg"
+
+			},
+			{"strainId": 61,
+			 "strainName": "Pineapple Express", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/pineapple-express_100x100.jpg"
+
+			},
+			{"strainId": 62,
+			 "strainName": "Platinum Trinity Kush", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/platinum_trinity_kush.jpg"
+
+			},
+			{"strainId": 63,
+			 "strainName": "Private Reserve OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/private_reserve_OG.jpg"
+
+			},
+			{"strainId": 64,
+			 "strainName": "Purple Haze", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/purple-haze_100x100.jpg"
+
+			},
+			
+			{"strainId": 65,
+			 "strainName": "Purple Urkle", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/purple-urkle_100x100.jpg"
+
+			},
+			{"strainId": 66,
+			 "strainName": "Raskal OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/raskal-og_100x100.jpg"
+
+			},
+			{"strainId": 67,
+			 "strainName": "Regulator OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/regulator-og.jpg"
+
+			},
+			{"strainId": 68,
+			 "strainName": "Saturn OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/saturn-og_100x100.jpg"
+
+			},
+			{"strainId": 69,
+			 "strainName": "Sherbet Cookies", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/sunset-sherbet_100x100.jpg"
+
+			},
+			{"strainId": 70,
+			 "strainName": "Sour Cherry", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/Sour_Cherry_Kush.jpg"
+
+			},
+			{"strainId": 71,
+			 "strainName": "Stratosphere", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/stratosphere.jpg"
+
+			},
+			{"strainId": 72,
+			 "strainName": "Super Grandaddy", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/Super_GDP.jpg"
+
+			},
+			{"strainId": 73,
+			 "strainName": "Tangerine", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/tangerine_100x100jpg"
+
+			},
+			{"strainId": 74,
+			 "strainName": "Tangilope", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/tangilope_100x100.jpg"
+
+			},
+			{"strainId": 75,
+			 "strainName": "Tropical OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/Tropical_OG.jpg"
+
+			},
+			{"strainId": 76,
+			 "strainName": "Ancient OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/ancient-og_100x100.jpg"
+
+			},
+			{"strainId": 77,
+			 "strainName": "Afghani", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/afghani_100x100_902b.jpg"
+
+			},
+			{"strainId": 78,
+			 "strainName": "Avi-Dekel", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/avi-dekel_100x100.jpg"
+
+			},
+			{"strainId": 79,
+			 "strainName": "Bull Rider", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/bull-rider-1498.jpg"
+
+			},
+			{"strainId": 80,
+			 "strainName": "Cannatonic", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cannatonic_100x100.jpg"
+
+			},
+			{"strainId": 81,
+			 "strainName": "Charlotte's Web", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/charlotte-s-web_100x100.jpg"
+
+			},
+			{"strainId": 82,
+			 "strainName": "G13 Haze", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/g13-haze_100x100.jpg"
+
+			},
+			{"strainId": 83,
+			 "strainName": "Great White Shark", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/great-white-shark_100x100.jpg"
+
+			},
+			{"strainId": 84,
+			 "strainName": "Harle-Tsu", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/harle-tsu_100x100.jpg"
+
+			},
+			{"strainId": 85,
+			 "strainName": "Harlequin", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/harlequin_100x100.jpg"
+
+			},
+			{"strainId": 86,
+			 "strainName": "Hog", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/hog_100x100.jpg"
+
+			},
+			{"strainId": 87,
+			 "strainName": "King's Kush", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/king-s-kush_100x100.jpg"
+
+			},
+			{"strainId": 88,
+			 "strainName": "Kosher Kush", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/kosher-kush_100x100.jpg"
+
+			},
+			{"strainId": 89,
+			 "strainName": "Lemon Larry OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/larry-og_100x100.jpg"
+
+			},
+			{"strainId": 90,
+			 "strainName": "Master Bubba", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/master-bubba_100x100jpg"
+
+			},
+			{"strainId": 91,
+			 "strainName": "Pineapple Thai", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/pineapple-thai_100x100.jpg"
+
+			},
+			{"strainId": 92,
+			 "strainName": "Sour Tsunami", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/sour-tsunami_100x100.jpg"
+
+			},
+			{"strainId": 93,
+			 "strainName": "The White", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/the-white_100x100.jpg"
+
+			},
+			{"strainId": 94,
+			 "strainName": "Valentine X", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/Valentine-X.jpg"
+
+			},
+			{"strainId": 95,
+			 "strainName": "White Fire Alien OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/white-fire-alien-og_100x100.jpg"
+
+			},
+			{"strainId": 96,
+			 "strainName": "Yoda OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/yoda-og_100x100.jpg"
+
+			},
+			{"strainId": 97,
+			 "strainName": "707 Headband", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/707-headband_100x100.jpg"
+
+			},
+			{"strainId": 98,
+			 "strainName": "Acapulco Gold", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/acapulco-gold_100x100.jpg"
+
+			},
+			{"strainId": 99,
+			 "strainName": "Alien OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/alien-og_100x100.jpg"
+
+			},
+			{"strainId": 100,
+			 "strainName": "Alien Rock Candy", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/alien-rock-candy_100x100.jpg"
+
+			},
+			{"strainId": 101,
+			 "strainName": "Amnesia Haze", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/amnesia-haze_100x100.jpg"
+
+			},
+			{"strainId": 102,
+			 "strainName": "ATF", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/alaskan-thunder-fuck_100x100.jpg"
+
+			},
+			{"strainId": 103,
+			 "strainName": "Bay Cookies", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/bay_cookies.jpg"
+
+			},
+			{"strainId": 104,
+			 "strainName": "Berry Queen", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/berryQueen.jpg"
+
+			},
+			{"strainId": 105,
+			 "strainName": "Berry White", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/berry-white_100x100.jpg"
+
+			},
+			{"strainId": 106,
+			 "strainName": "UW", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/uw_100x100.jpg"
+
+			},
+			{"strainId": 107,
+			 "strainName": "Blue Dream", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/blue-dream_100x100.jpg"
+
+			},
+			{"strainId": 108,
+			 "strainName": "Blue Moonshine", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/blue-moonshine_100x100.jpg"
+
+			},
+			{"strainId": 109,
+			 "strainName": "Blueberry Trainwreck", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/blueberry_100x100.jpg"
+
+			},
+			{"strainId": 110,
+			 "strainName": "Cannatonic #4", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cannatonic_100x100.jpg"
+
+			},
+			{"strainId": 111,
+			 "strainName": "Candy Jack", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/candy-jack_100x100.jpg"
+
+			},
+			{"strainId": 112,
+			 "strainName": "CandyLand", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/candyland_100x100.jpg"
+
+			},
+			{"strainId": 113,
+			 "strainName": "Cannalope Haze", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/cannalope-haze_100x100.jpg"
+
+			},
+			{"strainId": 114,
+			 "strainName": "Cataract Kush", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cataract-kush_100x100.jpg"
+
+			},
+			{"strainId": 115,
+			 "strainName": "Chemdawg", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/chemdawg_100x100.jpg"
+
+			},
+			{"strainId": 116,
+			 "strainName": "Cherry Pie", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cherry-pie_100x100.jpg"
+
+			},
+			{"strainId": 117,
+			 "strainName": "Chocolate Thai", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/chocolate-thai_100x100.jpg"
+
+			},
+			{"strainId": 118,
+			 "strainName": "Clear Lake", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/clear_lake.jpg"
+
+			},
+			{"strainId": 119,
+			 "strainName": "Dubtech", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/dubtech.jpg"
+
+			},
+			{"strainId": 120,
+			 "strainName": "Ghost OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/ghost-og_100x100.jpg"
+
+			},
+			{"strainId": 121,
+			 "strainName": "Grape Cookies", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/grape_Cookies.jpg"
+
+			},
+			{"strainId": 120,
+			 "strainName": "Grape Kool Aid", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/Purple Wreck-578x433.jpg"
+
+			},
+			{"strainId": 121,
+			 "strainName": "Jupiter Kush", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/jupiter-kush_100x100.jpg"
+
+			},
+			{"strainId": 122,
+			 "strainName": "L.A. Confidential", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/la-confidential_100x100.jpg"
+
+			},
+			{"strainId": 123,
+			 "strainName": "Lemon Jack", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/lemon-jack_100x100.jpg"
+
+			},
+			{"strainId": 124,
+			 "strainName": "Lemon OG Kush", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/lemon-og-kush_100x100.jpg"
+
+			},
+			{"strainId": 125,
+			 "strainName": "Mad Max", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/MADMAX.jpg"
+
+			},
+			{"strainId": 126,
+			 "strainName": "Mafia OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/mafia-og.jpg"
+
+			},
+			{"strainId": 127,
+			 "strainName": "Mango Maui", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/mango-maui-578x385.jpg"
+
+			},
+			{"strainId": 128,
+			 "strainName": "May Weather Kush", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/May-weather-kush.jpg"
+
+			},
+			{"strainId": 129,
+			 "strainName": "Phantom OG", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/phantom-og_100x100.jpg"
+
+			},
+			{"strainId": 130,
+			 "strainName": "Pineapple Hogsbreath", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/hog-s-breath_100x100.jpg"
+
+			},
+			{"strainId": 131,
+			 "strainName": "Silverback Gorilla", 
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/silverback-gorilla_100x100.jpg"
+
+			},
+			{"strainId": 132,
+			 "strainName": "Sugar Plum", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/sugar-plum_100x100.jpg"
+
+			},
+			{"strainId": 133,
+			 "strainName": "Super Lemon Haze", 
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/super-lemon-haze_100x100.jpg"
+
+			},
+			{"strainId": 134,
+			 "strainName": "Lemon Marmalade", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/acapulco-gold_100x100.jpg"
+
+			},
+			{"strainId": 135,
+			 "strainName": "White Fire OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/white-fire-og_100x100.jpg"
+
+			},
+			{"strainId": 138,
+			 "strainName": "White Walker OG", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/whitewalker-og_100x100.jpg"
+
+			},
+			{"strainId": 139,
+			 "strainName": "Cherry Bomb", 
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cherry-bomb_100x100.jpg"
+
+			},
+			{"strainId": 140,
+			 "strainName": "DJ Short Blueberry",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/dj-short-blueberry_100x100.jpg"
+
+			},
+			{"strainId": 141,
+			 "strainName": "El Alquimista",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/El-Alquimista.jpg"
+
+			},
+			{"strainId": 142,
+			 "strainName": "Godfather OG",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/godfather-og_100x100.jpg"
+
+			},
+			{"strainId": 143,
+			 "strainName": "Herijuana",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/herijuana_100x100.jpg"
+
+			},
+			{"strainId": 144,
+			 "strainName": "Lavender",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/lavender_100x100.jpg"
+
+			},
+			{"strainId": 145,
+			 "strainName": "Purple Coma",
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/purple-coma.jpg"
+
+			},
+			{"strainId": 146,
+			 "strainName": "Purple Passion",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/purple-passion_100x100.jpg"
+
+			},
+			{"strainId": 147,
+			 "strainName": "Sour Bubble",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/sour-bubble_100x100.jpg"
+
+			},
+			{"strainId": 148,
+			 "strainName": "Sour Dub",
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/SourDub.jpg"
+
+			},
+			{"strainId": 149,
+			 "strainName": "Strawberry Mist",
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/Kali-Mist-Bud-Closeup.jpg"
+
+			},
+			{"strainId": 150,
+			 "strainName": "LA Chocolat",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/DNA_Genetics_Seeds_-_LA_Chocolat.jpg"
+
+			},
+			{"strainId": 151,
+			 "strainName": "Afghani Bullrider",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/afghani-bullrider_100x100.jpg"
+
+			},
+			{"strainId": 152,
+			 "strainName": "Afgoo",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/afgoo_100x100.jpg"
+
+			},
+			{"strainId": 153,
+			 "strainName": "Afgooey",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/afgooey_100x100.jpg"
+
+			},
+			{"strainId": 154,
+			 "strainName": "AK-47",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/ak-47_100x100.jpg"
+
+			},
+			{"strainId": 155,
+			 "strainName": "AK-48",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/ak-48_100x100.jpg"
+
+			},
+			{"strainId": 156,
+			 "strainName": "Kalashnikova",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/kalashnikova_100x100.jpg"
+
+			},
+			{"strainId": 157,
+			 "strainName": "Black Buddah",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/Black-Budha.jpg"
+
+			},
+			{"strainId": 158,
+			 "strainName": "OG Cheese",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/og-cheese_100x100.jpg"
+
+			},
+			{"strainId": 159,
+			 "strainName": "Mercury OG",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/mercury-og_100x100.jpg"
+
+			},
+			{"strainId": 160,
+			 "strainName": "Silver Surfer",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/silver-surfer_100x100.jpg"
+
+			},
+			{"strainId": 161,
+			 "strainName": "Sour OG",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/sour-og_100x100.jpg"
+
+			},
+			{"strainId": 162,
+			 "strainName": "Mars OG",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/mars-og_100x100.jpg"
+
+			},
+			{"strainId": 163,
+			 "strainName": "White Rhino",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/white-rhino_100x100.jpg"
+
+			},
+			{"strainId": 164,
+			 "strainName": "Green Queen",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/green-queen_100x100.jpg"
+
+			},
+			{"strainId": 165,
+			 "strainName": "Green Dynamite",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/dynamite_100x100.jpg"
+
+			},
+			{"strainId": 166,
+			 "strainName": "J1",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/j1_100x100.jpg"
+
+			},
+			{"strainId": 167,
+			 "strainName": "Kryptonite",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/kryptonite_100x100.jpg"
+
+			},
+			{"strainId": 168,
+			 "strainName": "Master Kush",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/master-kush_100x100.jpg"
+
+			},
+			{"strainId": 169,
+			 "strainName": "Black Magic Kush",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/black-magic-kush.jpg"
+
+			},
+			{"strainId": 170,
+			 "strainName": "Blackberry Kush",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/blackberry-kush_100x100.jpg"
+
+			},
+			{"strainId": 171,
+			 "strainName": "Blue Diesel",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/blue-diesel_100x100.jpg"
+
+			}, 
+			{"strainId": 172,
+			 "strainName": "Blue Haze",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/blue-haze_100x100.jpg"
+
+			},
+			{"strainId": 173,
+			 "strainName": "Brutus OG",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/brutus-og-3.png"
+
+			},
+			{"strainId": 174,
+			 "strainName": "Bubba Kush",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/bubba-kush_100x100.jpg"
+
+			},
+			{"strainId": 175,
+			 "strainName": "Cheese",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cheese_100x100.jpg"
+
+			}, 
+			{"strainId": 176,
+			 "strainName": "Cinderella 99",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/cinderella-99_100x100.jpg"
+
+			}, 
+			{"strainId": 177,
+			 "strainName": "Diablo Haze",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/diablo_100x100.jpg"
+
+			},
+			{"strainId": 178,
+			 "strainName": "Diamond OG",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/diamond-og_100x100.jpg"
+
+			},
+			{"strainId": 179,
+			 "strainName": "Grandaddy Purple",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/grandaddy-purple.jpg"
+
+			},
+			{"strainId": 180,
+			 "strainName": "Fire OG",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/fire-og_100x100.jpg"
+
+			}, 
+			{"strainId": 181,
+			 "strainName": "GirlScout Cookies",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/girl-scout-cookies_100x100.jpg"
+
+			},
+			{"strainId": 182,
+			 "strainName": "Grape Ape",
+			 "strainType": "Indica",
+			 "imageUrl": "images/strains/grape-ape_100x100.jpg"
+
+			},
+			{"strainId": 183,
+			 "strainName": "Headband",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/headband_100x100.jpg"
+
+			}, 
+			{"strainId": 184,
+			 "strainName": "Island Sweet Skunk",
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/island-sweet-skunk_100x100.jpg"
+
+			},
+			{"strainId": 185,
+			 "strainName": "LA Kush",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/la-kush_100x100.jpg"
+
+			},
+			{"strainId": 186,
+			 "strainName": "Gorilla Glue",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/gorilla-glue--4_100x100.jpg"
+
+			},
+			{"strainId": 187,
+			 "strainName": "Jack Frost",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/jack-frost_100x100.jpg"
+
+			},
+			{"strainId": 188,
+			 "strainName": "Kali Mist",
+			 "strainType": "Sativa",
+			 "imageUrl": "images/strains/kali-mist_100x100.jpg"
+
+			},
+		 	{"strainId": 189,
+			 "strainName": "NY Sour Diesel",
+			 "strainType": "Hybrid",
+			 "imageUrl": "images/strains/nyc-sour-diesel.jpg"
+
+			},
+		 	{"strainId": 190,
+		 	"strainName": "Skunk #1",
+		 	"strainType": "Hybrid",
+		 	"imageUrl": "images/strains/skunk--1_100x100.jpg"
+
+			},
+			{"strainId": 191,
+			 	"strainName": "Snowcap",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/snowcap_100x100.jpg"
+
+			},
+			{"strainId": 192,
+			 	"strainName": "Super Silver Haze",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/super-silver-haze_100x100.jpg"
+
+			},
+			{"strainId": 193,
+			 	"strainName": "Neptune OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/neptune-og_100x100.jpg"
+
+			},
+			{"strainId": 194,
+			 	"strainName": "Organic OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/organic-og-kush.JPG"
+
+			},
+			{"strainId": 195,
+			 	"strainName": "Kandy Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/kandy-kush_100x100.jpg"
+
+			},
+			{"strainId": 196,
+			 	"strainName": "King Louis XIII",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/king-louis-xiii_100x100.jpg"
+
+			},
+			{"strainId": 197,
+			 	"strainName": "White Kryptonite",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/white-kryptonite_100x100.jpg"
+
+			},
+			{"strainId": 198,
+			 	"strainName": "Legend OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/kryptonite_100x100.jpg"
+
+			},
+			{"strainId": 199,
+			 	"strainName": "Lemon Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/lemon-diesel_100x100.jpg"
+
+			},
+			{"strainId": 200,
+			 	"strainName": "Lemon Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/lemon-kush_100x100.jpg"
+
+			},
+			{"strainId": 201,
+			 	"strainName": "Blackwater",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/blackwater_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 202,
+			 	"strainName": "UltraViolet OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/UltravioletOG.jpg"
+			 	
+			}, 
+			{"strainId": 203,
+			 	"strainName": "Face Off OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/face-off-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 204,
+			 	"strainName": "Citrix",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/Citrix.jpg"
+			 	
+			},
+			{"strainId": 205,
+			 	"strainName": "Grapefruit",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/grapefruit_100x100.jpg"
+			 	
+			},
+			{"strainId": 206,
+			 	"strainName": "Chocolate Kush",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/chocolate-kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 207,
+			 	"strainName": "Chocolate Chunk",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/chocolate-chunk_100x100.jpg"
+			 	
+			},
+			{"strainId": 208,
+			 	"strainName": "Chocolope",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/chocolope_100x100.jpg"
+			 	
+			},
+			{"strainId": 209,
+			 	"strainName": "Cinex",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/cinex_100x100.jpg"
+			 	
+			},
+			{"strainId": 210,
+			 	"strainName": "Shiskaberry",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/shishkaberry_100x100.jpg"
+			 	
+			},
+			{"strainId": 211,
+			 	"strainName": "R4",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/R4-200x160.jpg"
+			 	
+			},
+			{"strainId": 212,
+			 	"strainName": "Super Sweet",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/super-sweet_100x100.jpg"
+			 	
+			},
+			{"strainId": 213,
+			 	"strainName": "Sweet Lavender Diesel",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/sweet-lavender-diesel.jpg"
+			 	
+			},
+			{"strainId": 214,
+			 	"strainName": "Cotton Candy Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/cotton-candy-kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 215,
+			 	"strainName": "Larry OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/larry-og_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 216,
+			 	"strainName": "Flo",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/flo_100x100.jpg"
+			 	
+			},
+			{"strainId": 217,
+			 	"strainName": "Obama Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/obama-kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 218,
+			 	"strainName": "Orange Crush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/orange-crush_100x100.jpg"
+			 	
+			},
+			{"strainId": 219,
+			 	"strainName": "Pink Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/pink-kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 220,
+			 	"strainName": "Red Dragon",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/red-dragon_100x100.jpg"
+			 	
+			},
+			{"strainId": 221,
+			 	"strainName": "Purple Sour Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/purple-sour-diesel_100x100.jpg"
+			 	
+			},
+			{"strainId": 222,
+			 	"strainName": "Dream Queen",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/dream-queen_100x100.jpg"
+			 	
+			},
+			{"strainId": 223,
+			 	"strainName": "Willy's Wonder",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/willy-s-wonder_100x100.jpg"
+			 	
+			},
+			{"strainId": 224,
+			 	"strainName": "Jean Guy",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/jean-guy_100x100.jpg"
+			 	
+			},
+			{"strainId": 225,
+			 	"strainName": "Orange Bud",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/orange-bud_100x100.jpg"
+			 	
+			},
+			{"strainId": 226,
+			 	"strainName": "Fucking Incredible",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/fucking-incredible_100x100.jpg"
+			 	
+			},
+			{"strainId": 227,
+			 	"strainName": "Sage N Sour",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/sage-n-sour_100x100.jpg"
+			 	
+			},
+			{"strainId": 228,
+			 	"strainName": "Bubba OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/bubba-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 229,
+			 	"strainName": "Hawaiian Snow",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
+			 	
+			},
+			{"strainId": 230,
+			 	"strainName": "Dr. Who",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
+			 	
+			},
+			{"strainId": 231,
+			 	"strainName": "Pineapple Chunk",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/pineapple-chunk_100x100.jpg"
+			 	
+			},
+			{"strainId": 232,
+			 	"strainName": "Pot of Gold",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/pot-of-gold_100x100.jpg"
+			 	
+			},
+			{"strainId": 233,
+			 	"strainName": "Tangerine Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/tangerine-kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 234,
+			 	"strainName": "Black Cherry Soda",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/black-cherry-soda_100x100.jpg"
+			 	
+			},
+			{"strainId": 235,
+			 	"strainName": "Qrazy Train",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/qrazy-train_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 236,
+			 	"strainName": "Death Star OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/death-star-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 237,
+			 	"strainName": "Blueberry Cheesecake",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/blueberry-cheesecake_100x100.jpg"
+			 	
+			},
+			{"strainId": 238,
+			 	"strainName": "Blue Crack",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/blue-crack_100x100.jpg"
+			 	
+			},
+			{"strainId": 239,
+			 	"strainName": "Bio-Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/bio-diesel_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 240,
+			 	"strainName": "Power Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/power-kush_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 241,
+			 	"strainName": "Panama Red",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/panama-red_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 242,
+			 	"strainName": "Purple Dragon",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/purple-dragon_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 243,
+			 	"strainName": "King Kong",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/king-kong_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 244,
+			 	"strainName": "Church OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/church-og_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 245,
+			 	"strainName": "Purple Arrow",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/purple-arrow_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 246,
+			 	"strainName": "Pandora's Box",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/pandora-s-box_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 247,
+			 	"strainName": "Abusive OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/abusive-og_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 248,
+			 	"strainName": "Platinum Purple Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/Platinum-Purple-Kush_100x100.jpg"
+			 	
+			},
+			{"strainId": 249,
+			 	"strainName": "Black Tuna",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/black-tuna_100x100.jpg"
+			 	
+			},
+			{"strainId": 250,
+			 	"strainName": "Charlie Sheen",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/charlie-sheen_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 251,
+			 	"strainName": "Rainbow",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/rainbow_100x100.jpg"
+			 	
+			},
+			{"strainId": 252,
+			 	"strainName": "Caramelicious",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/caramelicious_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 253,
+			 	"strainName": "Sour Cream",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/sour-cream_100x100.jpg"
+			 	
+			},
+			{"strainId": 254,
+			 	"strainName": "Apollo 11",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/apollo-11_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 255,
+			 	"strainName": "Green Crack Extreme",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/green-crack-extreme_100x100.jpg"
+			 	
+			},
+			{"strainId": 256,
+			 	"strainName": "Sour Cheese",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/sour-cheese_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 257,
+			 	"strainName": "Venom OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/venom-og_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 258,
+			 	"strainName": "Platinum Wreck",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/platinum_kush_indica.jpg"
+			 	
+			}, 
+			{"strainId": 259,
+			 	"strainName": "Deep Purple",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/deep-purple_100x100.jpg"
+			 	
+			},
+			{"strainId": 261,
+			 	"strainName": "Purple Afghani",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/purple-afghani_100x100.jpg"
+			 	
+			},
+			{"strainId": 262,
+			 	"strainName": "Heavy Duty Fruity",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/heavy-duty-fruity_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 263,
+			 	"strainName": "The Truth",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/the-truth_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 264,
+			 	"strainName": "Triple Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/triple-diesel_100x100.jpg"
+			 	
+			},
+			{"strainId": 265,
+			 	"strainName": "Grape Crush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/grape-crush_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 266,
+			 	"strainName": "Holland's Hope",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/hollands-hope_100x100.jpg"
+			 	
+			},
+			{"strainId": 267,
+			 	"strainName": "Black Cherry OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/black-cherry-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 268,
+			 	"strainName": "Blue Frost",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/blue-frost_100x100.jpg"
+			 	
+			},
+			{"strainId": 269,
+			 	"strainName": "BC Sweet Tooth",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/bc-sweet-tooth_100x100.jpg"
+			 	
+			},
+			{"strainId": 270,
+			 	"strainName": "Pink Panther",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/pink-panther_100x100.jpg"
+			 	
+			},
+			{"strainId": 271,
+			 	"strainName": "Orange Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/orange-diesel_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 272,
+			 	"strainName": "Watermelon",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/watermelon_100x100.jpg"
+			 	
+			},
+			{"strainId": 273,
+			 	"strainName": "OG Wreck",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/og-wreck_100x100.jpg"
+			 	
+			},
+			{"strainId": 274,
+			 	"strainName": "Green Hornet",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/green-hornet_100x100.jpg"
+			 	
+			},
+			{"strainId": 275,
+			 	"strainName": "Purple Ice",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/purple-ice_100x100.jpg"
+			 	
+			},
+			{"strainId": 276,
+			 	"strainName": "Blue Knight",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/blue-knight_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 277,
+			 	"strainName": "Scooby Snacks",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/scooby-snacks_100x100.jpg"
+			 	
+			},
+			{"strainId": 278,
+			 	"strainName": "Afghan Diesel",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/afghan-diesel_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 279,
+			 	"strainName": "Tigers Milk",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/tiger-s-milk_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 280,
+			 	"strainName": "Mexican",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/mexican_100x100.jpg"
+			 	
+			},
+			{"strainId": 281,
+			 	"strainName": "Lifesaver",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/lifesaver_100x100.jpg"
+			 	
+			},
+			{"strainId": 282,
+			 	"strainName": "Freezeland",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/freezeland_100x100.jpg"
+			 	
+			},
+			{"strainId": 283,
+			 	"strainName": "Critical Sensi Star",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/critical-sensi-star_100x100.jpg"
+			 	
+			},
+			{"strainId": 284,
+			 	"strainName": "Rugburn OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/rug-burn-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 285,
+			 	"strainName": "White Lightning",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/white-lightning_100x100.jpg"
+			 	
+			},
+			{"strainId": 286,
+			 	"strainName": "Black Betty",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/black-betty_100x100.jpg"
+			 	
+			},
+			{"strainId": 287,
+			 	"strainName": "The Black",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/the-black_100x100.jpg"
+			 	
+			},
+			{"strainId": 288,
+			 	"strainName": "The Black",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/pineapple-jack_100x100.jpg"
+			 	
+			},
+			{"strainId": 289,
+			 	"strainName": "Barbara Bud",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/barbara-bud_100x100.jpg"
+			 	
+			},
+			{"strainId": 290,
+			 	"strainName": "Wappa",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/wappa_100x100.jpg"
+			 	
+			},
+			{"strainId": 291,
+			 	"strainName": "Kilimanjaro",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/kilimanjaro_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 292,
+			 	"strainName": "Mendo Purps",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/mendocino-purps_100x100.jpg"
+			 	
+			},
+			{"strainId": 293,
+			 	"strainName": "White Skunk",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/white-skunk.jpg"
+			 	
+			},
+			{"strainId": 294,
+			 	"strainName": "Jamaican",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/jamaican_100x100.jpg"
+			 	
+			},
+			{"strainId": 295,
+			 	"strainName": "White Elephant",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/white-elephant_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 296,
+			 	"strainName": "Medibud",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/medibud_100x100.jpg"
+			 	
+			},
+			{"strainId": 297,
+			 	"strainName": "Dream Berry",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/dream-berry_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 298,
+			 	"strainName": "Belladonna",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/belladonna_100x100.jpg"
+			 	
+			},
+			{"strainId": 299,
+			 	"strainName": "Jacky White",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/jacky-white_100x100.jpg"
+			 	
+			},
+			{"strainId": 300,
+			 	"strainName": "Remedy",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/remedy_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 301,
+			 	"strainName": "Conspiracy Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/conspiracy-kush_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 302,
+			 	"strainName": "Night Terror OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/night-terror-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 303,
+			 	"strainName": "U2 Kush",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/u2-kush_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 304,
+			 	"strainName": "BSC",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/boy-scout-cookies_100x100.jpg"
+			 	
+			},
+			{"strainId": 305,
+			 	"strainName": "Purple Crack",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/purple-crack_100x100.jpg"
+			 	
+			},
+			{"strainId": 306,
+			 	"strainName": "Banana Candy",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/banana-candy_100x100.jpg"
+			 	
+			},
+			{"strainId": 307,
+			 	"strainName": "Love Potion #9",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/love-potion--9_100x100.jpg"
+			 	
+			},
+			{"strainId": 308,
+			 	"strainName": "Omega Dawg",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/omega-dawg_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 309,
+			 	"strainName": "Super Lemon OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/super-lemon-og_100x100.jpg"
+			 	
+			},
+			{"strainId": 310,
+			 	"strainName": "Elvis",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/elvis_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 311,
+			 	"strainName": "Silver Bubble",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/silver-bubble_100x100.jpg"
+			 	
+			},
+			{"strainId": 312,
+			 	"strainName": "Cindy White",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/cindy-white_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 313,
+			 	"strainName": "Gucci OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/gucci-og_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 314,
+			 	"strainName": "Sourlope",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/sourlope_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 315,
+			 	"strainName": "Buddah Tahoe",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/buddha-tahoe_100x100.jpg"
+			 	
+			},
+			{"strainId": 316,
+			 	"strainName": "Hawaiian Dream",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/hawaiian-dream_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 317,
+			 	"strainName": "Frostbite",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/frostbite_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 318,
+			 	"strainName": "Goldberry",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/goldberry_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 319,
+			 	"strainName": "Sonoma Coma",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/sonoma-coma_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 320,
+			 	"strainName": "Seattle Blue",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/seattle-blue_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 321,
+			 	"strainName": "Northern Berry",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/northern-berry_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 322,
+			 	"strainName": "OG's Pearl",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/og-s-pearl_100x100.jpg"
+			 	
+			},
+			{"strainId": 323,
+			 	"strainName": "Colorado Chem",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/colorado-chem_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 324,
+			 	"strainName": "Enigma",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/enigma_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 325,
+			 	"strainName": "Black 84",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/black--84_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 326,
+			 	"strainName": "Dr. Funk",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/Dr-Funk-200x160.jpg"
+			 	
+			}, 
+			{"strainId": 327,
+			 	"strainName": "Grand Doggy Purps",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/grand-doggy-purps_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 328,
+			 	"strainName": "Yummy",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/yummy_100x100.jpg"
+			 	
+			},
+			{"strainId": 329,
+			 	"strainName": "Haole",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/haole_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 330,
+			 	"strainName": "Incredible Bulk",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/incredible-bulk_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 331,
+			 	"strainName": "Eran Almog",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/eran-almog_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 332,
+			 	"strainName": "Catfish",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/catfish_100x100.jpg"
+			 	
+			},
+			{"strainId": 333,
+			 	"strainName": "Lions Gate",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/lions-gate_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 334,
+			 	"strainName": "Master Skunk",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/master-skunk_100x100.jpg"
+			 	
+			},
+			{"strainId": 335,
+			 	"strainName": "Ringo's Gift",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/ringo-s-gift_100x100.jpg"
+			 	
+			},
+			{"strainId": 336,
+			 	"strainName": "Sapphire Star",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/sapphire-star_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 337,
+			 	"strainName": "Jesus",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/jesus_100x100.jpg"
+			 	
+			},
+			{"strainId": 338,
+			 	"strainName": "Chem Scout",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/chem-scout_100x100.jpg"
+			 	
+			},
+			{"strainId": 339,
+			 	"strainName": "Ramona OG",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/chem-scout_100x100.jpg"
+			 	
+			},
+			{"strainId": 340,
+			 	"strainName": "OG Strawberry",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/og-strawberry_100x100.jpg"
+			 	
+			},
+			{"strainId": 341,
+			 	"strainName": "Gorilla Glue #4",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/gorilla-glue--4_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 342,
+			 	"strainName": "Holy Grail Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/holy-grail-kush_100x100_733a.jpg"
+			 	
+			}, 
+			{"strainId": 343,
+			 	"strainName": "Purple Nepal",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/purple-nepal_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 344,
+			 	"strainName": "Super Jack",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/super-jack_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 345,
+			 	"strainName": "Clinical OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/og-kush2_100x100.jpg"
+			 	
+			}, 
+			{"strainId": 346,
+			 	"strainName": "Diesel Cookies",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/girl-scout-cookies2_100x100.jpg"
+			}, 
+			{"strainId": 347,
+			 	"strainName": "Dreamweaver",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/dreamweaver.jpg"
+			}, 
+			{"strainId": 348,
+			 	"strainName": "Ogre",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/ogre_100x100.jpg"
+			}, 
+			{"strainId": 349,
+			 	"strainName": "SFV OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/sfv-og_100x100.jpg"
+			},
+			{"strainId": 350,
+			 	"strainName": "The Flav",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/the-flav_100x100.jpg"
+			},
+			{"strainId": 351,
+			 	"strainName": "God's Gift",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/god-s-gift_100x100.jpg"
+			}, 
+			{"strainId": 352,
+			 	"strainName": "Amnesia",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/amnesia_100x100.jpg"
+			}, 
+			{"strainId": 353,
+			 	"strainName": "A-Train",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/a-train_100x100.jpg"
+			}, 
+			{"strainId": 354,
+			 	"strainName": "Sugar Black Rose",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/sugar-black-rose_100x100.jpg"
+			}, 
+			{"strainId": 355,
+			 	"strainName": "Ice Queen",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/ice-queen_100x100.jpg"
+			}, 
+			{"strainId": 356,
+			 	"strainName": "Midnight Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/midnight_100x100.jpg"
+			}, 
+			{"strainId": 357,
+			 	"strainName": "Black Velvet",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/Black-Velvet_100x100.jpg"
+			},
+			{"strainId": 358,
+			 	"strainName": "Jamaican Dream",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/jamaican-dream_100x100.jpg"
+			}, 
+			{"strainId": 359,
+			 	"strainName": "California Grapefruit",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/california-grapefruit_100x100.jpg"
+			}, 
+			{"strainId": 360,
+			 	"strainName": "Scott's OG",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/scott-s-og_100x100.jpg"
+			}, 
+			{"strainId": 361,
+			 	"strainName": "Hawaiian Sativa",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/hawaiian-sativa_100x100.jpg"
+			}, 
+			{"strainId": 362,
+			 	"strainName": "Wet Dream",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/wet-dream_100x100.jpg"
+			},
+			{"strainId": 363,
+			 	"strainName": "Sublime",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/sublime_100x100_46fa.jpg"
+			},
+			{"strainId": 364,
+			 	"strainName": "Purple Voodoo",
+			 	"strainType": "hyrbrid",
+			 	"imageUrl": "images/strains/purple-voodoo_100x100_1bb5.jpg"
+			},
+			{"strainId": 365,
+			 	"strainName": "Fire Haze",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/fire-haze_100x100_0ff8.jpg"
+			},
+			{"strainId": 366,
+			 	"strainName": "Space Jill",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/space-jill_100x100_4026.jpg"
+			},
+			{"strainId": 367,
+			 	"strainName": "Maui Waui",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/maui-waui_100x100_89bb.jpg"
+			},
+			{"strainId": 368,
+			 	"strainName": "Golden Goat",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/hawaiian-snow_100x100.jpg"
+			},
+			{"strainId": 369,
+			 	"strainName": "Laughing Buddha",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/laughing-buddha_100x100_ebef.jpg"
+			},
+			{"strainId": 370,
+			 	"strainName": "Durban Poison",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/durban-poison_100x100_09a5.jpg"
+			},
+			{"strainId": 371,
+			 	"strainName": "Mob Boss",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/mob-boss_100x100_5cd4.jpg"
+			},
+			{"strainId": 372,
+			 	"strainName": "Banana Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/banana-kush_100x100_9b04.jpg"
+			},
+			{"strainId": 373,
+			 	"strainName": "Black Widow",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/black-widow_100x100.jpg"
+			},
+			{"strainId": 374,
+			 	"strainName": "Jack the Ripper",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/jack-the-ripper_100x100.jpg"
+			},
+			{"strainId": 375,
+			 	"strainName": "Purple Thai",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/purple-thai_100x100.jpg"
+			}, 
+			{"strainId": 376,
+			 	"strainName": "Silver Haze",
+			 	"strainType": "Sativa",
+			 	"imageUrl": "images/strains/silver-haze_100x100.jpg"
+			},
+			{"strainId": 377,
+			 	"strainName": "Northern Lights Blue",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/blue-lights_100x100.jpg"
+			},
+			{"strainId": 378,
+			 	"strainName": "Mango Kush",
+			 	"strainType": "Hybrid",
+			 	"imageUrl": "images/strains/mango-kush_100x100.jpg"
+			}
+		]; 
+/** end strain name data **/
+
+/** api vars and path definitions **/
 		//service api
-		var productUrl = "/api/products";
-		var effectUrl = "/api/effects";
-		var temperatureUrl = "/api/temperatures";
-		var modeUrl = "/api/modes";
+		/**var productUrl = "/api/products";**/
+		/**var effectUrl = "/api/effects";**/
+		/**var temperatureUrl = "/api/temperatures";**/
+		/**var modeUrl = "/api/modes";**/
+		/**var strainUrl = "/api/plantLog";**/
+		var plantLogUrl = "/api/plantLog";
+		var phaseUrl = "/api/phases";
+		var feedStylesUrl = "/api/feedStyles";
+		var foxfarmScheduleUrl = "/api/foxfarmScheduleUrl";
+		var growthPhaseUrl = "/api/growthPhaseUrl";
+		var weeklyScheduleUrl = "/api/weeklySchedule";
 		var strainUrl = "/api/strains";
 		var strainNameUrl = "/api/strainNames";
-		var tasteUrl = "/api/tastes";
-		var recEffectUrl = "/api/recEffects";
+		/**var tasteUrl = "/api/tastes";**/
+		/**var recEffectUrl = "/api/recEffects";**/
 
 		//for strain details
 		var detailsUrl = "/api/details";
-		var detailModeUrl = "/api/detailModes";
-		var vapeTempUrl = "/api/vapeTemps";
-		var vTipUrl = "/api/vTips";
+		/**var detailModeUrl = "/api/detailModes";**/
+		/**var vapeTempUrl = "/api/vapeTemps";**/
+		/**var vTipUrl = "/api/vTips";**/
 
-		$httpBackend.whenGET(productUrl).respond(products);
-		$httpBackend.whenGET(temperatureUrl).respond(temperatures);
-		$httpBackend.whenGET(modeUrl).respond(modes);
-		$httpBackend.whenGET(effectUrl).respond(effects);
+		/**$httpBackend.whenGET(productUrl).respond(products); **/
+		/**$httpBackend.whenGET(temperatureUrl).respond(temperatures);**/
+		/**$httpBackend.whenGET(modeUrl).respond(modes);**/
+		/**$httpBackend.whenGET(effectUrl).respond(effects);**/
+		$httpBackend.whenGET(weeklySchedule).respond(weeklySchedule);
+		$httpBackend.whenGET(growthPhaseUrl).respond(growthPhase);
+		$httpBackend.whenGET(foxfarmScheduleUrl).respond(foxfarmSchedule);
+		$httpBackend.whenGET(feedStylesUrl).respond(feedStyles);
+		$httpBackend.whenGET(phaseUrl).respond(phases);
+		$httpBackend.whenGET(plantLogUrl).respond(plantLog);
 		$httpBackend.whenGET(strainUrl).respond(strains);
 		$httpBackend.whenGET(strainNameUrl).respond(strainNames);
-		$httpBackend.whenGET(tasteUrl).respond(tastes);
-		$httpBackend.whenGET(recEffectUrl).respond(recEffects);
+		/**$httpBackend.whenGET(tasteUrl).respond(tastes);**/
+		/**$httpBackend.whenGET(recEffectUrl).respond(recEffects);**/
 
 		//for strain details
 		$httpBackend.whenGET(detailsUrl).respond(strains);
-		$httpBackend.whenGET(detailModeUrl).respond(detailModes);
-		$httpBackend.whenGET(vapeTempUrl).respond(vapeTemps);
-		$httpBackend.whenGET(vTipUrl).respond(vTips);
+		/**$httpBackend.whenGET(detailModeUrl).respond(detailModes);**/
+		/**$httpBackend.whenGET(vapeTempUrl).respond(vapeTe/
+		$httpBackend.whenGET(growthPhaseUrl).respond();**hase);/**$httpBackend.whenGET(vTipUrl).respond(vTips);**/
+
 
 		var editingRegex = new RegExp(strainUrl + "/[0-9][0-9]*", '');
 
