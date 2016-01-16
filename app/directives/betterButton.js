@@ -7,79 +7,59 @@
 			return {
 		      restrict: 'AE',
 		      scope: {
-		    	  ngModel: '@',
-		          onFilled: '@',
+		    	  entryStatus: '@',
 		          action: '&'
 		        },
-		      template: '<div class="betterbutton"><div class="outterBorder" style="border-color: {{btnColor}}" ng-click="action()"><div class="innerName" style="color: {{btnColor}}"><span class={{DisplayShape}} aria-hidden="true"></span></div></div>',
+		      template: '<div class="betterbutton"><div class="innerName" style="color:{{btnColor}}; opacity:{{btnOpacity}};" ng-click="action()"><span class={{DisplayShape}} aria-hidden="true"></span></div>',
 		      link: function (scope, elem, attrs) {
 		    	  
-		    	  scope.DisplayShape = 'glyphicon glyphicon-plus';
-		    	  scope.checkButton = 'glyphicon glyphicon-ok';
-		    	  scope.addButton = 'glyphicon glyphicon-plus';
-		    	  scope.backButton = 'glyphicon glyphicon-chevron-left';
-		    	  scope.resetButtonA = 'glyphicon glyphicon-remove';
-		    	  scope.resetButtonB = 'glyphicon glyphicon-remove-sign';
-		    	  scope.dashButton = 'glyphicon glyphicon-dashboard';
-		    	  scope.btnColor = 'orange';
+		    	  	scope.DisplayShape = 'glyphicon glyphicon-remove';
+		    	  	scope.checkButton = 'glyphicon glyphicon-ok';
+		    	  	scope.emailed = ''
+		    	  	scope.removeButton = 'glyphicon glyphicon-remove';
+		    	  	scope.btnColor = '#ffffff';
+		    	  	scope.btnOpacity = 0.5;
+  	  	
+		    	  	
+	    		  	scope.$watch('entryStatus', function(newValue) {
+			      		if(attrs.entryStatus == 'saved'){
+			    		  	scope.DisplayShape = scope.checkButton;
+			    		  	scope.btnColor = '#ffffff';
+			    		  	scope.btnOpacity = 0.8;
+		    		  	}
+			    	  
+			    	  	if(attrs.entryStatus == 'done'){
+			    		  	scope.DisplayShape = scope.checkButton;
+			    		  	scope.btnColor = '#66ff33';
+			    		  	scope.btnOpacity = 0.8;
+		    		  	}
+			    	  
+			    	  	if(attrs.entryStatus == 'new'){
+						  	scope.DisplayShape = scope.removeButton;
+						  	scope.btnColor = '#ffffff';
+		    	  			scope.btnOpacity = 0.5;
+		    		  	}	
+			        });
+
+		    	  	elem.bind('mouseover', function() {
+	    	        	elem.css('cursor', 'pointer');
+	    	        	elem.css('opacity', 1);
+	    	      	});
+
+	    	      	elem.bind('mouseout', function() {
+	    	        	elem.css('cursor', 'pointer');
+	    	        	elem.css('opacity', 0.5);
+	    	      	});
 		    	  
-		    	  elem.css('border-color', 'red');
-		    	  
-		    	  if(attrs.ngModel == 'add'){
-		    		  scope.DisplayShape = scope.addButton;
-	    		  }
-		    	  
-		    	  if(attrs.ngModel == 'back'){
-    				  scope.DisplayShape = scope.backButton;
-	    		  }
-		    	  
-		    	  if(attrs.ngModel == 'remove'){
-    				  scope.DisplayShape = scope.resetButtonA;
-	    		  }
-		    	  		    	  
-		    	  elem.bind('click', function() {
-		    		  
-		    		  if(attrs.onFilled == 'false'){
-		    			  scope.$apply(function() {
-		    				  scope.btnColor = 'red';
-		    		      });
-		    		  }
-		    		  
-		    		  if(attrs.onFilled == 'true'){
-		    			  setToCheck();
-		    			  setTimeout(setToAdd, 1000);
-		    		  }
-		    		  
-		    		  if(attrs.onFilled == 'removed'){
-		    			  scope.$apply(function() {
-		    				  scope.DisplayShape = scope.resetButtonB;
-			    			  setTimeout(function() {
-			    				  scope.DisplayShape = scope.resetButtonA;
-				    		  }, 1000);
-			    		  });  
-		    		  }
-		    		
-	    	      });
-		    	  
-		    	  elem.bind('mouseover', function() {
-	    	        elem.css('cursor', 'pointer');
-	    	      });
-		    	  
-		    	  function setToCheck(){
-		    		  scope.$apply(function() {
-		 				 scope.btnColor = 'green';
-		 				 scope.DisplayShape = scope.checkButton;
-		    		  });
-		    	  }
 		 		
-		    	  function setToAdd(){
+		    	  /*function setToAdd(){
 		    		  scope.$apply(function() {
 		    			  scope.btnColor = 'orange';
 		    			  scope.DisplayShape = scope.addButton;
 		    		  });
-		    	  }
+		    	  }*/
 		    	  
-		      }
+		      	}
 			};
 		});
 	

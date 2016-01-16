@@ -131,6 +131,79 @@
       					 entryDate: vm.currentDate}
 			}
 	    ];
+
+	    /*vm.currentPlantsList = [
+		    {plant:1, 
+		     name: 'Jack',
+		     desc: 'NA', 
+		     plantData: {plantType: 'annual',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:2, 
+		     name: 'Star',
+		     desc: 'NA', 
+		     plantData: {plantType: 'perannual',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: null,
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:3, 
+		     name: 'Tinkles',
+		     desc: 'NA', 
+		     plantData: {plantType: 'annual',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:4, 
+		     name: 'Northern Light',
+		     desc: 'NA', 
+		     plantData: {plantType: 'perannual',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:5, 
+		     name: 'Gold',
+		     desc: 'Barney\'s Farm', 
+		     plantData: {plantType: 'annual',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			}
+	    ];*/
 	}
 
 }());

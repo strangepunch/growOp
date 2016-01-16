@@ -25,9 +25,15 @@
 
     //scope variables
     $scope.btnSuccess = 'default';
+    $scope.btnSuccessEmail = 'default';
+    $scope.submitSuccess = 'default';
 
     //data input variables
     vm.isSaved = true;
+    vm.todayEntryStatus = 'new';
+    vm.errorMessage = '';
+    vm.isShow = true;
+    vm.tempHold = true;
 
     vm.PlantName = $scope.listName;
     vm.PlantDesc = $scope.listDesc;
@@ -43,7 +49,7 @@
   		plantPPM: 'enter plant PPM...',
   		plantPH: 'enter plant PH...',
       plantHeight: 'enter plant Height...',
-      plantMsg: 'extra notes on this plant...',
+      plantMsg: 'extra notes on this plant...'
   	};
 
   	vm.inputData = {
@@ -79,8 +85,9 @@
   	vm.storeData = storeData;
     vm.makeJSON = makeJSON;
     vm.emailData = sendMail;
+    vm.submitData = submitData; 
     vm.clearData = clearData;
-
+    vm.togglePanel = togglePanel;
   	//---- Bindable Members---END----//
 
     //---- Functions---START----//
@@ -100,8 +107,11 @@
           vm.storedData = vm.inputData;
           vm.storedData.entryTime = vm.currentTimestamp;
           vm.storedData.entryDate = vm.currentDate;
+
           $scope.btnSuccess = 'success';
           vm.isSaved = false;
+          vm.todayEntryStatus = 'saved';
+
           vm.makeJSON();
       }else{
           console.log("No entry!");
@@ -134,6 +144,9 @@
 
         $scope.btnSuccess = 'default';
         vm.isSaved = true;
+        vm.todayEntryStatus = 'new';
+        $scope.btnSuccessEmail = 'default';
+        vm.errorMessage = '';
         console.log("Cleared PLANT input DATA!");
     }
 
@@ -171,23 +184,76 @@
                     'email': 'measurements@2geeseflying.com',
                     'name': 'Tester',
                     'type': 'to'
-                  },
-                  {
-                    'email': 'jessicazh09@gmail.com',
-                    'name': 'Tester',
-                    'type': 'to'
                   }
                 ],
               'autotext': 'true',
-              'subject': 'Some growOp Data',
+              'subject': vm.PlantName + ' growOp Data',
               'html': vm.emailMessageDATAinJSON
             }
           }
          }).done(function(response) {
-           console.log(response); // if you're into that sorta thing
+            console.log(response); // if you're into that sorta thing
+            for(i=0; i<response.length; i++){
+            if(response[i].status == "sent"){
+              $scope.btnSuccessEmail = 'success';
+              vm.errorMessage = 'email success!';
+              vm.todayEntryStatus = 'done';
+            }else if (response[i].status == "queued"){
+              $scope.btnSuccessEmail = 'success';
+              vm.errorMessage = 'email queued!';
+              vm.todayEntryStatus = 'done';
+            }else{
+              $scope.btnSuccessEmail = 'fail';
+              vm.errorMessage = 'email fail. contact help deak or try again!';
+            }
+           }
+           $scope.$apply();
          });
     }
+
+    function submitData(){
+      vm.storeData();
+      if( $scope.btnSuccess == 'success'){
+          vm.emailData();
+          if($scope.btnSuccessEmail = 'success'){
+             console.log("Plant Mailed")
+            $scope.submitSuccess = 'success';
+          }else{
+           $scope.submitSuccess = 'fail';
+          }
+      }else{
+        $scope.submitSuccess = 'fail';
+      }
+      clearErrorMessage();
+    }
+
+    function togglePanel() {
+      console.log($(window).width());
+
+      if($(window).width() <1200){
+        vm.isShow = !vm.isShow;
+        vm.tempHold = vm.isShow;
+      }else{
+        vm.isShow = true;
+      }
+    }
     //---- Functions---END----//
+    
+    //---- Other Functions----//
+    function clearErrorMessage(){
+       setTimeout(function(){ vm.errorMessage = ''; $scope.$apply();}, 3000);
+    }
+
+    $(window).resize(function() {
+      width = $(this).width();
+      if(width >= 1200){
+        vm.isShow = true;
+      }else{
+        vm.isShow = vm.tempHold;
+      }
+      $scope.$apply();
+    });
+    //---- Other Functions---END----// 
 
     vm.getData();
 	}

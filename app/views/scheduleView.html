@@ -1,0 +1,50 @@
+<div class="schedule">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+	  		<div class="btn-group btn-group-justified">
+			  	<div class="col-xs-3">week: {{vm.currentWeek}}</div>
+			  	<div class="col-xs-6"></div>
+			  	<div class="col-xs-3" style="text-align:right" ng-click="vm.editStartDate()">
+			  		edit
+			  		<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+			  	</div>
+			</div>
+		</div>
+		<div class="panel-heading" ng-show="vm.showEditStartDate">
+			<div class="row">
+		  		<div class="col-xs-2">Grow Started: </div>
+		  		<div class="col-xs-3">
+		  			<input type="number" class="form-control" min="1" max="12" only-Digits ng-model="vm.input_month" placeholder="month">
+		  		</div>
+		  		<div class="col-xs-3">
+		  			<input type="number" class="form-control" min="1" max="31" only-Digits ng-model="vm.input_day" placeholder="day">
+		  		</div>
+		  		<div class="col-xs-3">
+		  			<input type="text" class="form-control" only-Digits ng-model="vm.input_year" placeholder="year" ng-disabled="true" style="background-color:#4d4d4d;color:white">
+		  		</div>
+
+		  		<div class="col-xs-12" style="text-align:center">
+		  			<button class="btn btn-default btn-sm" style="margin-top:5px" ng-click="vm.changeStartDate()">Submit</button>
+		  		</div>
+		  	</div>
+		</div>
+		<div class="panel-body">
+		  	<!-- <div ng-repeat="feed in vm.feedSchedule">
+		      	<img class="img-responsive" ng-src="images\schedule\horizontal\{{feed.url}}" alt="{{feed.week}}">
+		  	</div> -->
+		  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		      	<img class="img-responsive" ng-src="images\schedule\horizontal\{{vm.currentImage}}">
+
+			  	<!-- Left and right controls -->
+			 	<a class="left carousel-control" role="button" ng-click="vm.prevOne()">
+			    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    	<span class="sr-only">Previous</span>
+			  	</a>
+			  	<a class="right carousel-control" role="button" ng-click="vm.nextOne()">
+			    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    	<span class="sr-only">Next</span>
+			  	</a>
+		  	</div>
+		</div>
+	</div>
+</div>

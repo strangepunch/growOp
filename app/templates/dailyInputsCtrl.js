@@ -25,10 +25,12 @@
 
     //scope variables
     $scope.btnSuccess = 'default';
+    $scope.btnSuccessEmai = 'default';
+    $scope.submitSuccess = 'default';
 
     //data input variables
     vm.isSaved = true;
-    vm.errorMessage = 'need to save before email';
+    vm.errorMessage = '';
 
     vm.emailMessageDATAinJSON = "";
 
@@ -38,7 +40,8 @@
   		roomLight: 'room light info...',
   		totalWater: 'total water used...',
   		totalPPM: 'PPM before use...',
-  		totalPH: 'PH before use...'
+  		totalPH: 'PH before use...',
+      roomMsg: 'general notes...'
   	};
 
   	vm.inputData = {
@@ -49,6 +52,7 @@
   		totalPPM: null,
   		totalPH: null,
       timeOfDay: null,
+      roomMsg: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
   	};
@@ -61,6 +65,7 @@
   		totalPPM: 0,
   		totalPH: 0,
       timeOfDay: 'evening',
+      roomMsg: 'nothing is going on around here.',
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
   	};
@@ -72,6 +77,7 @@
   	vm.storeData = storeData;
     vm.makeJSON = makeJSON;
     vm.emailData = sendMail;
+    vm.submitData = submitData;
     vm.clearData = clearData;
 
   	//---- Bindable Members---END----//
@@ -83,6 +89,7 @@
         } else{
           vm.inputData = vm.storedData;
         }
+        //vm.errorMessage = 'need to save before email';
     }
   	
   	function storeData(){
@@ -92,13 +99,16 @@
           vm.storedData = vm.inputData;
           vm.storedData.entryTime = vm.currentTimestamp;
           vm.storedData.entryDate = vm.currentDate;
+
           $scope.btnSuccess = 'success';
-          vm.errorMessage = 'now you can email';
+          //vm.errorMessage = 'now you can email';
           vm.isSaved = false;
+
           vm.makeJSON();
       }else{
           console.log("No entry!");
           $scope.btnSuccess = 'fail';
+          vm.errorMessage = 'missing entries';
           vm.isSaved = true;
       }
       var myJsonString = JSON.stringify(vm.storedData);
@@ -114,13 +124,15 @@
             totalPPM: null,
             totalPH: null,
             timeOfDay: null,
+            roomMsg: null,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
         };
 
         $scope.btnSuccess = 'default';
         vm.isSaved = true;
-        vm.errorMessage = 'need to save before email';
+        $scope.btnSuccessEmail = 'default';
+        vm.errorMessage = '';
         console.log("Cleared ROOM input DATA!");
     }
 
@@ -134,6 +146,7 @@
             totalPPM: vm.storedData.totalPPM,
             totalPH: vm.storedData.totalPH,
             timeOfDay: vm.storedData.timeOfDay,
+            roomMsg: vm.storedData.roomMsg,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
           };
@@ -155,21 +168,44 @@
                     'email': 'measurements@2geeseflying.com',
                     'name': 'Tester',
                     'type': 'to'
-                  },
-                  {
-                    'email': 'jessicazh09@gmail.com',
-                    'name': 'Tester',
-                    'type': 'to'
                   }
                 ],
               'autotext': 'true',
-              'subject': 'growOp Data in JSON format',
+              'subject': 'Room Data in JSON format',
               'html': vm.emailMessageDATAinJSON
             }
           }
          }).done(function(response) {
            console.log(response); // if you're into that sorta thing
+           for(i=0; i<response.length; i++){
+            if(response[i].status == "sent"){
+              $scope.btnSuccessEmail = 'success';
+              vm.errorMessage = 'email success!';
+            }else if (response[i].status == "queued"){
+              $scope.btnSuccessEmail = 'success';
+              vm.errorMessage = 'email queued!';
+            }else{
+              $scope.btnSuccessEmail = 'fail';
+              vm.errorMessage = 'email fail. contact help deak or try again!';
+            }
+           }
+           $scope.$apply();
          });
+    }
+
+    function submitData(){
+      vm.storeData();
+      if( $scope.btnSuccess == 'success'){
+          vm.emailData();
+          if($scope.btnSuccessEmail = 'success'){
+             console.log("Room Mailed")
+            $scope.submitSuccess = 'success';
+          }else{
+           $scope.submitSuccess = 'fail';
+          }
+      }else{
+        $scope.submitSuccess = 'fail';
+      }
     }
     //---- Functions---END----//
 	}

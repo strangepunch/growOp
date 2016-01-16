@@ -4,12 +4,13 @@
 		<span style="font-size:.5em">{{vm.PlantCount}}.</span>
 		<span style="font-size:.8em">{{vm.PlantName}}</span>
 		<!-- <span style="font-size:.5em">{{vm.PlantDesc}}</span> -->
-		<button type="button" class="close" data-dismiss="alert" ui-sref="daily.plants">
+		<!-- <button type="button" class="close" data-dismiss="panel" ui-sref="daily.plants">
 	  		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	  	</button>
+	  	</button> -->
+	  	<button class="close" better-button entry-status='{{vm.todayEntryStatus}}' ng-click="vm.togglePanel()"></button>
 	</legend>
   	</div>
-  	<div class="panel-body">
+  	<div class="panel-body" ng-show="vm.isShow">
 		<div class="panel-group">
 		   	<form class="form-horizontal" name="dailyForm">
 			  	<fieldset>
@@ -55,7 +56,7 @@
 			      		<label for="input" class="col-lg-3 control-label">Height:</label>
 			      		<div class="col-lg-9">
 				      		<div class="input-group">
-							    <input type="text" class="form-control" required only-Digits ng-model="vm.inputData.plantHeight" placeholder="{{vm.placeholders.plantHeight}}">
+							    <input type="text" class="form-control" only-Digits ng-model="vm.inputData.plantHeight" placeholder="{{vm.placeholders.plantHeight}}">
 							    <span class="input-group-btn">
 							      	<button class="btn btn-default" type="button">in.</button>
 							    </span>
@@ -130,11 +131,13 @@
 					        		  ng-model="vm.inputData.plantMsg" placeholder="{{vm.placeholders.plantMsg}}"></textarea>
 					    </div>
 				    </div>
-			    	<div class="col-xs-12">
+			    	<div class="col-xs-12" style="text-align:center">
 						<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->
-						<button class="btn {{buttonStyle}}" ng-click="vm.storeData()">Save</button>
-						<button class="btn btn-default" ng-click="vm.emailData()" ng-disabled="vm.isSaved">Email</button>
+						<button class="btn {{submitButtonStyle}}" ng-click="vm.submitData()">Submit</button>
+						<!-- <button class="btn {{buttonStyle}}" ng-click="vm.storeData()">Save</button>
+						<button class="btn {{emailButtonStyle}}" ng-click="vm.emailData()" ng-disabled="vm.isSaved">Email</button> -->
 						<button class="btn btn-default" ng-click="vm.clearData()">Clear</button>
+						<br/><span>{{vm.errorMessage}}<span>
 					</div>
 				</fieldset>
 			</form>

@@ -4,7 +4,7 @@
         <META character="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <title>growOp 0.05</title>
+        <title>growOp 0.07</title>
         <meta http-equiv="x-ua-compatible" content="IE=edge" />
         <meta name="apple-touch-fullscreen" content="yes">
         <link rel="shortcut icon" href="favicon.ico"/>
@@ -51,7 +51,7 @@
         <script src="app/ctrl/mainViewCtrl.js"></script>
         <script src="app/ctrl/dailyViewCtrl.js"></script>
         <script src="app/ctrl/plantViewCtrl.js"></script>
-        <script src="app/ctrl/overViewCtrl.js"></script>
+        <script src="app/ctrl/scheduleCtrl.js"></script>
 
         <!-- Templates Controllers -->
         <script src="app/templates/dailyInputsCtrl.js"></script>
@@ -84,9 +84,9 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
               <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref="daily.plants">Daily Feeding</a></li>
+                <li class="active"><a ui-sref="daily">Daily Feeding</a></li>
                 <li><a ui-sref="plant">Plant Progress</a></li>
-                <!-- <li><a ui-sref="main">Purchases</a></li> -->
+                <li><a ui-sref="schedule">Weekly To-Do</a></li>
               </ul>
               <!-- <ul class="nav navbar-nav navbar-right">
                  <li class="dropdown">

@@ -31,20 +31,26 @@
 			            }
 			        });
 
-		      		/*scope.$watch('dataList', function(newValue) {
-					    if (newValue !== undefined) {
-					        console.log(scope.dataList);
-					    }
-					})*/
-
-		      		/*scope.collapseID = attrs.listName ;
-		      		scope.$watch('checkedSuccess', function(newValue) {
-			      		if(scope.checkedSuccess == true){
-		    				scope.panelStyle = 'panel-success';
+			        scope.$watch('btnSuccessEmail', function(newValue) {
+			      		if(scope.btnSuccessEmail == 'success'){
+		    				scope.emailButtonStyle = 'btn-success';
+			            }else if(scope.btnSuccessEmail == 'fail'){
+			            	scope.emailButtonStyle = 'btn-danger';
 			            }else{
-			            	scope.panelStyle = 'panel-default';
+			            	scope.emailButtonStyle = 'btn-default';
 			            }
-			        });*/
+			        });
+
+			        scope.$watch('submitSuccess', function(newValue) {
+			      		if(scope.submitSuccess == 'success'){
+		    				scope.submitButtonStyle = 'btn-success';
+			            }else if(scope.submitSuccess == 'fail'){
+			            	scope.submitButtonStyle = 'btn-danger';
+			            }else{
+			            	scope.submitButtonStyle = 'btn-default';
+			            }
+			        });
+
 		    	}
 			};
 		});

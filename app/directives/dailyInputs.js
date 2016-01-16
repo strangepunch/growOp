@@ -27,6 +27,27 @@
 			            }else{
 			            	scope.buttonStyle = 'btn-default';
 			            }
+
+			        });
+
+			        scope.$watch('btnSuccessEmail', function(newValue) {
+			      		if(scope.btnSuccessEmail == 'success'){
+		    				scope.emailButtonStyle = 'btn-success';
+			            }else if(scope.btnSuccessEmail == 'fail'){
+			            	scope.emailButtonStyle = 'btn-danger';
+			            }else{
+			            	scope.emailButtonStyle = 'btn-default';
+			            }
+			        });
+
+			        scope.$watch('submitSuccess', function(newValue) {
+			      		if(scope.submitSuccess == 'success'){
+		    				scope.submitButtonStyle = 'btn-success';
+			            }else if(scope.submitSuccess == 'fail'){
+			            	scope.submitButtonStyle = 'btn-danger';
+			            }else{
+			            	scope.submitButtonStyle = 'btn-default';
+			            }
 			        });
 
 		    	  	/*elem.css('border-color', 'red');*/
