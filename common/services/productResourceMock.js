@@ -42,22 +42,18 @@
 
 		];
 
-/** phase numbers defined here **/
-		var phases = [
+/** today contains daily updated status gathered from various other collections here**/
+		var todayData = [
 		{
-			"seedling" : "0"
-		}, 
-		{
-			"vegetation" : "1"
-		}, 
-		{
-			"flowering" : "2"
-		}, 
-		{
-			"drying" : "3"
-		}, 
-		{
-			"cure" : "4"
+			"growPhase" : "0", 
+			plantHealth : [
+			{
+				"plantHealth1" : "poor",
+				"plantHealth2" : "excellent",
+				"plantHealth3" : "poor",
+				"plantHealth4" : "poor",
+				"plantHealth5" : "poor",
+			}]
 		}];
 
 
@@ -932,6 +928,633 @@
 			}]
 		}
 		],
+ 	"week0B" : [
+ 		{
+ 			"growthStage": "seedling",
+ 			"weekMsg":"Sucessful incubation requires consistent light, warmth and humidity.",
+ 			"entryTime":"00:00:00:000",
+ 			"entryDate":"2016/1/15",
+ 			"day1" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":70,
+			 			"roomHumidity":45,
+			 			"roomLight":80,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"evening",
+			 			"roomMsg":"nothing is going on around here.",
+			 			"entryTime":"11:55:45:130",
+			 			"entryDate":"2016/1/15"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+	 			{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant3" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant4" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant5" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}],
+			"day2" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":70,
+			 			"roomHumidity":45,
+			 			"roomLight":80,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"evening",
+			 			"roomMsg":"nothing is going on around here.",
+			 			"entryTime":"11:55:45:130",
+			 			"entryDate":"2016/1/15"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+	 			{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant3" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant4" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant5" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}],
+			"day3" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":70,
+			 			"roomHumidity":45,
+			 			"roomLight":80,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"evening",
+			 			"roomMsg":"nothing is going on around here.",
+			 			"entryTime":"11:55:45:130",
+			 			"entryDate":"2016/1/15"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+	 			{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant3" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant4" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant5" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}],
+			"day4" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":70,
+			 			"roomHumidity":45,
+			 			"roomLight":80,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"evening",
+			 			"roomMsg":"nothing is going on around here.",
+			 			"entryTime":"11:55:45:130",
+			 			"entryDate":"2016/1/15"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+	 			{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant3" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant4" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant5" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}],
+			"day5" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":70,
+			 			"roomHumidity":45,
+			 			"roomLight":80,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"evening",
+			 			"roomMsg":"nothing is going on around here.",
+			 			"entryTime":"11:55:45:130",
+			 			"entryDate":"2016/1/15"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant2" :[ 
+	 			{
+					"PlantName":"Jack",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}],
+				"plant3" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant4" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant5" :[ 
+					{
+						"PlantName":"Jack",
+						"PlantDesc":"NA",
+						"plantType":"annual",
+						"plantWater":1,
+						"plantPPM":0,
+						"plantPH":0,
+						"plantHeight":0,
+						"plantCond":"good",
+						"timeOfDay":"morning",
+						"plantMsg":"",
+						"entryTime":"10:5:8:856",
+						"entryDate":"2016/1/14"
+				}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}],
+			"day6" : [
+			{
+			 	"environment" : [
+			 		{
+			 			"roomTemp":77,
+			 			"roomHumidity":32,
+			 			"roomLight":24,
+			 			"totalWater":5,
+			 			"totalPPM":0,
+			 			"totalPH":0,
+			 			"timeOfDay":"morning",
+			 			"roomMsg":"first day using the app, soil turned",
+			 			"entryTime":"9:31:43:252",
+			 			"entryDate":"2016/1/18"
+			 		}
+			 	], 
+				"plant1" : [ 
+				{
+					"PlantName":"Auto Jack Herer",
+					"PlantDesc":"(by Advanced)",
+					"plantType":"Sativa",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":"7",
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"No sprout. Incubator good",
+					"entryTime":"9:31:43:252",
+					"entryDate":"2016/1/18"}],
+				"plant2" :[ 
+	 			{"PlantName":"Critical Sensi Star","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":1,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","timeOfDay":"morning","plantMsg":"Fan leaves x2 growing under cfl","entryTime":"9:31:43:373","entryDate":"2016/1/18"}],
+				"plant3" :[ 
+					{"PlantName":"Green Crack","PlantDesc":"(Cali Connection)","plantType":"Sativa","plantWater":1,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout. Soil turned","entryTime":"9:31:43:453","entryDate":"2016/1/18"}],
+				"plant4" :[ 
+					{"PlantName":"Auto Northern Light Blue","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":1,"plantPPM":0,"plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout. Soil turned","entryTime":"9:31:43:525","entryDate":"2016/1/18"}],
+				"plant5" :[ 
+					{"PlantName":"Acapulco Gold","PlantDesc":"(Barney's Farm)","plantType":"Sativa","plantWater":1,"plantPPM":0,"plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout soil turned","entryTime":"9:31:43:584","entryDate":"2016/1/18"}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"00:0:0:000",
+					"entryDate":"2016/1/1"
+				}]
+			}],
+			"day7" : [
+			{
+			 	"environment" : [
+			 		{"roomTemp":"77","roomHumidity":"32","roomLight":"","totalWater":null,"totalPPM":"6","totalPH":"7","timeOfDay":null,"roomMsg":"Still only 1 sprout, CSS, transplanted into 7 gal planter","entryTime":"15:47:17:811","entryDate":"2016/1/19"}], 
+				"plant1" : [ 
+				{"PlantName":"Auto Jack Herer","PlantDesc":"(by Advanced)","plantType":"Sativa","plantWater":1,"plantPPM":"4800","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"15:47:18:348","entryDate":"2016/1/19"}],
+				"plant2" :[ 
+	 			{"PlantName":"Critical Sensi Star","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":"1","plantPPM":"4350","plantPH":"7","plantHeight":"2","plantCond":"good","timeOfDay":"morning","plantMsg":"Cotyledon leaves turning brown at tips. New jagged fans look good","entryTime":"15:47:18:482","entryDate":"2016/1/19"}],
+				"plant3" :[ 
+					{"PlantName":"Green Crack","PlantDesc":"(Cali Connection)","plantType":"Sativa","plantWater":1,"plantPPM":"04720","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"15:47:18:556","entryDate":"2016/1/19"}],
+				"plant4" :[ 
+					{"PlantName":"Auto Northern Light Blue","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":1,"plantPPM":"5170","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"15:47:18:625","entryDate":"2016/1/19"}],
+				"plant5" :[ 
+					{"PlantName":"Acapulco Gold","PlantDesc":"(Barney's Farm)","plantType":"Sativa","plantWater":1,"plantPPM":"4630","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"15:47:18:709","entryDate":"2016/1/19"}],
+				"plant6" :[ 
+				{
+					"PlantName":"Empty",
+					"PlantDesc":"NA",
+					"plantType":"annual",
+					"plantWater":1,
+					"plantPPM":0,
+					"plantPH":0,
+					"plantHeight":0,
+					"plantCond":"good",
+					"timeOfDay":"morning",
+					"plantMsg":"",
+					"entryTime":"10:5:8:856",
+					"entryDate":"2016/1/14"
+				}]
+			}]
+		}
+		],		
  	"week1" : [
  		{
  			"growthStage": "seedling",
