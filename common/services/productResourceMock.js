@@ -43,16 +43,39 @@
 		];
 
 /** today contains daily updated status gathered from various other collections here**/
-		var todayData = [
+		var todaysData = [
 		{
-			"growPhase" : "0", 
-			plantHealth : [
+			"growPhase" : "seedling", 
+			"currentWeek" : "0B",
+			"currentDay" : "7",
+			"plantHealth" : [
 			{
 				"plantHealth1" : "poor",
 				"plantHealth2" : "excellent",
 				"plantHealth3" : "poor",
 				"plantHealth4" : "poor",
-				"plantHealth5" : "poor",
+				"plantHealth5" : "poor"
+			}],
+			"plantProblems" : [
+			{
+				"problemPlant1" : "plant1",
+				"problemNote" : "Plant hasn't sprouted"
+			},
+			{
+				"problemPlant2" : "plant2",
+				"problemNote" : "none"
+			},
+			{
+				"problemPlant3" : "plant3",
+				"problemNote" : "Plant hasn't sprouted"
+			},
+			{
+				"problemPlant4" : "plant4",
+				"problemNote" : "Plant hasn't sprouted"
+			},
+			{
+				"problemPlant5" : "plant5",
+				"problemNote" : "Plant hasn't sprouted"
 			}]
 		}];
 
@@ -12154,7 +12177,7 @@
 		}
 		]																												
 }];
-/** end **/
+/** end masterGrowLog**/
 		/** we could use this as a basis for the suggested feeding schedule based on the current foxfarm feedstyle  - this can form the basis of reminders ont he status screen and data on the feeding screen **/
 		var foxfarmSchedule = [
 			{
@@ -12708,484 +12731,7 @@ var weeklySchedule = [
 				}];
 
 */
-/* push new values into a structure like this to record and retrieve ongoing data */
-/*		var myGrowData = [
-		{
-				"week" : "0D1",
-				"environment" : 
-				{
-					"roomTemp":70,
-					"roomHumidity":45,
-					"roomLight":80,
-					"totalWater":5,
-					"totalPPM":0,
-					"totalPH":0,
-					"timeOfDay":"evening",
-					"roomMsg":"nothing is going on around here.",
-					"entryTime":"10:22:7:590",
-					"entryDate":"2016/1/14"
-				},
-				"plant1" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant2" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant3" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant4" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant5" :
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant6" : 
-				{
-					"PlantName":"",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"00:0:0:000",
-					"entryDate":"2016/1/1"
-				},
-			},
-			{
-				"week" : "0D2",
-				"environment" : 
-				{
-					"roomTemp":70,
-					"roomHumidity":45,
-					"roomLight":80,
-					"totalWater":5,
-					"totalPPM":0,
-					"totalPH":0,
-					"timeOfDay":"evening",
-					"roomMsg":"nothing is going on around here.",
-					"entryTime":"10:22:7:590",
-					"entryDate":"2016/1/14"
-				},
-				"plant1" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant2" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant3" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant4" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant5" :
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant6" : 
-				{
-					"PlantName":"",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"00:0:0:000",
-					"entryDate":"2016/1/1"
-				},
-			},
-			{
-				"week" : "0D3",
-				"environment" : 
-				{
-					"roomTemp":70,
-					"roomHumidity":45,
-					"roomLight":80,
-					"totalWater":5,
-					"totalPPM":0,
-					"totalPH":0,
-					"timeOfDay":"evening",
-					"roomMsg":"nothing is going on around here.",
-					"entryTime":"10:22:7:590",
-					"entryDate":"2016/1/14"
-				},
-				"plant1" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant2" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant3" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant4" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant5" :
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant6" : 
-				{
-					"PlantName":"",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"00:0:0:000",
-					"entryDate":"2016/1/1"
-				},
-			},
-			{
-				"week" : "0D4",
-				"environment" : 
-				{
-					"roomTemp":70,
-					"roomHumidity":45,
-					"roomLight":80,
-					"totalWater":5,
-					"totalPPM":0,
-					"totalPH":0,
-					"timeOfDay":"evening",
-					"roomMsg":"nothing is going on around here.",
-					"entryTime":"10:22:7:590",
-					"entryDate":"2016/1/14"
-				},
-				"plant1" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant2" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant3" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant4" : 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant5" :
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				},
-				"plant6" : 
-				{
-					"PlantName":"",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"00:0:0:000",
-					"entryDate":"2016/1/1"
-				},
-			},
-			{
-				"week" : "0D5",
-				"weekImg" : "images/schedule/week3.jpg"
-			},
-			{
-				"week" : "0D6",
-				"weekImg" : "images/schedule/week4.jpg"
-			},
-			{
-				"week" : "0D7",
-				"weekImg" : "images/schedule/week5.jpg"
-			},
-			{
-				"week" : "1D1",
-				"weekImg" : "images/schedule/week6.jpg"
-			},
-			{
-				"week" : "1D2",
-				"weekImg" : "images/schedule/week7.jpg"
-			},
-			{
-				"week" : "8",
-				"weekImg" : "images/schedule/week8.jpg"
-			},
-			{
-				"week" : "9",
-				"weekImg" : "images/schedule/week9.jpg"
-			},
-			{
-				"week" : "10",
-				"weekImg" : "images/schedule/week10.jpg"
-			},
-			{
-				"week" : "11",
-				"weekImg" : "images/schedule/week11.jpg"
-			},
-			{
-				"week" : "12",
-				"weekImg" : "images/schedule/week12.jpg"
-			},
-			{
-				"week" : "13",
-				"weekImg" : "images/schedule/week13.jpg"
-			},
-			{
-				"week" : "14",
-				"weekImg" : "images/schedule/week14.jpg"
-			}
-	}];
- 
 
-*/
 
 /*************************************************/
 
