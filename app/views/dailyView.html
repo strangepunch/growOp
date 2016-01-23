@@ -16,8 +16,10 @@
 	  	<div class="panel-body">
 	  		<div to-do-list list-name="inputB"></div>
 	  		<!-- <div to-do-list arry-List="vm.someToDoListItems" list-name="inputA"></div> -->
+	  		<h3 class="title" style="padding-top:10px"> environment </h3>
 	    	<div daily-inputs></div>
 	    	<!-- <div class="col-lg-4" input-plant-det list-name="Plant A"></div> -->
+	    	<h3 class="title"> plant log </h3>
 	    	<div class="col-lg-4" ng-repeat = "plant in vm.currentPlantsList">
 	    		<div input-plant-det counter="{{plant.plant}}" list-name="{{plant.name}}" list-desc="{{plant.desc}}" arry-List="plant.plantData"></div>
 	    	</div>

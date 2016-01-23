@@ -32,7 +32,7 @@
     vm.isSaved = true;
     vm.todayEntryStatus = 'new';
     vm.errorMessage = '';
-    vm.isShow = true;
+    vm.isShow = false;
     vm.tempHold = true;
 
     vm.PlantName = $scope.listName;

@@ -9,6 +9,16 @@
 	legend {
 		color:#66ff33;
 	}
+	@font-face {
+	    font-family: mySyncopate;
+	    src: url(../fonts/Syncopate-Regular.ttf);
+	    font-weight: normal;
+	}
+	.title{
+		opacity: 0.3;
+		text-align: center;
+		font-family: mySyncopate;
+	}
 }
 
 @media screen 
@@ -44,5 +54,17 @@
 
 	legend {
 		color:#66ff33;
+	}
+
+	@font-face {
+	    font-family: mySyncopate;
+	    src: url(../fonts/Syncopate-Regular.ttf);
+	    font-weight: normal;
+	}
+
+	.title{
+		opacity: 0.3;
+		text-align: center;
+		font-family: mySyncopate;
 	}
 }
