@@ -19,6 +19,11 @@
 		text-align: center;
 		font-family: mySyncopate;
 	}
+	.date{
+		color: orange;
+		float:right; 
+		padding-right:5px;
+	}
 }
 
 @media screen 
@@ -66,5 +71,11 @@
 		opacity: 0.3;
 		text-align: center;
 		font-family: mySyncopate;
+	}
+
+	.date{
+		color: orange;
+		float:right; 
+		padding-right:5px;
 	}
 }

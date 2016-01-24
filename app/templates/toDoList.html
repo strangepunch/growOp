@@ -1,10 +1,11 @@
 <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
 	<div class="panel {{panelStyle}}">
 	    <div class="panel-heading" role="tab" id="headingOne">
-	      <h4 class="panel-title">
+	      <h4 class="panel-title row">
 	        <button style="background:transparent;border:none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{collapseID}}" aria-expanded="false" aria-controls="{{collapseID}}">
 	          Today <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 	        </button>
+	        <span class="date">{{vm.theDayofWeek}}, {{vm.theDate}}</span>
 	        <!-- <button class="btn btn-default btn-xs" style="float:right" ng-click="vm.clearData()">Clear <span class="glyphicon glyphicon-check" aria-hidden="true"></span></button> -->
 	      </h4>
 	    </div>

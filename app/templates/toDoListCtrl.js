@@ -19,6 +19,17 @@
 
   	vm.currentTimestamp = hr + ":" + min + ":" + sec + ":" + mSec;
 
+    var MM = d.getMonth() + 1;
+    var DD = d.getDate();
+    var YYYY = d.getFullYear();
+
+    vm.currentDate = MM + "/" + DD + "/" + YYYY;
+
+    var thisDay = d.getDay();
+    vm.theDayofWeek = "Monday";
+    vm.theMonthName = "Jan";
+    vm.theDate = vm.theMonthName + " " + DD;
+
     //scope variables
     $scope.checkedSuccess = false;
 
@@ -40,7 +51,9 @@
     vm.getData = getData;
   	vm.storeData = storeData;
     vm.clearData = clearData;
-
+    vm.getDayOfWeek = getDayOfWeek;
+    vm.getMonthName = getMonthName;
+ 
   	//---- Bindable Members---END----//
 
     //---- Functions---START----//
@@ -87,9 +100,85 @@
       $scope.checkedSuccess = false;
     }
 
+    function getDayOfWeek(){
+      switch(thisDay) {
+        case 1:
+          vm.theDayofWeek = 'Monday';
+          break;
+        case 2:
+          vm.theDayofWeek = 'Tuesday';
+          break;
+        case 3:
+          vm.theDayofWeek = 'Wednesday';
+          break;
+        case 4:
+          vm.theDayofWeek = 'Thursday';
+          break;
+        case 5:
+          vm.theDayofWeek = 'Friday';
+          break;
+        case 6:
+          vm.theDayofWeek = 'Monday';
+          break;
+        case 0:
+          vm.theDayofWeek = 'Sunday';
+          break;
+        default:
+          vm.theDayofWeek = 'Sunday';
+      }
+
+    }
+
+    function getMonthName(){
+      switch(MM) {
+        case 1:
+          vm.theMonthName = 'Jan';
+          break;
+        case 2:
+          vm.theMonthName = 'Feb';
+          break;
+        case 3:
+          vm.theMonthName = 'Mar';
+          break;
+        case 4:
+          vm.theMonthName = 'Apr';
+          break;
+        case 5:
+          vm.theMonthName = 'May';
+          break;
+        case 6:
+          vm.theMonthName = 'June';
+          break;
+        case 7:
+          vm.theMonthName = 'July';
+          break;
+        case 8:
+          vm.theMonthName = 'Aug';
+          break;
+        case 9:
+          vm.theMonthName = 'Sept';
+          break;
+        case 10:
+          vm.theMonthName = 'Oct';
+          break;
+        case 11:
+          vm.theMonthName = 'Nov';
+          break;
+        case 12:
+          vm.theMonthName = 'Dec';
+          break;
+        default:
+          vm.theMonthName = 'Jan';
+      }
+
+      vm.theDate = vm.theMonthName + " " + DD;
+    }
+
     //---- Functions---END----//
 
     vm.getData();
+    vm.getDayOfWeek();
+    vm.getMonthName();
 	}
 
 }());

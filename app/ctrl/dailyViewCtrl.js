@@ -61,6 +61,93 @@
 
 	    vm.currentPlantsList = [
 		    {plant:1, 
+		     name: 'GSC-Auto',
+		     desc: '(FastBuds)', 
+		     plantData: {plantType: 'Hybrid',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:2, 
+		     name: 'CSS',
+		     desc: '(Delicious)', 
+		     plantData: {plantType: 'Indica',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: null,
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:3, 
+		     name: 'Jack Herer',
+		     desc: '(Blackskull)', 
+		     plantData: {plantType: 'Sativa',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:4, 
+		     name: 'DM - Auto',
+		     desc: '(Blackskull)', 
+		     plantData: {plantType: 'Hybrid',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:5, 
+		     name: 'Cinex',
+		     desc: '(N.A.)', 
+		     plantData: {plantType: 'Sativa',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			},
+			{plant:6, 
+		     name: 'JH - Auto',
+		     desc: '(by Advanced)', 
+		     plantData: {plantType: 'Sativa',
+						 plantWater: 1,
+						 plantPPM: 0,
+						 plantPH: 0,
+						 plantHeight: 0,
+						 plantCond: 'good',
+						 timeOfDay: 'morning',
+						 plantMsg: '',
+						 entryTime: vm.currentTimestamp,
+      					 entryDate: vm.currentDate}
+			}
+	    ];
+
+	    /*vm.currentPlantsList = [
+		    {plant:1, 
 		     name: 'Auto Jack Herer',
 		     desc: '(by Advanced)', 
 		     plantData: {plantType: 'Sativa',
@@ -130,7 +217,7 @@
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
 			}
-	    ];
+	    ];*/
 
 	    /*vm.currentPlantsList = [
 		    {plant:1, 
