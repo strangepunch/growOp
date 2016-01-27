@@ -1,0 +1,146 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	<legend>
+		<span style="font-size:.5em">{{vm.PlantCount}}.</span>
+		<span style="font-size:.8em">{{vm.PlantName}}</span>
+		<!-- <span style="font-size:.5em">{{vm.PlantDesc}}</span> -->
+		<!-- <button type="button" class="close" data-dismiss="panel" ui-sref="daily.plants">
+	  		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+	  	</button> -->
+	  	<button class="close" better-button entry-status='{{vm.todayEntryStatus}}' ng-click="vm.togglePanel()"></button>
+	</legend>
+  	</div>
+  	<div class="panel-body" ng-show="vm.isShow">
+		<div class="panel-group">
+		   	<form class="form-horizontal" name="dailyForm">
+			  	<fieldset>
+			  		<div class="well">
+					  <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+					</div>
+			  		<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Strain:</label>
+			      		<div class="col-lg-9">
+			        		<input type="text" class="form-control" style="background-color:#4d4d4d;color:white" ng-model="vm.inputData.plantType" placeholder="{{vm.placeholders.plantType}}" ng-disabled="vm.inPlantProgressView">
+			      		</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Company:</label>
+			      		<div class="col-lg-9">
+			        		<input type="text" class="form-control" style="background-color:#4d4d4d;color:white" ng-model="vm.PlantDesc" ng-disabled="vm.inPlantProgressView">
+			      		</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Water:</label>
+			      		<div class="col-lg-9">
+				      		<div class="input-group">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantWater" placeholder="{{vm.placeholders.plantWater}}">
+							    <span class="input-group-btn">
+							      	<button class="btn btn-default" type="button">gal.</button>
+							    </span>
+							</div>
+						</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">PPM:</label>
+			      		<div class="col-lg-9">
+			        		<input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantPPM" placeholder="{{vm.placeholders.plantPPM}}">
+			      		</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">PH:</label>
+			      		<div class="col-lg-9">
+			        		<input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantPH" placeholder="{{vm.placeholders.plantPH}}">
+			      		</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Height:</label>
+			      		<div class="col-lg-9">
+				      		<div class="input-group">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantHeight" placeholder="{{vm.placeholders.plantHeight}}">
+							    <span class="input-group-btn">
+							      	<button class="btn btn-default" type="button">in.</button>
+							    </span>
+							</div>
+						</div>
+			    	</div>
+			    	<table class="col-xs-12 col-sm-6 col-xs-6 col-lg-12">
+			    		<tr>
+			    			<td class="col-sm-6 col-lg-6">
+			    				<div class="form-group">
+						      		<label class="col-lg-6 control-label">Light:</label>
+								      <div class="col-lg-6">
+								        <div class="radio">
+								          <label>
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="CFL" checked="">
+								            CFL
+								          </label>
+								        </div>
+								        <div class="radio">
+								          <label>
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="afternoon">
+								            HPS
+								          </label>
+								        </div>
+								         <div class="radio">
+								          <label>
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="evening">
+								            Na
+								          </label>
+								        </div>
+								    </div>
+						    	</div>
+						    </td>
+						    
+				    		<td class="col-xs-6 col-lg-6">
+			    				<div class="form-group">
+						      		<label class="col-lg-6 control-label">Condition:</label>
+								      <div class="col-lg-6">
+								        <div class="radio">
+								          <label>
+								            <input type="radio" name="plantRadios" 
+								            	   ng-model="vm.inputData.plantCond" value="great" checked="">
+								            Great
+								          </label>
+								        </div>
+								        <div class="radio">
+								          <label>
+								            <input type="radio" name="plantRadios" 
+								            	   ng-model="vm.inputData.plantCond" value="good">
+								            Good
+								          </label>
+								        </div>
+								         <div class="radio">
+								          <label>
+								            <input type="radio" name="plantRadios" 
+								            	   ng-model="vm.inputData.plantCond" value="poor">
+								            Poor
+								          </label>
+								        </div>
+								    </div>
+						    	</div>
+						    </td>
+			    		</tr>
+			    	</table>
+			    	<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-12">
+					    <label for="textArea" class="col-xs-6 col-sm-2 col-md-2 col-lg-2 control-label">Notes:</label>
+					    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+					        <textarea class="form-control" rows="6" style="overflow:auto;resize:none"
+					        		  ng-model="vm.inputData.plantMsg" placeholder="{{vm.placeholders.plantMsg}}"></textarea>
+					    </div>
+				    </div>
+			    	<div class="col-xs-12" style="text-align:center">
+						<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->
+						<button class="btn {{submitButtonStyle}}" ng-click="vm.submitData()">Submit</button>
+						<!-- <button class="btn {{buttonStyle}}" ng-click="vm.storeData()">Save</button>
+						<button class="btn {{emailButtonStyle}}" ng-click="vm.emailData()" ng-disabled="vm.isSaved">Email</button> -->
+						<button class="btn btn-default" ng-click="vm.clearData()">Clear</button>
+						<br/><span>{{vm.errorMessage}}<span>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
