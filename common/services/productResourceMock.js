@@ -42,18 +42,18 @@
 
 		];
 
-/** today contains daily updated status gathered from various other collections here**/
-		var todaysData = [
+/** today contains daily updated status gathered from various other collections. This structure simulates that dynamically generated data**/
+		var today = [
 		{
-			"growPhase" : "seedling", 
+			"growPhase" : "0", 
 			"currentWeek" : "0B",
 			"currentDay" : "7",
 			"plantHealth" : [
 			{
-				"plantHealth1" : "poor",
+				"plantHealth1" : "good",
 				"plantHealth2" : "excellent",
-				"plantHealth3" : "poor",
-				"plantHealth4" : "poor",
+				"plantHealth3" : "good",
+				"plantHealth4" : "good",
 				"plantHealth5" : "poor"
 			}],
 			"plantProblems" : [
