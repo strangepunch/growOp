@@ -40,7 +40,7 @@
 						 plantPH: 5,
 						 plantHeight: 10,
 						 plantCond: 'good',
-						 timeOfDay: 'evening',
+						 //timeOfDay: 'evening',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
 			},
@@ -53,7 +53,7 @@
 						 plantPH: 6,
 						 plantHeight: 4,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
 			}
@@ -69,7 +69,8 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'CFL',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -83,7 +84,8 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'HPS',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -97,7 +99,8 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'CFL',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -111,7 +114,8 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'CFL',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -125,13 +129,14 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'CFL',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
 			},
 			{plant:6, 
-		     name: 'empty',
+		     name: 'Empty',
 		     desc: '', 
 		     plantData: {plantType: 'Sativa',
 						 plantWater: 0,
@@ -139,7 +144,8 @@
 						 plantPH: 0,
 						 plantHeight: 0,
 						 plantCond: 'good',
-						 timeOfDay: 'morning',
+						 //timeOfDay: 'morning',
+						 lightType: 'CFL',
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}

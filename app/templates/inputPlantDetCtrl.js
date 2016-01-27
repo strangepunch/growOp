@@ -1,21 +1,21 @@
 (function () {
-	angular
-			.module("growOpApp")
-			.controller("InputPlantDetCtrl",
-						["$scope",
-						 "localStorageService",
-							InputPlantDetCtrl]);
-	
-	function InputPlantDetCtrl($scope, localStorageService){
-		var vm = this;
-    	
-  	//----Bindable Members Up Top----//
-  	//time variables
-		var d = new Date();
-		var hr = d.getHours();
-		var min = d.getMinutes();
-		var sec = d.getSeconds();
-		var mSec = d.getMilliseconds();
+  angular
+      .module("growOpApp")
+      .controller("InputPlantDetCtrl",
+            ["$scope",
+             "localStorageService",
+              InputPlantDetCtrl]);
+  
+  function InputPlantDetCtrl($scope, localStorageService){
+    var vm = this;
+      
+    //----Bindable Members Up Top----//
+    //time variables
+    var d = new Date();
+    var hr = d.getHours();
+    var min = d.getMinutes();
+    var sec = d.getSeconds();
+    var mSec = d.getMilliseconds();
     var MM = d.getMonth() + 1;
     var DD = d.getDate();
     var YYYY = d.getFullYear();
@@ -43,52 +43,54 @@
 
     vm.emailMessageDATAinJSON = "";
 
-  	vm.placeholders = {
+    vm.placeholders = {
       plantType: 'plant type',
-  		plantWater: 'enter water used...',
-  		plantPPM: 'enter plant PPM...',
-  		plantPH: 'enter plant PH...',
+      plantWater: 'enter water used...',
+      plantPPM: 'enter plant PPM...',
+      plantPH: 'enter plant PH...',
       plantHeight: 'enter plant Height...',
       plantMsg: 'extra notes on this plant...'
-  	};
+    };
 
-  	vm.inputData = {
+    vm.inputData = {
       plantType: null,
-  		plantWater: null,
-  		plantPPM: null,
-  		plantPH: null,
+      plantWater: null,
+      plantPPM: null,
+      plantPH: null,
       plantHeight: null,
       plantCond: null,
-      timeOfDay: null,
+      //timeOfDay: null,
+      lightType: null,
       plantMsg: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
-  	};
+    };
 
-  	vm.storedData = {
+    vm.storedData = {
       plantType: 'unknown',
-  		plantWater: 0,
-  		plantPPM: 0,
-  		plantPH: 0,
+      plantWater: 0,
+      plantPPM: 0,
+      plantPH: 0,
       plantHeight: 0,
       plantCond: 'good',
-      timeOfDay: 'morning',
+      //timeOfDay: 'morning',
+      lightType: 'CFL',
       plantMsg: 'this plant feels good.',
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
-  	};
+    };
 
     vm.outputData_storedData = '';
 
-  	//function declarations
+    //function declarations
     vm.getData = getData;
-  	vm.storeData = storeData;
+    vm.storeData = storeData;
     vm.makeJSON = makeJSON;
     vm.emailData = sendMail;
     vm.submitData = submitData; 
     vm.clearData = clearData;
     vm.togglePanel = togglePanel;
-  	//---- Bindable Members---END----//
+    //---- Bindable Members---END----//
 
     //---- Functions---START----//
     function getData(){
@@ -99,8 +101,8 @@
           vm.inputData = vm.storedData;
         }
     }
-  	
-  	function storeData(){
+    
+    function storeData(){
       //!$scope.dailyForm.$pristine && 
       if(!$scope.dailyForm.$invalid) {
           //console.log("vm.inputData", vm.inputData);
@@ -120,7 +122,7 @@
       }
       var myJsonString = JSON.stringify(vm.storedData);
       console.log("JSON: " + myJsonString);
-  	}
+    }
 
     function clearData(){
         vm.inputData = {
@@ -130,7 +132,8 @@
           plantPH: null,
           plantHeight: null,
           plantCond: null,
-          timeOfDay: null,
+          //timeOfDay: null,
+          lightType: null,
           plantMsg: null,
           entryTime: vm.currentTimestamp,
           entryDate: vm.currentDate
@@ -161,7 +164,8 @@
             plantPH: vm.storedData.plantPH,
             plantHeight: vm.storedData.plantHeight,
             plantCond: vm.storedData.plantCond,
-            timeOfDay: vm.storedData.timeOfDay,
+            lightType: vm.storedData.lightType,
+            //timeOfDay: vm.storedData.timeOfDay,
             plantMsg: vm.storedData.plantMsg,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
@@ -256,6 +260,6 @@
     //---- Other Functions---END----// 
 
     vm.getData();
-	}
+  }
 
 }());

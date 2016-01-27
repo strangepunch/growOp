@@ -5,7 +5,7 @@
 	      		<label for="input" class="col-lg-6 control-label">Room Temp:</label>
 	      		<div class="col-lg-6">
 		      		<div class="input-group">
-					    <input type="text" class="form-control" required only-Digits ng-model="vm.inputData.roomTemp" placeholder="{{vm.placeholders.roomTemp}}">
+					    <input type="text" class="form-control" required only-Digits allow-decimal="true" ng-model="vm.inputData.roomTemp" placeholder="{{vm.placeholders.roomTemp}}">
 					    <span class="input-group-btn">
 					      	<button class="btn btn-default" type="button">&#8457;/&#8451;</button>
 					    </span>
@@ -16,7 +16,7 @@
 	      		<label for="input" class="col-lg-6 control-label">Humidity:</label>
 	      		<div class="col-lg-6">
 		      		<div class="input-group">
-					    <input type="text" class="form-control" required only-Digits ng-model="vm.inputData.roomHumidity" placeholder="{{vm.placeholders.roomHumidity}}">
+					    <input type="text" class="form-control" required only-Digits allow-decimal="true" ng-model="vm.inputData.roomHumidity" placeholder="{{vm.placeholders.roomHumidity}}">
 					    <span class="input-group-btn">
 					      	<button class="btn btn-default" type="button">atm.</button>
 					    </span>
@@ -40,7 +40,7 @@
 					</div>
 				</div>
 	    	</div>
-	    	<div class="form-group col-sm-6 col-lg-3">
+	    	<!-- <div class="form-group col-sm-6 col-lg-3">
 	      		<label for="input" class="col-lg-6 control-label">PPM Before:</label>
 	      		<div class="col-lg-6">
 	        		<input type="text" class="form-control" required only-Digits ng-model="vm.inputData.totalPPM" placeholder="{{vm.placeholders.totalPPM}}">
@@ -51,7 +51,7 @@
 	      		<div class="col-lg-6">
 	        		<input type="text" class="form-control" required only-Digits ng-model="vm.inputData.totalPH" placeholder="{{vm.placeholders.totalPH}}">
 	      		</div>
-	    	</div>
+	    	</div> -->
 	    	<div class="form-group col-xs-12 col-lg-6">
 			    <label for="textArea" class="col-sm-2 col-lg-2 control-label">Notes:</label>
 			    <div class="col-xs-12 col-sm-9 col-md-10 Scol-lg-10">
@@ -60,7 +60,7 @@
 			    </div>
 		    </div>
 	    	<div class="col-xs-12" style="text-align:center">
-				<button class="btn btn-primary" ng-click="vm.getData()">Test</button>
+				<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->
 				<button class="btn {{submitButtonStyle}}" ng-click="vm.submitData()">Submit</button>
 				<!-- <button class="btn {{buttonStyle}}" ng-click="vm.storeData()">Save</button>
 				<button class="btn {{emailButtonStyle}}" ng-click="vm.emailData()" ng-disabled="vm.isSaved">Email</button> -->

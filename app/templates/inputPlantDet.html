@@ -33,7 +33,7 @@
 			      		<label for="input" class="col-lg-3 control-label">Water:</label>
 			      		<div class="col-lg-9">
 				      		<div class="input-group">
-							    <input type="text" class="form-control" required only-Digits allow-decimal="true" ng-model="vm.inputData.plantWater" placeholder="{{vm.placeholders.plantWater}}">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantWater" placeholder="{{vm.placeholders.plantWater}}">
 							    <span class="input-group-btn">
 							      	<button class="btn btn-default" type="button">gal.</button>
 							    </span>
@@ -43,20 +43,20 @@
 			    	<div class="form-group col-sm-6 col-lg-12">
 			      		<label for="input" class="col-lg-3 control-label">PPM:</label>
 			      		<div class="col-lg-9">
-			        		<input type="text" class="form-control" required only-Digits ng-model="vm.inputData.plantPPM" placeholder="{{vm.placeholders.plantPPM}}">
+			        		<input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantPPM" placeholder="{{vm.placeholders.plantPPM}}">
 			      		</div>
 			    	</div>
 			    	<div class="form-group col-sm-6 col-lg-12">
 			      		<label for="input" class="col-lg-3 control-label">PH:</label>
 			      		<div class="col-lg-9">
-			        		<input type="text" class="form-control" required only-Digits ng-model="vm.inputData.plantPH" placeholder="{{vm.placeholders.plantPH}}">
+			        		<input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantPH" placeholder="{{vm.placeholders.plantPH}}">
 			      		</div>
 			    	</div>
 			    	<div class="form-group col-sm-6 col-lg-12">
 			      		<label for="input" class="col-lg-3 control-label">Height:</label>
 			      		<div class="col-lg-9">
 				      		<div class="input-group">
-							    <input type="text" class="form-control" only-Digits ng-model="vm.inputData.plantHeight" placeholder="{{vm.placeholders.plantHeight}}">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.plantHeight" placeholder="{{vm.placeholders.plantHeight}}">
 							    <span class="input-group-btn">
 							      	<button class="btn btn-default" type="button">in.</button>
 							    </span>
@@ -67,27 +67,27 @@
 			    		<tr>
 			    			<td class="col-xs-6 col-lg-6">
 			    				<div class="form-group">
-						      		<label class="col-lg-6 control-label">Time of Day:</label>
+						      		<label class="col-lg-6 control-label">Light:</label>
 								      <div class="col-lg-6">
 								        <div class="radio">
 								          <label>
-								            <input type="radio" name="timeRadios" 
-								            	   ng-model="vm.inputData.timeOfDay" value="morning" checked="">
-								            Morning
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="CFL" checked="">
+								            CFL
 								          </label>
 								        </div>
 								        <div class="radio">
 								          <label>
-								            <input type="radio" name="timeRadios" 
-								            	   ng-model="vm.inputData.timeOfDay" value="afternoon">
-								            Afternoon
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="afternoon">
+								            HPS
 								          </label>
 								        </div>
 								         <div class="radio">
 								          <label>
-								            <input type="radio" name="timeRadios" 
-								            	   ng-model="vm.inputData.timeOfDay" value="evening">
-								            Evening
+								            <input type="radio" name="lightRadios" 
+								            	   ng-model="vm.inputData.lightType" value="evening">
+								            Na
 								          </label>
 								        </div>
 								    </div>
@@ -96,7 +96,7 @@
 						    
 				    		<td class="col-xs-6 col-lg-6">
 			    				<div class="form-group">
-						      		<label class="col-lg-6 control-label">Condtion:</label>
+						      		<label class="col-lg-6 control-label">Condition:</label>
 								      <div class="col-lg-6">
 								        <div class="radio">
 								          <label>
@@ -127,7 +127,7 @@
 			    	<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-12">
 					    <label for="textArea" class="col-xs-6 col-sm-2 col-md-2 col-lg-2 control-label">Notes:</label>
 					    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-					        <textarea class="form-control" rows="3" style="overflow:auto;resize:none"
+					        <textarea class="form-control" rows="6" style="overflow:auto;resize:none"
 					        		  ng-model="vm.inputData.plantMsg" placeholder="{{vm.placeholders.plantMsg}}"></textarea>
 					    </div>
 				    </div>
