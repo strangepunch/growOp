@@ -51,7 +51,7 @@
   		totalWater: null,
   		//totalPPM: null,
   		//totalPH: null,
-      timeOfDay: null,
+      //timeOfDay: null,
       roomMsg: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
@@ -64,7 +64,7 @@
   		totalWater: 5,
   		//totalPPM: 0,
   		//totalPH: 0,
-      timeOfDay: 'evening',
+      //timeOfDay: 'evening',
       roomMsg: 'nothing is going on around here.',
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
@@ -123,7 +123,7 @@
             totalWater: null,
             //totalPPM: null,
             //totalPH: null,
-            timeOfDay: null,
+            //timeOfDay: null,
             roomMsg: null,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
@@ -145,7 +145,7 @@
             totalWater: vm.storedData.totalWater,
             //totalPPM: vm.storedData.totalPPM,
             //totalPH: vm.storedData.totalPH,
-            timeOfDay: vm.storedData.timeOfDay,
+            //timeOfDay: vm.storedData.timeOfDay,
             roomMsg: vm.storedData.roomMsg,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
