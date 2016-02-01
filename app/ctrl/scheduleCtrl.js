@@ -42,73 +42,71 @@
     		day: 5
     	};
 
-    	vm.currentImage = "week0.jpg";
+    	vm.currentImage = "week0.png";
     	vm.currentWeek = "0";
     	vm.currentIndex = 0;
 		vm.feedSchedule = [
 				{
 					"week": "0",
-					"url": "week0.jpg"
+					"url": "week0.png"
 				},
 				{
 					"week": "0B",
-					"url": "week0B.jpg"
+					"url": "week0B.png"
 				},
 				{
 					"week": "1",
-					"url": "week1.jpg"
+					"url": "week1.png"
 				},
 				{
 					"week": "2",
-					"url": "week2.jpg"
+					"url": "week2.png"
 				},
 				{
 					"week": "3",
-					"url": "week3.jpg"
+					"url": "week3.png"
 				},
 				{
 					"week": "4",
-					"url": "week4.jpg"
+					"url": "week4.png"
 				},
 				{
 					"week": "5",
-					"url": "week5.jpg"
+					"url": "week5.png"
 				},
 				{
 					"week": "6",
-					"url": "week6.jpg"
+					"url": "week6.png"
 				},
 				{
 					"week": "7",
-					"url": "week7.jpg"
+					"url": "week7.png"
 				},
-				{
-					"week": "8",
-					"url": "week8.jpg"
+				{	"week": "8",
+					"url": "week8.png"
 				},
-				{
-					"week": "9",
-					"url": "week9.jpg"
+				{	"week": "9",
+					"url": "week9.png"
 				},
 				{
 					"week": "10",
-					"url": "week10.jpg"
+					"url": "week10.png"
 				},
 				{
 					"week": "11",
-					"url": "week11.jpg"
+					"url": "week11.png"
 				},
 				{
 					"week": "12",
-					"url": "week12.jpg"
+					"url": "week12.png"
 				},
 				{
 					"week": "13",
-					"url": "week13.jpg"
+					"url": "week13.png"
 				},
 				{
 					"week": "14",
-					"url": "week14.jpg"
+					"url": "week14.png"
 				}
 
 			];
