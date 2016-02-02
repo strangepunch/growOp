@@ -13,10 +13,10 @@
 		      template: '<div class="betterbutton"><div class="innerName" style="color:{{btnColor}}; opacity:{{btnOpacity}};" ng-click="action()"><span class={{DisplayShape}} aria-hidden="true"></span></div>',
 		      link: function (scope, elem, attrs) {
 		    	  
-		    	  	scope.DisplayShape = 'glyphicon glyphicon-remove';
+		    	  	scope.DisplayShape = 'glyphicon glyphicon-option-vertical';
 		    	  	scope.checkButton = 'glyphicon glyphicon-ok';
 		    	  	scope.emailed = ''
-		    	  	scope.removeButton = 'glyphicon glyphicon-remove';
+		    	  	scope.removeButton = 'glyphicon glyphicon-option-vertical';
 		    	  	scope.btnColor = '#ffffff';
 		    	  	scope.btnOpacity = 0.5;
   	  	

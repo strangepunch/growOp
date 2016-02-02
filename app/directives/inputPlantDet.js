@@ -10,6 +10,7 @@
 		    	  dataList: '=arryList',
 		          listName: '@',
 		          listDesc: '@',
+		          listImg: '@',
 		          counter: '@',
 		          action: '&'
 		        },

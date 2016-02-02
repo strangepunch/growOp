@@ -37,6 +37,7 @@
 
     vm.PlantName = $scope.listName;
     vm.PlantDesc = $scope.listDesc;
+    vm.PlantImg = $scope.listImg;
     vm.PlantCount = $scope.counter;
     
     vm.inPlantProgressView = true;
