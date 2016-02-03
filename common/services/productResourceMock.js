@@ -92,7 +92,6 @@
  			"totalWater":5,
  			"totalPPM":0,
  			"totalPH":0,
- 			"timeOfDay":"evening",
  			"roomMsg":"nothing is going on around here.",
  			"entryTime":"11:55:45:130",
  			"entryDate":"2016/1/15"
@@ -108,7 +107,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -123,7 +121,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -138,7 +135,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -153,7 +149,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -168,7 +163,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -183,7 +177,6 @@
 				"plantPH":0,
 				"plantHeight":0,
 				"plantCond":"good",
-				"timeOfDay":"morning",
 				"plantMsg":"",
 				"entryTime":"10:5:8:856",
 				"entryDate":"2016/1/14"
@@ -2392,94 +2385,18 @@
 			"day7" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"72","roomHumidity":"62","roomLight":"24","totalWater":null,"roomMsg":"Good positive growth overall. Warmed to 77°","entryTime":"11:59:12:589","entryDate":"2016/2/2"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, one compound set. 24\" from halide bulb, no wilting","entryTime":"11:59:12:815","entryDate":"2016/2/2"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"5 sets leaves, sprouts at nodes, 22\" from bulb, no wilting so no changes","entryTime":"11:59:12:941","entryDate":"2016/2/2"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, newest tier is compound, 25\" from bulb, no wilting","entryTime":"11:59:13:27","entryDate":"2016/2/2"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, coty leaves still green. Rotating 3x /d","entryTime":"11:59:13:127","entryDate":"2016/2/2"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","plantMsg":"No sprout yet","entryTime":"11:59:13:243","entryDate":"2016/2/2"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -55349,6 +55266,120 @@ var weeklySchedule = [
 			 "descriptionAbbrev": "The Mango Kush marijuana strain tastes similar to the the actual mango fruit, with a distinct kush flavor, and hints of pine on the exhale.",
 			 "tags": [""],
 			 "imageUrl": "images/strains/mango-kush_100x100.jpg"
+			},
+			{"strainId": 379,
+			 "strainName": "Auto Diesel-Matic",
+			 "strainType": "Indica",
+			 "components": [
+			 	{ 
+			 		"name": "THC9",  
+			 		"value": 12.00
+			 	},
+			 	{ 
+			 		"name": "CBD", 
+			 		"value": 8.00
+			 	},
+			 	{ 
+			 		"name": "CBN", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBG", 
+			 		"value": 0.00	
+			 	},
+			 	{ 
+			 		"name": "CBC", 
+			 		"value": 0.00 
+			 	},
+			 	{ 
+			 		"name": "THCV", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THCA", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "THC8", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pulegone", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Myrcene", 
+			 		"value": 0.200
+			 	},
+			 	{ 
+			 		"name": "Caryophyllene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Limonene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Linalool", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Eucalyptol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Pinene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Terpineol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Terpineol-4", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cymene", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Apigenin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Quercetin", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Cannflavin A", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Beta-sitosterol", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "CBL", 
+			 		"value": 0.00
+			 	},
+			 	{ 
+			 		"name": "Humulene", 
+			 		"value": 0.89
+				},
+				{ 
+			 		"name": "Terpinolene", 
+			 		"value": 0.00
+				}	
+		 	], 
+		 	"taste": ["Fuel","Spicy","Fruity", "Hash"],
+		 	 "conditions": ["Stress", "Pain", "Anxiety"],
+			 "positiveEffects": ["Potent", "Relaxed","Peaceful", "Creative", "Mind + Body", "Euphoric"],
+			 "negativeEffects": [""],
+			 "descriptionDetailed": "Diesel Matic is a cross of our super-fast Skull Ryder and the multiple award winner NYCD (New York City Diesel). The result is a very potent auto flowering strain which gives off an amazing fuel-type aroma and has an incredible spicy yet fruity flavour. This plant begins to throw out pistils as early as day 16 and will show incredible vigour right from the start. Most phenotypes produce multiple side branches which start off skinny but will soon fill out with numerous glistening buds. The ability of Diesel Matic to produce so many branches makes it an excellent strain for use in a SOG setup where yields can easily reach 90g per plant. The aroma which comes off these plants really fills the grow room with a mixture of spicy and fruity tones that combine in a truly pungent scent. The Indica dominant genetics of Diesel Matic make for a fairly narcotic effect although it is not a total couch-locker and allows the smoker to stay active. Flowering time: 60-70 days from seed to bud., THC levels: Medium (10% 15%), CBD levels: Medium, Yields: 30g-90g per plant, Height: 40cm 80cm, Genetics: Ruderalis 30% Indica 50% Sativa 20%, Strains : SkullRyder X N.Y.C.D (New York City Diesel)",
+			 "descriptionAbbrev": "Diesel Matic is a cross of super-fast Skull Ryder and the multiple award winner NYCD (New York City Diesel). The Indica dominant genetics of Diesel Matic make for a fairly narcotic effect although it is not a total ‘couch-locker’ and allows the smoker to stay active.",
+			 "tags": [""],
+			 "imageUrl": "images/strains/auto-diesel-matic.jpg"
 			}
 		];
 
@@ -57585,6 +57616,11 @@ var weeklySchedule = [
 			 	"strainName": "Mango Kush",
 			 	"strainType": "Hybrid",
 			 	"imageUrl": "images/strains/mango-kush_100x100.jpg"
+			}, 
+			{"strainId": 379,
+			 	"strainName": "Auto Diesel-Matic",
+			 	"strainType": "Indica",
+			 	"imageUrl": "images/strains/auto-diesel-matic.jpg"
 			}
 		]; 
 /** end strain name data **/

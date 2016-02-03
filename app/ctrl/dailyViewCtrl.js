@@ -95,7 +95,7 @@
 			{plant:3, 
 		     name: 'Auto DM',
 		     desc: '(Blackskull)',
-		     img:'images/strains/acapulco-gold_100x100.jpg', 
+		     img:'images/strains/auto-diesel-matic.jpg', 
 		     plantData: {plantType: 'Indica',
 						 plantWater: 0,
 						 plantPPM: 0,
