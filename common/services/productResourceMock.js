@@ -1702,7 +1702,7 @@
 		],		
  	"week1" : [
  		{
- 			"growthStage": "seedling",
+ 			"growthStage": "1",
  			"weekMsg":"Sucessful incubation requires consistent light, warmth and humidity.",
  			"entryTime":"00:00:00:000",
  			"entryDate":"2016/1/15",
@@ -2179,7 +2179,7 @@
 		],
 	"week2" : [
  		{
- 			"growthStage": "seedling",
+ 			"growthStage": "1",
  			"weekMsg":"Sucessful incubation requires consistent light, warmth and humidity.",
  			"entryTime":"11:38:29:377",
  			"entryDate":"2016/1/28",
@@ -2417,101 +2417,25 @@
 		],
 	"week3" : [
  		{
- 			"growthStage": "seedling",
+ 			"growthStage": "1",
  			"weekMsg":"Sucessful incubation requires consistent light, warmth and humidity.",
  			"entryTime":"00:00:00:000",
- 			"entryDate":"2016/1/15",
+ 			"entryDate":"2016/2/03",
  			"day1" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"75","roomHumidity":"72","roomLight":"24","totalWater":null,"roomMsg":"Good positive growth, arranged for now equal light exposure","entryTime":"13:48:48:158","entryDate":"2016/2/3"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers leaves","entryTime":"13:48:48:395","entryDate":"2016/2/3"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":null,"plantPPM":null,"plantPH":null,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers leaves","entryTime":"13:48:48:595","entryDate":"2016/2/3"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"poor","lightType":"afternoon","plantMsg":"No sprout yet","entryTime":"13:48:48:780","entryDate":"2016/2/3"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2531,94 +2455,18 @@
 			"day2" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"77","roomHumidity":"61","roomLight":"24","totalWater":null,"roomMsg":"Conditions seem consistently optimal for vegetative growing","entryTime":"8:25:21:919","entryDate":"2016/2/4"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves. Stem is strengthening & thickening","entryTime":"8:25:22:172","entryDate":"2016/2/4"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Some wilting of leaves. Moved from 24\" to 30\" from bulb. Misted soil. No leaf discoloration","entryTime":"8:25:22:368","entryDate":"2016/2/4"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","plantMsg":"One sprout at top surface of rockwool","entryTime":"8:25:22:555","entryDate":"2016/2/4"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2638,94 +2486,18 @@
 			"day3" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"77","roomHumidity":"64","roomLight":"24","totalWater":null,"roomMsg":"1:5 tea diluted with RO on 1-4. Pot 5 full strength tea. CSS ready to FIM. 2 sprouts visible","entryTime":"12:35:4:262","entryDate":"2016/2/5"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":"0.4","plantPPM":"4990","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"12:35:4:527","entryDate":"2016/2/5"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":"0.44","plantPPM":"2660","plantPH":"7","plantHeight":"5","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done of primary stem","entryTime":"12:35:4:666","entryDate":"2016/2/5"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":"0.4","plantPPM":"3580","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Wilting today, believed to be from too close to bulb. 30\" now, moved to 36\"","entryTime":"12:35:4:762","entryDate":"2016/2/5"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":"0.4","plantPPM":"5260","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"Good progress","entryTime":"12:35:4:851","entryDate":"2016/2/5"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":"0.4","plantPPM":"4020","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"2 sprouts in incubator, not ready for transplant yet. Full strength compost tea applied","entryTime":"12:35:4:935","entryDate":"2016/2/5"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2746,10 +2518,10 @@
 			{
 			 	"environment" : [
 			 		{
-			 			"roomTemp":70,
+			 			"roomTemp":74,
 			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
+			 			"roomLight":24,
+			 			"totalWater":2.5,
 			 			"totalPPM":0,
 			 			"totalPH":0,
 			 			"timeOfDay":"evening",
@@ -2852,94 +2624,18 @@
 			"day5" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"72","roomHumidity":"61","roomLight":"24","totalWater":null,"roomMsg":"3 seedlings now in pot 5","entryTime":"8:58:50:781","entryDate":"2016/2/7"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:38","entryDate":"2016/2/7"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"great","lightType":"afternoon","plantMsg":"Tolerated FIM well","entryTime":"8:58:51:163","entryDate":"2016/2/7"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:248","entryDate":"2016/2/7"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:318","entryDate":"2016/2/7"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"2 more sprouts planted. Will watch closely as veg progresses for sexing","entryTime":"8:58:51:433","entryDate":"2016/2/7"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2959,94 +2655,18 @@
 			"day6" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"75","roomHumidity":"59","roomLight":"24","totalWater":null,"roomMsg":"Aerated all pots. BB 1 tsp/gal pot 5, BB 3tsp/g + GB 1tsp/g all others. Applied fish protein to all plants, 3/4 teaspoon for 1 quart water.","entryTime":"9:44:29:723","entryDate":"2016/2/8"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":"0.5","plantPPM":"4610","plantPH":"7","plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"4 tiers leaves","entryTime":"9:44:30:42","entryDate":"2016/2/8"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":"0.5","plantPPM":"4060","plantPH":"7","plantHeight":"8","plantCond":"great","lightType":"afternoon","plantMsg":"Nutes done.","entryTime":"9:44:30:197","entryDate":"2016/2/8"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":"0.5","plantPPM":"4230","plantPH":"7.2","plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves.","entryTime":"9:44:30:304","entryDate":"2016/2/8"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":"0.5","plantPPM":"4550","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves","entryTime":"9:44:30:403","entryDate":"2016/2/8"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":"0.5","plantPPM":"4250","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"BB only. All 3 sprouts doing well","entryTime":"9:44:30:496","entryDate":"2016/2/8"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -3066,94 +2686,18 @@
 			"day7" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"73","roomHumidity":"63","roomLight":"24","totalWater":null,"roomMsg":"Looks good. Raised halide 4\" wilted leaves JH&CSS","entryTime":"8:24:59:569","entryDate":"2016/2/9"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":7,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"Leaves wilted probably from too much light or too much water from foliar application of fish protein.","entryTime":"8:24:59:569","entryDate":"2016/2/8"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"great","lightType":"afternoon","plantMsg":"Lowest 2 fans removed, shaded since they are totally shaded. FIM site showing new sprouts","entryTime":"8:25:0:101","entryDate":"2016/2/9"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:25:0:222","entryDate":"2016/2/9"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:25:0:332","entryDate":"2016/2/9"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"All 3 will survive now. Switch to halide soon, don't want stretch tho","entryTime":"8:25:0:439","entryDate":"2016/2/9"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -3174,8 +2718,8 @@
 		],
 	"week4" : [
  		{
- 			"growthStage": "seedling",
- 			"weekMsg":"Sucessful incubation requires consistent light, warmth and humidity.",
+ 			"growthStage": "1",
+ 			"weekMsg":"",
  			"entryTime":"00:00:00:000",
  			"entryDate":"2016/1/15",
  			"day1" : [
