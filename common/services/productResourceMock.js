@@ -15,6 +15,9 @@
 		var phases = [
 		{
 			"seedling" : "0"
+		},
+		{
+			"seedling" : "0B"
 		}, 
 		{
 			"vegetation" : "1"
@@ -183,6 +186,327 @@
 		}]
 	}];
 	/** end daily log data structure **/
+
+
+/** weekly growth images */
+ var photos = [
+ {
+	"soil": {
+		"plantPic1" : "images/soil/soil1_5_seven_gal_pots.jpg"
+		},
+	"nutrients": {
+		"plantPic1" : "images/nutrients/nutrients_1.jpg",
+		"plantPic2" : "images/plants/plant2/bigBloom_CU.png",
+		"plantPic3" : "images/plants/plant2/growBig_CU.png",
+		"plantPic4" : "images/plants/plant2/tigerBloom_CU.png"
+	},
+	"compostTea": {
+		"plantPic1" : "images/compost_tea/compost_tea.jpg",
+		"plantPic2" : "images/compost_tea/compost_tea2.jpg",
+		"plantPic3" : "images/compost_tea/five_gal_bucket.jpg"
+		},
+	"equipment": {
+		"plantPic1" : "images/equipment/45gph_pump.jpg",
+		"plantPic2" : "images/equipment/airhose_and_splitter.jpg",
+		"plantPic3" : "images/equipment/five_gal_bucket.jpg",
+		"plantPic4" : "images/equipment/soil1_5_seven_gal_pots.jpg"
+		},
+ 	"week0": {
+		"plant1": {
+			"plantPic1" : "images/plants/plant1/or_week0_3.jpg",
+			"plantPic2" : "images/plants/plant1/week0_1.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/plant2/week0_1.jpg",
+			"plantPic2" : "images/plants/plant2/week0_2.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/plant3/or_week0_3.jpg",
+			"plantPic2" : "images/plants/plant3/week0_1.jpg"
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/plant4/or_week0_3.jpg",
+			"plantPic2" : "images/plants/plant4/week0_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/plant5/IMAG3363.jpg",
+			"plantPic2" : "images/plants/plant5/or_week0_2.jpg",
+			"plantPic3" : "images/plants/plant5/or_week0_3.jpg",
+			"plantPic4" : "images/plants/plant5/or_week0_4.jpg",
+			"plantPic5" : "images/plants/plant5/or_week0_5.jpg",
+			"plantPic6" : "images/plants/plant5/week0_1.jpg"
+  		}
+  	},
+  	"week0B": {
+		"plant1": {
+			"plantPic1" : "images/plants/plant1/week0B_3.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/plant2/week0B_1.jpg",
+			"plantPic2" : "images/plants/plant2/week0B_2.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/plant3/week0B_3.jpg"
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/plant4/week0B_3.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/plant5/week1_2.jpg"
+  		}
+  	},
+  	"week1": {
+		"plant1": {
+			"plantPic1" : "images/plants/week1/plant1/week1_3.jpg",
+			"plantPic1" : "images/plants/week1/plant1/week1_5.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week1/plant2/week_1_5.jpg",
+			"plantPic2" : "images/plants/week1/plant2/week1_1.jpg",
+			"plantPic2" : "images/plants/week1/plant2/week1_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week1/plant3/week1_3.jpg",
+			"plantPic1" : "images/plants/week1/plant3/week1_5.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week1/plant4/week1_3.jpg",
+			"plantPic1" : "images/plants/week1/plant4/week1_5.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week1/plant5/week1_2.jpg",
+			"plantPic1" : "images/plants/week1/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week2": {
+		"plant1": {
+			"plantPic1" : "images/plants/week2/plant1/week2_5.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week2/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week2/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week2/plant4/week2_1.jpg"
+  		},
+  		"plantPic1/plant5": {
+			"plantPic1" : "images/plants/week2/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week3": {
+		"plant1": {
+			"plantPic1" : "images/plants/week3/plant1/week2_5.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week3/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week3/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week3/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week3/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week4": {
+		"plant1": {
+			"plantPic1" : "images/plants/week4/plant1/Week4-JH2.jpg",
+			"plantPic1" : "images/plants/week4/plant1/Week4-JH1.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week4/plant2/Week4-CSS2.jpg",
+			"plantPic1" : "images/plants/week4/plant2/Week4-css1.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week4/plant3/Week4-autodeiselmatic2.jpg",
+			"plantPic1" : "images/plants/week4/plant3/Week4-autodieselmatic1.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week4/plant4/Week4-gsc2.jpg",
+			"plantPic1" : "images/plants/week4/plant4/Week4-gsc1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week4/plant5/Week4-orange-rooster2.jpg",
+			"plantPic1" : "images/plants/week4/plant5/Week4-orange-rooster1.jpg"
+  		}
+  	},
+  	"week5": {
+		"plant1": {
+			"plantPic1" : "images/plants/week5/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week5/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week5/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week5/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week5/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week6": {
+		"plant1": {
+			"plantPic1" : "images/plants/week6/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week6/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week6/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week6/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week6/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week7": {
+		"plant1": {
+			"plantPic1" : "images/plants/week7/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week7/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week7/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week7/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week7/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week8": {
+		"plant1": {
+			"plantPic1" : "images/plants/week8/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week8/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week8/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week8/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week8/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week9": {
+		"plant1": {
+			"plantPic1" : "images/plants/week9/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week9/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week9/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week9/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week9/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week10": {
+		"plant1": {
+			"plantPic1" : "images/plants/week10/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week10/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week10/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week10/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week10/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week11": {
+		"plant1": {
+			"plantPic1" : "images/plants/week11/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week11/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week11/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week11/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week11/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week12": {
+		"plant1": {
+			"plantPic1" : "images/plants/week12/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week12/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week12/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week12/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week12/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week13": {
+		"plant1": {
+			"plantPic1" : "images/plants/week13/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week13/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week13/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week13/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week13/plant5/week2_2.jpg"
+  		}
+  	},
+  	"week14": {
+		"plant1": {
+			"plantPic1" : "images/plants/week14/plant1/Week4-JH2.jpg"
+  		},
+  		"plant2": {
+			"plantPic1" : "images/plants/week14/plant2/week2_4.jpg"
+  		},
+  		"plant3": {
+			"plantPic1" : "images/plants/week14/plant3/week2_3.jpg" 
+  		},
+  		"plant4": {
+			"plantPic1" : "images/plants/week14/plant4/week2_1.jpg"
+  		},
+  		"plant5": {
+			"plantPic1" : "images/plants/week14/plant5/week2_2.jpg"
+  		}
+  	}
+ }];
+/** end plant photows **/
+
 
 /** reporting data structure - live data until mongoDB can be used **/
  var masterPlantLog = [{
@@ -2725,94 +3049,18 @@
  			"day1" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"73","roomHumidity":"63","roomLight":"24","totalWater":null,"roomMsg":"","entryTime":"16:40:56:351","entryDate":"2016/2/10"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"FIM done on primary stalk","entryTime":"16:40:56:603","entryDate":"2016/2/10"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"good","lightType":"afternoon","plantMsg":"Secondary stalks almost ready to FIM","entryTime":"16:40:56:716","entryDate":"2016/2/10"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"16:40:56:804","entryDate":"2016/2/10"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"16:40:56:890","entryDate":"2016/2/10"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"Starting slow transition to halide. All 3 look good","entryTime":"16:40:57:5","entryDate":"2016/2/10"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2832,94 +3080,18 @@
 			"day2" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"72","roomHumidity":"58","roomLight":"24","totalWater":null,"roomMsg":"Aeration done, tea started","entryTime":"13:20:34:871","entryDate":"2016/2/11"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"No wilting, tolerated FIM well","entryTime":"13:20:35:151","entryDate":"2016/2/11"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done x 5 on lower branches. Some wilting, not severe. Lite at 24\"","entryTime":"13:20:35:292","entryDate":"2016/2/11"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"Sprouting new tiers","entryTime":"13:20:35:368","entryDate":"2016/2/11"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"New leaves emerging","entryTime":"13:20:35:433","entryDate":"2016/2/11"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"Slowly moving pot toward halide. Still under cfl","entryTime":"13:20:35:527","entryDate":"2016/2/11"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -2939,94 +3111,18 @@
 			"day3" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"73","roomHumidity":"52","roomLight":"24","totalWater":null,"roomMsg":"Compost tea applied 1:5 for all\nAll.look good\nPoured fish protiein on JH, CSS, GSC","entryTime":"11:46:38:242","entryDate":"2016/2/12"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":".4","plantPPM":"3230","plantPH":"7","plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"Recovering well from first fim","entryTime":"11:46:38:431","entryDate":"2016/2/12"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":".4","plantPPM":"1080","plantPH":"7","plantHeight":"10","plantCond":"good","lightType":"afternoon","plantMsg":"Insect bites on 2 leaves\nResponding well to FIM","entryTime":"11:46:38:545","entryDate":"2016/2/12"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":".4","plantPPM":"3550","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"New growth is healthy","entryTime":"11:46:38:676","entryDate":"2016/2/12"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":"2460","plantPPM":0,"plantPH":"7","plantHeight":"3","plantCond":"great","lightType":"afternoon","plantMsg":"Starting 4th tier of leaves\nShould be ready for fim in 2-3 days","entryTime":"11:46:38:761","entryDate":"2016/2/12"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":.4,"plantPPM":"2940","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"Placed on halide light\nCenter of 3 doing the best","entryTime":"11:46:38:878","entryDate":"2016/2/12"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -3046,94 +3142,18 @@
 			"day4" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"72","roomHumidity":"68","roomLight":"24","totalWater":null,"roomMsg":"Elevated all pots except 2 on 5\"platform due to height descrepancy.","entryTime":"8:0:53:15","entryDate":"2016/2/13"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb now on 5\" platform","entryTime":"8:0:53:382","entryDate":"2016/2/13"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done x 1. Pruned 2 lowest fans in shade. Height 1\"/d, with excellent response to FIMs.","entryTime":"8:0:53:520","entryDate":"2016/2/13"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb on platform.","entryTime":"8:0:53:642","entryDate":"2016/2/13"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb on platform","entryTime":"8:0:53:721","entryDate":"2016/2/13"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"30\" from bulb. All 3 sprouts look good","entryTime":"8:0:53:839","entryDate":"2016/2/13"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
