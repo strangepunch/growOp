@@ -38,7 +38,7 @@
 	      		<label for="input" class="col-lg-6 control-label">Light Height:</label>
 	      		<div class="col-lg-6">
 		      		<div class="input-group">
-					    <input type="text" class="form-control" only-Digits ng-model="vm.inputData.roomLightHt" placeholder="{{vm.placeholders.roomLightHt}}">
+					    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.roomLightHt" placeholder="{{vm.placeholders.roomLightHt}}">
 					    <span class="input-group-btn">
 					      	<button class="btn btn-default" type="button">in.</button>
 					    </span>
@@ -87,7 +87,7 @@
 		            	<span> <!--ng-if="item.checked != false"-->
 		            		 Amt:
 			            	<div class="input-group">
-							    <input type="text" class="form-control" only-Digits ng-model="item.amt">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="item.amt">
 							    <span class="input-group-btn">
 							      	<button class="btn btn-default" style="padding-left:10px;width:45px" type="button"> t/g</button>
 							    </span>

@@ -104,12 +104,12 @@
 	    vm.getFullPlantsArray();
 
 	    //temporary solution. refresh screen to see updated array.
-	    setInterval(function(){
+	    /*setInterval(function(){
 	    	vm.getFullPlantsArray(); 
 	    	vm.errorMessage = ""; 
 	    	vm.addButtonStyle = "btn-primary"; 
 	    	$scope.$apply();
-	    }, 5000);
+	    }, 5000);*/
 
 	    /**---Temporary Stuff---**/
     	/*vm.currentPlantsList = [
