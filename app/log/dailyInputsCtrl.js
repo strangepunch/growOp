@@ -162,6 +162,10 @@
         $scope.btnSuccessEmail = 'default';
         vm.errorMessage = '';
         console.log("Cleared ROOM input DATA!");
+
+        for(var obj in vm.Nutrients){
+            vm.Nutrients[obj].amt = 0;
+        }
     }
 
     function makeJSON(){

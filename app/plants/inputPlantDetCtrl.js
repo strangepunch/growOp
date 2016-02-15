@@ -181,6 +181,11 @@
         $scope.btnSuccessEmail = 'default';
         vm.errorMessage = '';
         console.log("Cleared PLANT input DATA!");
+
+        for(var obj in vm.Pruning){
+            vm.Pruning[obj].tier = 0;
+            vm.Pruning[obj].times = 0;
+        }
     }
 
     function makeJSON(){
