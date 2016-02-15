@@ -50,8 +50,28 @@
       plantPPM: 'enter plant PPM...',
       plantPH: 'enter plant PH...',
       plantHeight: 'enter plant Height...',
+      lightHt: 'enter light Height...',
       plantMsg: 'extra notes on this plant...'
     };
+
+    vm.Pruning =[{
+      "name": "FIM",
+      "tier": 0,
+      "times": 0,
+      "checked": false,
+    }, {"name": "Top",
+      "tier": 0,
+      "times": 0,
+      "checked": false
+    }, {"name": "sCrop",
+      "tier": 0,
+      "times": 0,
+      "checked": false
+    }, {"name": "LST",
+      "tier": 0,
+      "times": 0,
+      "checked": false
+    }];
 
     vm.inputData = {
       plantType: null,
@@ -62,6 +82,8 @@
       plantCond: null,
       //timeOfDay: null,
       lightType: null,
+      lightHt: null,
+      pruning: null,
       plantMsg: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
@@ -76,6 +98,8 @@
       plantCond: 'good',
       //timeOfDay: 'morning',
       lightType: 'CFL',
+      lightHt: 0,
+      pruning: vm.Pruning,
       plantMsg: 'this plant feels good.',
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
@@ -108,6 +132,9 @@
       if(!$scope.dailyForm.$invalid) {
           //console.log("vm.inputData", vm.inputData);
           vm.storedData = vm.inputData;
+          //console.log("vm.storedData", vm.storedData);
+          //console.log("vm.Pruning", vm.Pruning);
+          vm.storedData.pruning = vm.Pruning
           vm.storedData.entryTime = vm.currentTimestamp;
           vm.storedData.entryDate = vm.currentDate;
 
@@ -135,6 +162,8 @@
           plantCond: null,
           //timeOfDay: null,
           lightType: null,
+          lightHt: null,
+          pruning: null,
           plantMsg: null,
           entryTime: vm.currentTimestamp,
           entryDate: vm.currentDate
@@ -166,7 +195,8 @@
             plantHeight: vm.storedData.plantHeight,
             plantCond: vm.storedData.plantCond,
             lightType: vm.storedData.lightType,
-            //timeOfDay: vm.storedData.timeOfDay,
+            lightHt: vm.storedData.lightHt,
+            pruning: vm.storedData.pruning,
             plantMsg: vm.storedData.plantMsg,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate

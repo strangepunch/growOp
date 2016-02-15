@@ -34,7 +34,7 @@
 						//Entry View
 						.state("/", {
 							url: "/",
-							templateUrl: "app/views/dailyView.html",
+							templateUrl: "app/log/dailyView.html",
 							controller: "DailyViewCtrl",
 							controllerAs: "vm"
 						})
@@ -42,7 +42,7 @@
 						//Main Button Navs
 						.state("main", {
 							url: "/main_menu",
-							templateUrl: "app/views/mainView.html",
+							templateUrl: "app/main/mainView.html",
 							controller: "MainViewCtrl",
 							controllerAs: "vm"
 						})
@@ -50,7 +50,7 @@
 						//Daily Feeding View
 						.state("daily", {
 							url: "/daily",
-							templateUrl: "app/views/dailyView.html",
+							templateUrl: "app/log/dailyView.html",
 							controller: "DailyViewCtrl",
 							controllerAs: "vm"
 						})
@@ -58,15 +58,28 @@
 						//Plant Progress View
 						.state("plant", {
 							url: "/plants",
-							templateUrl: "app/views/plantView.html",
+							templateUrl: "app/plants/plantView.html",
 							controller: "PlantViewCtrl",
 							controllerAs: "vm"
+						})
+						.state("plant.addPlant", {
+							url: "/addPlant",
+							templateUrl: "app/plants/plantAddView.html",
+							controller: "PlantViewCtrl",
+							controllerAs: "vm"
+						})
+						.state("plantDet", {
+							url: "/plantsDetail",
+							templateUrl: "app/plants/plantDetView.html",
+							controller: "PlantDetViewCtrl",
+							controllerAs: "vm",
+							params: {plantName: ''}
 						})
 
 						//Weekly Schedule View
 						.state("schedule", {
 							url: "/schedule",
-							templateUrl: "app/views/scheduleView.html",
+							templateUrl: "app/schedule/scheduleView.html",
 							controller: "ScheduleCtrl",
 							controllerAs: "vm"
 						})

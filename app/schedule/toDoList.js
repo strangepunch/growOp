@@ -13,7 +13,7 @@
 		        },
 		      controller: 'ToDoListCtrl',
 			  controllerAs: 'vm',
-		      templateUrl: 'app/templates/toDoList.html',
+		      templateUrl: 'app/schedule/toDoList.html',
 		      link: function (scope, elem, attrs) {
 		      		//console.log('listName', attrs.listName);
 

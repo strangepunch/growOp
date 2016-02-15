@@ -13,7 +13,7 @@
 		        },
 		      controller: 'DailyInputsCtrl',
 			  controllerAs: 'vm',
-		      templateUrl: 'app/templates/dailyInputs.html',
+		      templateUrl: 'app/log/dailyInputs.html',
 		      link: function (scope, elem, attrs) {
 		      		if(scope.dailyForm.$pristine) {
 		                scope.buttonStyle = 'btn-default';

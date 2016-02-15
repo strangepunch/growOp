@@ -125,6 +125,17 @@
 						    </td>
 			    		</tr>
 			    	</table>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-4 control-label">Light Height:</label>
+			      		<div class="col-lg-8">
+				      		<div class="input-group">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.lightHt" placeholder="{{vm.placeholders.lightHt}}">
+							    <span class="input-group-btn">
+							      	<button class="btn btn-default" type="button">in.</button>
+							    </span>
+							</div>
+						</div>
+			    	</div>
 			    	<div class="form-group col-xs-12 col-sm-6 col-md-6 col-lg-12">
 					    <label for="textArea" class="col-xs-6 col-sm-2 col-md-2 col-lg-2 control-label">Notes:</label>
 					    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -132,6 +143,34 @@
 					        		  ng-model="vm.inputData.plantMsg" placeholder="{{vm.placeholders.plantMsg}}"></textarea>
 					    </div>
 				    </div>
+				    <div class="col-xs-12 col-lg-12">
+			    		<h3 class="title" style="padding-top:10px"> pruning </h3>
+			    	</div>
+			    	<div class="form-group col-xs-6 col-sm-3 col-lg-6" ng-repeat="item in vm.Pruning track by $index" style="margin-right:5px">
+			      		<div class="checkbox">
+				          	<label>
+				            	<input type="checkbox" ng-model="item.checked"> 
+				            		{{item.name}} 
+				            	<span> <!--ng-if="item.checked != false"-->
+					            	<div class="input-group">
+									    <input type="text" class="form-control" only-Digits ng-model="item.tier">
+									    <span class="input-group-btn">
+									      	<button class="btn btn-default" type="button" style="padding-left:9px;width:45px">tier</button>
+									    </span>
+									</div>
+								</span>
+								<br/>
+								<span> <!--ng-if="item.checked != false"-->
+					            	<div class="input-group">
+					            		<span class="input-group-btn">
+									      	<button class="btn btn-default" type="button">x</button>
+									    </span>
+									    <input type="text" class="form-control" only-Digits ng-model="item.times">
+									</div>
+								</span>
+				          	</label>
+				        </div>
+			    	</div>
 			    	<div class="col-xs-12" style="text-align:center">
 						<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->
 						<button class="btn {{submitButtonStyle}}" ng-click="vm.submitData()">Submit</button>

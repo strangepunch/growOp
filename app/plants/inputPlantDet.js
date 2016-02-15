@@ -16,7 +16,7 @@
 		        },
 		      controller: 'InputPlantDetCtrl',
 			  controllerAs: 'vm',
-		      templateUrl: 'app/templates/inputPlantDet.html',
+		      templateUrl: 'app/plants/inputPlantDet.html',
 		      link: function (scope, elem, attrs) {
 		      		if(scope.dailyForm.$pristine) {
 		                scope.buttonStyle = 'btn-default';

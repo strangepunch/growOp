@@ -37,19 +37,43 @@
   	vm.placeholders = {
   		roomTemp: 'room temp...',
   		roomHumidity: 'room humidity...',
-  		roomLight: 'room light info...',
+  		roomLightHr: 'room light hour on...',
+      roomLightHt: 'room light height...',
   		totalWater: 'total water used...',
   		//totalPPM: 'PPM before use...',
   		//totalPH: 'PH before use...',
       roomMsg: 'general notes...'
   	};
 
+    vm.Nutrients = [{
+      "name": "Grow B.",
+      "amt": 0,
+      "checked": false
+    }, {
+      "name": "Big Bl.",
+      "amt": 0,
+      "checked": false
+    }, {
+      "name": "Tiger Bl.",
+      "amt": 0,
+      "checked": false
+    }, {
+      "name": "Sea 90",
+      "amt": 0,
+      "checked": false
+    }, {
+      "name": "Protein",
+      "amt": 0,
+      "checked": false
+    }];
+
   	vm.inputData = {
   		roomTemp: null,
   		roomHumidity: null,
-  		roomLight: null,
+  		roomLightHr: null,
+      roomLightHt: null,
   		totalWater: null,
-  		//totalPPM: null,
+  		nutrients: null,
   		//totalPH: null,
       //timeOfDay: null,
       roomMsg: null,
@@ -60,8 +84,10 @@
   	vm.storedData = {
   		roomTemp: 70,
   		roomHumidity: 45,
-  		roomLight: 80,
+  		roomLightHr: 20,
+      roomLightHt: 35,
   		totalWater: 5,
+      nutrients: vm.Nutrients,
   		//totalPPM: 0,
   		//totalPH: 0,
       //timeOfDay: 'evening',
@@ -119,8 +145,10 @@
         vm.inputData = {
             roomTemp: null,
             roomHumidity: null,
-            roomLight: null,
+            roomLightHr: null,
+            roomLightHt: null,
             totalWater: null,
+            nutrients: null,
             //totalPPM: null,
             //totalPH: null,
             //timeOfDay: null,
@@ -141,8 +169,10 @@
       var tempFormatData = {
             roomTemp: vm.storedData.roomTemp,
             roomHumidity: vm.storedData.roomHumidity,
-            roomLight: vm.storedData.roomLight,
+            roomLightHr: vm.storedData.roomLightHr,
+            roomLightHt: vm.storedData.roomLightHt,
             totalWater: vm.storedData.totalWater,
+            nutrients: vm.Nutrients,
             //totalPPM: vm.storedData.totalPPM,
             //totalPH: vm.storedData.totalPH,
             //timeOfDay: vm.storedData.timeOfDay,

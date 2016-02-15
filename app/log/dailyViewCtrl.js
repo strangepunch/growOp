@@ -59,6 +59,28 @@
 			}
 	    ];
 
+	    vm.Pruning =[{
+		    "name": "FIM",
+		    "tier": 0,
+		    "times": 0,
+		    "checked": false
+	    }, 
+	    {	"name": "Top",
+	      	"tier": 0,
+	      	"times": 0,
+	      	"checked": false
+	    }, 
+	    {	"name": "sCrop",
+	      	"tier": 0,
+	      	"times": 0,
+	      	"checked": false
+	    }, 
+	    {	"name": "LST",
+	      	"tier": 0,
+	      	"times": 0,
+	      	"checked": false
+	    }];
+
 	    vm.currentPlantsList = [
 		    {plant:1, 
 		     name: 'Jack Herer',
@@ -72,6 +94,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'CFL',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -88,6 +112,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'HPS',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -95,7 +121,7 @@
 			{plant:3, 
 		     name: 'Auto DM',
 		     desc: '(Blackskull)',
-		     img:'images/strains/auto-diesel-matic.jpg', 
+		     img:'images/strains/acapulco-gold_100x100.jpg', 
 		     plantData: {plantType: 'Indica',
 						 plantWater: 0,
 						 plantPPM: 0,
@@ -104,6 +130,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'CFL',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -120,6 +148,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'CFL',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -136,6 +166,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'CFL',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
@@ -152,6 +184,8 @@
 						 plantCond: 'good',
 						 //timeOfDay: 'morning',
 						 lightType: 'CFL',
+						 lightHt: 0,
+						 pruning: vm.Pruning,
 						 plantMsg: '',
 						 entryTime: vm.currentTimestamp,
       					 entryDate: vm.currentDate}
