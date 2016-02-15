@@ -14,7 +14,7 @@
 			["$delegate",
 				function ($delegate) {
 					return function (exception, cause) {
-						exception.message = "Please contact the help desk! \n Message: " + exception.message;
+						exception.message = "Please contact the help desk (and pray)! \n Message: " + exception.message;
 
 						$delegate(exception, cause);
 						alert(exception.message);
@@ -81,6 +81,14 @@
 							url: "/schedule",
 							templateUrl: "app/schedule/scheduleView.html",
 							controller: "ScheduleCtrl",
+							controllerAs: "vm"
+						})
+
+						//Grow History View
+						.state("history", {
+							url: "/history",
+							templateUrl: "app/history/historyView.html",
+							controller: "HistoryCtrl",
 							controllerAs: "vm"
 						})
 

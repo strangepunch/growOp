@@ -45,148 +45,6 @@
 
 		];
 
-/** today contains daily updated status gathered from various other collections. This structure simulates that dynamically generated data**/
-		var today = [
-		{
-			"growPhase" : "0", 
-			"currentWeek" : "0B",
-			"currentDay" : "7",
-			"plantHealth" : [
-			{
-				"plantHealth1" : "good",
-				"plantHealth2" : "excellent",
-				"plantHealth3" : "good",
-				"plantHealth4" : "good",
-				"plantHealth5" : "poor"
-			}],
-			"plantProblems" : [
-			{
-				"problemPlant1" : "plant1",
-				"problemNote" : "Plant hasn't sprouted"
-			},
-			{
-				"problemPlant2" : "plant2",
-				"problemNote" : "none"
-			},
-			{
-				"problemPlant3" : "plant3",
-				"problemNote" : "Plant hasn't sprouted"
-			},
-			{
-				"problemPlant4" : "plant4",
-				"problemNote" : "Plant hasn't sprouted"
-			},
-			{
-				"problemPlant5" : "plant5",
-				"problemNote" : "Plant hasn't sprouted"
-			}]
-		}];
-
-
-
-/** daily plant log data structure **/
- var plantLog = [
- {
- 	"environment" : [
- 		{
- 			"roomTemp":70,
- 			"roomHumidity":45,
- 			"roomLight":80,
- 			"totalWater":5,
- 			"totalPPM":0,
- 			"totalPH":0,
- 			"roomMsg":"nothing is going on around here.",
- 			"entryTime":"11:55:45:130",
- 			"entryDate":"2016/1/15"
- 		}
- 	], 
-			"plant1" : [ 
-			{
-				"PlantName":"Jack",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-			}],
-			"plant2" :[ 
- 			{
-				"PlantName":"Jack",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-		}],
-		"plant3" :[ 
-			{
-				"PlantName":"Jack",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-		}],
-		"plant4" :[ 
-			{
-				"PlantName":"Jack",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-		}],
-		"plant5" :[ 
-			{
-				"PlantName":"Jack",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-		}],
-		"plant6" :[ 
-			{
-				"PlantName":"Empty",
-				"PlantDesc":"NA",
-				"plantType":"annual",
-				"plantWater":1,
-				"plantPPM":0,
-				"plantPH":0,
-				"plantHeight":0,
-				"plantCond":"good",
-				"plantMsg":"",
-				"entryTime":"10:5:8:856",
-				"entryDate":"2016/1/14"
-		}]
-	}];
-	/** end daily log data structure **/
-
 
 /** weekly growth images */
  var photos = [
@@ -3173,94 +3031,18 @@
 			"day5" : [
 			{
 			 	"environment" : [
-			 		{
-			 			"roomTemp":70,
-			 			"roomHumidity":45,
-			 			"roomLight":80,
-			 			"totalWater":5,
-			 			"totalPPM":0,
-			 			"totalPH":0,
-			 			"timeOfDay":"evening",
-			 			"roomMsg":"nothing is going on around here.",
-			 			"entryTime":"11:55:45:130",
-			 			"entryDate":"2016/1/15"
-			 		}
+			 		{"roomTemp":"70","roomHumidity":"61","roomLight":"24","totalWater":null,"roomMsg":"1,3,4,5 on 5\" platform to equalize light exposure with 2. Misting undersides of fans 2-3x/d. Rotating platform pots 2x/d","entryTime":"6:37:36:552","entryDate":"2016/2/14"}
 			 	], 
 				"plant1" : [ 
-				{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+				{"PlantName":"Jack Herer","PlantDesc":"(Blackskull)","plantType":"Sativa","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:36:777","entryDate":"2016/2/14"}],
 				"plant2" :[ 
-	 			{
-					"PlantName":"Jack",
-					"PlantDesc":"NA",
-					"plantType":"annual",
-					"plantWater":1,
-					"plantPPM":0,
-					"plantPH":0,
-					"plantHeight":0,
-					"plantCond":"good",
-					"timeOfDay":"morning",
-					"plantMsg":"",
-					"entryTime":"10:5:8:856",
-					"entryDate":"2016/1/14"
-				}],
+	 			{"PlantName":"CSS","PlantDesc":"(Delicious)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"great","lightType":"afternoon","plantMsg":"FIM redone on main tip. Slight wilting at 23\" from bulb. Will raise lite tmrw & raise platform for other pots","entryTime":"6:37:36:947","entryDate":"2016/2/14"}],
 				"plant3" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto DM","PlantDesc":"(Blackskull)","plantType":"Indica","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"FIM mainshoot soon","entryTime":"6:37:37:96","entryDate":"2016/2/14"}],
 				"plant4" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:37:221","entryDate":"2016/2/14"}],
 				"plant5" :[ 
-					{
-						"PlantName":"Jack",
-						"PlantDesc":"NA",
-						"plantType":"annual",
-						"plantWater":1,
-						"plantPPM":0,
-						"plantPH":0,
-						"plantHeight":0,
-						"plantCond":"good",
-						"timeOfDay":"morning",
-						"plantMsg":"",
-						"entryTime":"10:5:8:856",
-						"entryDate":"2016/1/14"
-				}],
+					{"PlantName":"Orange Rooster","PlantDesc":"(N.A.)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:37:426","entryDate":"2016/2/14"}],
 				"plant6" :[ 
 				{
 					"PlantName":"Empty",
@@ -57196,7 +56978,7 @@ var weeklySchedule = [
 		/**var temperatureUrl = "/api/temperatures";**/
 		/**var modeUrl = "/api/modes";**/
 		/**var strainUrl = "/api/plantLog";**/
-		var plantLogUrl = "/api/plantLog";
+		//var plantLogUrl = "/api/plantLog";
 		var phaseUrl = "/api/phases";
 		var feedStylesUrl = "/api/feedStyles";
 		var foxfarmScheduleUrl = "/api/foxfarmScheduleUrl";
@@ -57204,6 +56986,7 @@ var weeklySchedule = [
 		var weeklyScheduleUrl = "/api/weeklySchedule";
 		var strainUrl = "/api/strains";
 		var strainNameUrl = "/api/strainNames";
+		var photosUrl = "/api/photos";
 		/**var tasteUrl = "/api/tastes";**/
 		/**var recEffectUrl = "/api/recEffects";**/
 
@@ -57222,9 +57005,10 @@ var weeklySchedule = [
 		$httpBackend.whenGET(foxfarmScheduleUrl).respond(foxfarmSchedule);
 		$httpBackend.whenGET(feedStylesUrl).respond(feedStyles);
 		$httpBackend.whenGET(phaseUrl).respond(phases);
-		$httpBackend.whenGET(plantLogUrl).respond(plantLog);
+		/**$httpBackend.whenGET(plantLogUrl).respond(plantLog);**/
 		$httpBackend.whenGET(strainUrl).respond(strains);
 		$httpBackend.whenGET(strainNameUrl).respond(strainNames);
+		$httpBackend.whenGET(photosUrl).respond(photos);
 		/**$httpBackend.whenGET(tasteUrl).respond(tastes);**/
 		/**$httpBackend.whenGET(recEffectUrl).respond(recEffects);**/
 
