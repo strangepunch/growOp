@@ -74,7 +74,7 @@
 							controller: "PlantDetViewCtrl",
 							controllerAs: "vm",
 							params: {plantName: ''}
-						})
+						})				
 
 						//Weekly Schedule View
 						.state("schedule", {
@@ -84,13 +84,23 @@
 							controllerAs: "vm"
 						})
 
-						//Grow History View
+						//Photo View
 						.state("history", {
 							url: "/history",
 							templateUrl: "app/history/historyView.html",
 							controller: "HistoryCtrl",
 							controllerAs: "vm"
 						})
+
+						//Grow History View
+						.state("photos", {
+							url: "/photos",
+							templateUrl: "app/photos/photoView.html",
+							controller: "PhotoViewCtrl",
+							controllerAs: "vm"
+						})
+
+
 
 				}]
 

@@ -1,0 +1,30 @@
+<div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+	<div class="panel {{panelStyle}}">
+	    <div class="panel-heading" role="tab" id="headingOne">
+	      <h4 class="panel-title row">
+	        <button style="background:transparent;border:none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#{{collapseID}}" aria-expanded="false" aria-controls="{{collapseID}}">
+	          choose photos <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	        </button>
+	        <!--make below plant name and week number -->
+	        <!--<span class="date">{{vm.theDayofWeek}}, {{vm.theDate}}</span>-->
+	        <!-- <button class="btn btn-defa
+	        ult btn-xs" style="float:right" ng-click="vm.clearData()">Clear <span class="glyphicon glyphicon-check" aria-hidden="true"></span></button> -->
+	      </h4>
+	    </div>
+	    <div id="{{collapseID}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+	      <div class="panel-body">
+      		<form class="form-horizontal">
+  				<fieldset>
+			      	<div class="form-group col-sm-6 col-lg-4" ng-repeat="item in vm.toDoListItems">
+			      		<div class="checkbox">
+				          	<label>
+				            	<input type="checkbox" ng-model="item.checked" ng-click="vm.checkedItem(item)"> {{item.discription}} <span ng-if="item.measurement != 'N.A.'">({{item.measurement}})</span>
+				          	</label>
+				        </div>
+			    	</div>
+			  </fieldset>
+			</form>
+	    </div>
+	  </div>
+	</div>
+</div>

@@ -79,11 +79,6 @@
 	      	"tier": 0,
 	      	"times": 0,
 	      	"checked": false
-	    },
-	    {	"name": "Fan",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
 	    }];
 
 	    vm.currentPlantsList = [
