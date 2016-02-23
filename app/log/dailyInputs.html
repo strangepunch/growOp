@@ -75,6 +75,18 @@
 	        		<input type="text" class="form-control" required only-Digits ng-model="vm.inputData.totalPH" placeholder="{{vm.placeholders.totalPH}}">
 	      		</div>
 	    	</div> -->
+
+	    	<div class="col-xs-12 col-lg-12">
+	    		<h3 class="title" style="padding-top:10px"> soil care </h3>
+	    	</div>
+	    	<div class="form-group col-xs-6 col-sm-4 col-lg-2" ng-repeat="item in vm.soil track by $index" style="padding-left:25px;margin-right:5px">
+	      		<div class="checkbox">
+		          	<label>
+		            	<input type="checkbox" ng-model="item.checked"> 
+		            		{{item.name}} 
+		          	</label>
+		        </div>
+	    	</div>
 	    	
 	    	<div class="col-xs-12 col-lg-12">
 	    		<h3 class="title" style="padding-top:10px"> nutrients </h3>

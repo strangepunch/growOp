@@ -44,6 +44,15 @@
   		//totalPH: 'PH before use...',
       roomMsg: 'general notes...'
   	};
+ 
+ //added to allow Aerate checkbox in environment area
+   vm.soil = [
+      {
+        "name": "Aerate",
+        "amt": 0,
+        "checked": false
+      }];
+
 
     vm.Nutrients = [{
       "name": "Grow B.",
@@ -76,6 +85,7 @@
   		nutrients: null,
   		//totalPH: null,
       //timeOfDay: null,
+      soil: null,
       roomMsg: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
@@ -88,6 +98,7 @@
       roomLightHt: 35,
   		totalWater: 5,
       nutrients: vm.Nutrients,
+      soil: vm.soil,
   		//totalPPM: 0,
   		//totalPH: 0,
       //timeOfDay: 'evening',
@@ -149,6 +160,7 @@
             roomLightHt: null,
             totalWater: null,
             nutrients: null,
+            soil: null,
             //totalPPM: null,
             //totalPH: null,
             //timeOfDay: null,
@@ -177,6 +189,7 @@
             roomLightHt: vm.storedData.roomLightHt,
             totalWater: vm.storedData.totalWater,
             nutrients: vm.Nutrients,
+            soil: vm.soil,
             //totalPPM: vm.storedData.totalPPM,
             //totalPH: vm.storedData.totalPH,
             //timeOfDay: vm.storedData.timeOfDay,
