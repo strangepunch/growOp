@@ -115,11 +115,12 @@
     vm.makeJSON = makeJSON;
     vm.emailData = sendMail;
     vm.submitData = submitData;
-    vm.clearData = clearData;
+    vm.clearData = clearData; 
 
   	//---- Bindable Members---END----//
 
     //---- Functions---START----//
+    //fetch the entered data and place it in the temporary inputData structure
     function getData(){
         if($scope.dataList != undefined){
           vm.inputData = $scope.dataList;
@@ -128,11 +129,14 @@
         }
         //vm.errorMessage = 'need to save before email';
     }
-  	
+
+    //copy data from temp input data structure to storedData and give it a time stamp
   	function storeData(){
       //!$scope.dailyForm.$pristine &&
       if(!$scope.dailyForm.$invalid) {
         //console.log("vm.inputData", vm.inputData);
+
+          //take the input data and place it in stored data 
           vm.storedData = vm.inputData;
           vm.storedData.entryTime = vm.currentTimestamp;
           vm.storedData.entryDate = vm.currentDate;
@@ -141,6 +145,7 @@
           //vm.errorMessage = 'now you can email';
           vm.isSaved = false;
 
+          //format the data into JSON
           vm.makeJSON();
       }else{
           console.log("No entry!");
@@ -148,10 +153,12 @@
           vm.errorMessage = 'missing entries';
           vm.isSaved = true;
       }
+      //note - use this approach to prepare data for remote service call  -sm
       var myJsonString = JSON.stringify(vm.storedData);
       console.log("JSON: " + myJsonString);
   	}
 
+    //empty the input data structure and give it a time stamp
     function clearData(){
         vm.inputData = {
             roomTemp: null,

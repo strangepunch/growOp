@@ -25,11 +25,20 @@
     	var _YYYY = d.getFullYear();
 
     	/**---local variables---**/
+    	
+    	//set up a place to store the plant objects 
     	vm.currentPlantsList = [];
-    	//place holders
+    	
+    	// temp storage for field placeholder text - placeholders 
     	vm.placeholders = {
 		    plantName: "Enter name of this plant...",
 		    plantCompany: "Enter company that sold this plant..."
+	    };
+
+	    //plant status variable
+	    vm.plantStatusData = {
+	    	plantName: null,
+	    	plantStage: "Seeding" //insert function to get actual plant stage here
 	    };
 
     	//input variables
