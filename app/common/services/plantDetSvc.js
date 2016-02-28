@@ -127,8 +127,9 @@
 							     	stage: _stage,
 							     	start: _start,
 							     	end: _end,
-							     	img: _image,  
-							     	plantData: {plantType: 'search value',
+							     	img: _image,
+							     	plantType: 'search value',  
+							     	plantData: {
 												plantWater: 0,
 												plantPPM: 0,
 												plantPH: 0,
