@@ -1,0 +1,349 @@
+[{
+	"growOp": 1,
+	"rooms": [{
+		"roomID": 1,
+		"enviroment": [{
+			"env_desc": "",
+			"env_type": "",
+			"env_scehdule": [{
+				"week": "0",
+				"entries": [{
+					"day": 1,
+					"data": [{
+						"roomTemp": 70,
+						"roomHumidity": 45,
+						"roomLight": 80,
+						"totalWater": 5,
+						"totalPPM": 0,
+						"totalPH": 0,
+						"timeOfDay": "evening",
+						"roomMsg": "nothing is going on around here.",
+						"entryTime": "11:55:45:130",
+						"entryDate": "2016/1/15"
+					}]
+				}, {
+					"day": 2,
+					"data": [{
+						"roomTemp": 70,
+						"roomHumidity": 45,
+						"roomLight": 80,
+						"totalWater": 5,
+						"totalPPM": 0,
+						"totalPH": 0,
+						"timeOfDay": "evening",
+						"roomMsg": "nothing is going on around here.",
+						"entryTime": "11:55:45:130",
+						"entryDate": "2016/1/15"
+					}]
+				}, {
+					"day": 3,
+					"data": [{}]
+				}, {
+					"day": 4,
+					"data": [{}]
+				}, {
+					"day": 5,
+					"data": [{}]
+				}, {
+					"day": 6,
+					"data": [{}]
+				}, {
+					"day": 7,
+					"data": [{}]
+				}]
+			}, {
+				"week": "0B",
+				"entries": [{
+					"day": 1,
+					"data": [{}]
+				}, {
+					"day": 2,
+					"data": [{}]
+				}, {
+					"day": 3,
+					"data": [{}]
+				}, {
+					"day": 4,
+					"data": [{}]
+				}, {
+					"day": 5,
+					"data": [{}]
+				}, {
+					"day": 6,
+					"data": [{}]
+				}, {
+					"day": 7,
+					"data": [{}]
+				}]
+			}, {
+				"week": "1",
+				"entries": [{
+					"day": 1
+				}, {
+					"day": 2
+				}, {
+					"day": 3
+				}, {
+					"day": 4
+				}, {
+					"day": 5
+				}, {
+					"day": 6
+				}, {
+					"day": 7
+				}]
+			}, {
+				"week": "2",
+				"entries": [{
+					"day": 1,
+					"data": [{}]
+				}, {
+					"day": 2
+				}, {
+					"day": 3
+				}, {
+					"day": 4
+				}, {
+					"day": 5
+				}, {
+					"day": 6
+				}, {
+					"day": 7
+				}]
+			}, {
+				"week": "3",
+				"entries": [{
+					"day": 1,
+					"data": [{}]
+				}, {
+					"day": 2
+				}]
+			}, {
+				"week": "4"
+			}, {
+				"week": "5"
+			}, {
+				"week": "6"
+			}, {
+				"week": "7"
+			}, {
+				"week": "8"
+			}, {
+				"week": "9"
+			}, {
+				"week": "10"
+			}, {
+				"week": "11"
+			}, {
+				"week": "12"
+			}, {
+				"week": "13"
+			}, {
+				"week": "14"
+			}]
+		}]
+	}, {
+		"roomID": 2,
+		"enviroment": [{
+			"env_descr": "",
+			"env_type": "",
+			"env_scehdule": [{
+				"week": "0",
+				"entries": [{
+					"day": 1,
+					"data": [{}]
+				}, {
+					"day": 2,
+					"data": [{}]
+				}]
+			}]
+		}]
+	}],
+	"plants": [{
+		"plantID": 1,
+		"plantName": "Orange Rooster",
+		"plantDesc": "(N.A.)",
+		"plantType": "Hybrid",
+		"stage": "_stage",
+		"start": "_start",
+		"end": "_end",
+		"img": "_image",
+		"plantData": [{
+			"week": "0",
+			"entries": [{
+				"day": 1,
+				"data": [{
+					"plantWater": 0,
+					"plantPPM": 0,
+					"plantPH": 0,
+					"plantHeight": "6",
+					"plantCond": "good",
+					"lightType": "afternoon",
+					"pruning": [{
+						"name": "FIM",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "Top",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "sCrop",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "LST",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "Fan",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}],
+					"plantMsg": "3 sprouts progressing, unsure of sexing",
+					"entryTime": "8:24:24:174",
+					"entryDate": "2016/2/21"
+				}]
+			}, {
+				"day": 2,
+				"data": [{}]
+			}]
+		}, {
+			"week": "0B"
+		}, {
+			"week": "1"
+		}, {
+			"week": "2"
+		}]
+	}, {
+		"plantID": 2,
+		"plantName": "_nameB",
+		"desc": "_company",
+		"stage": "_stage",
+		"start": "_start",
+		"end": "_end",
+		"img": "_image",
+		"plantData": []
+	}]
+}, {
+	"growOp": 2,
+	"rooms": [{
+		"roomID": 1,
+		"enviroment": [{
+			"env_desc": "",
+			"env_type": "",
+			"env_scehdule": [{
+				"week": "0",
+				"entries": [{
+					"day": 1,
+					"data": [{
+						"roomTemp": 70,
+						"roomHumidity": 45,
+						"roomLight": 80,
+						"totalWater": 5,
+						"totalPPM": 0,
+						"totalPH": 0,
+						"timeOfDay": "evening",
+						"roomMsg": "nothing is going on around here.",
+						"entryTime": "11:55:45:130",
+						"entryDate": "2016/1/15"
+					}]
+				}, {
+					"day": 2,
+					"data": [{}]
+				}, {
+					"day": 3,
+					"data": [{}]
+				}, {
+					"day": 4,
+					"data": [{}]
+				}, {
+					"day": 5,
+					"data": [{}]
+				}, {
+					"day": 6,
+					"data": [{}]
+				}, {
+					"day": 7,
+					"data": [{}]
+				}]
+			}]
+		}]
+	}],
+	"plants": [{
+		"plantID": 1,
+		"plantName": "Orange Rooster",
+		"plantDesc": "(N.A.)",
+		"plantType": "Hybrid",
+		"stage": "_stage",
+		"start": "_start",
+		"end": "_end",
+		"img": "_image",
+		"plantData": [{
+			"week": "0",
+			"entries": [{
+				"day": 1,
+				"data": [{
+					"plantWater": 0,
+					"plantPPM": 0,
+					"plantPH": 0,
+					"plantHeight": "",
+					"plantCond": "good",
+					"lightType": "morning",
+					"pruning": [{
+						"name": "FIM",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "Top",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "sCrop",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "LST",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}, {
+						"name": "Fan",
+						"tier": 0,
+						"times": 0,
+						"checked": false
+					}],
+					"plantMsg": "",
+					"entryTime": "",
+					"entryDate": ""
+				}]
+			}, {
+				"day": 2,
+				"data": [{}]
+			}, {
+				"day": 3,
+				"data": [{}]
+			}, {
+				"day": 4,
+				"data": [{}]
+			}, {
+				"day": 5,
+				"data": [{}]
+			}, {
+				"day": 6,
+				"data": [{}]
+			}, {
+				"day": 7,
+				"data": [{}]
+			}]
+		}]
+	}]
+}]

@@ -56001,6 +56001,7 @@ var weeklySchedule = [
 		var photosUrl = "/api/photos";
 		/**var tasteUrl = "/api/tastes";**/
 		/**var recEffectUrl = "/api/recEffects";**/
+		var masterPlantLogUrl = "/api/masterPlantLog"
 
 		//for strain details
 		var detailsUrl = "/api/details";
@@ -56023,6 +56024,7 @@ var weeklySchedule = [
 		$httpBackend.whenGET(photosUrl).respond(photos);
 		/**$httpBackend.whenGET(tasteUrl).respond(tastes);**/
 		/**$httpBackend.whenGET(recEffectUrl).respond(recEffects);**/
+		$httpBackend.whenGET(masterPlantLogUrl).respond(masterPlantLog);
 
 		//for strain details
 		$httpBackend.whenGET(detailsUrl).respond(strains);
