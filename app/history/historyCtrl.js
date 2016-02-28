@@ -45,6 +45,8 @@
     	vm.currentImage = "or_week0_4.jpg";
     	vm.currentWeek = "0";
     	vm.currentIndex = 0;
+
+		//temp storage for photos
 		vm.feedSchedule = [
 				{
 					"week": "0",
@@ -72,41 +74,41 @@
 				},
 				{
 					"week": "5",
-					"url": "Week4-CSS2.jpg"
+					"url": "cssweek5p5.jpg"
 				},
 				{
 					"week": "6",
-					"url": "fim_2.jpg"
+					"url": "jhweek6p.jpg"
 				},
 				{
 					"week": "7",
-					"url": "five_gal_bucket.jpg"
+					"url": "cssweek6p1.jpg"
 				},
 				{	"week": "8",
-					"url": "fim_1.jpg"
+					"url": "admweek6p3.jpg"
 				},
 				{	"week": "9",
-					"url": "Week4-gsc1.jpg"
+					"url": "gscweek6p1.jpg"
 				},
 				{
 					"week": "10",
-					"url": "Week4-JH1.jpg"
+					"url": "orweek6p1.jpg"
 				},
 				{
 					"week": "11",
-					"url": "Week4-orange-rooster1.jpg"
+					"url": "orweek6p2.jpg"
 				},
 				{
 					"week": "12",
-					"url": "Week4-JH2.jpg"
+					"url": "jhweek6p1.jpg"
 				},
 				{
 					"week": "13",
-					"url": "Week4-orange-rooster2.jpg"
+					"url": "cssweek6p2.jpg"
 				},
 				{
 					"week": "14",
-					"url": "fim_6.jpg"
+					"url": "admweek6p2.jpg"
 				},
 
 			];
@@ -165,7 +167,7 @@
 				},
 				{
 					"week": "5",
-					"plant1url": "Week4-CSS2.jpg",
+					"plant1url": "cssweek5p5.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -173,7 +175,7 @@
 				},
 				{
 					"week": "6",
-					"plant1url": "fim_2.jpg",
+					"plant1url": "jhweek6p.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -181,21 +183,21 @@
 				},
 				{
 					"week": "7",
-					"plant1url": "five_gal_bucket.jpg",
+					"plant1url": "cssweek6p1.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
 					"plant5url": "or_week0_4.jpg"
 				},
 				{	"week": "8",
-					"plant1url": "fim_1.jpg",
+					"plant1url": "admweek6p3.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
 					"plant5url": "or_week0_4.jpg"
 				},
 				{	"week": "9",
-					"plant1url": "Week4-gsc1.jpg",
+					"plant1url": "gscweek6p1.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -203,7 +205,7 @@
 				},
 				{
 					"week": "10",
-					"plant1url": "Week4-JH1.jpg",
+					"plant1url": "orweek6p1.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -211,7 +213,7 @@
 				},
 				{
 					"week": "11",
-					"plant1url": "Week4-orange-rooster1.jpg",
+					"plant1url": "orweek6p2.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -219,7 +221,7 @@
 				},
 				{
 					"week": "12",
-					"plant1url": "Week4-JH2.jpg",
+					"plant1url": "jhweek6p1.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -227,7 +229,7 @@
 				},
 				{
 					"week": "13",
-					"plant1url": "Week4-orange-rooster2.jpg",
+					"plant1url": "cssweek6p2.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
@@ -235,7 +237,7 @@
 				},
 				{
 					"week": "14",
-					"plant1url": "fim_6.jpg",
+					"plant1url": "admweek6p2.jpg",
 					"plant2url": "or_week0_4.jpg",
 					"plant3url": "or_week0_4.jpg",
 					"plant4url": "or_week0_4.jpg",
