@@ -38,7 +38,7 @@
 	    //plant status variable
 	    vm.plantStatusData = {
 	    	plantName: null,
-	    	plantStage: "Seeding" //insert function to get actual plant stage here
+	    	plantHealth: "good" //insert function to get actual plant stage here
 	    };
 
     	//input variables
@@ -46,7 +46,7 @@
 			plantName: null,
 			plantCompany: null,
 			plantDate: {year: _YYYY, month: _MM, day: _DD},
-			plantStage: "Seeding"
+			plantStage: "Seedling"
 	    };
 	    
 	    //btn variables
