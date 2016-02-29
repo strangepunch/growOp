@@ -4,9 +4,10 @@
 			.controller("PhotoViewCtrl",
 						["$scope",
 						 "localStorageService",
+						 "plantPhotoSvc",
 							PhotoViewCtrl]);
 	
-	function PhotoViewCtrl($scope, localStorageService){
+	function PhotoViewCtrl($scope, localStorageService, plantPhotoSvc){
 		var vm = this;
     	
 		var d = new Date();
@@ -20,195 +21,195 @@
 
 	    vm.currentTimestamp = hr + ":" + min + ":" + sec + ":" + mSec;
 	    vm.currentDate = YYYY + "/" + MM + "/" + DD;
-
-    	vm.somePhotoItems = [
-		     {item:1, discription: 'Plant 1', measurement: 'N.A.', checked: false},
-		     {item:2, discription: 'Plant 2', measurement: 'N.A.', checked: false},
-		     {item:3, discription: 'Plant 3', measurement: 'N.A.', checked: false},
-		     {item:4, discription: 'Plant 4', measurement: 'N.A.', checked: false},
-		     {item:5, discription: 'Plant 5', measurement: 'N.A.', checked: false},
-		     {item:6, discription: 'Misc', measurement: 'N.A.', checked: false}
+		/**---local variables---**/
+    	vm.someFilterItems = [
+		     {name: 'Plant 1', checked: false},
+		     {name: 'Plant 2', checked: false},
+		     {name: 'Plant 3', checked: false},
+		     {name: 'Plant 4', checked: false},
+		     {name: 'Plant 5', checked: false},
+		     {name: 'Seedling', checked: false},
+		     {name: 'FIM', checked: false},
+		     {name: 'Flower', checked: false},
+		     {name: 'Misc', checked: false}
 	    ];
+	    vm.checkedSelec = false;
+	    vm.imageURLArray = [];
+	    vm.currentIndex = 0;
+	    vm.imageURL = "";
+	    vm.currentImage = vm.imageURLArray[0];
 
-	    vm.somePlantsList = [
-		    {plant:1, 
-		     name: 'Jack',
-		     desc: 'none', 
-		     plantData: {plantType: 'some info...',
-						 plantWater: 2,
-						 plantPPM: 50,
-						 plantPH: 5,
-						 plantHeight: 10,
-						 plantCond: 'good',
-						 //timeOfDay: 'evening',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
-			},
-			{plant:2, 
-		     name: 'Jill',
-		     desc: 'none', 
-		     plantData: {plantType: '...can not be editted in daily view',
-						 plantWater: 3,
-						 plantPPM: 60,
-						 plantPH: 6,
-						 plantHeight: 4,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
+	    /**---function declarations---**/
+	    //for checkbox filter
+	    vm.checkedItem = checkedItem;
+	    vm.findCheckedItem = findCheckedItem;
+	    vm.removeCheckedItem = removeCheckedItem;
+	    //button function for parsing the images
+	    vm.prevOne = prevOne;
+		vm.nextOne = nextOne;
+
+	    //filter images actions
+	    //--checked
+	    vm.findWeeklySpecImages = findWeeklySpecImages;
+	    //--unchecked
+	    vm.removeWeeklySpecImages = removeWeeklySpecImages;
+
+	    /**---function---**/
+	    //for checkbox filter
+	    vm.count = 0;
+	    function checkedItem(item){
+	    	//console.log(item);
+	      	var getIndexNum = vm.someFilterItems.indexOf(item);
+	      	//console.log(getIndexNum);
+	      	if(vm.count < 1){
+	      		vm.someFilterItems[getIndexNum].checked = true; 
+	      		vm.findCheckedItem(vm.someFilterItems[getIndexNum].name);
+	      		vm.count++;
+	      	}else{
+	      		if(vm.someFilterItems[getIndexNum].checked == true){
+	      			vm.someFilterItems[getIndexNum].checked = true; 
+	      			vm.findCheckedItem(vm.someFilterItems[getIndexNum].name);
+		      		vm.count = 0;
+		      	}else{
+		      		vm.someFilterItems[getIndexNum].checked = false;
+		      		vm.removeCheckedItem(vm.someFilterItems[getIndexNum].name);
+		      		vm.count++;
+		      	}
+	      	}
+	      	
+	    };
+	    //whatever selected gets pushed in to the array
+	    function findCheckedItem(name){
+	    	switch(name){
+	    		case 'Plant 1':
+	    			vm.findWeeklySpecImages('0', 1);
+	    			break;
+	    		case 'Plant 2':
+	    			vm.findWeeklySpecImages('0', 2);
+	    			break;
+	    		case 'Plant 3':
+	    			vm.findWeeklySpecImages('0', 3);
+	    			break;
+	    		case 'Plant 4':
+	    			vm.findWeeklySpecImages('0', 4);
+	    			break;
+	    		case 'Plant 5':
+	    			vm.findWeeklySpecImages('0', 5);
+	    			break;
+	    		case 'Seedling':
+	    			break;
+	    		case 'FIM':
+	    			break;
+	    		case 'Flower':
+	    			break;
+	    		default:
+	    			break;
+
+	    	}
+	    };
+	    //whatever unselected gets removed from the array
+	    function removeCheckedItem(name){
+	    	switch(name){
+	    		case 'Plant 1':
+	    			vm.removeWeeklySpecImages('0', 1);
+	    			break;
+	    		case 'Plant 2':
+	    			vm.removeWeeklySpecImages('0', 2);
+	    			break;
+	    		case 'Plant 3':
+	    			vm.removeWeeklySpecImages('0', 3);
+	    			break;
+	    		case 'Plant 4':
+	    			vm.removeWeeklySpecImages('0', 4);
+	    			break;
+	    		case 'Plant 5':
+	    			vm.removeWeeklySpecImages('0', 5);
+	    			break;
+	    		case 'Seedling':
+	    			break;
+	    		case 'FIM':
+	    			break;
+	    		case 'Flower':
+	    			break;
+	    		default:
+	    			break;
+
+	    	}
+	    };
+
+
+	    //possible filter actions
+	    function findWeeklySpecImages(_weekNum, _plantNum){
+	    	var plantArray = plantPhotoSvc.getWeeklyPlantPhoto(_weekNum);
+
+	    	//find image for specific plant
+	    	if(_plantNum != null && _plantNum != ""){
+
+	    		for(var i=0; i<plantArray.length; i++){
+	    			if(plantArray[i].plant == _plantNum){
+	    				for(var x=0; x<plantArray[i].plantPic.length; x++){
+	    					vm.imageURL = plantArray[i].plantPic[x];
+	    					console.log("vm.imageURL ", vm.imageURL);
+	    					vm.imageURLArray.push(vm.imageURL);
+	    					vm.currentImage = vm.imageURLArray[0];
+	    				}
+	    			}
+	    		}
+
+	    	}else{ //when _plantNum  is null, get all plant's plantPic arrays
+
+	    		for(var i=0; i<plantArray.length; i++){
+    				for(var x=0; x<plantArray[i].plantPic.length; x++){
+    					vm.imageURL = plantArray[i].plantPic[x];
+    					vm.imageURLArray.push(vm.imageURL);
+    					vm.currentImage = vm.imageURLArray[0];
+    				}
+	    		}
+
+	    	}
+	    }
+
+	    function removeWeeklySpecImages(_weekNum, _plantNum){
+	    	var plantArray = plantPhotoSvc.getWeeklyPlantPhoto(_weekNum);
+	    	//compare with each item in vm.imageURLArray
+	    	//remove matches
+	    	vm.currentImage = vm.imageURLArray[0];
+	    	vm.imageURLArray = [];
+	    }
+
+	    //button function for parsing the images
+	    function prevOne(){
+			var i = vm.currentIndex;
+			if(i > 0){
+				i--;
+				vm.currentImage = vm.imageURLArray[i];
+				vm.currentIndex = i;
+			}else{
+				i = 0;
+				vm.currentImage = vm.imageURLArray[i];
+				vm.currentIndex = i;
 			}
-	    ];
-
-	    vm.Pruning =[{
-		    "name": "FIM",
-		    "tier": 0,
-		    "times": 0,
-		    "checked": false
-	    }, 
-	    {	"name": "Top",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }, 
-	    {	"name": "sCrop",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }, 
-	    {	"name": "LST",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    },
-	    {	"name": "Fan",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }];
-	
-
-	    vm.currentPlantsList = [
-		    {plant:1, 
-		     name: 'Jack Herer',
-		     desc: '(Blackskull)',
-		     img: 'images/strains/jack-herer_100x100.jpg', 
-		     plantData: {plantType: 'Sativa',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'CFL',
-						 //lightHt: 0,
-						 pruning: vm.Pruning,
-						 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate},
-			 photos: {
-		 		photo1: 'images/plants/week0/plant1/or_week0_3.jpg',
-		 		photo2: 'images/plants/week0/plant1/week0_1.jpg',
-		 		photo3: 'images/plants/week0B/plant1/week0B_3.jpg',
-		 		photo4: 'images/plants/week0B/plant1/week0_1.jpg'
-			 	}
-			},
-			{plant:2, 
-		     name: 'CSS',
-		     desc: '(Delicious)',
-		     img: 'images/strains/critical-sensi-star_100x100.jpg', 
-		     plantData: {plantType: 'Indica',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'HPS',
-						 ////lightHt: 0,
-						 pruning: vm.Pruning,
-						 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
-			},
-			{plant:3, 
-		     name: 'Auto DM',
-		     desc: '(Blackskull)',
-		     img:'images/strains/acapulco-gold_100x100.jpg', 
-		     plantData: {plantType: 'Indica',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'CFL',
-						 //lightHt: 0,
-						 pruning: vm.Pruning,
-			 			 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-						 entryDate: vm.currentDate},
-			 photos: {
-			 	plant2photo1: 'images/strains/jack-herer_100x100.jpg',
-			 	plant2photo2: 'images/strains/jack-herer_100x100.jpg',
-			 	plant2photo3: 'images/strains/jack-herer_100x100.jpg'
-			 }
-			},
-			{plant:4, 
-		     name: 'Auto GSC',
-		     desc: '(Fastbuds)',
-		     img:'images/strains/girl-scout-cookies_100x100.jpg', 
-		     plantData: {plantType: 'Hybrid',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'CFL',
-						 //lightHt: 0,
-						 pruning: vm.Pruning,
-						 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
-			},
-			{plant:5, 
-		     name: 'Orange Rooster',
-		     desc: '(N.A.)', 
-		     img:'images/strains/acapulco-gold_100x100.jpg',
-		     plantData: {plantType: 'Hybrid',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'CFL',
-						 //lightHt: 0,
-						 pruning: vm.Pruning,
-						 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
-			},
-			{plant:6, 
-		     name: 'Empty',
-		     desc: '',
-		     img:'images/strains/acapulco-gold_100x100.jpg',  
-		     plantData: {plantType: 'Sativa',
-						 plantWater: 0,
-						 plantPPM: 0,
-						 plantPH: 0,
-						 plantHeight: 0,
-						 plantCond: 'good',
-						 //timeOfDay: 'morning',
-						 lightType: 'CFL',
-						 //lightHt: 0,
-						 pruning: vm.Pruning,
-						 plantMsg: '',
-						 entryTime: vm.currentTimestamp,
-      					 entryDate: vm.currentDate}
+			
+		}
+		function nextOne(){
+			var i = vm.currentIndex;
+			
+			if(i < vm.imageURLArray.length-1){
+				i++;
+				vm.currentImage = vm.imageURLArray[i];
+				vm.currentIndex = i;
+			}else{
+				i = vm.imageURLArray.length-1;
+				vm.currentImage = vm.imageURLArray[i];
+				vm.currentIndex = i;
 			}
-	    ];
+			
+		}
 
+
+	    /**---initiate the function---**/
+	    vm.findWeeklySpecImages("0B");
+	    vm.currentImage = vm.imageURLArray[5];
 	}
 
 }());
