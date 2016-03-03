@@ -1,4 +1,4 @@
- /** mock **/
+/** mock **/
 (function(){
 	"use strict";
 
@@ -33,8 +33,7 @@
 		}];
 		
 		/* use the feed sequence here to order the retrieval and display of daily feeding and compost tea data*/
-		var feedStyles = [
-			{
+		var feedStyles = [			{
 				"feedStyleName" :"foxfarm",
 				"feedSequence" : ["0", "1", "2", "3", "4", "flush", "5", "6", "7", "flush", "8", "9", "10", "flush", "11", "12"]
 			},
@@ -730,10 +729,10 @@ var plantLog = [{
 															"week": "7",
 															"entries": [{
 																	"day": 1,
-																	"data": [{}]
+																	"data": [{"roomTemp":"72","roomHumidity":"49","roomLightHr":"18","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"5 placed on ground. 1,4 still on 9\" platform since few of 5 fans have lite stress","entryTime":"11:8:37:359","entryDate":"2016/3/2"}]
 																}, {
 																	"day": 2,
-																	"data": [{}]
+																	"data": [{"roomTemp":"72","roomHumidity":"59","roomLightHr":"18","roomLightHt":"19","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Tea brew started 2.5 g","entryTime":"10:32:34:133","entryDate":"2016/3/3"}]
 																}, {
 																	"day": 3,
 																	"data": [{}]
@@ -947,7 +946,7 @@ var plantLog = [{
 					"start": "01-15-2016",
 					"end": "_endDate_",
 					"img": "images/strains/jack-herer_100x100.jpg", // this shoudl be automatically filled from the strains db before release
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -1324,10 +1323,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"No heat stress, still on platform to maximize lumens","entryTime":"11:8:36:112","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:246","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -1538,7 +1537,7 @@ var plantLog = [{
 					"start": "01-15-2016",
 					"end": "_endDate_",
 					"img": "images/strains/critical-sensi-star_100x100.jpg",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -1916,26 +1915,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{																	"plantWater":1,
-																	"plantPPM":0,
-																	"plantPH":0,
-																	"plantHeight":0,
-																	"plantCond":"good",
-																	"timeOfDay":"morning",
-																	"plantMsg":"",
-																	"entryTime":"10:5:8:856",
-																	"entryDate":"2016/1/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:265","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{																	"plantWater":1,
-																	"plantPPM":0,
-																	"plantPH":0,
-																	"plantHeight":0,
-																	"plantCond":"good",
-																	"timeOfDay":"morning",
-																	"plantMsg":"",
-																	"entryTime":"10:5:8:856",
-																	"entryDate":"2016/1/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"8","times":"6","checked":true}],"plantMsg":"","entryTime":"10:32:34:319","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
 																"data": [{																	"plantWater":1,
@@ -2186,7 +2169,7 @@ var plantLog = [{
 					"start": "01-15-2016",
 					"end": "_endDate_",
 					"img": "images/strains/auto-diesel-matic.jpg",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -2563,10 +2546,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:330","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"2","checked":true},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:401","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -2777,7 +2760,7 @@ var plantLog = [{
 					"start": "01-15-2016",
 					"end": "_endDate_",
 					"img": "images/strains/girl-scout-cookies_100x100.jpg",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -3155,10 +3138,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Slowly improving","entryTime":"11:8:36:385","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"Improving in size, color, fullness","entryTime":"10:32:34:480","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -3369,7 +3352,7 @@ var plantLog = [{
 					"start": "01-15-2016",
 					"end": "_endDate_",
 					"img": "images/strains/acapulco-gold_100x100.jpg",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -3763,10 +3746,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Lowered off platform, trace of heat stress","entryTime":"11:8:36:441","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"3","times":"4","checked":true}],"plantMsg":"","entryTime":"10:32:34:536","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -3977,7 +3960,7 @@ var plantLog = [{
 					"start": "_startDate_",
 					"end": "_endDate_",
 					"img": "_imageURL_",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
@@ -4405,7 +4388,7 @@ var plantLog = [{
 					"start": "_startDate_",
 					"end": "_endDate_",
 					"img": "_imageURL_",
-					"plant_scehdule": [
+					"plant_measurements": [
 										{
 											"week": "0",
 											"entries": [
