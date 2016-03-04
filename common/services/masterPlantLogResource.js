@@ -8,7 +8,7 @@
 			 masterPlantLogResource]);
 
 	function masterPlantLogResource($resource){
-		return $resource("/api/masterPlantLog")
+		return $resource("/api/plantLog")
 	}
 
 }());

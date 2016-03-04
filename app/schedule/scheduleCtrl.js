@@ -527,9 +527,17 @@
 				alert(error);
 			});
 
-			plantGetDataSvc.getWeekArray().then(function(data){
+			plantGetDataSvc.getWeekArrayForAllPlants(vm.currentWeek).then(function(data){
 				vm.temp2 = data;
 				console.log("vm.temp2: ", vm.temp2);
+				$scope.$apply();
+			}).catch(function(error){
+				alert(error);
+			});
+
+			plantGetDataSvc.getWeekArrayForEachPlant(5,vm.currentWeek).then(function(data){
+				vm.temp3 = data;
+				console.log("vm.temp3: ", vm.temp3);
 				$scope.$apply();
 			}).catch(function(error){
 				alert(error);
