@@ -388,8 +388,12 @@
 			function getWeeklyPlantPhoto(weekNum){
 				console.log("_PHOTO", vm._PHOTO.weekly);
 				for(var i=0; i<vm._PHOTO.weekly.length; i++){
-					if(vm._PHOTO.weekly[i].week == weekNum){
-						vm.tempArray = vm._PHOTO.weekly[i].plants;
+					if(weekNum == null){
+						vm.tempArray.push(vm._PHOTO.weekly[i].plants);
+					}else{
+						if(vm._PHOTO.weekly[i].week == weekNum){
+							vm.tempArray = vm._PHOTO.weekly[i].plants;
+						}
 					}
 				}
 				
