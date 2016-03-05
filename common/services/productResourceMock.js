@@ -735,7 +735,7 @@ var plantLog = [{
 																	"data": [{"roomTemp":"72","roomHumidity":"59","roomLightHr":"18","roomLightHt":"19","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Tea brew started 2.5 g","entryTime":"10:32:34:133","entryDate":"2016/3/3"}]
 																}, {
 																	"day": 3,
-																	"data": [{}]
+																	"data": [{"roomTemp":"73","roomHumidity":"55","roomLightHr":"18","roomLightHt":"18","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Applied compost tea to all","entryTime":"11:20:16:360","entryDate":"2016/3/4"}]
 																}, {
 																	"day": 4,
 																	"data": [{}]
@@ -1329,7 +1329,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:246","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"2","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Placed on the ground because of height\nFim - 2 level 2 and 1 level 3","entryTime":"11:20:16:822","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -1921,15 +1921,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"8","times":"6","checked":true}],"plantMsg":"","entryTime":"10:32:34:319","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{																	"plantWater":1,
-																	"plantPPM":0,
-																	"plantPH":0,
-																	"plantHeight":0,
-																	"plantCond":"good",
-																	"timeOfDay":"morning",
-																	"plantMsg":"",
-																	"entryTime":"10:5:8:856",
-																	"entryDate":"2016/1/14"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":0,"checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"1","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Ph fluctuation related burn on a few leaves","entryTime":"11:20:16:980","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
 																"data": [{																	"plantWater":1,
@@ -2552,7 +2544,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"2","checked":true},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:401","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:77","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3144,7 +3136,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"Improving in size, color, fullness","entryTime":"10:32:34:480","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:172","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3752,7 +3744,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"3","times":"4","checked":true}],"plantMsg":"","entryTime":"10:32:34:536","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Large fan leaves\nNo sex yet","entryTime":"11:20:17:271","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
 																"data": [{}]

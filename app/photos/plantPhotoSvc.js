@@ -69,7 +69,11 @@
 										"images/plants/week5/plant1/jhweek5p4.jpg",
 										"images/plants/week5/plant1/jhweek5p1.jpg",
 										"images/plants/week6/plant1/jhweek6p.jpg",
-										"images/plants/week6/plant1/jhweek6p1.jpg"
+										"images/plants/week6/plant1/jhweek6p1.jpg",
+										"images/plants/week7/plant1/jhweek7p1.jpg",
+										"images/plants/week7/plant1/jhweek7p2.jpg",
+										"images/plants/week7/plant1/jhweek7p3.jpg"
+
 									]
 								}, {
 									"plant": 2,
@@ -91,7 +95,10 @@
 										"images/plants/week5/plant2/cssweek5p5.jpg",
 										"images/plants/week5/plant2/cssweek5p6.jpg",
 										"images/plants/week6/plant2/cssweek6p1.jpg",
-										"images/plants/week6/plant2/cssweek6p2.jpg"
+										"images/plants/week6/plant2/cssweek6p2.jpg",
+										"images/plants/week7/plant2/cssweek7p1.jpg",
+										"images/plants/week7/plant2/cssweek7p2.jpg",
+										"images/plants/week7/plant2/cssweek7p3.jpg"
 									]
 								}, {
 									"plant": 3,
@@ -109,7 +116,10 @@
 										"images/plants/week5/plant3/admweek5p3.jpg",
 										"images/plants/week6/plant3/admweek6p1.jpg",
 										"images/plants/week6/plant3/admweek6p2.jpg",
-										"images/plants/week6/plant3/admweek6p3.jpg"
+										"images/plants/week6/plant3/admweek6p3.jpg",
+										"images/plants/week7/plant3/admweek7p1.jpg",
+										"images/plants/week7/plant3/admweek7p2.jpg",
+										"images/plants/week7/plant3/admweek7p3.jpg"
 									]
 								}, {
 									"plant": 4,
@@ -126,7 +136,10 @@
 										"images/plants/week5/plant4/gscweek5p2.jpg",
 										"images/plants/week5/plant4/gscweek5p3.jpg",
 										"images/plants/week6/plant4/gscweek6p1.jpg",
-										"images/plants/week6/plant4/gscweek6p2.jpg"
+										"images/plants/week6/plant4/gscweek6p2.jpg",
+										"images/plants/week7/plant4/gscweek7p1.jpg",
+										"images/plants/week7/plant4/gscweek7p2.jpg",
+										"images/plants/week7/plant4/gscweek7p3.jpg"
 									]
 								}, {
 									"plant": 5,
@@ -147,7 +160,11 @@
 										"images/plants/week5/plant5/orweek5p2.jpg",
 										"images/plants/week5/plant5/orweek5p3.jpg",
 										"images/plants/week6/plant5/orweek6p1.jpg",
-										"images/plants/week6/plant5/orweek6p1.jpg"
+										"images/plants/week6/plant5/orweek6p1.jpg",
+										"images/plants/week7/plant5/orweek7p1.jpg",
+										"images/plants/week7/plant5/orweek7p2.jpg",
+										"images/plants/week7/plant5/orweek7p3.jpg"
+
 									]
 								}]
 							}, {
