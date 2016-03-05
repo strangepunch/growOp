@@ -39,6 +39,7 @@
 								"plantPic": 3,
 								"url": "images/compost_tea/five_gal_bucket.jpg"
 							}],
+
 							"equipment": [{
 								"plantPic": 1,
 								"url": "images/equipment/45gph_pump.jpg"
@@ -48,40 +49,122 @@
 							}, {
 								"plantPic": 3,
 								"url": "images/equipment/five_gal_bucket.jpg"
-							}, {
-								"plantPic": 4,
-								"url": "images/equipment/soil1_5_seven_gal_pots.jpg"
 							}],
+
 							"weekly": [{
 								"week": "0",
 								"plants": [{
 									"plant": 1,
-									"plantPic": ["images/plants/week0/plant1/or_week0_3.jpg",
-										"images/plants/week0/plant1/week0_1.jpg"
+									"plantPic": [
+										"images/plants/week0/plant1/or_week0_3.jpg",
+										"images/plants/week0/plant1/week0_1.jpg",
+										"images/plants/week0B/plant1/week0B_3.jpg",
+										"images/plants/week1/plant1/week1_3.jpg",
+										"images/plants/week1/plant1/week1_5.jpg",
+										"images/plants/week2/plant1/week2_5.jpg",
+										"images/plants/week4/plant1/Week4-JH1.jpg",
+										"images/plants/week4/plant1/Week4-JH2.jpg",
+										"images/plants/week5/plant1/jhweek5p2.jpg",
+										"images/plants/week5/plant1/jhweek5p3.jpg",
+										"images/plants/week5/plant1/jhweek5p4.jpg",
+										"images/plants/week5/plant1/jhweek5p1.jpg",
+										"images/plants/week6/plant1/jhweek6p.jpg",
+										"images/plants/week6/plant1/jhweek6p1.jpg",
+										"images/plants/week7/plant1/jhweek7p1.jpg",
+										"images/plants/week7/plant1/jhweek7p2.jpg",
+										"images/plants/week7/plant1/jhweek7p3.jpg"
+
 									]
 								}, {
 									"plant": 2,
-									"plantPic": ["images/plants/week0/plant2/week0_1.jpg",
-										"images/plants/week0/plant2/week0_2.jpg"
+									"plantPic": [
+										"images/plants/week0/plant2/week0_1.jpg",
+										"images/plants/week0/plant2/week0_2.jpg",
+										"images/plants/week0B/plant2/week0B_1.jpg",
+										"images/plants/week0B/plant2/week0B_2.jpg",
+										"images/plants/week1/plant2/week_1_5.jpg",
+										"images/plants/week1/plant2/week1_1.jpg",
+										"images/plants/week1/plant2/week1_4.jpg",
+										"images/plants/week2/plant2/week2_4.jpg",
+										"images/plants/week4/plant2/Week4-css1.jpg",
+										"images/plants/week4/plant2/Week4-css2.jpg",
+										"images/plants/week5/plant2/cssweek5p1.jpg",
+										"images/plants/week5/plant2/cssweek5p2.jpg",
+										"images/plants/week5/plant2/cssweek5p3.jpg",
+										"images/plants/week5/plant2/cssweek5p4.jpg",
+										"images/plants/week5/plant2/cssweek5p5.jpg",
+										"images/plants/week5/plant2/cssweek5p6.jpg",
+										"images/plants/week6/plant2/cssweek6p1.jpg",
+										"images/plants/week6/plant2/cssweek6p2.jpg",
+										"images/plants/week7/plant2/cssweek7p1.jpg",
+										"images/plants/week7/plant2/cssweek7p2.jpg",
+										"images/plants/week7/plant2/cssweek7p3.jpg"
 									]
 								}, {
 									"plant": 3,
-									"plantPic": ["images/plants/week0/plant3/or_week0_3.jpg",
-										"images/plants/week0/plant3/week0_1.jpg"
+									"plantPic": [
+										"images/plants/week0/plant3/or_week0_3.jpg",
+										"images/plants/week0/plant3/week0_1.jpg",
+										"images/plants/week0B/plant3/week0B_3.jpg",
+										"images/plants/week1/plant3/week1_3.jpg",
+										"images/plants/week1/plant3/week1_5.jpg",
+										"images/plants/week2/plant3/week2_3.jpg",
+										"images/plants/week4/plant3/Week4-autodeiselmatic2.jpg",
+										"images/plants/week4/plant3/Week4-autodieselmatic1.jpg",
+										"images/plants/week5/plant3/admweek5p1.jpg",
+										"images/plants/week5/plant3/admweek5p2.jpg",
+										"images/plants/week5/plant3/admweek5p3.jpg",
+										"images/plants/week6/plant3/admweek6p1.jpg",
+										"images/plants/week6/plant3/admweek6p2.jpg",
+										"images/plants/week6/plant3/admweek6p3.jpg",
+										"images/plants/week7/plant3/admweek7p1.jpg",
+										"images/plants/week7/plant3/admweek7p2.jpg",
+										"images/plants/week7/plant3/admweek7p3.jpg"
 									]
 								}, {
 									"plant": 4,
-									"plantPic": ["images/plants/week0/plant4/or_week0_3.jpg",
-										"images/plants/week0/plant4/week0_1.jpg"
+									"plantPic": [
+										"images/plants/week0/plant4/or_week0_3.jpg",
+										"images/plants/week0/plant4/week0_1.jpg",
+										"images/plants/week0B/plant4/week0B_3.jpg",
+										"images/plants/week1/plant4/week1_3.jpg",
+										"images/plants/week1/plant4/week1_5.jpg",
+										"images/plants/week2/plant4/week2_1.jpg",
+										"images/plants/week4/plant4/Week4-gsc1.jpg",
+										"images/plants/week4/plant4/Week4-gsc1.jpg",
+										"images/plants/week5/plant4/gscweek5p1.jpg",
+										"images/plants/week5/plant4/gscweek5p2.jpg",
+										"images/plants/week5/plant4/gscweek5p3.jpg",
+										"images/plants/week6/plant4/gscweek6p1.jpg",
+										"images/plants/week6/plant4/gscweek6p2.jpg",
+										"images/plants/week7/plant4/gscweek7p1.jpg",
+										"images/plants/week7/plant4/gscweek7p2.jpg",
+										"images/plants/week7/plant4/gscweek7p3.jpg"
 									]
 								}, {
 									"plant": 5,
-									"plantPic": ["images/plants/week0/plant5/IMAG3363.jpg",
+									"plantPic": [
+										"images/plants/week0/plant5/IMAG3363.jpg",
 										"images/plants/week0/plant5/or_week0_2.jpg",
 										"images/plants/week0/plant5/or_week0_3.jpg",
 										"images/plants/week0/plant5/or_week0_4.jpg",
 										"images/plants/week0/plant5/or_week0_5.jpg",
-										"images/plants/week0/plant5/week0_1.jpg"
+										"images/plants/week0/plant5/week0_1.jpg",
+										"images/plants/week0B/plant5/week1_2.jpg",
+										"images/plants/week1/plant5/week1_2.jpg",
+										"images/plants/week2/plant5/week2_2.jpg",
+										"images/plants/week2/plant5/week2_2.jpg",
+										"images/plants/week4/plant5/Week4-orange-rooster1.jpg",
+										"images/plants/week4/plant5/Week4-orange-rooster2.jpg",
+										"images/plants/week5/plant5/orweek5p1.jpg",
+										"images/plants/week5/plant5/orweek5p2.jpg",
+										"images/plants/week5/plant5/orweek5p3.jpg",
+										"images/plants/week6/plant5/orweek6p1.jpg",
+										"images/plants/week6/plant5/orweek6p1.jpg",
+										"images/plants/week7/plant5/orweek7p1.jpg",
+										"images/plants/week7/plant5/orweek7p2.jpg",
+										"images/plants/week7/plant5/orweek7p3.jpg"
+
 									]
 								}]
 							}, {
