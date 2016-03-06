@@ -7,7 +7,7 @@
 						 "plantGetDataSvc",
 							ScheduleCtrl]);
 	
-	function ScheduleCtrl($scope, localStorageService, plantGetDataSvc){
+	function ScheduleCtrl($scope, localStorageService){
 		var vm = this;
     	
 		var d = new Date();
@@ -515,35 +515,6 @@
 			vm.showEditStartDate = false;
 		}
 
-		vm.temp = [];
-		vm.temp2 = [];
-		
-		vm.getTest = function(){
-			plantGetDataSvc.buildFullArray().then(function(data){
-				vm.temp = data;
-				console.log("vm.temp: ", vm.temp);
-				$scope.$apply();
-			}).catch(function(error){
-				alert(error);
-			});
-
-			plantGetDataSvc.getWeekArrayForAllPlants(vm.currentWeek).then(function(data){
-				vm.temp2 = data;
-				console.log("vm.temp2: ", vm.temp2);
-				$scope.$apply();
-			}).catch(function(error){
-				alert(error);
-			});
-
-			plantGetDataSvc.getWeekArrayForEachPlant(5,vm.currentWeek).then(function(data){
-				vm.temp3 = data;
-				console.log("vm.temp3: ", vm.temp3);
-				$scope.$apply();
-			}).catch(function(error){
-				alert(error);
-			});
-		}
-		vm.getTest();
 	} 
 
 }());

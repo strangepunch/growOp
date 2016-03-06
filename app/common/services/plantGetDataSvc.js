@@ -29,7 +29,7 @@
       		var _FULLDATA_ = [];
       		var _WEEKDATA_ = [];
       		var _WEEKDATAPERPLANT_ = [];
-      		var _DAYDATA_ = [];       	
+      		//var _DAYDATA_ = [];       	
 
       		/**---function declarations---**/
       
@@ -39,9 +39,10 @@
       		vm.getWeekArrayForAllPlants = getWeekArrayForAllPlants;
       		//build and return a week's array for each plant
       		vm.getWeekArrayForEachPlant = getWeekArrayForEachPlant;
+      		//build and return an array of daily entrie for each/all plants
+      		vm.getDailyPlantEntries = getDailyPlantEntries;
       		//build and return a plant's full entry array
       		//build and return a plant's week entry array
-      		//build and return most recent entries for all plants (and per plant?)
       		//build and return 
 
 			/**---function---**/
@@ -115,6 +116,62 @@
 						}
 					});
 				});
+      		}
+      		//build and return an array of daily entrie for each/all plants
+      		//leaving ID of the plant empty(null) gets all plants
+      		function getDailyPlantEntries(weekNum, dayNum, ID){
+      			return new Promise(function(resolve, reject){
+      				masterPlantLogResource.query(function(data){
+      					var _DAYDATA_ = []; //_DAYDATA_.splice(0, _DAYDATA_.length);
+						if(data != null){
+							var plantsArray = data[0].plants;
+
+							for(var i = 0; i < plantsArray.length; i++){
+
+								if(ID != null && ID != ""){
+									console.log("ID: ", ID);
+									if(plantsArray[i].plantID == ID){
+
+										for(var x = 0; x < plantsArray[i].plant_measurements.length; x++){
+
+											if(plantsArray[i].plant_measurements[x].week == weekNum){
+
+												for(var y = 0; y < plantsArray[i].plant_measurements[x].entries.length; y++){
+
+													if(plantsArray[i].plant_measurements[x].entries[y].day == dayNum){
+
+														_DAYDATA_.push({"pID":plantsArray[i].plantID, "data":plantsArray[i].plant_measurements[x].entries[y].data});
+														console.log("build_DAYDATA_: ", _DAYDATA_);
+														resolve(_DAYDATA_);
+													}
+												}
+											}
+										}
+									}
+								} else {
+
+									for(var x = 0; x < plantsArray[i].plant_measurements.length; x++){
+
+										if(plantsArray[i].plant_measurements[x].week == weekNum){
+
+											for(var y = 0; y < plantsArray[i].plant_measurements[x].entries.length; y++){
+
+												if(plantsArray[i].plant_measurements[x].entries[y].day == dayNum){
+
+													_DAYDATA_.push({"pID":plantsArray[i].plantID, "data":plantsArray[i].plant_measurements[x].entries[y].data});
+													console.log("build_DAYDATA_: ", _DAYDATA_);
+													resolve(_DAYDATA_);
+												}
+											}
+										}
+									}
+								}
+							}
+						}else{
+							reject("empty array...");
+						}
+					});
+      			});
       		}
 			
 			
