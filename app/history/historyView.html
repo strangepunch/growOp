@@ -1,10 +1,79 @@
 <div class="schedule">
 	<div class="panel panel-default">
-		<h3 class="title" style="padding-top:10px"> history </h3>
-			
+		<h3 class="title" style="padding-top:10px">lastest stats</h3>
+
 		<div class="panel-body">
+			<div> 
+				Total water given this week: 
+				<span style="font-size:4em;color:lightblue;">{{vm.totalWater}}</span>
+				gal.
+			</div>
+			<div class="col-xs-6 col-md-4 col-lg-3" ng-repeat="obj in vm.PlantWater">
+				Plant 
+				<span style="font-size:1.5em;color:lightgreen;">{{obj.pID}} </span> 
+				had 
+				<span style="font-size:2em;color:lightblue;">{{obj.totWater}} </span>
+				gal.
+			</div>
+		</div>
+
+		<div class="panel-body">
+			<h4>Your plants worked hard this week:</h4>
+			<div class="col-xs-6">Greatest growth is <br/>
+				<span style="font-size:4em;color:lightgreen;">{{vm.grewMost.totGrowth}}</span> in.
+			</div>
+			<div class="col-xs-6" style="text-align:right">Tallest plant is <br/>
+				<span style="font-size:5.5em;color:lightgreen;">{{vm.tallest.totHeight}}</span> in.
+			</div>
+			<div class="col-xs-12" style="text-align:center">
+				Plant 
+				<span style="font-size:3em;color:lightgreen;">{{vm.grewMost.pID}} </span> 
+				grew the most!
+			</div>
+			<div class="col-xs-12" style="text-align:center">
+				Plant 
+				<span style="font-size:2em;color:lightgreen;">{{vm.tallest.pID}} </span> 
+				is the tallest!
+			</div>
+			<div class="col-xs-12" style="text-align:center">
+				Plant 
+				<span style="font-size:2em;color:lightgreen;">{{vm.grewLeast.pID}} </span> 
+				grew the least!
+			</div>
+			<div class="col-xs-12" style="text-align:center">
+				Plant 
+				<span style="font-size:2em;color:red;">{{vm.shortest.pID}} </span> 
+				is the shortest!
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-4 col-lg-2" ng-repeat="obj in vm.PlantGrowth">
+					Plant 
+					<span style="font-size:1em;color:lightgreen;">{{obj.pID}} </span> 
+					grew 
+					<span style="font-size:1.5em;color:yellow;">{{obj.totGrowth}} </span>
+					in.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-4 col-lg-2" ng-repeat="obj in vm.PlantHeights">
+					Plant 
+					<span style="font-size:1em;color:lightgreen;">{{obj.pID}} </span> 
+					is 
+					<span style="font-size:1.5em;color:yellow;">{{obj.totHeight}} </span>
+					in.
+				</div>
+			</div>
+		</div>
+			
+		<!-- <div class="panel-body">
+			<div>{{vm.PlantWater|json}}</div>
+			<br/><br/>
+			<div>{{vm.PlantGrowth|json}}</div>
+			<br/><br/>
+			<div>{{vm.PlantHeights|json}}</div>
+			<br/><br/>
 			<div>{{vm.plantWeekly|json}}</div>
 			<br/><br/>
-		</div>
+		</div> -->
 	</div>
 </div>

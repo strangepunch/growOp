@@ -27,7 +27,7 @@
       		/**---Get Data FROM: masterPlantLogResource---**/
       		//local variables
       		var _FULLDATA_ = [];
-      		var _WEEKDATA_ = [];
+      		//var _WEEKDATA_ = [];
       		var _WEEKDATAPERPLANT_ = [];
       		//var _DAYDATA_ = [];       	
 
@@ -63,9 +63,9 @@
 			}
       		//build and return a week's array for all plants
       		function getWeekArrayForAllPlants(weekNum){
-      			_WEEKDATA_.splice(0, _WEEKDATAPERPLANT_.length);
       			return new Promise(function(resolve,reject){
 					masterPlantLogResource.query(function(data){
+						var _WEEKDATA_ = []; //_WEEKDATA_.splice(0, _WEEKDATAPERPLANT_.length);
 						if(data != null){
 							var plantsArray = data[0].plants;
 
