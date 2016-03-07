@@ -98,7 +98,7 @@
 				plantName: null,
 				plantCompany: null,
 				plantDate: {year: _YYYY, month: _MM, day: _DD},
-				plantStage: "Seeding"
+				plantStage: "Seedling"
 		    };
 	    }
 
