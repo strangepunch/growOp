@@ -744,10 +744,10 @@ var plantLog = [{
 																	"data": [{"roomTemp":"75","roomHumidity":"65","roomLightHr":"18","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Holding 1,2,5 in veg, 3&4 are flowering (autos)","entryTime":"8:22:57:958","entryDate":"2016/3/6"}]
 																}, {
 																	"day": 6,
-																	"data": [{}]
+																	"data": [{"roomTemp":"68","roomHumidity":"52","roomLightHr":"18","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":"3","checked":true},{"name":"Big Bl.","amt":"2","checked":true},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"1,2 have been FIMmed extensively. Want veg response before starting flowering. Plan mesh & HPS fri. 3,4 are flowering. Added 2tsp/g tigerbloom for these 2","entryTime":"11:12:41:452","entryDate":"2016/3/7"}]
 																}, {
 																	"day": 7,
-																	"data": [{}]
+																	"data": [{"roomTemp":"72","roomHumidity":"62","roomLightHr":"18","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":"1","checked":true}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Fish protein mist 3x/d","entryTime":"8:47:53:995","entryDate":"2016/3/8"}]
 																}]
 														}, {
 															"week": "8",
@@ -1196,13 +1196,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"Positive growth, 2 healthy fans. Placed 36\" from halide, watching closely","entryTime":"10:53:34:595","entryDate":"2016/1/30"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"Positive leaf & height growth. Moved to 30\" from halide bulb","entryTime":"7:9:28:148","entryDate":"2016/1/31"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"Halide","plantMsg":"Positive leaf & height growth. Moved to 30\" from halide bulb","entryTime":"7:9:28:148","entryDate":"2016/1/31"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"4240","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Aerated. 1 tsp/g big bloom added. 2 sets leaves. Tolerating halide well at 30\"","entryTime":"17:26:20:970","entryDate":"2016/2/1"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4240","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"Aerated. 1 tsp/g big bloom added. 2 sets leaves. Tolerating halide well at 30\"","entryTime":"17:26:20:970","entryDate":"2016/2/1"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, one compound set. 24\" from halide bulb, no wilting","entryTime":"11:59:12:815","entryDate":"2016/2/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 sets leaves, one compound set. 24\" from halide bulb, no wilting","entryTime":"11:59:12:815","entryDate":"2016/2/2"}]
 															}
 														]
 										}, {
@@ -1210,13 +1210,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers leaves","entryTime":"13:48:48:395","entryDate":"2016/2/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 tiers leaves","entryTime":"13:48:48:395","entryDate":"2016/2/3"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves. Stem is strengthening & thickening","entryTime":"8:25:22:172","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"3 tiers leaves. Stem is strengthening & thickening","entryTime":"8:25:22:172","entryDate":"2016/2/4"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"4990","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"12:35:4:527","entryDate":"2016/2/5"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4990","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"12:35:4:527","entryDate":"2016/2/5"}]
 															}, {
 																"day": 4,
 																"data": [{					
@@ -1231,13 +1231,13 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:38","entryDate":"2016/2/7"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"","entryTime":"8:58:51:38","entryDate":"2016/2/7"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.5","plantPPM":"4610","plantPH":"7","plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"4 tiers leaves","entryTime":"9:44:30:42","entryDate":"2016/2/8"}]
+																"data": [{"plantWater":"0.5","plantPPM":"4610","plantPH":"7","plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"4 tiers leaves","entryTime":"9:44:30:42","entryDate":"2016/2/8"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":7,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"Leaves wilted probably from too much light or too much water from foliar application of fish protein.","entryTime":"8:24:59:569","entryDate":"2016/2/8"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":7,"plantHeight":"4","plantCond":"good","lightType":"Halide","plantMsg":"Leaves wilted probably from too much light or too much water from foliar application of fish protein.","entryTime":"8:24:59:569","entryDate":"2016/2/8"}]
 															}
 														]
 										}, {
@@ -1245,25 +1245,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"FIM done on primary stalk","entryTime":"16:40:56:603","entryDate":"2016/2/10"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"FIM done on primary stalk","entryTime":"16:40:56:603","entryDate":"2016/2/10"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"No wilting, tolerated FIM well","entryTime":"13:20:35:151","entryDate":"2016/2/11"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"No wilting, tolerated FIM well","entryTime":"13:20:35:151","entryDate":"2016/2/11"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".4","plantPPM":"3230","plantPH":"7","plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"Recovering well from first fim","entryTime":"11:46:38:431","entryDate":"2016/2/12"}]
+																"data": [{"plantWater":".4","plantPPM":"3230","plantPH":"7","plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"Recovering well from first fim","entryTime":"11:46:38:431","entryDate":"2016/2/12"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb now on 5\" platform","entryTime":"8:0:53:382","entryDate":"2016/2/13"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"27\" from bulb now on 5\" platform","entryTime":"8:0:53:382","entryDate":"2016/2/13"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:36:777","entryDate":"2016/2/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"6:37:36:777","entryDate":"2016/2/14"}]
 															}, {
 																"day": 6,
 																"data": [{"plantWater":"0.5","plantPPM":"2670","plantPH":"7","plantHeight":"4","plantCond":null,"lightType":null,"lightHt":"25","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"H bulb","entryTime":"10:20:14:985","entryDate":"2016/2/15"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:15","entryDate":"2016/2/16"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:15","entryDate":"2016/2/16"}]
 															}
 														]
 										}, {
@@ -1271,25 +1271,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"Some fan wilting. Raised bulb","entryTime":"7:38:40:607","entryDate":"2016/2/17"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"Some fan wilting. Raised bulb","entryTime":"7:38:40:607","entryDate":"2016/2/17"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:443","entryDate":"2016/2/18"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:443","entryDate":"2016/2/18"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"2780","plantPH":"7.1","plantHeight":"6","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:294","entryDate":"2016/2/19"}]
+																"data": [{"plantWater":"0.4","plantPPM":"2780","plantPH":"7.1","plantHeight":"6","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:294","entryDate":"2016/2/19"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Low and wide with great new growth","entryTime":"12:39:3:222","entryDate":"2016/2/20"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Low and wide with great new growth","entryTime":"12:39:3:222","entryDate":"2016/2/20"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"1","times":"2","checked":true}],"plantMsg":"","entryTime":"8:24:23:654","entryDate":"2016/2/21"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"1","times":"2","checked":true}],"plantMsg":"","entryTime":"8:24:23:654","entryDate":"2016/2/21"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"3880","plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:403","entryDate":"2016/2/22"}]
+																"data": [{"plantWater":"0.4","plantPPM":"3880","plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:403","entryDate":"2016/2/22"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"2","times":"4","checked":true}],"plantMsg":"","entryTime":"11:18:16:68","entryDate":"2016/2/23"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"2","times":"4","checked":true}],"plantMsg":"","entryTime":"11:18:16:68","entryDate":"2016/2/23"}]
 															}
 														]
 										}, {
@@ -1297,25 +1297,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:47","entryDate":"2016/2/24"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:47","entryDate":"2016/2/24"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:745","entryDate":"2016/2/25"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:745","entryDate":"2016/2/25"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes with 1:5 tea","entryTime":"11:26:49:974","entryDate":"2016/2/26"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes with 1:5 tea","entryTime":"11:26:49:974","entryDate":"2016/2/26"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:22:930","entryDate":"2016/2/27"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:22:930","entryDate":"2016/2/27"}]
 															}, {
 																"day": 5,
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.3","plantPPM":"2740","plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"6","times":"3","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"15:14:8:241","entryDate":"2016/2/29"}]
+																"data": [{"plantWater":"0.3","plantPPM":"2740","plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"6","times":"3","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"15:14:8:241","entryDate":"2016/2/29"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:7:594","entryDate":"2016/3/1"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:7:594","entryDate":"2016/3/1"}]
 															}
 														]
 										}, {
@@ -1323,25 +1323,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"No heat stress, still on platform to maximize lumens","entryTime":"11:8:36:112","entryDate":"2016/3/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"No heat stress, still on platform to maximize lumens","entryTime":"11:8:36:112","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:246","entryDate":"2016/3/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:246","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"2","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Placed on the ground because of height\nFim - 2 level 2 and 1 level 3","entryTime":"11:20:16:822","entryDate":"2016/3/4"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"2","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Placed on the ground because of height\nFim - 2 level 2 and 1 level 3","entryTime":"11:20:16:822","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"14","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"4","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:377","entryDate":"2016/3/5"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"14","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"4","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:377","entryDate":"2016/3/5"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"4","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:22:58:286","entryDate":"2016/3/6"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"4","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:22:58:286","entryDate":"2016/3/6"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":"3850","plantPH":0,"plantHeight":"17","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"4","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:12:41:714","entryDate":"2016/3/7"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"1","checked":true}],"plantMsg":"","entryTime":"8:50:42:83","entryDate":"2016/3/8"}]
 															}
 														]
 										}, {
@@ -1777,22 +1777,22 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"7","plantHeight":"2","plantCond":"good","timeOfDay":"morning","plantMsg":"Light lowered from 30 to 24\". Excellent deep green fan enlargement. No signs of stretching nor stress","entryTime":"10:40:50:471","entryDate":"2016/1/27"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"great","lightType":"afternoon","plantMsg":"2nd tier of jagged fans emerging. Halide at 24\" now, tolerating well. No wilting","entryTime":"11:38:29:694","entryDate":"2016/1/28"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"great","lightType":"Halide","plantMsg":"2nd tier of jagged fans emerging. Halide at 24\" now, tolerating well. No wilting","entryTime":"11:38:29:694","entryDate":"2016/1/28"}]
 															}, {
 																"day": 3,
 																"data": [{"plantWater":".6","plantPPM":"3600","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"CFL","plantMsg":"","entryTime":"11:53:39:682","entryDate":"2016/1/29"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"great","lightType":"afternoon","plantMsg":"# & size fans increasing. Very healthy at 24\". Rotating every 6 h","entryTime":"10:53:34:718","entryDate":"2016/1/30"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"great","lightType":"Halide","plantMsg":"# & size fans increasing. Very healthy at 24\". Rotating every 6 h","entryTime":"10:53:34:718","entryDate":"2016/1/30"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"Positive leaf & height growth. Moved to 30\" from halide bulb","entryTime":"7:9:28:148","entryDate":"2016/1/31"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"Halide","plantMsg":"Positive leaf & height growth. Moved to 30\" from halide bulb","entryTime":"7:9:28:148","entryDate":"2016/1/31"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"4750","plantPH":"7","plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"4 sets leaves. Nutes added Tolerating halide well at 24\" Aerated pre watering","entryTime":"17:26:21:101","entryDate":"2016/2/1"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4750","plantPH":"7","plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"4 sets leaves. Nutes added Tolerating halide well at 24\" Aerated pre watering","entryTime":"17:26:21:101","entryDate":"2016/2/1"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"5 sets leaves, sprouts at nodes, 22\" from bulb, no wilting so no changes","entryTime":"11:59:12:941","entryDate":"2016/2/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"5 sets leaves, sprouts at nodes, 22\" from bulb, no wilting so no changes","entryTime":"11:59:12:941","entryDate":"2016/2/2"}]
 															}
 														]
 										}, {
@@ -1800,13 +1800,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"afternoon","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"great","lightType":"Halide","plantMsg":"1/2\" growth/day, considerable branching w/o pruning. May be ready to FIM soon","entryTime":"8:25:22:293","entryDate":"2016/2/4"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.44","plantPPM":"2660","plantPH":"7","plantHeight":"5","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done of primary stem","entryTime":"12:35:4:666","entryDate":"2016/2/5"}]
+																"data": [{"plantWater":"0.44","plantPPM":"2660","plantPH":"7","plantHeight":"5","plantCond":"great","lightType":"Halide","plantMsg":"FIM done of primary stem","entryTime":"12:35:4:666","entryDate":"2016/2/5"}]
 															}, {
 																"day": 4,
 																"data": [{					
@@ -1821,13 +1821,13 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"great","lightType":"afternoon","plantMsg":"Tolerated FIM well","entryTime":"8:58:51:163","entryDate":"2016/2/7"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"great","lightType":"Halide","plantMsg":"Tolerated FIM well","entryTime":"8:58:51:163","entryDate":"2016/2/7"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.5","plantPPM":"4060","plantPH":"7","plantHeight":"8","plantCond":"great","lightType":"afternoon","plantMsg":"Nutes done.","entryTime":"9:44:30:197","entryDate":"2016/2/8"}]
+																"data": [{"plantWater":"0.5","plantPPM":"4060","plantPH":"7","plantHeight":"8","plantCond":"great","lightType":"Halide","plantMsg":"Nutes done.","entryTime":"9:44:30:197","entryDate":"2016/2/8"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"great","lightType":"afternoon","plantMsg":"Lowest 2 fans removed, shaded since they are totally shaded. FIM site showing new sprouts","entryTime":"8:25:0:101","entryDate":"2016/2/9"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"great","lightType":"Halide","plantMsg":"Lowest 2 fans removed, shaded since they are totally shaded. FIM site showing new sprouts","entryTime":"8:25:0:101","entryDate":"2016/2/9"}]
 															}
 														]
 										}, {
@@ -1835,25 +1835,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"good","lightType":"afternoon","plantMsg":"Secondary stalks almost ready to FIM","entryTime":"16:40:56:716","entryDate":"2016/2/10"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"good","lightType":"Halide","plantMsg":"Secondary stalks almost ready to FIM","entryTime":"16:40:56:716","entryDate":"2016/2/10"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done x 5 on lower branches. Some wilting, not severe. Lite at 24\"","entryTime":"13:20:35:292","entryDate":"2016/2/11"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"great","lightType":"Halide","plantMsg":"FIM done x 5 on lower branches. Some wilting, not severe. Lite at 24\"","entryTime":"13:20:35:292","entryDate":"2016/2/11"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".4","plantPPM":"1080","plantPH":"7","plantHeight":"10","plantCond":"good","lightType":"afternoon","plantMsg":"Insect bites on 2 leaves\nResponding well to FIM","entryTime":"11:46:38:545","entryDate":"2016/2/12"}]
+																"data": [{"plantWater":".4","plantPPM":"1080","plantPH":"7","plantHeight":"10","plantCond":"good","lightType":"Halide","plantMsg":"Insect bites on 2 leaves\nResponding well to FIM","entryTime":"11:46:38:545","entryDate":"2016/2/12"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"great","lightType":"afternoon","plantMsg":"FIM done x 1. Pruned 2 lowest fans in shade. Height 1\"/d, with excellent response to FIMs.","entryTime":"8:0:53:520","entryDate":"2016/2/13"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"great","lightType":"Halide","plantMsg":"FIM done x 1. Pruned 2 lowest fans in shade. Height 1\"/d, with excellent response to FIMs.","entryTime":"8:0:53:520","entryDate":"2016/2/13"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"great","lightType":"afternoon","plantMsg":"FIM redone on main tip. Slight wilting at 23\" from bulb. Will raise lite tmrw & raise platform for other pots","entryTime":"6:37:36:947","entryDate":"2016/2/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"great","lightType":"Halide","plantMsg":"FIM redone on main tip. Slight wilting at 23\" from bulb. Will raise lite tmrw & raise platform for other pots","entryTime":"6:37:36:947","entryDate":"2016/2/14"}]
 															}, {
 																"day": 6,
 																"data": [{"plantWater":"0.5","plantPPM":"3590","plantPH":"7","plantHeight":"13","plantCond":"good","lightType":"HPS","lightHt":"23","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:20:15:119","entryDate":"2016/2/15"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":">12\" taller than others, but not yet ready to place fencing mesh hanging over","entryTime":"9:14:2:185","entryDate":"2016/2/16"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":">12\" taller than others, but not yet ready to place fencing mesh hanging over","entryTime":"9:14:2:185","entryDate":"2016/2/16"}]
 															}
 														]
 										}, {
@@ -1861,25 +1861,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"Fan wilting should resolve with raised light","entryTime":"7:38:40:724","entryDate":"2016/2/17"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"Fan wilting should resolve with raised light","entryTime":"7:38:40:724","entryDate":"2016/2/17"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:578","entryDate":"2016/2/18"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:578","entryDate":"2016/2/18"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"1550","plantPH":"7.2","plantHeight":"20","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"2 lowest fans in shade, pruned","entryTime":"12:16:32:453","entryDate":"2016/2/19"}]
+																"data": [{"plantWater":"0.4","plantPPM":"1550","plantPH":"7.2","plantHeight":"20","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"2 lowest fans in shade, pruned","entryTime":"12:16:32:453","entryDate":"2016/2/19"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"2","times":0,"checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"LST to control vertical height","entryTime":"12:39:3:296","entryDate":"2016/2/20"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"2","times":0,"checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"LST to control vertical height","entryTime":"12:39:3:296","entryDate":"2016/2/20"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Adapting to 90 deg. LST well. Equalizes heights","entryTime":"8:24:23:802","entryDate":"2016/2/21"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Adapting to 90 deg. LST well. Equalizes heights","entryTime":"8:24:23:802","entryDate":"2016/2/21"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.6","plantPPM":"4500","plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Tolerated LST well","entryTime":"9:2:47:544","entryDate":"2016/2/22"}]
+																"data": [{"plantWater":"0.6","plantPPM":"4500","plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Tolerated LST well","entryTime":"9:2:47:544","entryDate":"2016/2/22"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"5","times":"3","checked":true},{"name":"Fan","tier":"6","times":"6","checked":true}],"plantMsg":"","entryTime":"11:18:16:273","entryDate":"2016/2/23"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"5","times":"3","checked":true},{"name":"Fan","tier":"6","times":"6","checked":true}],"plantMsg":"","entryTime":"11:18:16:273","entryDate":"2016/2/23"}]
 															}
 														]
 										}, {
@@ -1887,27 +1887,27 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:165","entryDate":"2016/2/24"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:165","entryDate":"2016/2/24"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"2","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:894","entryDate":"2016/2/25"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"2","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:894","entryDate":"2016/2/25"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes + tea","entryTime":"11:26:50:82","entryDate":"2016/2/26"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes + tea","entryTime":"11:26:50:82","entryDate":"2016/2/26"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"7","plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"2","times":"4","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:71","entryDate":"2016/2/27"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"7","plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"2","times":"4","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:71","entryDate":"2016/2/27"}]
 															}, {
 																"day": 5,
 																"data": [{}]
 															}, {
 																"day": 6,
 																"data": [{					
-																	"plantWater":"0.3","plantPPM":"1930","plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"5","times":"5","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"15:14:8:316","entryDate":"2016/2/29"}]
+																	"plantWater":"0.3","plantPPM":"1930","plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"5","times":"5","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"15:14:8:316","entryDate":"2016/2/29"}]
 															}, {
 																"day": 7,
 																"data": [{					
-																	"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Few light spots in middle of a few fans. Not classic nute burn. Will research","entryTime":"8:54:7:792","entryDate":"2016/3/1"}]
+																	"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Few light spots in middle of a few fans. Not classic nute burn. Will research","entryTime":"8:54:7:792","entryDate":"2016/3/1"}]
 															}
 														]
 										}, {
@@ -1915,41 +1915,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:265","entryDate":"2016/3/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:265","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"8","times":"6","checked":true}],"plantMsg":"","entryTime":"10:32:34:319","entryDate":"2016/3/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"8","times":"6","checked":true}],"plantMsg":"","entryTime":"10:32:34:319","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":0,"checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"1","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Ph fluctuation related burn on a few leaves","entryTime":"11:20:16:980","entryDate":"2016/3/4"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":"","plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":0,"checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"1","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Ph fluctuation related burn on a few leaves","entryTime":"11:20:16:980","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:526","entryDate":"2016/3/5"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:526","entryDate":"2016/3/5"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"3","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"8:22:58:404","entryDate":"2016/3/6"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"3","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"8:22:58:404","entryDate":"2016/3/6"}]
 															}, {
 																"day": 6,
-																"data": [{																	"plantWater":1,
-																	"plantPPM":0,
-																	"plantPH":0,
-																	"plantHeight":0,
-																	"plantCond":"good",
-																	"timeOfDay":"morning",
-																	"plantMsg":"",
-																	"entryTime":"10:5:8:856",
-																	"entryDate":"2016/1/14"}]
+																"data": [{"plantWater":"0.5","plantPPM":"3460","plantPH":0,"plantHeight":"21","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":"5","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:12:41:816","entryDate":"2016/3/7"}]
 															}, {
 																"day": 7,
-																"data": [{																	"plantWater":1,
-																	"plantPPM":0,
-																	"plantPH":0,
-																	"plantHeight":0,
-																	"plantCond":"good",
-																	"timeOfDay":"morning",
-																	"plantMsg":"",
-																	"entryTime":"10:5:8:856",
-																	"entryDate":"2016/1/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"23","plantCond":"great","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"8","times":"2","checked":true}],"plantMsg":"","entryTime":"8:50:42:195","entryDate":"2016/3/8"}]
 															}
 														]
 										}, {
@@ -2392,16 +2376,16 @@ var plantLog = [{
 																"data": [{"plantWater":".6","plantPPM":"3600","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"CFL","plantMsg":"","entryTime":"11:53:39:682","entryDate":"2016/1/29"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"Placed 48\" from halide, watching closely, 2 nice jagged leaves. Ht 1.5\"","entryTime":"10:53:34:808","entryDate":"2016/1/30"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"Halide","plantMsg":"Placed 48\" from halide, watching closely, 2 nice jagged leaves. Ht 1.5\"","entryTime":"10:53:34:808","entryDate":"2016/1/30"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"Positive leaf & height growth. 30\" from halide source now","entryTime":"7:9:28:394","entryDate":"2016/1/31"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"great","lightType":"Halide","plantMsg":"Positive leaf & height growth. 30\" from halide source now","entryTime":"7:9:28:394","entryDate":"2016/1/31"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"3750","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Tolerating halide at 30\". 2 sets leaves. Aerated. Nutes added","entryTime":"17:26:21:176","entryDate":"2016/2/1"}]
+																"data": [{"plantWater":"0.4","plantPPM":"3750","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"Tolerating halide at 30\". 2 sets leaves. Aerated. Nutes added","entryTime":"17:26:21:176","entryDate":"2016/2/1"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, newest tier is compound, 25\" from bulb, no wilting","entryTime":"11:59:13:27","entryDate":"2016/2/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 sets leaves, newest tier is compound, 25\" from bulb, no wilting","entryTime":"11:59:13:27","entryDate":"2016/2/2"}]
 															}
 														]
 										}, {
@@ -2409,13 +2393,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":null,"plantPPM":null,"plantPH":null,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers leaves","entryTime":"13:48:48:595","entryDate":"2016/2/3"}]
+																"data": [{"plantWater":null,"plantPPM":null,"plantPH":null,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 tiers leaves","entryTime":"13:48:48:595","entryDate":"2016/2/3"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Some wilting of leaves. Moved from 24\" to 30\" from bulb. Misted soil. No leaf discoloration","entryTime":"8:25:22:368","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"Some wilting of leaves. Moved from 24\" to 30\" from bulb. Misted soil. No leaf discoloration","entryTime":"8:25:22:368","entryDate":"2016/2/4"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"3580","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"Wilting today, believed to be from too close to bulb. 30\" now, moved to 36\"","entryTime":"12:35:4:762","entryDate":"2016/2/5"}]
+																"data": [{"plantWater":"0.4","plantPPM":"3580","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"Wilting today, believed to be from too close to bulb. 30\" now, moved to 36\"","entryTime":"12:35:4:762","entryDate":"2016/2/5"}]
 															}, {
 																"day": 4,
 																"data": [{						
@@ -2430,13 +2414,13 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:248","entryDate":"2016/2/7"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"8:58:51:248","entryDate":"2016/2/7"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.5","plantPPM":"4230","plantPH":"7.2","plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves.","entryTime":"9:44:30:304","entryDate":"2016/2/8"}]
+																"data": [{"plantWater":"0.5","plantPPM":"4230","plantPH":"7.2","plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"3 tiers leaves.","entryTime":"9:44:30:304","entryDate":"2016/2/8"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:25:0:222","entryDate":"2016/2/9"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"8:25:0:222","entryDate":"2016/2/9"}]
 															}
 														]
 										}, {
@@ -2444,25 +2428,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"16:40:56:804","entryDate":"2016/2/10"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"16:40:56:804","entryDate":"2016/2/10"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"Sprouting new tiers","entryTime":"13:20:35:368","entryDate":"2016/2/11"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"Sprouting new tiers","entryTime":"13:20:35:368","entryDate":"2016/2/11"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".4","plantPPM":"3550","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"New growth is healthy","entryTime":"11:46:38:676","entryDate":"2016/2/12"}]
+																"data": [{"plantWater":".4","plantPPM":"3550","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"Halide","plantMsg":"New growth is healthy","entryTime":"11:46:38:676","entryDate":"2016/2/12"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb on platform.","entryTime":"8:0:53:642","entryDate":"2016/2/13"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"27\" from bulb on platform.","entryTime":"8:0:53:642","entryDate":"2016/2/13"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","plantMsg":"FIM mainshoot soon","entryTime":"6:37:37:96","entryDate":"2016/2/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","plantMsg":"FIM mainshoot soon","entryTime":"6:37:37:96","entryDate":"2016/2/14"}]
 															}, {
 																"day": 6,
 																"data": [{"plantWater":"0.5","plantPPM":"5050","plantPH":"7","plantHeight":"5","plantCond":"good","lightType":"CFL","lightHt":"26","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:20:15:206","entryDate":"2016/2/15"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:281","entryDate":"2016/2/16"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:281","entryDate":"2016/2/16"}]
 															}
 														]
 										}, {
@@ -2470,25 +2454,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:40:819","entryDate":"2016/2/17"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:40:819","entryDate":"2016/2/17"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:656","entryDate":"2016/2/18"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:656","entryDate":"2016/2/18"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"2220","plantPH":"7.2","plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:543","entryDate":"2016/2/19"}]
+																"data": [{"plantWater":"0.4","plantPPM":"2220","plantPH":"7.2","plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:543","entryDate":"2016/2/19"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"8 tiers of growth","entryTime":"12:39:3:377","entryDate":"2016/2/20"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"8 tiers of growth","entryTime":"12:39:3:377","entryDate":"2016/2/20"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:24:23:904","entryDate":"2016/2/21"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"9","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:24:23:904","entryDate":"2016/2/21"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"4240","plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:625","entryDate":"2016/2/22"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4240","plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:625","entryDate":"2016/2/22"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"2","checked":true},{"name":"Fan","tier":"3","times":"2","checked":true}],"plantMsg":"","entryTime":"11:18:16:371","entryDate":"2016/2/23"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"2","checked":true},{"name":"Fan","tier":"3","times":"2","checked":true}],"plantMsg":"","entryTime":"11:18:16:371","entryDate":"2016/2/23"}]
 															}
 														]
 										}, {
@@ -2496,25 +2480,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"2","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:248","entryDate":"2016/2/24"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"4","times":"2","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:39:19:248","entryDate":"2016/2/24"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:960","entryDate":"2016/2/25"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:9:960","entryDate":"2016/2/25"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes + tea","entryTime":"11:26:50:161","entryDate":"2016/2/26"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Nutes + tea","entryTime":"11:26:50:161","entryDate":"2016/2/26"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:153","entryDate":"2016/2/27"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"3","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:153","entryDate":"2016/2/27"}]
 															}, {
 																"day": 5,
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.3","plantPPM":"1730","plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"4","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Lowered pot to ground level off of bricks.","entryTime":"15:14:8:384","entryDate":"2016/2/29"}]
+																"data": [{"plantWater":"0.3","plantPPM":"1730","plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"4","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Lowered pot to ground level off of bricks.","entryTime":"15:14:8:384","entryDate":"2016/2/29"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.7","plantHeight":"16","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:7:921","entryDate":"2016/3/1"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.7","plantHeight":"16","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:7:921","entryDate":"2016/3/1"}]
 															}
 														]
 										}, {
@@ -2522,25 +2506,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:330","entryDate":"2016/3/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:8:36:330","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"2","checked":true},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:401","entryDate":"2016/3/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"2","checked":true},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"10:32:34:401","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:77","entryDate":"2016/3/4"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:77","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"2","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"3","checked":true}],"plantMsg":"Improving slowly, gradually clearing lower foliage","entryTime":"8:26:29:609","entryDate":"2016/3/5"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"2","times":"2","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"3","checked":true}],"plantMsg":"Improving slowly, gradually clearing lower foliage","entryTime":"8:26:29:609","entryDate":"2016/3/5"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Flowering phase","entryTime":"8:22:58:491","entryDate":"2016/3/6"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Flowering phase","entryTime":"8:22:58:491","entryDate":"2016/3/6"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":"3390","plantPH":0,"plantHeight":"20","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"TB 2tsp/g added. No more FIM","entryTime":"11:12:41:883","entryDate":"2016/3/7"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"6","times":"2","checked":true}],"plantMsg":"","entryTime":"8:50:42:270","entryDate":"2016/3/8"}]
 															}
 														]
 										}, {
@@ -2987,13 +2971,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"Smallest but positive growth of 2 jagged leaves, still under cfl","entryTime":"10:53:34:898","entryDate":"2016/1/30"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"Smallest but good positive leaf enlargement. Moved from cfl to halide 30\". Will watch closely. Misted soil","entryTime":"7:9:28:481","entryDate":"2016/1/31"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"Halide","plantMsg":"Smallest but good positive leaf enlargement. Moved from cfl to halide 30\". Will watch closely. Misted soil","entryTime":"7:9:28:481","entryDate":"2016/1/31"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"4970","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"Tolerating halide at 36\". Aerated. Nutes added. 2 sets leaves","entryTime":"17:26:21:260","entryDate":"2016/2/1"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4970","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"Halide","plantMsg":"Tolerating halide at 36\". Aerated. Nutes added. 2 sets leaves","entryTime":"17:26:21:260","entryDate":"2016/2/1"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 sets leaves, coty leaves still green. Rotating 3x /d","entryTime":"11:59:13:127","entryDate":"2016/2/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 sets leaves, coty leaves still green. Rotating 3x /d","entryTime":"11:59:13:127","entryDate":"2016/2/2"}]
 															}
 														]
 										}, {
@@ -3001,13 +2985,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"2 tiers jagged leaves at 30\" from bulb","entryTime":"8:25:22:440","entryDate":"2016/2/4"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"5260","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"Good progress","entryTime":"12:35:4:851","entryDate":"2016/2/5"}]
+																"data": [{"plantWater":"0.4","plantPPM":"5260","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"Halide","plantMsg":"Good progress","entryTime":"12:35:4:851","entryDate":"2016/2/5"}]
 															}, {
 																"day": 4,
 																"data": [{
@@ -3022,13 +3006,13 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:58:51:318","entryDate":"2016/2/7"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"8:58:51:318","entryDate":"2016/2/7"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.5","plantPPM":"4550","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"3 tiers leaves","entryTime":"9:44:30:403","entryDate":"2016/2/8"}]
+																"data": [{"plantWater":"0.5","plantPPM":"4550","plantPH":"7","plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"3 tiers leaves","entryTime":"9:44:30:403","entryDate":"2016/2/8"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"8:25:0:332","entryDate":"2016/2/9"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"8:25:0:332","entryDate":"2016/2/9"}]
 															}
 														]
 										}, {
@@ -3036,25 +3020,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"16:40:56:890","entryDate":"2016/2/10"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"16:40:56:890","entryDate":"2016/2/10"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"New leaves emerging","entryTime":"13:20:35:433","entryDate":"2016/2/11"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"New leaves emerging","entryTime":"13:20:35:433","entryDate":"2016/2/11"}]
 															}, {
 																"day": 3,
-																"data": [{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":".4","plantPPM":"2460","plantPH":"7","plantHeight":"3","plantCond":"great","lightType":"afternoon","plantMsg":"Starting 4th tier of leaves\nShould be ready for fim in 2-3 days","entryTime":"11:46:38:761","entryDate":"2016/2/12"}]
+																"data": [{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":".4","plantPPM":"2460","plantPH":"7","plantHeight":"3","plantCond":"great","lightType":"Halide","plantMsg":"Starting 4th tier of leaves\nShould be ready for fim in 2-3 days","entryTime":"11:46:38:761","entryDate":"2016/2/12"}]
 															}, {
 																"day": 4,
-																"data": [{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"27\" from bulb on platform","entryTime":"8:0:53:721","entryDate":"2016/2/13"}]
+																"data": [{"PlantName":"Auto GSC","PlantDesc":"(Fastbuds)","plantType":"Hybrid","plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"27\" from bulb on platform","entryTime":"8:0:53:721","entryDate":"2016/2/13"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:37:221","entryDate":"2016/2/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"6:37:37:221","entryDate":"2016/2/14"}]
 															}, {
 																"day": 6,
 																"data": [{"plantWater":"0.5","plantPPM":"2260","plantPH":"7","plantHeight":"4","plantCond":"good","lightType":"CFL","lightHt":"28","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:20:15:291","entryDate":"2016/2/15"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:371","entryDate":"2016/2/16"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:14:2:371","entryDate":"2016/2/16"}]
 															}
 														]
 										}, {
@@ -3062,25 +3046,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:40:900","entryDate":"2016/2/17"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:40:900","entryDate":"2016/2/17"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:726","entryDate":"2016/2/18"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:726","entryDate":"2016/2/18"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"4140","plantPH":"7.1","plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:635","entryDate":"2016/2/19"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4140","plantPH":"7.1","plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:635","entryDate":"2016/2/19"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Small but healthy growth","entryTime":"12:39:3:472","entryDate":"2016/2/20"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Small but healthy growth","entryTime":"12:39:3:472","entryDate":"2016/2/20"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:24:24:61","entryDate":"2016/2/21"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:24:24:61","entryDate":"2016/2/21"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.4","plantPPM":"3860","plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:698","entryDate":"2016/2/22"}]
+																"data": [{"plantWater":"0.4","plantPPM":"3860","plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:698","entryDate":"2016/2/22"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:18:16:481","entryDate":"2016/2/23"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"5","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:18:16:481","entryDate":"2016/2/23"}]
 															}
 														]
 										}, {
@@ -3088,25 +3072,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"FIM done on Middle plant tallest of the 3. No sexing yet","entryTime":"9:39:19:378","entryDate":"2016/2/24"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"FIM done on Middle plant tallest of the 3. No sexing yet","entryTime":"9:39:19:378","entryDate":"2016/2/24"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:10:99","entryDate":"2016/2/25"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:10:99","entryDate":"2016/2/25"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All 3 progressing well","entryTime":"11:26:50:336","entryDate":"2016/2/26"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All 3 progressing well","entryTime":"11:26:50:336","entryDate":"2016/2/26"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"9","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:347","entryDate":"2016/2/27"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"9","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:347","entryDate":"2016/2/27"}]
 															}, {
 																"day": 5,
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.3","plantPPM":"1160","plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 plants progressing well, no sex characteristics yet","entryTime":"15:14:8:514","entryDate":"2016/2/29"}]
+																"data": [{"plantWater":"0.3","plantPPM":"1160","plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 plants progressing well, no sex characteristics yet","entryTime":"15:14:8:514","entryDate":"2016/2/29"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"12","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:8:123","entryDate":"2016/3/1"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:8:123","entryDate":"2016/3/1"}]
 															}
 														]
 										}, {
@@ -3114,25 +3098,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Slowly improving","entryTime":"11:8:36:385","entryDate":"2016/3/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Slowly improving","entryTime":"11:8:36:385","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"Improving in size, color, fullness","entryTime":"10:32:34:480","entryDate":"2016/3/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"10","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"Improving in size, color, fullness","entryTime":"10:32:34:480","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:172","entryDate":"2016/3/4"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:20:17:172","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:717","entryDate":"2016/3/5"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"18","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:26:29:717","entryDate":"2016/3/5"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Flowering","entryTime":"8:22:58:568","entryDate":"2016/3/6"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Flowering","entryTime":"8:22:58:568","entryDate":"2016/3/6"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":"3650","plantPH":0,"plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Preflower stage. TB added. No more FIM. Still on 9\" platform","entryTime":"11:12:41:936","entryDate":"2016/3/7"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"8:50:42:342","entryDate":"2016/3/8"}]
 															}
 														]
 										}, {
@@ -3609,13 +3593,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"poor","lightType":"afternoon","plantMsg":"No sprout yet","entryTime":"13:48:48:780","entryDate":"2016/2/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"poor","lightType":"Halide","plantMsg":"No sprout yet","entryTime":"13:48:48:780","entryDate":"2016/2/3"}]
 															}, {
 																"day": 2,
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","plantMsg":"One sprout at top surface of rockwool","entryTime":"8:25:22:555","entryDate":"2016/2/4"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"4020","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"afternoon","plantMsg":"2 sprouts in incubator, not ready for transplant yet. Full strength compost tea applied","entryTime":"12:35:4:935","entryDate":"2016/2/5"}]
+																"data": [{"plantWater":"0.4","plantPPM":"4020","plantPH":"7","plantHeight":"1","plantCond":"good","lightType":"Halide","plantMsg":"2 sprouts in incubator, not ready for transplant yet. Full strength compost tea applied","entryTime":"12:35:4:935","entryDate":"2016/2/5"}]
 															}, {
 																"day": 4,
 																"data": [{
@@ -3650,13 +3634,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"1","plantCond":"good","lightType":"CFL","plantMsg":"Slowly moving pot toward halide. Still under cfl","entryTime":"13:20:35:527","entryDate":"2016/2/11"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":.4,"plantPPM":"2940","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"afternoon","plantMsg":"Placed on halide light\nCenter of 3 doing the best","entryTime":"11:46:38:878","entryDate":"2016/2/12"}]
+																"data": [{"plantWater":.4,"plantPPM":"2940","plantPH":"7","plantHeight":"2","plantCond":"great","lightType":"Halide","plantMsg":"Placed on halide light\nCenter of 3 doing the best","entryTime":"11:46:38:878","entryDate":"2016/2/12"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"afternoon","plantMsg":"30\" from bulb. All 3 sprouts look good","entryTime":"8:0:53:839","entryDate":"2016/2/13"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"2","plantCond":"good","lightType":"Halide","plantMsg":"30\" from bulb. All 3 sprouts look good","entryTime":"8:0:53:839","entryDate":"2016/2/13"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"afternoon","plantMsg":"","entryTime":"6:37:37:426","entryDate":"2016/2/14"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"3","plantCond":"good","lightType":"Halide","plantMsg":"","entryTime":"6:37:37:426","entryDate":"2016/2/14"}]
 															}, {
 																"day": 6,
 																"data": [{"plantWater":"0.5","plantPPM":"3480","plantPH":"7","plantHeight":"3","plantCond":"good","lightType":"CFL","lightHt":"31","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:20:15:370","entryDate":"2016/2/15"}]
@@ -3670,25 +3654,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:41:3","entryDate":"2016/2/17"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"7:38:41:3","entryDate":"2016/2/17"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:817","entryDate":"2016/2/18"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"10:31:30:817","entryDate":"2016/2/18"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.4","plantPPM":"3570","plantPH":"7.3","plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:810","entryDate":"2016/2/19"}]
+																"data": [{"plantWater":"0.4","plantPPM":"3570","plantPH":"7.3","plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"12:16:32:810","entryDate":"2016/2/19"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All three looking good","entryTime":"12:39:3:564","entryDate":"2016/2/20"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"4","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All three looking good","entryTime":"12:39:3:564","entryDate":"2016/2/20"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 sprouts progressing, unsure of sexing","entryTime":"8:24:24:174","entryDate":"2016/2/21"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 sprouts progressing, unsure of sexing","entryTime":"8:24:24:174","entryDate":"2016/2/21"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.","plantPPM":"3210","plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:764","entryDate":"2016/2/22"}]
+																"data": [{"plantWater":"0.","plantPPM":"3210","plantPH":0,"plantHeight":"6","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"9:2:47:764","entryDate":"2016/2/22"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:18:16:604","entryDate":"2016/2/23"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:18:16:604","entryDate":"2016/2/23"}]
 															}
 														]
 										}, {
@@ -3696,25 +3680,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"FIM done on Middle plant tallest of the 3. No sexing yet","entryTime":"9:39:19:378","entryDate":"2016/2/24"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"7","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"FIM done on Middle plant tallest of the 3. No sexing yet","entryTime":"9:39:19:378","entryDate":"2016/2/24"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":"1","times":"1","checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:10:99","entryDate":"2016/2/25"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":"1","times":"1","checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"20:27:10:99","entryDate":"2016/2/25"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All 3 progressing well","entryTime":"11:26:50:336","entryDate":"2016/2/26"}]
+																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"8","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"All 3 progressing well","entryTime":"11:26:50:336","entryDate":"2016/2/26"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"9","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:347","entryDate":"2016/2/27"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.8","plantHeight":"9","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:51:23:347","entryDate":"2016/2/27"}]
 															}, {
 																"day": 5,
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":"0.3","plantPPM":"1160","plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 plants progressing well, no sex characteristics yet","entryTime":"15:14:8:514","entryDate":"2016/2/29"}]
+																"data": [{"plantWater":"0.3","plantPPM":"1160","plantPH":0,"plantHeight":"11","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"3 plants progressing well, no sex characteristics yet","entryTime":"15:14:8:514","entryDate":"2016/2/29"}]
 															}, {
 																"day": 7,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"12","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:8:123","entryDate":"2016/3/1"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":"6.9","plantHeight":"12","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"8:54:8:123","entryDate":"2016/3/1"}]
 															}
 														]
 										}, {
@@ -3722,25 +3706,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Lowered off platform, trace of heat stress","entryTime":"11:8:36:441","entryDate":"2016/3/2"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"13","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Lowered off platform, trace of heat stress","entryTime":"11:8:36:441","entryDate":"2016/3/2"}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"3","times":"4","checked":true}],"plantMsg":"","entryTime":"10:32:34:536","entryDate":"2016/3/3"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"3","times":"4","checked":true}],"plantMsg":"","entryTime":"10:32:34:536","entryDate":"2016/3/3"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Large fan leaves\nNo sex yet","entryTime":"11:20:17:271","entryDate":"2016/3/4"}]
+																"data": [{"plantWater":".2","plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Large fan leaves\nNo sex yet","entryTime":"11:20:17:271","entryDate":"2016/3/4"}]
 															}, {
 																"day": 4,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Big fans","entryTime":"8:26:29:800","entryDate":"2016/3/5"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"Big fans","entryTime":"8:26:29:800","entryDate":"2016/3/5"}]
 															}, {
 																"day": 5,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"afternoon","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"8:22:58:648","entryDate":"2016/3/6"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":"5","times":"2","checked":true}],"plantMsg":"","entryTime":"8:22:58:648","entryDate":"2016/3/6"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"plantMsg":"","entryTime":"11:12:42:5","entryDate":"2016/3/7"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"17","plantCond":"good","lightType":"Halide","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"1","checked":true},{"name":"Fan","tier":"4","times":"1","checked":true}],"plantMsg":"90° LST reduces height","entryTime":"8:50:42:414","entryDate":"2016/3/8"}]
 															}
 														]
 										}, {
