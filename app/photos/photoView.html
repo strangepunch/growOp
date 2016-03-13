@@ -1,36 +1,8 @@
 <div class="dailyView">
 	<div class="panel panel-default">
 	  	<div class="panel-body">
-	  		<!--The dropdown list of plants -->
-  			<div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="panel panel-default">
-				    <div class="panel-heading" role="tab" id="headingOne">
-				      <h4 class="panel-title row">
-				        <button style="background:transparent;border:none;" role="button" data-toggle="collapse" data-parent="#accordion" href="#PhotoFilter" aria-expanded="false" aria-controls="PhotoFilter">
-				        	<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-				          	Plant Photos
-				        </button>
-				      </h4>
-				    </div>
-				    <div id="PhotoFilter" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-				      <div class="panel-body">
-			      		<form class="form-horizontal">
-			  				<fieldset>
-						      	<div class="form-group col-xs-5 col-sm-3 col-lg-2" ng-repeat="item in vm.someFilterItems">
-						      		<div class="checkbox">
-							          	<label>
-							            	<input type="checkbox" ng-model="item.checked" ng-click="vm.checkedItem(item)"> {{item.name}}
-							          	</label>
-							        </div>
-						    	</div>
-						  </fieldset>
-						</form>
-				    </div>
-				  </div>
-				</div>
-			</div>
 	  		<!--display photo-->
-	  		<h3 class="title" style="padding-top:10px"> photos </h3>
+	  		<h3 class="title" style="padding-top:10px"> {{vm.PlantID}}. {{vm.PlantName}} photos </h3>
 	    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	    		<!--Display's photo-->
 		      	<img class="img-responsive" ng-src="{{vm.currentImage}}">
@@ -45,6 +17,9 @@
 			    	<span class="sr-only">Next</span>
 			  	</a>
 		  	</div>
+		  	<div class="col-xs-12" style="text-align:center;padding-top:15px;">
+				<button class="btn btn-default" ng-click="" ui-sref="photos">Back</button>
+			</div>
 		</div>
 	</div>
 </div>

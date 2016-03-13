@@ -1,12 +1,13 @@
 (function () {
 	angular
 			.module("growOpApp")
-			.controller("DailyViewCtrl",
+			.controller("PhotoListViewCtrl",
 						["$scope",
 						 "localStorageService",
-							DailyViewCtrl]);
+						 "plantPhotoSvc",
+							PhotoListViewCtrl]);
 	
-	function DailyViewCtrl($scope, localStorageService){
+	function PhotoListViewCtrl($scope, localStorageService, plantPhotoSvc){
 		var vm = this;
     	
 		var d = new Date();
@@ -20,39 +21,8 @@
 
 	    vm.currentTimestamp = hr + ":" + min + ":" + sec + ":" + mSec;
 	    vm.currentDate = YYYY + "/" + MM + "/" + DD;
-
-    	vm.someToDoListItems = [
-		     {item:1, discription: 'RO Water B', measurement: 'N.A.', checked: false},
-		     {item:2, discription: 'Grow Big B', measurement: '5 tsp/g', checked: false},
-		     {item:3, discription: 'Big Bloom B', measurement: '5 tsp/g', checked: false},
-		     {item:4, discription: 'Tiger BloomS B', measurement: '5 tsp/g', checked: false},
-		     {item:5, discription: 'Compost tea (brew)', measurement: 'x consentration per plant', checked: false},
-		     {item:6, discription: 'Clean up', measurement: 'N.A.', checked: false}
-	    ];
-
-	    vm.Pruning =[{
-		    "name": "FIM",
-		    "tier": 0,
-		    "times": 0,
-		    "checked": false
-	    }, 
-	    {	"name": "Top",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }, 
-	    {	"name": "sCrop",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }, 
-	    {	"name": "LST",
-	      	"tier": 0,
-	      	"times": 0,
-	      	"checked": false
-	    }];
-
-	    vm.currentPlantsList = [
+		/**---local variables---**/
+    	vm.currentPlantsList = [
 		    {plant:1, 
 		     name: 'Jack Herer',
 		     desc: '(Blackskull)',
@@ -174,6 +144,16 @@
       					 entryDate: vm.currentDate}
 			}
 	    ];
+
+	    /**---function declarations---**/
+	
+	    //filter images actions
+
+	    /**---function---**/
+
+
+	    /**---initiate the function---**/
+	    
 	}
 
 }());

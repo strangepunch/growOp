@@ -1,0 +1,34 @@
+<div class="plantView">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-lg-4" ng-repeat="plant in vm.currentPlantsList">
+					<div class="panel panel-info">
+					  	<div class="panel-heading">
+						    <div class="row panel-title">
+						    	<div class="col-xs-6" ui-sref="photosDisp({plantName:'{{plant.name}}',plantID:'{{plant.plant}}'})">{{plant.name}}<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+						    	<div class="col-xs-6" ng-click="vm.deletePlantBTN(plant.plant)"><span class="glyphicon glyphicon-minus" style="float:right" aria-hidden="true"></span></div>
+						    </div>
+					  	</div>
+					 	<div class="panel-body">
+						  	<div class="row">
+						  		<div class="col-xs-3">
+							  		Started: {{plant.start.month}}/{{plant.start.day}}/{{plant.start.year}}
+							  	</div> 
+							  	<div class="col-xs-3">
+							  		Company: {{plant.desc}}
+							  	</div>
+							  	<div class="col-xs-3">
+							  		Stage: {{plant.stage}}
+							  	</div>
+							  	<div class="col-xs-3">
+							  		Health: <span ng-style="{'color' : (plant.plantData.plantCond == 'great') ? '#00ff00' : (plant.plantData.plantCond == 'good') ? '#d9ff66' : (plant.plantData.plantCond == 'poor') ? '#ff4000' : 'white'}">{{plant.plantData.plantCond}}</span>
+							  	</div> 
+						  	</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

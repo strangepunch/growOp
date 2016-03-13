@@ -51,7 +51,9 @@
       plantPH: 'enter plant PH...',
       plantHeight: 'enter plant Height...',
       //lightHt: 'enter light Height...',
-      plantMsg: 'extra notes on this plant...'
+      plantMsg: 'extra notes on this plant...',
+      budNum: 'enter number of buds...',
+      budLength: 'enter length of the largest bud...'
     };
 
     vm.Pruning =[{
@@ -89,6 +91,8 @@
       //lightHt: null,
       pruning: null,
       plantMsg: null,
+      budNum: null,
+      budLength: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
     };
@@ -169,6 +173,8 @@
           //lightHt: null,
           pruning: null,
           plantMsg: null,
+          budNum: null,
+          budLength: null,
           entryTime: vm.currentTimestamp,
           entryDate: vm.currentDate
         };

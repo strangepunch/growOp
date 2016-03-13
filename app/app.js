@@ -84,7 +84,7 @@
 							controllerAs: "vm"
 						})
 
-						//Photo View
+						//Grow History View
 						.state("history", {
 							url: "/history",
 							templateUrl: "app/history/historyView.html",
@@ -92,12 +92,21 @@
 							controllerAs: "vm"
 						})
 
-						//Grow History View
+						//Photo View
 						.state("photos", {
+							url: "/photos",
+							templateUrl: "app/photos/photoListView.html",
+							controller: "PhotoListViewCtrl",
+							controllerAs: "vm"
+						})
+						.state("photosDisp", {
 							url: "/photos",
 							templateUrl: "app/photos/photoView.html",
 							controller: "PhotoViewCtrl",
-							controllerAs: "vm"
+							controllerAs: "vm",
+							params: {plantName: '',
+									 plantID: ''
+									}
 						})
 
 

@@ -171,6 +171,26 @@
 				          	</label>
 				        </div>
 			    	</div>
+			    	<div class="col-xs-12 col-lg-12">
+			    		<h3 class="title" style="padding-top:10px"> buds </h3>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Amount:</label>
+			      		<div class="col-lg-9">
+			        		<input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.budNum" placeholder="{{vm.placeholders.budNum}}">
+			      		</div>
+			    	</div>
+			    	<div class="form-group col-sm-6 col-lg-12">
+			      		<label for="input" class="col-lg-3 control-label">Largest:</label>
+			      		<div class="col-lg-9">
+				      		<div class="input-group">
+							    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="vm.inputData.budLength" placeholder="{{vm.placeholders.budLength}}">
+							    <span class="input-group-btn">
+							      	<button class="btn btn-default" type="button">in.</button>
+							    </span>
+							</div>
+						</div>
+			    	</div>
 			    	<div class="col-xs-12" style="text-align:center">
 						<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->
 						<button class="btn {{submitButtonStyle}}" ng-click="vm.submitData()">Submit</button>
