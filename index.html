@@ -79,7 +79,7 @@
 
     </head>
 
-    <body  ng-app = "growOpApp">
+    <body  ng-app = "growOpApp" ng-controller="MainViewCtrl as vm">
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -94,11 +94,11 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
               <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref="daily">Daily Feeding</a></li>
-                <li><a ui-sref="plant">Plant Progress</a></li>
-                <li><a ui-sref="schedule">Weekly Schedule</a></li>
-                <li><a ui-sref="history">Grow History</a></li>
-                <li><a ui-sref="photos">Photos</a></li>
+                <li ng-class="{active:vm.isActive('/daily')}"><a ui-sref="daily">Log Entry</a></li>
+                <li ng-class="{active:vm.isActive('/plants')}"><a ui-sref="plant">Plant Progress</a></li>
+                <li ng-class="{active:vm.isActive('/schedule')}"><a ui-sref="schedule">Weekly Schedule</a></li>
+                <li ng-class="{active:vm.isActive('/history')}"><a ui-sref="history">Grow History</a></li>
+                <li ng-class="{active:vm.isActive('/photos')}"><a ui-sref="photos">Photos</a></li>
               </ul>
               <!-- <ul class="nav navbar-nav navbar-right">
                  <li class="dropdown">

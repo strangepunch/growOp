@@ -3,10 +3,11 @@
 			.module("growOpApp")
 			.controller("MainViewCtrl",
 						["$scope",
+						 "$location",
 						 "localStorageService",
 							MainViewCtrl]);
 	
-	function MainViewCtrl($scope, localStorageService){
+	function MainViewCtrl($scope, $location, localStorageService){
 		var vm = this;
     	
 		var d = new Date();
@@ -16,6 +17,9 @@
 		var mSec = d.getMilliseconds();
 
     	vm.titleName = hr + ":" + min + ":" + sec + ":" + mSec;
+    	vm.isActive = function (viewLocation) { 
+	        return viewLocation === $location.path();
+	    };
 	}
 
 }());

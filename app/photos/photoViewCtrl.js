@@ -98,9 +98,12 @@
 			
 		}
 
-
 	    /**---initiate the function---**/
-	    vm.findWeeklySpecImages("0", vm.PlantID);
+	    if(vm.PlantName == "All Plants"){
+	    	vm.findWeeklySpecImages("0", null);
+	    } else{
+	    	vm.findWeeklySpecImages("0", vm.PlantID);
+	    }
 	    //vm.currentImage = vm.imageURLArray[5];
 	}
 

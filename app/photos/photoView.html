@@ -1,7 +1,8 @@
-<div class="dailyView">
+<div class="plantView">
 	<div class="panel panel-default">
 	  	<div class="panel-body">
 	  		<!--display photo-->
+	  		<span style="float:right" class="glyphicon glyphicon-remove" aria-hidden="true" ui-sref="photos"></span>
 	  		<h3 class="title" style="padding-top:10px"> {{vm.PlantID}}. {{vm.PlantName}} photos </h3>
 	    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	    		<!--Display's photo-->
@@ -18,7 +19,7 @@
 			  	</a>
 		  	</div>
 		  	<div class="col-xs-12" style="text-align:center;padding-top:15px;">
-				<button class="btn btn-default" ng-click="" ui-sref="photos">Back</button>
+				<button class="btn btn-default" ui-sref="photos">Back</button>
 			</div>
 		</div>
 	</div>

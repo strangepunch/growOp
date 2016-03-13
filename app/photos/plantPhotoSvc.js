@@ -163,7 +163,7 @@
 										"images/plants/week6/plant5/orweek6p1.jpg",
 										"images/plants/week7/plant5/orweek7p1.jpg",
 										"images/plants/week7/plant5/orweek7p2.jpg",
-										"images/plants/week7/plant5/orweek7p3.jpg"
+										"images/plants/week7/plant5/orweek7p3b.jpg"
 
 									]
 								}]
