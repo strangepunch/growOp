@@ -766,7 +766,7 @@ var plantLog = [{
 																				"data": [{}]
 																			}, {
 																				"day": 5,
-																				"data": [{{"roomTemp":"72","roomHumidity":"69","roomLightHr":"12","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"ScrOG in place, inducing flowering phase. Pots are at various heights to maximize screen coverage with branches & blooms","entryTime":"10:8:39:324","entryDate":"2016/3/13"}}]
+																				"data": [{"roomTemp":"72","roomHumidity":"69","roomLightHr":"12","roomLightHt":"17","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"ScrOG in place, inducing flowering phase. Pots are at various heights to maximize screen coverage with branches & blooms","entryTime":"10:8:39:324","entryDate":"2016/3/13"}]
 																			}, {
 																				"day": 6,
 																				"data": [{}]
