@@ -72,7 +72,11 @@
 										"images/plants/week6/plant1/jhweek6p1.jpg",
 										"images/plants/week7/plant1/jhweek7p1.jpg",
 										"images/plants/week7/plant1/jhweek7p2.jpg",
-										"images/plants/week7/plant1/jhweek7p3.jpg"
+										"images/plants/week7/plant1/jhweek7p3.jpg",
+										"images/plants/week8/plant1/jh_week8_1.jpg",
+										"images/plants/week8/plant1/jh_week8_scrog2.jpg",
+										"images/plants/week8/plant1/jh_week8_scrog3.jpg",
+										"images/plants/week8/plant1/jh_week8scrog.jpg"
 
 									]
 								}, {
@@ -98,7 +102,10 @@
 										"images/plants/week6/plant2/cssweek6p2.jpg",
 										"images/plants/week7/plant2/cssweek7p1.jpg",
 										"images/plants/week7/plant2/cssweek7p2.jpg",
-										"images/plants/week7/plant2/cssweek7p3.jpg"
+										"images/plants/week7/plant2/cssweek7p3.jpg",
+										"images/plants/week8/plant2/css_week8_1.jpg",
+										"images/plants/week8/plant2/css_week8_scrog1.jpg"
+
 									]
 								}, {
 									"plant": 3,
@@ -119,7 +126,13 @@
 										"images/plants/week6/plant3/admweek6p3.jpg",
 										"images/plants/week7/plant3/admweek7p1.jpg",
 										"images/plants/week7/plant3/admweek7p2.jpg",
-										"images/plants/week7/plant3/admweek7p3.jpg"
+										"images/plants/week7/plant3/admweek7p3.jpg",
+										"images/plants/week8/plant3/adm_week8.jpg",
+										"images/plants/week8/plant3/adm_week8_scrog.jpg",
+										"images/plants/week8/plant3/adm_week8_scrog2.jpg",
+										"images/plants/week8/plant3/adm_week8_budCU1.png",
+										"images/plants/week8/plant3/adm_week8_budCU2.png"
+
 									]
 								}, {
 									"plant": 4,
@@ -139,7 +152,14 @@
 										"images/plants/week6/plant4/gscweek6p2.jpg",
 										"images/plants/week7/plant4/gscweek7p1.jpg",
 										"images/plants/week7/plant4/gscweek7p2.jpg",
-										"images/plants/week7/plant4/gscweek7p3.jpg"
+										"images/plants/week7/plant4/gscweek7p3.jpg",
+										"images/plants/week8/plant4/gsc_week8.jpg",
+										"images/plants/week8/plant4/gsc_week8_2.jpg",
+										"images/plants/week8/plant4/gsc_week8_scrog1.jpg",
+										"images/plants/week8/plant4/gsc_week8_topdown.jpg",
+										"images/plants/week8/plant4/gsc_week8_measuring_bud.jpg",
+										"images/plants/week8/plant4/gsc_week8__budcu1.png",
+										"images/plants/week8/plant4/gsc_week8_budcu2.png"
 									]
 								}, {
 									"plant": 5,
@@ -163,7 +183,9 @@
 										"images/plants/week6/plant5/orweek6p1.jpg",
 										"images/plants/week7/plant5/orweek7p1.jpg",
 										"images/plants/week7/plant5/orweek7p2.jpg",
-										"images/plants/week7/plant5/orweek7p3b.jpg"
+										"images/plants/week7/plant5/orweek7p3b.jpg",
+										"images/plants/week8/plant5/or_week8.jpg",
+										"images/plants/week8/plant5/or_week8_2.jpg"
 
 									]
 								}]

@@ -26,7 +26,7 @@
 		    {plant:1, 
 		     name: 'Jack Herer',
 		     desc: '(Blackskull)',
-		     img: 'images/plants/week7/plant1/jhweek7p2.jpg', 
+		     img: 'images/plants/week8/plant1/jh_week8_1.jpg', 
 			},
 			{plant:2, 
 		     name: 'CSS',
