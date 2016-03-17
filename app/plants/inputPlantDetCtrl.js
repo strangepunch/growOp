@@ -109,6 +109,8 @@
       //lightHt: 0,
       pruning: vm.Pruning,
       plantMsg: 'this plant feels good.',
+      budNum: null,
+      budLength: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
     };
@@ -213,6 +215,8 @@
             //lightHt: vm.storedData.lightHt,
             pruning: vm.storedData.pruning,
             plantMsg: vm.storedData.plantMsg,
+            budNum: vm.storedData.budNum,
+            budLength: vm.storedData.budLength,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
           };
