@@ -212,6 +212,7 @@
             lightType: vm.storedData.lightType,
             //lightHt: vm.storedData.lightHt,
             pruning: vm.storedData.pruning,
+            budNum: vm.storedData.budNum,
             plantMsg: vm.storedData.plantMsg,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
