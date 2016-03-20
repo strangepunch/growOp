@@ -16,12 +16,26 @@
 		var min = d.getMinutes();
 		var sec = d.getSeconds();
 		var mSec = d.getMilliseconds();
+
 		var MM = d.getMonth() + 1;
 	    var DD = d.getDate();
 	    var YYYY = d.getFullYear();
 
+	    var _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
 	    vm.currentTimestamp = hr + ":" + min + ":" + sec + ":" + mSec;
-	    vm.currentDate = YYYY + "/" + MM + "/" + DD;
+	    //vm.currentDate = YYYY + "/" + MM + "/" + DD;
+	    vm.startDate = {
+    		year: 2016,
+    		month: 1,
+    		day: 15
+    	};
+	    vm.currentDate = {
+    		year: YYYY,
+    		month: MM,
+    		day: DD
+    	};
+
 		/**---local variables---**/
 		vm.PlantName = $stateParams.plantName;
 		vm.PlantID = $stateParams.plantID;
@@ -31,11 +45,28 @@
 	    vm.imageURL = "";
 	    vm.currentImage = vm.imageURLArray[0];
 
+	    vm.currentWeek = "0";
+	    vm.weekList = ["0", "0B", "1", "2", "3", "4", "5", "6",
+	    				"7", "8", "9", "10", "11", "12", "13", "14"];
+
+	    vm.Show = false;
+	    vm.Selected = "label-default";
+	    vm.currentSelection = vm.currentWeek;
+
 	    /**---function declarations---**/
 	    vm.findWeeklySpecImages = findWeeklySpecImages;
+	    vm.filterWeek = filterWeek;
+	    vm.selectedFilter = selectedFilter;
+
 	    //button function for parsing the images
 	    vm.prevOne = prevOne;
 		vm.nextOne = nextOne;
+		vm.closeBTN = closeBTN;
+		vm.openBTN = openBTN;
+
+		//calculate the difference between to date objects
+		vm.dateDiffInDays = dateDiffInDays;
+		vm.findCurrentWeek = findCurrentWeek;
 
 	    /**---function---**/
 	    //possible filter actions
@@ -98,13 +129,52 @@
 			
 		}
 
-	    /**---initiate the function---**/
-	    if(vm.PlantName == "All Plants"){
-	    	vm.findWeeklySpecImages("0", null);
-	    } else{
-	    	vm.findWeeklySpecImages("0", vm.PlantID);
+		//For "See More" week panel buttons
+		//filter
+	    function filterWeek(week){
+	    	vm.currentSelection = week;
+	    	vm.imageURLArray = [];
+	    	vm.findWeeklySpecImages(week, vm.PlantID);
 	    }
-	    //vm.currentImage = vm.imageURLArray[5];
+	    //open & close button
+		function closeBTN(){
+			vm.Show = false;
+		}
+		function openBTN(){
+			vm.Show = true;
+		}
+		function selectedFilter(week){
+			if(week == vm.currentSelection){
+				return vm.Selected;
+			} else{
+				return "";
+			}
+		}
+
+		//calculate the difference between to date objects
+		//start day vs. current day
+		function dateDiffInDays(start, current) {
+		  // Discard the time and time-zone information.
+		  var utc1 = Date.UTC(start.year, start.month, start.day);
+		  var utc2 = Date.UTC(current.year, current.month, current.day);
+
+		  return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+		}
+
+		function findCurrentWeek(){
+			vm.timePassed = dateDiffInDays(vm.startDate, vm.currentDate);
+			vm.currentWeek = Math.floor(vm.timePassed / 7);
+			vm.currentSelection = vm.currentWeek;
+		}
+
+	    /**---initiate the function---**/
+	    vm.findCurrentWeek();
+	    if(vm.PlantName == "All Plants"){
+	    	vm.findWeeklySpecImages(vm.currentWeek, null);
+	    } else{
+	    	vm.findWeeklySpecImages(vm.currentWeek, vm.PlantID);
+	    }
+	    
 	}
 
 }());

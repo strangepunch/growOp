@@ -4,6 +4,7 @@
 	  		<!--display photo-->
 	  		<span style="float:right" class="glyphicon glyphicon-remove" aria-hidden="true" ui-sref="photos"></span>
 	  		<h3 class="title" style="padding-top:10px"> {{vm.PlantID}}. {{vm.PlantName}} photos </h3>
+
 	    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	    		<!--Display's photo-->
 		      	<img class="img-responsive" ng-src="{{vm.currentImage}}">
@@ -19,7 +20,20 @@
 			  	</a>
 		  	</div>
 		  	<div class="col-xs-12" style="text-align:center;padding-top:15px;">
-				<button class="btn btn-default" ui-sref="photos">Back</button>
+		  		<span ng-show="!vm.Show" ng-click="vm.openBTN()">See More</span>
+		  		<div class="panel panel-default" ng-show="vm.Show">
+					<div class="panel-body">
+						<div class="col-xs-12"> 
+							<span style="float:left"> Week: </span>
+							<span style="float:right" class="glyphicon glyphicon-remove" aria-hidden="true" ng-click="vm.closeBTN()"></span> 
+							<br><br>
+						</div> 
+				  		<div class="col-xs-2" style="padding-bottom:5px" ng-repeat="week in vm.weekList">
+				  			<div class="label" ng-class="vm.selectedFilter(week)" 
+				  				 ng-click="vm.filterWeek(week)"> {{week}} </div>
+				  		</div>
+				  	</div>
+				</div>
 			</div>
 		</div>
 	</div>
