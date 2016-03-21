@@ -84,6 +84,8 @@
 				console.log("vm.plantWeekly: ", vm.plantWeekly);
 				vm.getTotalWaterPerPlant();
 				vm.getTotalGrowthPerPlant();
+				//**todo : create function below to retrieve the number of buds
+				//vm.getTotalBudsPerPlant();
 				$scope.$apply();
 			}).catch(function(error){
 				alert(error);
