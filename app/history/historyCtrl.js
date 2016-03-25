@@ -54,6 +54,7 @@
 		vm.PlantHeights = [];
 		vm.PlantGrowth = [];
 		vm.PlantWater = [];
+		vm.PlantMessages = [];
 
 		//declare
 
@@ -73,7 +74,7 @@
 		//---check general health of each plant this week
 		//vm.getHealthOfEachPlant = getHealthOfEachPlant;
 		//---Messages of the week (random?) for each plant
-		//vm.getPlantMessages = getPlantMessages;
+		vm.getPlantMessages = getPlantMessages;
 
 		/**---Functions---**/
 
@@ -84,6 +85,7 @@
 				console.log("vm.plantWeekly: ", vm.plantWeekly);
 				vm.getTotalWaterPerPlant();
 				vm.getTotalGrowthPerPlant();
+				vm.getPlantMessages();
 				//**todo : create function below to retrieve the number of buds
 				//vm.getTotalBudsPerPlant();
 				$scope.$apply();
@@ -121,6 +123,26 @@
 			}
 			vm.totalWater = Math.round(vm.totalWater * 100)/100;
 			//console.log("vm.totalWater:", vm.totalWater);
+		};
+
+
+		//---get logs for review
+		function getPlantMessages(){
+			console.log("in getPlantMessages");
+			vm.PlantMessages.splice(0,vm.PlantMessages.length);
+			for(var i=0; i<vm.plantWeekly.length; i++){
+				//var sum = 0;
+				for(var x=0; x<vm.plantWeekly[i].data.length; x++){
+					var message = (vm.plantWeekly[i].data[x].data[0].plantMsg);
+					//if(!Number.isNaN(water)){
+						//console.log("water: ", water);
+					//	sum = sum + water;
+					//}
+				}
+				vm.PlantMessages.push({"pID":vm.plantWeekly[i].pID, "PlantMsg":message});
+			}
+			//vm.totalWater = Math.round(vm.totalWater * 100)/100;
+			console.log("vm.PlantMessages: ", vm.PlantMessages);
 		};
 
 		//---find how much each plants have grown this week
