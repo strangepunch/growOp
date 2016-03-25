@@ -809,7 +809,7 @@ var plantLog = [{
 																				"data": [{"roomTemp":"75","roomHumidity":"69","roomLightHr":"12","roomLightHt":"14","totalWater":null,"nutrients":[{"name":"Grow B.","amt":"2","checked":true},{"name":"Big Bl.","amt":"3","checked":true},{"name":"Tiger Bl.","amt":"2","checked":true},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"17:11:54:420","entryDate":"2016/3/23"}]
 																			}, {
 																				"day": 2,
-																				"data": [{}]
+																				"data": [{"roomTemp":"75","roomHumidity":"80","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Both Jack Herer and Css are preflowering\nScrog fully covered with plant growth","entryTime":"16:19:46:230","entryDate":"2016/3/24"}]
 																			}, {
 																				"day": 3,
 																				"data": [{}]
@@ -1404,7 +1404,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"","budLength":0,"entryTime":"17:11:54:845","entryDate":"2016/3/23"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Signs of preflowering","budLength":0,"entryTime":"16:19:46:641","entryDate":"2016/3/24"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -1996,7 +1996,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"","budLength":0,"entryTime":"17:11:55:14","entryDate":"2016/3/23"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Signs of preflowering","budLength":".25","entryTime":"16:19:46:783","entryDate":"2016/3/24"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -2587,7 +2587,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"14","plantMsg":"","budLength":"3","entryTime":"17:11:55:100","entryDate":"2016/3/23"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":"0","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"14","plantMsg":"Healthy bud growth","budLength":"1","entryTime":"16:19:46:882","entryDate":"2016/3/24"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -3179,7 +3179,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"14","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"21","plantMsg":"","budLength":"3","entryTime":"17:11:55:197","entryDate":"2016/3/23"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":"0","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"30","plantMsg":"","budLength":"2","entryTime":"16:19:47:46","entryDate":"2016/3/24"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -3787,7 +3787,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.2","plantPPM":0,"plantPH":0,"plantHeight":"27","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Isolated from others to prevent possibility fertilization. Still slight droop of fans","budLength":0,"entryTime":"17:11:55:288","entryDate":"2016/3/23"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":"0","plantPPM":0,"plantPH":0,"plantHeight":"28","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Isolated from others to prevent possibility fertilization. Fans looking better.","budLength":0,"entryTime":"17:11:55:288","entryDate":"2016/3/24"}]
 															}, {
 																"day": 3,
 																"data": [{}]
