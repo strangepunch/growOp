@@ -815,7 +815,7 @@ var plantLog = [{
 																				"data": [{}]
 																			}, {
 																				"day": 4,
-																				"data": [{}]
+																				"data": [{"roomTemp":"77","roomHumidity":"75","roomLightHr":"12","roomLightHt":"13","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Applied 3 gal full strength compost tea\nRaised light 2 clicks to compensate for css and jh vertical growth","entryTime":"22:5:36:265","entryDate":"2016/3/26"}]
 																			}, {
 																				"day": 5,
 																				"data": [{}]
@@ -1410,7 +1410,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Pre flowering is evident. Watered with. 6 gal full strength compost tea in 3 passes.","budLength":0,"entryTime":"22:5:36:866","entryDate":"2016/3/26"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -2002,7 +2002,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":true},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Vertical growth above screen.. Pre flower is evident. Watered with. 6 gal full strength compost tea.","budLength":0,"entryTime":"22:5:37:1","entryDate":"2016/3/26"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -2593,7 +2593,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Great bud health.. Watered with. 6 gal full strength compost tea in 3 passes.","budLength":0,"entryTime":"22:5:37:120","entryDate":"2016/3/26"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -3185,7 +3185,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Great bud health. Watered with. 6 gal full strength compost tea.","budLength":0,"entryTime":"22:5:37:226","entryDate":"2016/3/26"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -3793,7 +3793,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"0","plantMsg":"Residing inside next to window for natural light. No sign of buds yet so veg continues.. Some signs of sexing on two females.\nWatered with . 6 gal compost tea.","budLength":0,"entryTime":"22:5:37:319","entryDate":"2016/3/26"}]
 															}, {
 																"day": 5,
 																"data": [{}]
