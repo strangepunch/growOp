@@ -844,7 +844,7 @@ var plantLog = [{
 																				"data": [{"roomTemp":"73","roomHumidity":"63","roomLightHr":"12","roomLightHt":"16","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Flush RO water only #3&4, hairs turning brown. Tea 1:5 all others.","entryTime":"9:33:48:79","entryDate":"2016/4/2"}]
 																			}, {
 																				"day": 5,
-																				"data": [{}]
+																				"data": [{"roomTemp":"63","roomHumidity":"48","roomLightHr":"12","roomLightHt":"15","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Temp 59-76°. Hum 43-55%","entryTime":"8:45:36:914","entryDate":"2016/4/3"}]
 																			}, {
 																				"day": 6,
 																				"data": [{}]
@@ -1131,7 +1131,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1143,7 +1143,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1439,7 +1439,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.6","plantPPM":"2140","plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"36","plantMsg":"1:5 CT applied. Mid-flower stage","budLength":"2","entryTime":"9:33:48:538","entryDate":"2016/4/2"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"26","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"36","plantMsg":"","budLength":"2","entryTime":"8:45:37:391","entryDate":"2016/4/3"}]
 															}, {
 																"day": 6,
 																"data": [{}]
@@ -1722,7 +1722,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1734,7 +1734,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1745,11 +1745,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"1","plantPPM":"3480","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"afternoon","plantMsg":"1:5tea 1/2gal. Halide 50% 2.5ft yest. Inc to 75% today","entryTime":"13:50:20:652","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"3480","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"afternoon","plantMsg":"1:5tea 1/2gal. Halide 50% 2.5ft yest. Inc to 75% today","entryTime":"13:50:20:652","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2031,7 +2031,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.8","plantPPM":0,"plantPH":0,"plantHeight":"30","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"23","plantMsg":"No drainage with 0.8g 1:5 tea","budLength":"3","entryTime":"9:33:48:704","entryDate":"2016/4/2"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"31","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"23","plantMsg":"In bloom","budLength":"3","entryTime":"8:45:37:520","entryDate":"2016/4/3"}]
 															}, {
 																"day": 6,
 																"data": [{}]
@@ -2315,7 +2315,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{						
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2327,7 +2327,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{						
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2338,11 +2338,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"4250","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:730","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"4250","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:730","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{						
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2622,7 +2622,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.6","plantPPM":"5150","plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"Plain RO water used, since 10-20% brown hairs","budLength":"4","entryTime":"9:33:48:796","entryDate":"2016/4/2"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"23","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"22","plantMsg":"Frosty, very leafy buds. 20% hairs brown.","budLength":"4","entryTime":"8:45:37:587","entryDate":"2016/4/3"}]
 															}, {
 																"day": 6,
 																"data": [{}]
@@ -2907,7 +2907,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2919,7 +2919,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2930,11 +2930,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"3950","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:785","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"3950","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:785","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{						
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2948,7 +2948,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0","plantPPM":0,"plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout yet but ready to come up","entryTime":"13:10:12:678","entryDate":"2016/1/24"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":1,"plantPPM":"4460","plantPH":"7","plantHeight":"1","plantCond":"good","timeOfDay":"morning","plantMsg":"Some fungal colonies on old rockwool, seedling transplanted into new rockwool, placed in soil at 1 day old. Cotyledon leaves x2 look good","entryTime":"16:2:36:442","entryDate":"2016/1/25"}]
+																"data": [{"plantWater":".6","plantPPM":"4460","plantPH":"7","plantHeight":"1","plantCond":"good","timeOfDay":"morning","plantMsg":"Some fungal colonies on old rockwool, seedling transplanted into new rockwool, placed in soil at 1 day old. Cotyledon leaves x2 look good","entryTime":"16:2:36:442","entryDate":"2016/1/25"}]
 															}, {
 																"day": 7,
 																"data": [{"plantWater":"0","plantPPM":"4300","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"morning","plantMsg":"doing great\nCSS is growing normally and looks completey healthy","entryTime":"11:22:20:924","entryDate":"2016/1/26"}]
@@ -3214,7 +3214,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.6","plantPPM":"3850","plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"30-40% brown hairs. Plain RO water flush. Trichomes 100% clear","budLength":"3","entryTime":"9:33:48:897","entryDate":"2016/4/2"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Frosty buds. Hairs maybe 30% brown overall. Trichomes clear.","budLength":"3","entryTime":"8:45:37:664","entryDate":"2016/4/3"}]
 															}, {
 																"day": 6,
 																"data": [{}]
@@ -3497,7 +3497,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3509,7 +3509,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3520,11 +3520,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"5180","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:876","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"5180","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:876","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3542,7 +3542,7 @@ var plantLog = [{
 															}, {
 																"day": 7,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3822,7 +3822,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0.6","plantPPM":"3380","plantPH":0,"plantHeight":"33","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Early flowering stage. No male flowers. 1:5 tea applied. Long stems with multiple flowers, unsure of how many clusters will result","budLength":"1","entryTime":"9:33:48:992","entryDate":"2016/4/2"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Long stems, in early bloom. No male glands. Huge fans. 2 plants remain in pot #5.","budLength":"1","entryTime":"8:45:37:743","entryDate":"2016/4/3"}]
 															}, {
 																"day": 6,
 																"data": [{}]
