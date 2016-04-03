@@ -42,6 +42,7 @@
     	vm.currentDay = 4;
 		vm.plantWeekly = [];
 		vm.timePassed = 0;
+		vm.totalWeeks = 0;
 
 		vm.totalWater = 0;
 		vm.grewMost = {};
@@ -73,7 +74,11 @@
 		//---check general health of each plant this week
 		//vm.getHealthOfEachPlant = getHealthOfEachPlant;
 		//---Messages of the week (random?) for each plant
-		//vm.getPlantMessages = getPlantMessages;
+		vm.getPlantMessages = getPlantMessages;
+
+		//button functions
+		vm.prevOne = prevOne;
+		vm.nextOne = nextOne;
 
 		/**---Functions---**/
 
@@ -84,6 +89,7 @@
 				console.log("vm.plantWeekly: ", vm.plantWeekly);
 				vm.getTotalWaterPerPlant();
 				vm.getTotalGrowthPerPlant();
+				vm.getPlantMessages();
 				$scope.$apply();
 			}).catch(function(error){
 				alert(error);
@@ -103,6 +109,8 @@
 		//find how much water each plants have drunk this week
 		function getTotalWaterPerPlant(){
 			//console.log("here");
+			//clear values
+			vm.totalWater = 0;
 			vm.PlantWater.splice(0,vm.PlantWater.length);
 			for(var i=0; i<vm.plantWeekly.length; i++){
 				var sum = 0;
@@ -123,11 +131,28 @@
 			//console.log("vm.totalWater:", vm.totalWater);
 		};
 
+		//---Messages of the week (random?) for each plant
+		function getPlantMessages(){
+			console.log("here");
+			//clear values
+			vm.PlantMessages.splice(0,vm.PlantMessages.length);
+			for(var i=0; i<vm.plantWeekly.length; i++){
+				var msg = [];
+				for(var x=0; x<vm.plantWeekly[i].data.length; x++){
+					msg.push(vm.plantWeekly[i].data[x].data[0].plantMsg);
+				}
+				vm.PlantMessages.push({"pID":vm.plantWeekly[i].pID, "plantMsg":msg});
+			}
+
+			console.log("vm.PlantMessages: ", vm.PlantMessages);
+		};
+
 		//---find how much each plants have grown this week
 		function getTotalGrowthPerPlant(){
 			//console.log("here");
+			//clear values
 			vm.PlantGrowth.splice(0,vm.PlantGrowth.length);
-			vm.PlantHeights.splice(0,vm.PlantGrowth.length);
+			vm.PlantHeights.splice(0,vm.PlantHeights.length);
 			for(var i=0; i<vm.plantWeekly.length; i++){
 				var diff = 0;
 				var maxHeight = 0;
@@ -163,8 +188,8 @@
 			vm.grewMost = max;
 			vm.grewLeast = min;
 
-			console.log("vm.grewMost: ", vm.grewMost);
-			console.log("vm.grewLeast: ", vm.grewLeast);
+			//console.log("vm.grewMost: ", vm.grewMost);
+			//console.log("vm.grewLeast: ", vm.grewLeast);
 
 			var max = vm.PlantHeights[0];
 			var min = vm.PlantHeights[0];
@@ -179,15 +204,52 @@
 			}
 			vm.tallest = max;
 			vm.shortest = min;
-			console.log("vm.tallest: ", vm.tallest);
-			console.log("vm.shortest: ", vm.shortest);
+			//console.log("vm.tallest: ", vm.tallest);
+			//console.log("vm.shortest: ", vm.shortest);
 		};
+
+		function prevOne(){
+			var i = vm.currentIndex;
+			if(i > 0){
+				i--;
+				vm.currentIndex = i;
+				vm.currentWeek = vm.currentIndex;
+				vm.getWeekly();
+			}else{
+				i = 0;
+				vm.currentIndex = i;
+				vm.currentWeek = vm.currentIndex;
+				vm.getWeekly();
+			}
+			
+		}
+
+		//button functions
+		function nextOne(){
+			var i = vm.currentIndex;
+			if(i < vm.totalWeeks){
+				i++;
+				vm.currentIndex = i;
+				//console.log("vm.currentIndexE: ", vm.currentWeek);
+				vm.currentWeek = vm.currentIndex;
+				vm.getWeekly();
+			}else{
+				i = vm.totalWeeks;
+				vm.currentIndex = i;
+				//console.log("vm.currentIndexF: ", vm.currentWeek);
+				vm.currentWeek = vm.currentIndex;
+				vm.getWeekly();
+			}
+			
+		}
 
 		/**---RUN Functions---**/
 		vm.timePassed = dateDiffInDays(vm.startDate, vm.currentDate);
 		//console.log("vm.timePassed: ", vm.timePassed);
 		vm.currentWeek = Math.floor(vm.timePassed / 7);
 		//console.log("vm.currentWeek: ", vm.currentWeek);
+		vm.totalWeeks = vm.currentWeek;
+		vm.currentIndex = vm.currentWeek;
 
 		vm.getWeekly();
 	}

@@ -1,7 +1,34 @@
 <div class="schedule">
 	<div class="panel panel-default">
-		<h3 class="title" style="padding-top:10px">latest stats</h3>
+		<div class="panel-heading">
+			<div class="btn-group btn-group-justified">
+			  	<div class="col-xs-3" style="text-align:left" ng-click="vm.prevOne()">
+			  		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  	</div>
+			  	<div class="col-xs-6" style="text-align:center">week: {{vm.currentWeek}}</div>
+			  	<div class="col-xs-3" style="text-align:right" ng-click="vm.nextOne()">
+			  		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  	</div>
+			</div>
+		</div>
+		<h3 class="title" style="padding-top:10px">latest logs</h3>
+		<div class="panel-body">
+			<div ng-repeat="plantObj in vm.PlantMessages">
+				<div class="media" ng-show="plantObj.plantMsg!=''&&plantObj.plantMsg!=null" ng-repeat="msgObj in plantObj.plantMsg track by $index">
+				  <div class="media-left" ng-show="msgObj!=''&& msgObj!=null">
+				      plant 
+				      <span style="font-size:1.5em;color:lightgreen;"> 
+				      	{{plantObj.pID}} 
+				      </span>
+				  </div>
+				  <div class="media-body" ng-show="msgObj!='' && msgObj!=null">
+				    {{msgObj}}
+				  </div>
+				</div>
+			</div>
+		</div>
 
+		<h3 class="title" style="padding-top:10px">latest stats</h3>
 		<div class="panel-body">
 			<div> 
 				Total water given this week: 
