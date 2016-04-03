@@ -13,17 +13,21 @@
 		</div>
 		<h3 class="title" style="padding-top:10px">latest logs</h3>
 		<div class="panel-body">
-			<div ng-repeat="plantObj in vm.PlantMessages">
-				<div class="media" ng-show="plantObj.plantMsg!=''&&plantObj.plantMsg!=null" ng-repeat="msgObj in plantObj.plantMsg track by $index">
-				  <div class="media-left" ng-show="msgObj!=''&& msgObj!=null">
-				      plant 
-				      <span style="font-size:1.5em;color:lightgreen;"> 
-				      	{{plantObj.pID}} 
-				      </span>
-				  </div>
-				  <div class="media-body" ng-show="msgObj!='' && msgObj!=null">
-				    {{msgObj}}
-				  </div>
+			<div ng-repeat="plantObj in vm.PlantMessages|limitTo:5" 
+				 style="background-image:url('{{vm.getPlantImg(plantObj.pID)}}');background-size: cover;
+    			background-repeat: no-repeat;">
+				<div class="media" 
+					 ng-repeat="msgObj in plantObj.plantMsg track by $index"
+					 style="background-color:black; opacity:0.6">
+				  	<div class="media-left" ng-show="msgObj!=''&& msgObj!=null">
+				      	plant
+				      	<span style="font-size:1.5em;color:lightgreen;"> 
+				      		{{plantObj.pID}} 
+				      	</span>
+				  	</div>
+				  	<div class="media-body" ng-show="msgObj!='' && msgObj!=null">
+				    	{{msgObj}}
+				  	</div>
 				</div>
 			</div>
 		</div>

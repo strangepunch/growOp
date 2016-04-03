@@ -56,6 +56,30 @@
 		vm.PlantGrowth = [];
 		vm.PlantWater = [];
 
+		//current plant 1 to 1 grab bag of stuff
+		vm.currentPlantsList = [
+		    {plant:1, 
+		     name: 'Jack Herer',
+		     img: 'images/strains/jack-herer_100x100.jpg', 
+			},
+			{plant:2, 
+		     name: 'CSS',
+		     img: 'images/strains/critical-sensi-star_100x100.jpg', 
+			},
+			{plant:3, 
+		     name: 'Auto DM',
+		     img:'images/strains/acapulco-gold_100x100.jpg', 
+			},
+			{plant:4, 
+		     name: 'Auto GSC',
+		     img:'images/strains/girl-scout-cookies_100x100.jpg', 
+			},
+			{plant:5, 
+		     name: 'Orange Rooster',
+		     img:'images/strains/acapulco-gold_100x100.jpg',
+			}
+	    ];
+
 		//declare
 
 		/**---Function declarations---**/
@@ -79,6 +103,9 @@
 		//button functions
 		vm.prevOne = prevOne;
 		vm.nextOne = nextOne;
+
+		//image selecction
+		vm.getPlantImg = getPlantImg
 
 		/**---Functions---**/
 
@@ -139,7 +166,13 @@
 			for(var i=0; i<vm.plantWeekly.length; i++){
 				var msg = [];
 				for(var x=0; x<vm.plantWeekly[i].data.length; x++){
-					msg.push(vm.plantWeekly[i].data[x].data[0].plantMsg);
+					var pMsg = vm.plantWeekly[i].data[x].data[0].plantMsg;
+					//console.log("messages: ", pMsg )
+					if(pMsg != undefined && pMsg != ""){
+						msg.push(vm.plantWeekly[i].data[x].data[0].plantMsg);
+					}else{
+						msg.push(null);
+					}
 				}
 				vm.PlantMessages.push({"pID":vm.plantWeekly[i].pID, "plantMsg":msg});
 			}
@@ -241,6 +274,16 @@
 				vm.getWeekly();
 			}
 			
+		}
+
+		//get plant images
+		function getPlantImg(id){
+			console.log("id ", id);
+			for(var i=0;i<vm.currentPlantsList.length;i++){
+				if(vm.currentPlantsList[i].plant == id){
+					return vm.currentPlantsList[i].img;
+				}
+			}
 		}
 
 		/**---RUN Functions---**/
