@@ -443,71 +443,19 @@
 								"week": "10",
 								"plants": [{
 									"plant": 1,
-									"plantPic": [
-										"images/plants/week10/plant1/Week10jh1.jpg",
-										"images/plants/week10/plant1/Week10jhCU1.png",
-										"images/plants/week10/plant1/Week10jhCU2.png",
-										"images/plants/week10/plant1/Week10jhCU2a.png",
-										"images/plants/week10/plant1/Week10jhCU3.png",
-										"images/plants/week10/plant1/Week10jhCU4.png",
-										"images/plants/week10/plant1/Week10bjhCu1.png",
-										"images/plants/week10/plant1/Week10bjhCu2.png",
-										"images/plants/week10/plant1/Week10bjhCu3.png",
-										"images/plants/week10/plant1/Week10bjhCu4.png",
-										"images/plants/week10/plant1/Week10bjhCu5.png",
-										"images/plants/week10/plant1/Week10bjhCu6.png"
-									]
+									"plantPic": []
 								}, {
 									"plant": 2,
-									"plantPic": [
-										"images/plants/week10/plant2/Week10css1.jpg",
-										"images/plants/week10/plant2/Week10css2.jpg",
-										"images/plants/week10/plant2/Week10cssCU1.png",
-										"images/plants/week10/plant2/Week10cssCU2.png",
-										 "images/plants/week10/plant2/Week10cssCU3.png",
-										 "images/plants/week10/plant2/Week10cssCU4.png",
-										 "images/plants/week10/plant2/Week10cssCU5.png",
-										 "images/plants/week10/plant2/Week10cssCU6.png",
-										 "images/plants/week10/plant2/Week10cssCU7.png",
-										 "images/plants/week10/plant2/Week10cssCU8.png",
-										 "images/plants/week10/plant2/Week10cssCU9.png",
-										 "images/plants/week10/plant2/Week10bcssCu1.png",
-										 "images/plants/week10/plant2/Week10bcssCu2.png",
-										 "images/plants/week10/plant2/Week10b2cssCu2.png",
-										 "images/plants/week10/plant2/Week10bcssCu3.png",
-										 "images/plants/week10/plant2/Week10bcssCu4.png"
-										]
+									"plantPic": []
 								}, {
 									"plant": 3,
-									"plantPic": [
-										 "images/plants/week10/plant3/Week10adm1.jpg",
-										 "images/plants/Week10/plant3/Week10admCU1.png",
-										 "images/plants/week10/plant3/Week10admCU2.png",
-										 "images/plants/week10/plant3/Week10admCU3.png",
-										 "images/plants/week10/plant3/Week10admCU4.png",
-										 "images/plants/week10/plant3/Week10admCU5.png",
-										 "images/plants/week10/plant3/Week10admCU6.png"
-									]
+									"plantPic": []
 								}, {
 									"plant": 4,
-									"plantPic": [
-										 "images/plants/week10/plant4/Week10gsc1.jpg",
-										 "images/plants/week10/plant4/Week10gscCU1.jpg",
-										 "images/plants/week10/plant4/Week10gscCU2.png",
-										 "images/plants/week10/plant4/Week10gscCU3.png",
-										 "images/plants/week10/plant4/Week10gscCU4.png",
-										 "images/plants/week10/plant4/Week10gscCU5.png"
-									]
+									"plantPic": []
 								}, {
 									"plant": 5,
-									"plantPic": [
-										 "images/plants/week10/plant5/Week10or1.jpg",
-										 "images/plants/week10/plant5/Week10orCU1.png",
-										 "images/plants/week10/plant5/Week10orCU5.png",
-										 "images/plants/week10/plant5/Week10orCU4.png",
-										 "images/plants/week10/plant5/Week10orCU3.png",
-										 "images/plants/week10/plant5/Week10orCU2.png"
-									]
+									"plantPic": []
 								}]
 							}, {
 								"week": "11",
