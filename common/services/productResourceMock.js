@@ -1131,7 +1131,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1143,7 +1143,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1722,7 +1722,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1734,7 +1734,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -1745,11 +1745,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":"1","plantPPM":"3480","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"afternoon","plantMsg":"1:5tea 1/2gal. Halide 50% 2.5ft yest. Inc to 75% today","entryTime":"13:50:20:652","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"3480","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"afternoon","plantMsg":"1:5tea 1/2gal. Halide 50% 2.5ft yest. Inc to 75% today","entryTime":"13:50:20:652","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{					
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2315,7 +2315,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{						
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2327,7 +2327,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{						
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2338,11 +2338,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"4250","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:730","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"4250","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:730","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{						
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2907,7 +2907,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2919,7 +2919,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2930,11 +2930,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"3950","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:785","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"3950","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:785","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{						
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -2948,7 +2948,7 @@ var plantLog = [{
 																"data": [{"plantWater":"0","plantPPM":0,"plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout yet but ready to come up","entryTime":"13:10:12:678","entryDate":"2016/1/24"}]
 															}, {
 																"day": 6,
-																"data": [{"plantWater":1,"plantPPM":"4460","plantPH":"7","plantHeight":"1","plantCond":"good","timeOfDay":"morning","plantMsg":"Some fungal colonies on old rockwool, seedling transplanted into new rockwool, placed in soil at 1 day old. Cotyledon leaves x2 look good","entryTime":"16:2:36:442","entryDate":"2016/1/25"}]
+																"data": [{"plantWater":".6","plantPPM":"4460","plantPH":"7","plantHeight":"1","plantCond":"good","timeOfDay":"morning","plantMsg":"Some fungal colonies on old rockwool, seedling transplanted into new rockwool, placed in soil at 1 day old. Cotyledon leaves x2 look good","entryTime":"16:2:36:442","entryDate":"2016/1/25"}]
 															}, {
 																"day": 7,
 																"data": [{"plantWater":"0","plantPPM":"4300","plantPH":"7","plantHeight":"2","plantCond":"great","timeOfDay":"morning","plantMsg":"doing great\nCSS is growing normally and looks completey healthy","entryTime":"11:22:20:924","entryDate":"2016/1/26"}]
@@ -3497,7 +3497,7 @@ var plantLog = [{
 															{
 																"day": 1,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3509,7 +3509,7 @@ var plantLog = [{
 															}, {
 																"day": 2,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3520,11 +3520,11 @@ var plantLog = [{
 																	"entryDate":"2016/1/14"}]
 															}, {
 																"day": 3,
-																"data": [{"plantWater":1,"plantPPM":"5180","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:876","entryDate":"2016/1/22"}]
+																"data": [{"plantWater":".6","plantPPM":"5180","plantPH":"7","plantHeight":0,"plantCond":"good","timeOfDay":"morning","plantMsg":"No sprout","entryTime":"13:50:20:876","entryDate":"2016/1/22"}]
 															}, {
 																"day": 4,
 																"data": [{
-																	"plantWater":0,
+																	"plantWater":"0",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
@@ -3542,7 +3542,7 @@ var plantLog = [{
 															}, {
 																"day": 7,
 																"data": [{
-																	"plantWater":1,
+																	"plantWater":".6",
 																	"plantPPM":0,
 																	"plantPH":0,
 																	"plantHeight":0,
