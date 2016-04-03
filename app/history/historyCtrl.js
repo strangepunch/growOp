@@ -59,7 +59,7 @@
 		//current plant 1 to 1 grab bag of stuff
 		vm.currentPlantsList = [
 		    {plant:1, 
-		     name: 'Jack Herer',
+		     name: 'JH',
 		     img: 'images/strains/jack-herer_100x100.jpg', 
 			},
 			{plant:2, 
@@ -67,15 +67,15 @@
 		     img: 'images/strains/critical-sensi-star_100x100.jpg', 
 			},
 			{plant:3, 
-		     name: 'Auto DM',
+		     name: 'DM',
 		     img:'images/strains/acapulco-gold_100x100.jpg', 
 			},
 			{plant:4, 
-		     name: 'Auto GSC',
+		     name: 'GSC',
 		     img:'images/strains/girl-scout-cookies_100x100.jpg', 
 			},
 			{plant:5, 
-		     name: 'Orange Rooster',
+		     name: 'OR',
 		     img:'images/strains/acapulco-gold_100x100.jpg',
 			}
 	    ];
