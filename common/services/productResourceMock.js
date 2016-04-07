@@ -2048,7 +2048,7 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 2,
-																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"30","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"23","plantMsg":"","budLength":"1","entryTime":"9:36:35:918","entryDate":"2016/4/7"}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"30","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"23","plantMsg":"23 buds with approx 1 in max length.","budLength":"1","entryTime":"9:36:35:918","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
 																"data": [{}]
