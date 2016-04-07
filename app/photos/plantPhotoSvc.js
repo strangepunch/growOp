@@ -445,7 +445,9 @@
 									"plant": 1,
 									"plantPic": []
 								}, {
+
 									"plant": 2,
+
 									"plantPic": []
 								}, {
 									"plant": 3,
@@ -461,19 +463,84 @@
 								"week": "11",
 								"plants": [{
 									"plant": 1,
-									"plantPic": []
+									"plantPic": [
+										"images/plants/week11/plant1/Week11JH1.jpg",
+										"images/plants/week11/plant1/Week11JH2.jpg",
+										"images/plants/week11/plant1/Week11JH3.jpg",
+										"images/plants/week11/plant1/Week11JH4.png",
+										"images/plants/week11/plant1/Week11JHCU1.jpg",
+										"images/plants/week11/plant1/Week11JHCU2.jpg",
+										"images/plants/week11/plant1/Week11JHCU3.png",
+										"images/plants/week11/plant1/Week11JHCU4.png"
+									]
 								}, {
 									"plant": 2,
-									"plantPic": []
+									"plantPic": [
+											"images/plants/week11/plant2/Week11CSSCU1.png",
+											"images/plants/week11/plant2/Week11CSS1.jpg",
+											"images/plants/week11/plant2/Week11CSSCU2.png",
+											"images/plants/week11/plant2/Week11CSS6.jpg",
+											"images/plants/week11/plant2/Week11CSSCU3.png",
+											"images/plants/week11/plant2/Week11CSS5.jpg",
+											"images/plants/week11/plant2/Week11CSSCU4.png",
+											"images/plants/week11/plant2/Week11CSS3.jpg",
+											"images/plants/week11/plant2/Week11CSSCU5.png",
+											"images/plants/week11/plant2/Week11CSS2.jpg",
+											"images/plants/week11/plant2/Week11CSSCU6.png",
+											"images/plants/week11/plant2/Week11CSSCU7.png",
+											"images/plants/week11/plant2/Week11CSSCU8.png",
+											"images/plants/week11/plant2/Week11CSSCU9.png",
+											"images/plants/week11/plant2/Week11CSSCU10.png",
+											"images/plants/week11/plant2/Week11CSSCU11.png"
+											
+									]
 								}, {
 									"plant": 3,
-									"plantPic": []
+									"plantPic": [
+										"images/plants/week11/plant3/Week11ADMCU1.png",
+										"images/plants/week11/plant3/Week11adm1.jpg",
+										"images/plants/week11/plant3/Week11ADMCU2.png",
+										"images/plants/week11/plant3/Week11adm2.jpg",
+										"images/plants/week11/plant3/Week11ADMCU3.png",
+										"images/plants/week11/plant3/Week11adm3.jpg",				
+										"images/plants/week11/plant3/Week11ADMCU4.png",
+										"images/plants/week11/plant3/Week11adm4.jpg", 
+										"images/plants/week11/plant3/Week11ADMCU5.png"
+									]
 								}, {
 									"plant": 4,
-									"plantPic": []
+									"plantPic": [
+										"images/plants/week11/plant4/Week11GSCCU2.png",
+										"images/plants/week11/plant4/Week11GSC1.jpg",	
+										"images/plants/week11/plant4/Week11GSCCU1.png",
+										"images/plants/week11/plant4/Week11GSC2.jpg",
+										"images/plants/week11/plant4/Week11GSCCU3.png",
+										"images/plants/week11/plant4/Week11GSC3.png",
+										"images/plants/week11/plant4/Week11GSCCU4.png",
+										"images/plants/week11/plant4/Week11GSC4.png",
+										"images/plants/week11/plant4/Week11GSCCU5.png",
+										"images/plants/week11/plant4/Week11GSC5.png",
+										"images/plants/week11/plant4/Week11GSCCU6.png",
+										"images/plants/week11/plant4/Week11GSC6.png",
+										"images/plants/week11/plant4/Week11GSCCU7.png",
+										"images/plants/week11/plant4/Week11GSCCU8.png",
+										"images/plants/week11/plant4/Week11GSCCU9.png",
+										"images/plants/week11/plant4/Week11GSCCU9a.png"
+									]
 								}, {
 									"plant": 5,
-									"plantPic": []
+									"plantPic": [
+										"images/plants/week11/plant5/Week11ORCU1.png",
+										"images/plants/week11/plant5/Week11OR1.jpg",
+										"images/plants/week11/plant5/Week11ORCU2.png",
+										"images/plants/week11/plant5/Week11OR2.jpg",
+										"images/plants/week11/plant5/Week11ORCU3.png",
+										"images/plants/week11/plant5/Week11OR3.jpg",
+										"images/plants/week11/plant5/Week11ORCU4.png",
+										"images/plants/week11/plant5/Week11OR4.jpg",
+										"images/plants/week11/plant5/Week11ORCU5.png",
+										"images/plants/week11/plant5/Week11ORCU6.png"
+									]
 								}]
 							}, {
 								"week": "12",

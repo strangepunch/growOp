@@ -44,7 +44,7 @@
 		     img:'images/plants/week7/plant4/gscweek7p1.jpg', 
 			},
 			{plant:5, 
-		     name: 'Orange Rooster',
+		     name: 'Org Rooster',
 		     desc: '(N.A.)', 
 		     img:'images/plants/week7/plant5/orweek7p3b.jpg',
 			},
