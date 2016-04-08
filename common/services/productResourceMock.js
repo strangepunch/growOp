@@ -864,7 +864,7 @@ var plantLog = [{
 																				"data": [{"roomTemp":"68","roomHumidity":"53","roomLightHr":"12","roomLightHt":"15","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Tea started for 1,2,5","entryTime":"9:30:51:405","entryDate":"2016/4/7"}]
 																			}, {
 																				"day": 3,
-																				"data": [{}]
+																				"data": [{"roomTemp":"68","roomHumidity":"53","roomLightHr":"12","roomLightHt":"15","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"RO water 3&4, 1:5 tea 1,2,5","entryTime":"8:7:18:591","entryDate":"2016/4/8"}]
 																			}, {
 																				"day": 4,
 																				"data": [{}]
@@ -1459,7 +1459,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"26","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"38","plantMsg":"Blooms progressing, all hairs white","budLength":"3","entryTime":"9:30:51:880","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"1590","plantPH":0,"plantHeight":"26","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"38","plantMsg":"Dominant growth & using nutes effectively based on effluent ppm reading","budLength":"3","entryTime":"8:7:18:971","entryDate":"2016/4/8"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -2051,7 +2051,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"30","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"23","plantMsg":"23 buds with approx 1 in max length.","budLength":"1","entryTime":"9:36:35:918","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"4680","plantPH":0,"plantHeight":"21","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"30% brown hairs","budLength":"4","entryTime":"8:7:19:238","entryDate":"2016/4/8"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -2642,7 +2642,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"21","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"10-20% brown hairs. Buds are very leafy & frosty, progressing in size","budLength":"4","entryTime":"9:36:35:982","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"4680","plantPH":0,"plantHeight":"21","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"30% brown hairs","budLength":"4","entryTime":"8:7:19:238","entryDate":"2016/4/8"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3234,7 +3234,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"19","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Buds appear to be increasing in density. Approx 50% brown hairs, <10% amber trichomes, mostly clear. Few cloudy","budLength":"3","entryTime":"9:36:36:67","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"4140","plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"30-50% brown hairs. Rear bud sample:no colored trichomes, nearly all clear","budLength":"3","entryTime":"8:13:51:117","entryDate":"2016/4/8"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3842,7 +3842,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Long, tall, few flowers. No male characteristics","budLength":"1","entryTime":"9:36:36:149","entryDate":"2016/4/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"4030","plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Long, stretched branches, flowering but not many buds for 2 plants","budLength":"1","entryTime":"8:13:51:201","entryDate":"2016/4/8"}]
 															}, {
 																"day": 4,
 																"data": [{}]
