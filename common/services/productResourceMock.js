@@ -884,7 +884,7 @@ var plantLog = [{
 															"entries": [
 																			{
 																				"day": 1,
-																				"data": [{}]
+																				"data": [{"roomTemp":"68","roomHumidity":"62","roomLightHr":"12","roomLightHt":"11","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Lite temps hi 60s, dark temps low 60s. Hum 60s","entryTime":"9:21:8:747","entryDate":"2016/4/13"}]
 																			}, {
 																				"day": 2,
 																				"data": [{}]
@@ -1479,7 +1479,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"24","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"40","plantMsg":"looks healthy and vibrant","budLength":"4","entryTime":"9:21:9:100","entryDate":"2016/4/13"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -2071,7 +2071,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"27","plantMsg":"looks healthy and vibrant","budLength":"6","entryTime":"9:21:9:231","entryDate":"2016/4/13"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -2662,7 +2662,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"looks healthy and vibrant","budLength":"5","entryTime":"9:21:9:304","entryDate":"2016/4/13"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -3254,7 +3254,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"14","plantMsg":"New bud sampling <10% amber trichomes","budLength":"4","entryTime":"9:21:9:412","entryDate":"2016/4/13"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -3862,7 +3862,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Leaves withering, entered late flowering stage, tho all hairs white","budLength":"1","entryTime":"9:21:9:518","entryDate":"2016/4/13"}]
 															}, {
 																"day": 2,
 																"data": [{}]

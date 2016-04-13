@@ -28,7 +28,7 @@
 	    vm.startDate = {
     		year: 2016,
     		month: 1,
-    		day: 15
+    		day: 12
     	};
 	    vm.currentDate = {
     		year: YYYY,
