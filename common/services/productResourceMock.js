@@ -890,7 +890,7 @@ var plantLog = [{
 																				"data": [{"roomTemp":"73","roomHumidity":"65","roomLightHr":"12","roomLightHt":"11","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"14:26:37:160","entryDate":"2016/4/14"}]
 																			}, {
 																				"day": 3,
-																				"data": [{}]
+																				"data": [{"roomTemp":"72","roomHumidity":"45","roomLightHr":"12","roomLightHt":"11","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Orange rooster is yellowing but has buds\nAll others in various stages of flowering\nCompost tea added to all plants in 1:5 concentration even though all are flowering as an organic nutrient boost that is slow released","entryTime":"13:35:16:28","entryDate":"2016/4/15"}]
 																			}, {
 																				"day": 4,
 																				"data": [{}]
@@ -1485,7 +1485,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"24","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"40","plantMsg":"JH is approx 24 in tall and has around 40 buds with the largest around 4 in.","budLength":"4","entryTime":"14:26:37:493","entryDate":"2016/4/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":"1","times":"4","checked":true},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"44","plantMsg":"Jack rules the roost.\nThe growing amount of surface area it has occupied is touching all other plants.","budLength":"4","entryTime":"13:35:16:478","entryDate":"2016/4/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -2077,7 +2077,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"31","plantCond":"great","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"27","plantMsg":"CSS is approx 31 in tall and has around 27 buds with the largest arounbd 6 in.","budLength":"6","entryTime":"14:26:37:640","entryDate":"2016/4/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".8","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"30","plantMsg":"CSS has an amazing 6 in cola that is Christmas tree shaped.\nReally beautiful flowering shows its healthy and strong. \nThe bud count is approximate.","budLength":"6","entryTime":"13:35:16:650","entryDate":"2016/4/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -2668,7 +2668,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"ADM is approx 22 in tall and has around 19 buds with the largest around 5 in.","budLength":"5","entryTime":"14:26:37:723","entryDate":"2016/4/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"20","plantMsg":"Excellent bud health with Christmas tree colas nicely forming. Late flowering stage indicated by hairs turning brown. \nBud count an estimate.","budLength":"6","entryTime":"13:35:16:743","entryDate":"2016/4/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3260,7 +3260,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"14","plantMsg":"GSC is approx 16 in tall and has around 14 buds with the largest around 4 in.","budLength":"4","entryTime":"14:26:37:811","entryDate":"2016/4/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":"16","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"20","plantMsg":"Great looking buds.\nSmall overall size but healthy looking leaves and buds.\n50% brown hairs. \nPlenty of frost. Trichomes still at 10% amber but leaves not yellowing yet.","budLength":"5","entryTime":"13:35:16:850","entryDate":"2016/4/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3868,7 +3868,7 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"36","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Two female OR plants are approx 36 in tall and have around 10 buds with the largest around 1 in.","budLength":"1","entryTime":"14:26:37:903","entryDate":"2016/4/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":"34","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"12","plantMsg":"On the outside of the light perimeter \nTall sativa like growth without many buds.","budLength":"1","entryTime":"13:35:16:967","entryDate":"2016/4/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
