@@ -194,6 +194,26 @@
 								</div>
 							</div>
 				    	</div>
+				    	<div class="col-xs-12 col-lg-12">
+				    		<h3 class="title" style="padding-top:10px"> Trichomes </h3>
+				    	</div>
+				    	<div class="form-group col-xs-6 col-sm-4 col-lg-6" ng-repeat="item in vm.Trichomes track by $index" style="padding-left:25px;margin-right:5px">
+				      		<div class="checkbox">
+					          	<label>
+					            	<input type="checkbox" ng-model="item.checked"> 
+					            		{{item.name}} 
+					            	<span> <!--ng-if="item.checked != false"-->
+					            		 Amt:
+						            	<div class="input-group">
+										    <input type="text" class="form-control" only-Digits allow-decimal="true" ng-model="item.amt">
+										    <span class="input-group-btn">
+										      	<button class="btn btn-default" style="padding-left:10px;width:45px" type="button"> % </button>
+										    </span>
+										</div>
+									</span>
+					          	</label>
+					        </div>
+				    	</div>
 			    	</div>
 			    	<div class="col-xs-12" style="text-align:center">
 						<!-- <button class="btn btn-primary" ng-click="vm.getData()">Test</button> -->

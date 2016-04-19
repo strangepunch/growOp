@@ -79,6 +79,20 @@
       "checked": false
     }];
 
+    vm.Trichomes = [{
+      "name": "Clear",
+      "amt": 0,
+      "checked": false
+    },{
+      "name": "Cloudy",
+      "amt": 0,
+      "checked": false
+    },{
+      "name": "Amber",
+      "amt": 0,
+      "checked": false
+    }];
+
     vm.inputData = {
       plantType: null,
       plantWater: null,
@@ -93,6 +107,7 @@
       plantMsg: null,
       budNum: null,
       budLength: null,
+      trichomes: null,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
     };
@@ -111,6 +126,7 @@
       plantMsg: 'this plant feels good.',
       budNum: null,
       budLength: null,
+      trichomes: vm.Trichomes,
       entryTime: vm.currentTimestamp,
       entryDate: vm.currentDate
     };
@@ -144,7 +160,8 @@
           vm.storedData = vm.inputData;
           //console.log("vm.storedData", vm.storedData);
           //console.log("vm.Pruning", vm.Pruning);
-          vm.storedData.pruning = vm.Pruning
+          vm.storedData.pruning = vm.Pruning;
+          vm.storedData.trichomes = vm.Trichomes;
           vm.storedData.entryTime = vm.currentTimestamp;
           vm.storedData.entryDate = vm.currentDate;
 
@@ -198,6 +215,10 @@
             vm.Pruning[obj].tier = 0;
             vm.Pruning[obj].times = 0;
         }
+
+        for(var obj in vm.Trichomes){
+            vm.Trichomes[obj].amt = 0;
+        }
     }
 
     function makeJSON(){
@@ -218,6 +239,7 @@
             plantMsg: vm.storedData.plantMsg,
             budNum: vm.storedData.budNum,
             budLength: vm.storedData.budLength,
+            trichomes: vm.storedData.trichomes,
             entryTime: vm.currentTimestamp,
             entryDate: vm.currentDate
           };
