@@ -115,7 +115,8 @@
     vm.makeJSON = makeJSON;
     vm.emailData = sendMail;
     vm.submitData = submitData;
-    vm.clearData = clearData; 
+    vm.clearData = clearData;
+    vm.tempSendMail = tempSendMail;
 
   	//---- Bindable Members---END----//
 
@@ -247,10 +248,16 @@
          });
     }
 
+    function tempSendMail(data){
+      var subject = "EnviromentInput";
+      window.open('mailto:measurements@2geeseflying.com?subject=' + subject + '&body=' + data);
+    }
+
     function submitData(){
       vm.storeData();
       if( $scope.btnSuccess == 'success'){
-          vm.emailData();
+          //vm.emailData();
+          tempSendMail(vm.emailMessageDATAinJSON)
           if($scope.btnSuccessEmail = 'success'){
              console.log("Room Mailed")
             $scope.submitSuccess = 'success';

@@ -141,6 +141,7 @@
     vm.submitData = submitData; 
     vm.clearData = clearData;
     vm.togglePanel = togglePanel;
+    vm.tempSendMail = tempSendMail;
     //---- Bindable Members---END----//
 
     //---- Functions---START----//
@@ -288,10 +289,16 @@
          });
     }
 
+    function tempSendMail(data){
+      var subject = "PlantsInput";
+      window.open('mailto:measurements@2geeseflying.com?subject=' + subject + '&body=' + data);
+    }
+
     function submitData(){
       vm.storeData();
       if( $scope.btnSuccess == 'success'){
-          vm.emailData();
+          //vm.emailData();
+          vm.tempSendMail(vm.emailMessageDATAinJSON);
           if($scope.btnSuccessEmail = 'success'){
              console.log("Plant Mailed")
             $scope.submitSuccess = 'success';
