@@ -899,14 +899,122 @@ var plantLog = [{
 																				"data": [{}]
 																			}, {
 																				"day": 6,
+																				"data": [{"roomTemp":"66","roomHumidity":"51","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":"1","checked":true},{"name":"Big Bl.","amt":"3","checked":true},{"name":"Tiger Bl.","amt":"2","checked":true},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"RO water 3&4. Nutes all others. Ppm readings reveal flush 3,4. Plenty of nutes all others","entryTime":"10:56:11:896","entryDate":"2016/4/18"}]
+																			}, {
+																				"day": 7,
+																				"data": [{"roomTemp":"68","roomHumidity":"53","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Rest day for all plants after nutrients and flush yesterday. No significant changes to the grow. 1-4 healthy, 5 flowering although at a lesser level.","entryTime":"11:5:47:513","entryDate":"2016/4/19"}]
+																			}
+																		]
+														}, {
+															"week": "14",
+															"entries": [
+																			{
+																				"day": 1,
+																				"data": [{"roomTemp":"72","roomHumidity":"58","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":"1","checked":true},{"name":"Big Bl.","amt":"3","checked":true},{"name":"Tiger Bl.","amt":"3","checked":true},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Extra nutes to 1,2,5","entryTime":"9:43:27:272","entryDate":"2016/4/20"}]
+																			}, {
+																				"day": 2,
+																				"data": [{"roomTemp":"75","roomHumidity":"62","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"13:31:47:104","entryDate":"2016/4/21"}]
+																			}, {
+																				"day": 3,
+																				"data": [{}]
+																			}, {
+																				"day": 4,
+																				"data": [{}]
+																			}, {
+																				"day": 5,
+																				"data": [{}]
+																			}, {
+																				"day": 6,
 																				"data": [{}]
 																			}, {
 																				"day": 7,
 																				"data": [{}]
 																			}
 																		]
-														}, {
-															"week": "14",
+														},
+														{
+															"week": "15",
+															"entries": [
+																			{
+																				"day": 1,
+																				"data": [{}]
+																			}, {
+																				"day": 2,
+																				"data": [{}]
+																			}, {
+																				"day": 3,
+																				"data": [{}]
+																			}, {
+																				"day": 4,
+																				"data": [{}]
+																			}, {
+																				"day": 5,
+																				"data": [{}]
+																			}, {
+																				"day": 6,
+																				"data": [{}]
+																			}, {
+																				"day": 7,
+																				"data": [{}]
+																			}
+																		]
+														},
+														{
+															"week": "16",
+															"entries": [
+																			{
+																				"day": 1,
+																				"data": [{}]
+																			}, {
+																				"day": 2,
+																				"data": [{}]
+																			}, {
+																				"day": 3,
+																				"data": [{}]
+																			}, {
+																				"day": 4,
+																				"data": [{}]
+																			}, {
+																				"day": 5,
+																				"data": [{}]
+																			}, {
+																				"day": 6,
+																				"data": [{}]
+																			}, {
+																				"day": 7,
+																				"data": [{}]
+																			}
+																		]
+														},
+														{
+															"week": "17",
+															"entries": [
+																			{
+																				"day": 1,
+																				"data": [{}]
+																			}, {
+																				"day": 2,
+																				"data": [{}]
+																			}, {
+																				"day": 3,
+																				"data": [{}]
+																			}, {
+																				"day": 4,
+																				"data": [{}]
+																			}, {
+																				"day": 5,
+																				"data": [{}]
+																			}, {
+																				"day": 6,
+																				"data": [{}]
+																			}, {
+																				"day": 7,
+																				"data": [{}]
+																			}
+																		]
+														},
+														{
+															"week": "18",
 															"entries": [
 																			{
 																				"day": 1,
@@ -1494,10 +1602,10 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"2190","plantPH":0,"plantHeight":"24","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"43","plantMsg":"All nutes applied with .6 gal RO water. Estimate 43 buds as Jack Herer shows extremely healthy flowering. The largest JH bud estimated at 4 in.","budLength":"4","entryTime":"10:56:12:417","entryDate":"2016/4/18"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"24","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"43","plantMsg":"Hairs white, stems numerous & filling in with buds. Total buds approx 43. Rest day after nutrients yesterday. Largest is 4 in.","budLength":"4","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:5:47:931","entryDate":"2016/4/19"}]
 															}
 														]
 										}, {
@@ -1505,10 +1613,10 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":"0.3","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Extra nutes to 1,2,5","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"9:43:27:464","entryDate":"2016/4/20"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Jack Herer after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:504","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
 																"data": [{}]
@@ -2086,14 +2194,122 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 6,
+																"data": [{"plantWater":"0.6","plantPPM":"3130","plantPH":0,"plantHeight":"32","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"38","plantMsg":"Critical Sensi Star has the largest bud of all plants at 6 in. Today she was fed all three nutes with .6 gal RO water.","budLength":"6","entryTime":"10:56:12:606","entryDate":"2016/4/18"}]
+															}, {
+																"day": 7,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"32","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"38","plantMsg":"Rest day for CSS. Approx 38 buds the largest of which is 6 in. Flowering progressing nicely.","budLength":"6","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:5:48:83","entryDate":"2016/4/19"}]
+															}
+														]
+										}, {
+											"week": "14",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{"plantWater":"0.3","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Extra nutes to 1,2,5","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"9:43:27:568","entryDate":"2016/4/20"}]
+															}, {
+																"day": 2,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for CSS after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:705","entryDate":"2016/4/21"}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
 																"data": [{}]
 															}, {
 																"day": 7,
 																"data": [{}]
 															}
 														]
-										}, {
-											"week": "14",
+										},
+										{
+											"week": "15",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "16",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "17",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "18",
 											"entries": [
 															{
 																"day": 1,
@@ -2677,10 +2893,10 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":"5750","plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"12","plantMsg":"Auto Diesel Matic had a flush with .5 gal of RO water today with no nutrients or compost tea added. She has a 7 in bud with an estimated 22 total buds.","budLength":"7","entryTime":"10:56:12:712","entryDate":"2016/4/18"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"12","plantMsg":"Approx 12 buds with the largest at around 7 in. 15 % cloudy and 5 % amber trichomes.","budLength":"7","trichomes":[{"name":"Clear","amt":"80","checked":true},{"name":"Cloudy","amt":"15","checked":true},{"name":"Amber","amt":"5","checked":true}],"entryTime":"11:5:48:187","entryDate":"2016/4/19"}]
 															}
 														]
 										}, {
@@ -2688,7 +2904,115 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Extra nutes to 1,2,5","budLength":0,"trichomes":[{"name":"Clear","amt":"98","checked":true},{"name":"Cloudy","amt":"2","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"9:43:27:648","entryDate":"2016/4/20"}]	
+															}, {
+																"day": 2,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Auto Diesel Matic.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:829","entryDate":"2016/4/21"}]
+															}, {
+																"day": 3,
 																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "15",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]	
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "16",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]	
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "17",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]	
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "18",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]	
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -3269,14 +3593,122 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 6,
+																"data": [{"plantWater":"0.5","plantPPM":"3840","plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"Girl Scout Cookies had a flush with .5 gal of RO water today. She has approx 16 buds with the largest being around 5 in. 10% amber trichomes, all others clear","budLength":"5","entryTime":"10:56:12:808","entryDate":"2016/4/18"}]
+															}, {
+																"day": 7,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"16","plantMsg":"10 % amber trichomes and 5 in bud length indicate Auto GSC is holding in flowering phase with increasing bud growth. Today is a rest day after pure water flush yesterday.","budLength":"5","trichomes":[{"name":"Clear","amt":"40","checked":true},{"name":"Cloudy","amt":"50","checked":true},{"name":"Amber","amt":"10","checked":true}],"entryTime":"11:5:48:307","entryDate":"2016/4/19"}]
+															}
+														]
+										}, {
+											"week": "14",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Extra nutes to 1,2,5","budLength":0,"trichomes":[{"name":"Clear","amt":"80","checked":true},{"name":"Cloudy","amt":"19","checked":true},{"name":"Amber","amt":"1","checked":true}],"entryTime":"9:43:27:739","entryDate":"2016/4/20"}]
+															}, {
+																"day": 2,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for GSC.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:919","entryDate":"2016/4/21"}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
 																"data": [{}]
 															}, {
 																"day": 7,
 																"data": [{}]
 															}
 														]
-										}, {
-											"week": "14",
+										},
+										{
+											"week": "15",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "16",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "17",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "18",
 											"entries": [
 															{
 																"day": 1,
@@ -3877,14 +4309,122 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 6,
+																"data": [{"plantWater":"0.6","plantPPM":"5280","plantPH":0,"plantHeight":"34","plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster has around 10 buds with the largest being 2 in. Today she got all 3 nutes and .6 gal RO water. Her leaves are yellowing but her buds continue growing.","budLength":"2","entryTime":"10:56:12:893","entryDate":"2016/4/18"}]
+															}, {
+																"day": 7,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"34","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Approx 10 buds with the largest around 2 in indicate Orange Rooster will probably be a low producer unless a burst or growth happens in the bud. Lower leaves already turning yellow.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:5:48:386","entryDate":"2016/4/19"}]
+															}
+														]
+										}, {
+											"week": "14",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{"plantWater":"0.3","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Extra nutes to 1,2,5","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"9:43:27:821","entryDate":"2016/4/20"}]
+															}, {
+																"day": 2,
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Orange Rooster after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:45:23","entryDate":"2016/4/21"}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
 																"data": [{}]
 															}, {
 																"day": 7,
 																"data": [{}]
 															}
 														]
-										}, {
-											"week": "14",
+										},
+										{
+											"week": "15",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "16",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "17",
+											"entries": [
+															{
+																"day": 1,
+																"data": [{}]
+															}, {
+																"day": 2,
+																"data": [{}]
+															}, {
+																"day": 3,
+																"data": [{}]
+															}, {
+																"day": 4,
+																"data": [{}]
+															}, {
+																"day": 5,
+																"data": [{}]
+															}, {
+																"day": 6,
+																"data": [{}]
+															}, {
+																"day": 7,
+																"data": [{}]
+															}
+														]
+										},
+										{
+											"week": "18",
 											"entries": [
 															{
 																"day": 1,
