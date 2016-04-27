@@ -916,19 +916,19 @@ var plantLog = [{
 																				"data": [{"roomTemp":"75","roomHumidity":"62","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"13:31:47:104","entryDate":"2016/4/21"}]
 																			}, {
 																				"day": 3,
-																				"data": [{}]
+																				"data": [{"roomTemp":"74","roomHumidity":"65","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Tea applied. Trichomes sampled from a different bud each day examined","entryTime":"10:34:3:946","entryDate":"2016/4/22"}]
 																			}, {
 																				"day": 4,
 																				"data": [{}]
 																			}, {
 																				"day": 5,
-																				"data": [{}]
+																				"data": [{"roomTemp":"78","roomHumidity":"61","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"17:24:21:943","entryDate":"2016/4/24"}]
 																			}, {
 																				"day": 6,
-																				"data": [{}]
+																				"data": [{"roomTemp":"73","roomHumidity":"63","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":"1","checked":true},{"name":"Big Bl.","amt":"3","checked":true},{"name":"Tiger Bl.","amt":"2","checked":true},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"RO water 3,4. Nutes all others.","entryTime":"10:26:27:165","entryDate":"2016/4/25"}]
 																			}, {
 																				"day": 7,
-																				"data": [{}]
+																				"data": [{"roomTemp":"73","roomHumidity":"64","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"8:49:56:966","entryDate":"2016/4/26"}]
 																			}
 																		]
 														},
@@ -1619,19 +1619,19 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Jack Herer after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:504","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.4","plantPPM":"1930","plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Buds filling in 50+ stems. Hairs still white-beige. Tea applied. Trichomes sampled from a different bud each day examined.","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:34:4:587","entryDate":"2016/4/22"}]
 															}, {
 																"day": 4,
 																"data": [{}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Few white hairs turning brown. Approx 51 buds with the largest at 5 in.","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"17:24:22:406","entryDate":"2016/4/24"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Some leaves yellowing, very few hairs brown","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:26:27:562","entryDate":"2016/4/25"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Approx 51 buds with max still at 5 in. Some leaves yellowing, very few hairs brown","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"8:49:57:574","entryDate":"2016/4/26"}]
 															}
 														]
 										}
@@ -2211,19 +2211,19 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for CSS after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:705","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.4","plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"Tea applied. Trichomes sampled from a different bud each day examined.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:34:4:738","entryDate":"2016/4/22"}]
 															}, {
 																"day": 4,
 																"data": [{}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"Few white hairs turning brown. Approx 35 buds with the largest at 7 in.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"17:24:22:565","entryDate":"2016/4/24"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"Nutes applied.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:26:27:716","entryDate":"2016/4/25"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"10-20% red hairs. Looks like mid flower stage but no amber trichomes yet. Approx 35 buds with the largest at 7 in.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"8:49:57:574","entryDate":"2016/4/26"}]
 															}
 														]
 										},
@@ -2910,19 +2910,19 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Auto Diesel Matic.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:829","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.4","plantPPM":"3490","plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Tea applied. Trichomes sampled from a different bud each day examined.","budLength":"7","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"40","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:34:4:831","entryDate":"2016/4/22"}]
 															}, {
 																"day": 4,
 																"data": [{}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Approx 15 buds with the largest at 7 in.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"17:24:22:651","entryDate":"2016/4/24"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"3410","plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"RO water only.","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:26:27:811","entryDate":"2016/4/25"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Rest day after RO flush. Approx 15 buds with the largest at 7 in. Relatively small size overall but excellent health and frosty buds. Trichomes are approx 80% clear and 20 % cloudy. ","budLength":"7","trichomes":[{"name":"Clear","amt":"80","checked":true},{"name":"Cloudy","amt":"20","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"8:49:57:669","entryDate":"2016/4/26"}]
 															}
 														]
 										},
@@ -3610,19 +3610,19 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for GSC.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:44:919","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.4","plantPPM":"2790","plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Tea applied. Trichomes sampled from a different bud each day examined.","budLength":"5","trichomes":[{"name":"Clear","amt":"80","checked":true},{"name":"Cloudy","amt":"20","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:34:4:937","entryDate":"2016/4/22"}]
 															}, {
 																"day": 4,
 																"data": [{}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Most hairs are brown. Approx 19 buds with the largest at 5 in. Trichomes are 50% cloudy and 5% amber.","budLength":"5","trichomes":[{"name":"Clear","amt":"50","checked":true},{"name":"Cloudy","amt":"45","checked":true},{"name":"Amber","amt":"5","checked":true}],"entryTime":"17:24:22:765","entryDate":"2016/4/24"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"3060","plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"RO water only.","budLength":"5","trichomes":[{"name":"Clear","amt":"80","checked":true},{"name":"Cloudy","amt":"20","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:26:27:912","entryDate":"2016/4/25"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Rest day after RO flush. Approx 19 buds with the largest at 5 in. Relatively small size overall but excellent health and frosty buds. Trichomes approx 60% clear with 40% cloudy. Still only min amt have turned amber.","budLength":"5","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"40","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"8:49:57:775","entryDate":"2016/4/26"}]
 															}
 														]
 										},
@@ -4326,19 +4326,19 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Rest day for Orange Rooster after extra nutes applied yesterday.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:31:45:23","entryDate":"2016/4/21"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":"0.4","plantPPM":"1350","plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Tea applied. Trichomes sampled from a different bud each day examined.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:34:5:7","entryDate":"2016/4/22"}]
 															}, {
 																"day": 4,
 																"data": [{}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Approx 10 buds with the largest being 2 in.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"17:24:22:894","entryDate":"2016/4/24"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":"5150","plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Nutes applied.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:26:27:995","entryDate":"2016/4/25"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Rest day after nutes yesterday. Approx 10 buds with the largest at 2 in. No cloudy trichomes appearing yet.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"8:49:57:866","entryDate":"2016/4/26"}]
 															}
 														]
 										},
