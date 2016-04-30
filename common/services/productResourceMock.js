@@ -946,7 +946,7 @@ var plantLog = [{
 																				"data": [{"roomTemp":"79","roomHumidity":"52","roomLightHr":"12","roomLightHt":"14","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":".65 RO compost tea flush on 1,2,5\nPure RO water flush on 3,4\nAeration on all","entryTime":"13:9:28:613","entryDate":"2016/4/29"}]
 																			}, {
 																				"day": 4,
-																				"data": [{}]
+																				"data": [{"roomTemp":"78","roomHumidity":"51","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Rest day","entryTime":"18:39:39:631","entryDate":"2016/4/30"}]
 																			}, {
 																				"day": 5,
 																				"data": [{}]
@@ -1649,7 +1649,7 @@ var plantLog = [{
 																"data": [{"plantWater":".65","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Compost tea flush\nSoil was dry\nGrowth is exellent\nLeaves yellowing","budLength":"6","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:9:29:18","entryDate":"2016/4/29"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"10-20% red hairs","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:14","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -2349,7 +2349,7 @@ var plantLog = [{
 																"data": [{"plantWater":".65","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"59% red hairs\nLeaves yellowing","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":"0","checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:9:29:209","entryDate":"2016/4/29"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"20% red hairs","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:181","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -3048,7 +3048,7 @@ var plantLog = [{
 																"data": [{"plantWater":.5,"plantPPM":0,"plantPH":0,"plantHeight":"20","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Approx 15 buds with 40% cloudy trichomes. Largest is 7 in.","budLength":"7","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"40","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"10:58:27:739","entryDate":"2016/4/28"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Still white hair growth/activity. Pistils are still propagating.","budLength":"7","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"40","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:263","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -3748,7 +3748,7 @@ var plantLog = [{
 																"data": [{"plantWater":".5","plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Aerated soil\nRO flush\nCould harvest anyday\nNo amber trichs\n50% cloudy \nExpecting harvest Monday","budLength":"5","trichomes":[{"name":"Clear","amt":"60","checked":false},{"name":"Cloudy","amt":"40","checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:9:29:455","entryDate":"2016/4/29"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Little to no pistil activity. Hairs red, ready for harvest soon","budLength":"5","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"39","checked":true},{"name":"Amber","amt":"1","checked":true}],"entryTime":"18:39:40:359","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
 																"data": [{}]
@@ -4464,7 +4464,7 @@ var plantLog = [{
 																"data": [{"plantWater":".65","plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Compost tea flush\nStill sparse growth but approx 10 buds","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"13:9:29:569","entryDate":"2016/4/29"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"No change","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:479","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
 																"data": [{}]
