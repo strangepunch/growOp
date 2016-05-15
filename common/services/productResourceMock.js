@@ -949,13 +949,13 @@ var plantLog = [{
 																				"data": [{"roomTemp":"78","roomHumidity":"51","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Rest day","entryTime":"18:39:39:631","entryDate":"2016/4/30"}]
 																			}, {
 																				"day": 5,
-																				"data": [{}]
+																				"data": [{"roomTemp":"78","roomHumidity":"51","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":null,"entryTime":"11:12:56:258","entryDate":"2016/5/1"}]
 																			}, {
 																				"day": 6,
-																				"data": [{}]
+																				"data": [{"roomTemp":"78","roomHumidity":"56","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Harvest for plants 2,3,4. Full trim and hung to dry in same environment.","entryTime":"21:9:35:781","entryDate":"2016/5/2"}]
 																			}, {
 																				"day": 7,
-																				"data": [{}]
+																				"data": [{"roomTemp":"78","roomHumidity":"56","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Plant 1 is yellowing and increasingly cloudy but very little to no amber yet. Both Pkant 1 and plant 5 are in final flowering phase.","entryTime":"20:41:19:326","entryDate":"2016/5/3"}]
 																			}
 																		]
 														},
@@ -964,7 +964,7 @@ var plantLog = [{
 															"entries": [
 																			{
 																				"day": 1,
-																				"data": [{}]
+																				"data": [{"roomTemp":"70","roomHumidity":"55","roomLightHr":"12","roomLightHt":null,"totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":false}],"roomMsg":"Orange Rooster and a Jack are in final flowering.","entryTime":"21:18:2:863","entryDate":"2016/5/6"}]
 																			}, {
 																				"day": 2,
 																				"data": [{}]
@@ -973,16 +973,16 @@ var plantLog = [{
 																				"data": [{}]
 																			}, {
 																				"day": 4,
-																				"data": [{}]
+																				"data": [{"roomTemp":"77","roomHumidity":"48","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Few seeds found, suspected pollination from plant 5. Plant 5 removed from room. 0.6 gal RO water applied to each","entryTime":"15:48:11:636","entryDate":"2016/5/9"}]
 																			}, {
 																				"day": 5,
-																				"data": [{}]
+																				"data": [{"roomTemp":"77","roomHumidity":"48","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"OR and JH expected harvest tomorrow.","entryTime":"15:48:11:636","entryDate":"2016/5/10"}]
 																			}, {
 																				"day": 6,
-																				"data": [{}]
+																				"data": [{"roomTemp":"77","roomHumidity":"48","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Harvested JH and OR. Both hanging to dry.","entryTime":"15:48:11:636","entryDate":"2016/5/11"}]
 																			}, {
 																				"day": 7,
-																				"data": [{}]
+																				"data": [{"roomTemp":"77","roomHumidity":"48","roomLightHr":"12","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Drying JH and OR.","entryTime":"15:48:11:636","entryDate":"2016/5/12"}]
 																			}
 																		]
 														},
@@ -991,13 +991,13 @@ var plantLog = [{
 															"entries": [
 																			{
 																				"day": 1,
-																				"data": [{}]
+																				"data": [{"roomTemp":"74","roomHumidity":"56","roomLightHr":"0","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Drying JH and OR. CSS, GSC and ADM curing.","entryTime":"15:48:11:636","entryDate":"2016/5/13"}]
 																			}, {
 																				"day": 2,
-																				"data": [{}]
+																				"data": [{"roomTemp":"74","roomHumidity":"56","roomLightHr":"0","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Drying JH and OR. CSS, GSC and ADM curing.","entryTime":"15:48:11:636","entryDate":"2016/5/14"}]
 																			}, {
 																				"day": 3,
-																				"data": [{}]
+																				"data": [{"roomTemp":"74","roomHumidity":"56","roomLightHr":"0","roomLightHt":"12","totalWater":null,"nutrients":[{"name":"Grow B.","amt":0,"checked":false},{"name":"Big Bl.","amt":0,"checked":false},{"name":"Tiger Bl.","amt":0,"checked":false},{"name":"Sea 90","amt":0,"checked":false},{"name":"Protein","amt":0,"checked":false}],"soil":[{"name":"Aerate","amt":0,"checked":true}],"roomMsg":"Drying JH and OR. CSS, GSC and ADM curing.","entryTime":"15:48:11:636","entryDate":"2016/5/15"}]
 																			}, {
 																				"day": 4,
 																				"data": [{}]
@@ -1652,13 +1652,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"10-20% red hairs","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:14","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Entering late flowering stage. 20-30% red hairs","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:14:52:505","entryDate":"2016/5/1"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Yellowing leaves indicate jack hearer is in mid stage of flowering lifecycle. \nExpect to harvest within 1 week","budLength":"5","trichomes":[{"name":"Clear","amt":"00","checked":false},{"name":"Cloudy","amt":"0","checked":false},{"name":"Amber","amt":"0","checked":false}],"entryTime":"21:9:36:323","entryDate":"2016/5/2"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":0,"plantPH":0,"plantHeight":"25","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Hairs still 70% white. Leaves yellowing. Late flowering phase","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"20:44:19:326","entryDate":"2016/5/3"}]
 															}
 														]
 										}, 
@@ -1667,7 +1667,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":25,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Seeds discovered in a few buds. We suspect possible pollenation by Orange Rooster since we discovered seeds in it first. Mark recommended letting it continue to completion.","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:198","entryDate":"2016/5/6"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -1676,16 +1676,16 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":.6,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Few seeds found. Hairs 50% red","budLength":"5","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:9:939","entryDate":"2016/5/9"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Expected harvest tomorrow.","budLength":"5","trichomes":[{"name":"Clear","amt":"25","checked":true},{"name":"Cloudy","amt":"75","checked":true},{"name":"Amber","amt":"25","checked":true}],"entryTime":"15:48:9:939","entryDate":"2016/5/10"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Harvest and trim. Now hanging to dry.","budLength":"5","trichomes":[{"name":"Clear","amt":"25","checked":true},{"name":"Cloudy","amt":"75","checked":true},{"name":"Amber","amt":"25","checked":true}],"entryTime":"15:48:9:939","entryDate":"2016/5/11"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Hanging to dry. Day 1","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:9:939","entryDate":"2016/5/12"}]
 															}
 														]
 										},
@@ -1694,13 +1694,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Friday: Drying - Day 2: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:9:939","entryDate":"2016/5/13"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Saturday: Drying - Day 3: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:14:9:939","entryDate":"2016/5/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"51","plantMsg":"Jack Herer - Sunday: Drying - Day 4: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:14:9:939","entryDate":"2016/5/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -2352,13 +2352,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"20% red hairs","budLength":"7","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:181","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"29","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"35","plantMsg":"Ready for harvest","budLength":"7","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"30","checked":true},{"name":"Amber","amt":"20","checked":true}],"entryTime":"11:14:52:629","entryDate":"2016/5/1"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Harvest day","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:476","entryDate":"2016/5/2"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Drying","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:476","entryDate":"2016/5/23"}]
 															}
 														]
 										},
@@ -2367,25 +2367,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Friday: Final trim and bottled in 1 qt mason jars. Cure Day - 1.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/6"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Saturday: Cure - Day 2. Burped 1 time - 15 min. Bottle temp - 65, RH - 70","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Sunday: Cure - Day 3. Burped 2 times - 15 min. Bottle temp - 68, RH - 72","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/8"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Monday: Cure - Day 4. Burped 2 times - 15 min. Bottle temp - 70, RH - 69","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/9"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Tuesday: Cure - Day 5. Burped 2 times - 30 min. Bottle temp - 72, RH - 68","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/10"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Wednesday: Cure - Day 6. Burped 2 times - 30 min. Bottle temp - 70, RH - 69","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/11"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Thursday: Cure - Day 7. Burped 1 times - 30 min. Bottle temp - 65, RH - 68","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/12"}]
 															}
 														]
 										},
@@ -2394,13 +2394,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Friday: Cure - Day 8. Burped 2 times - 30 min. Bottle temp - 65, RH - 66","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:326","entryDate":"2016/5/13"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Saturday: Cure - Day 9. Burped 2 times - AM - 30 min. PM - same, Bottle temp - 56, RH - 66","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:16:3:326","entryDate":"2016/5/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Critical Sensi Star - Sunday: Cure - Day 10. Burped 2 times - AM - 30 min. PM - same, Bottle temp - 60, RH - 64","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"14:05:3:326","entryDate":"2016/5/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3051,13 +3051,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Still white hair growth/activity. Pistils are still propagating.","budLength":"7","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"40","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:263","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"22","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"15","plantMsg":"Ready for harvest. Trichomes not turning amber. Some fan yellowing","budLength":"7","trichomes":[{"name":"Clear","amt":"50","checked":true},{"name":"Cloudy","amt":"50","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:14:52:709","entryDate":"2016/5/1"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Harvest day","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:569","entryDate":"2016/5/2"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Drying","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:569","entryDate":"2016/5/3"}]
 															}
 														]
 										},
@@ -3066,25 +3066,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]	
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Friday: Final trim and placed in mason jars. Cure  - Day 1","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/6"}]	
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Saturday: Cure  - Day 2. Temp - 68 and RH - 72","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Sunday: Cure  - Day 3. Temp - 65 and RH - 70","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/8"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Monday: Cure  - Day 4. Temp - 74 and RH - 70. Burped 2 times - 15 min","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/9"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Tuesday: Cure  - Day 5. Temp - 72 and RH - 68. Burped 2 times - 45 min","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/10"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Wednesday: Cure  - Day 6. Temp - 65 and RH - 67. Burped 2 times - 30 min","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/11"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Thursday: Cure  - Day 7. Temp - 68 and RH - 69. Burped 2 times - 30 min","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/12"}]
 															}
 														]
 										},
@@ -3093,13 +3093,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]	
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Friday: Cure - Day:8. Burped 2 times : AM - 30 min. PM - 30 min, Temp - 65 and RH - 66.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/13"}]	
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Saturday: Cure - Day:9. Burped 2 times : AM - 30 min. PM - 30 min, Bottle temp : 56, RH : 66","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Diesel Matic - Sunday: Cure - Day:10. Burped 2 times : AM - 30 min. PM - 30 min, Bottle temp : 60, RH : 64","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:406","entryDate":"2016/5/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -3751,13 +3751,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Little to no pistil activity. Hairs red, ready for harvest soon","budLength":"5","trichomes":[{"name":"Clear","amt":"60","checked":true},{"name":"Cloudy","amt":"39","checked":true},{"name":"Amber","amt":"1","checked":true}],"entryTime":"18:39:40:359","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"15","plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"19","plantMsg":"Ready for harvest","budLength":"5","trichomes":[{"name":"Clear","amt":"50","checked":true},{"name":"Cloudy","amt":"50","checked":true},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:14:52:809","entryDate":"2016/5/1"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Harvest day","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:687","entryDate":"2016/5/2"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"great","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Harvest day","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:687","entryDate":"2016/5/3"}]
 															}
 														]
 										},
@@ -3766,25 +3766,25 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Final trim and placed in mason jars for cure Day 1","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/6"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Cure Day 2. Temp - 65 RH - 70","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/7"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Sunday: Cure - Day 3. Temp - 68, RH - 72","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/8"}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Monday: Cure  - Day 4. Temp - 72, RH - 69","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/9"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Tuesday: Cure  - Day 5. Temp - 72, RH - 72. Placed 62 med humidipak in jar to stabilize.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/10"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Wednesday: Cure  - Day 6. Temp - 74, RH - 64. Placed 62 med humidipak in jar to stabilize.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/11"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Thursday: Cure - Day 7. Temp - 72, RH - 64. Removed humidipak.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/12"}]
 															}
 														]
 										},
@@ -3793,13 +3793,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Friday: Cure - Day 8. Log: Burped 0 times : AM - 0 min. PM - 0 min, Temp : 65, RH : 63.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:506","entryDate":"2016/5/13"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Saturday: Cure - Day 9. Log: Burped 2 times : AM - 30 min. PM - 30 min, Temp : 56, RH : 63.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:18:3:506","entryDate":"2016/5/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Auto Girl Scout Cookies - Sunday: Cure - Day 10. Log: Burped 2 times : AM - 30 min. PM - 30 min, Temp : 60, RH : 63.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"14:09:3:506","entryDate":"2016/5/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
@@ -4467,13 +4467,13 @@ var plantLog = [{
 																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"No change","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"18:39:40:479","entryDate":"2016/4/30"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"11:14:52:963","entryDate":"2016/5/1"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Still in flowering stage with only about 10 small buds","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:9:36:777","entryDate":"2016/5/2"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":"0.5","plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Leaves yellowing. Final phase of flowering. Buds haven't grown much but they are almost ready for harvest.","budLength":"2","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"20:44:19:699","entryDate":"2016/5/3"}]
 															}
 														]
 										},
@@ -4482,7 +4482,7 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":".6","plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"CFL","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":null,"plantMsg":"Discovered some seeds in the buds.. Suspect hermaphrodite \nAlso it may have contaminated Jack Here since we also found some seeds in her. Physically moved further away from Jack hoping to limit pollenation effects.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"21:18:3:581","entryDate":"2016/5/6"}]
 															}, {
 																"day": 2,
 																"data": [{}]
@@ -4491,16 +4491,16 @@ var plantLog = [{
 																"data": [{}]
 															}, {
 																"day": 4,
-																"data": [{}]
+																"data": [{"plantWater":"0.6","plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Outside light, few seeds found, no male pistils visible. Plant removed from grow room since it is suspected of pollinating Jack Herer.","budLength":"3","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/9"}]
 															}, {
 																"day": 5,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":"33","plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Expected harvest tomorrow.","budLength":"3","trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/10"}]
 															}, {
 																"day": 6,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster - Harvest day. Now hanging to dry.","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/11"}]
 															}, {
 																"day": 7,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster - Hanging to dry. Day 1","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/12"}]
 															}
 														]
 										},
@@ -4509,13 +4509,13 @@ var plantLog = [{
 											"entries": [
 															{
 																"day": 1,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster - Friday: Drying - Day 2: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/13"}]
 															}, {
 																"day": 2,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster - Saturday: Drying - Day 3: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/14"}]
 															}, {
 																"day": 3,
-																"data": [{}]
+																"data": [{"plantWater":0,"plantPPM":0,"plantPH":0,"plantHeight":0,"plantCond":"good","lightType":"HPS","pruning":[{"name":"FIM","tier":0,"times":0,"checked":false},{"name":"Top","tier":0,"times":0,"checked":false},{"name":"sCrop","tier":0,"times":0,"checked":false},{"name":"LST","tier":0,"times":0,"checked":false},{"name":"Fan","tier":0,"times":0,"checked":false}],"budNum":"10","plantMsg":"Orange Rooster - Sunday: Drying - Day 4: Hanging in dry room","budLength":0,"trichomes":[{"name":"Clear","amt":0,"checked":false},{"name":"Cloudy","amt":0,"checked":false},{"name":"Amber","amt":0,"checked":false}],"entryTime":"15:48:10:348","entryDate":"2016/5/15"}]
 															}, {
 																"day": 4,
 																"data": [{}]
